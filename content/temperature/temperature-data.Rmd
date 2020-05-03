@@ -48,7 +48,9 @@ There are no column names, and the missing data are usually recorded with the st
 
 As an example, these are the first six rows of the Paris.txt file.
 
-<embed src="/img/temperature/Paris_head" width="70%" height="775" />
+
+
+<embed src="/img/temperature/Paris_head.png" width="70%" />
 
 
 ## /raw folder

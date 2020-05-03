@@ -17,7 +17,7 @@
             <div class="row">
                  {{ $paginator := .Paginate (where .Data.Pages "Type" "temperature") }}
 {{ range $paginator.Pages }}
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-4 col-sm-6">
                     <div class="box-image-text blog">
                         <div class="top">
                             <div class="image" style="overflow:hidden">
