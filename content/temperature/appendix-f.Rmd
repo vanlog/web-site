@@ -1,0 +1,55 @@
+---
+title: Appendix F - Selection procedure
+author: 'Mariachiara Fortuna'
+date: '2020-04-23'
+slug: appendix-f
+categories: 
+  - research
+tags: 
+  - research
+  - temperature
+  - FGN
+  - R
+---
+
+
+**Affiliations:** 
+
+John K. Dagsvik, Statistics Norway, Research Department; 
+
+Mariachiara Fortuna, freelance statistician, Turin; 
+
+Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology. 
+
+
+\vspace{0.5cm}
+
+**Corresponding author:**
+
+John K. Dagsvik, E-mail: john.dagsvik@ssb.no
+
+Mariachiara Fortuna, E-mail: mariachiara.fortuna1@gmail.com (reference for code and analysis)
+
+
+
+
+```{r global options, echo=F}
+knitr::opts_chunk$set(
+  echo = TRUE, # Set to TRUE for pdf with code
+  message=FALSE,
+  warning = FALSE)
+longrun <- FALSE
+```
+
+
+
+```{r loading libraries, warning = F, message = F}
+require(knitr)
+require(dplyr)
+require(ggplot2)
+require(tidyr)
+# require(tempFGN)
+
+```
+
+

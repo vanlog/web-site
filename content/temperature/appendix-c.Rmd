@@ -1,0 +1,523 @@
+---
+title: Appendix C - Estimation and test results
+author: 'Mariachiara Fortuna'
+date: '2020-04-23'
+slug: appendix-b-d
+categories: 
+  - research
+tags: 
+  - research
+  - temperature
+  - FGN
+  - R
+---
+
+
+**Affiliations:** 
+
+John K. Dagsvik, Statistics Norway, Research Department; 
+
+Mariachiara Fortuna, freelance statistician, Turin; 
+
+Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology. 
+
+
+\vspace{0.5cm}
+
+**Corresponding author:**
+
+John K. Dagsvik, E-mail: john.dagsvik@ssb.no
+
+Mariachiara Fortuna, E-mail: mariachiara.fortuna1@gmail.com (reference for code and analysis)
+
+
+
+
+```{r global options, echo=F}
+knitr::opts_chunk$set(
+  echo = TRUE, # Set to TRUE for pdf with code
+  message=FALSE,
+  warning = FALSE)
+longrun <- FALSE
+```
+
+
+
+```{r loading libraries, warning = F, message = F}
+require(knitr)
+require(dplyr)
+require(ggplot2)
+require(tidyr)
+# require(tempFGN)
+
+```
+
+
+```{r path building, eval = F}
+# DATA PATH
+data_final_path <- file.path("data","final")
+data_supporting_path <- file.path("data", "supporting")
+data_moberg_path <- file.path("data", "moberg")
+
+# OUTPUT PATH
+output_supporting_path <- file.path("output", "supporting")
+output_table_path <- file.path("output", "table")
+output_figure_path <- file.path("output", "figure")
+output_temporary_path <- file.path("output", "temporary")
+output_manipuated_path <- file.path("output", "manipulated")
+```
+
+
+```{r data reading, eval = F}
+
+# ACCESS TO SELECTED TIME SERIES
+selected <- read.csv(file.path(data_supporting_path, "T0.SelInfo.csv"), sep=";", dec=",")
+country_sel <- selected$Country
+station_sel <- selected$Station
+njs <- nrow(selected)
+data_dir_sel <- file.path(data_final_path, country_sel, paste0(station_sel, ".txt"))
+stationame_sel <- paste0(country_sel,", ",station_sel)
+
+# ACCESS TO ALL THE TIME SERIES
+all <- read.csv(file.path(data_supporting_path, "T0.TempInfo.csv"), sep=";", dec=",")
+country_all <- all$Country
+station_all <- all$Station
+nja <- nrow(all)
+data_dir_all <- file.path(data_final_path, country_all, paste0(station_all, ".txt"))
+stationame_all <- paste0(country_all,", ",station_all)
+
+# ACCESS TO MOBERG DATA
+moberg <- read.table(file.path(data_moberg_path, "Moberg data.txt"),
+                   header = T, na.strings = 99)
+Year_m <- moberg[, 1]
+Xj_m <- moberg[, 2]
+Zj_m <- scale(Xj_m)
+Yj_m <- cumsum(Zj_m)
+```
+  
+
+
+# APPENDIX C - ESTIMATION AND TEST RESULTS
+
+
+###  Table C1. Estimation results when using the characteristic function estimator and the Whittle method. Monthly data. 
+
+
+```{r TC1 - H estimation with full monthly data building, eval=FALSE}
+
+  # Parameters table
+  Parameters <- matrix(0, nrow=nja, ncol=3)
+  colnames(Parameters) <- c("Hc", "Hw", "SE_Hw")
+  rownames(Parameters) <- stationame_all
+  
+  pb <- txtProgressBar() # Start the progress bar
+
+  for (j in 1:nja){
+    
+    setTxtProgressBar(pb, j/nja) # Update the progress bar
+    
+    # Data reading 
+    data <- read.delim(data_dir_all[j], header=F, na.strings=99)
+    Zm <- monthlyAdj(data, scale=T)$Zm
+    
+    # Estimation
+    whittle <- WhittleEst(Zm)
+    Parameters[j,1] <- estim.cf.H(Yj=Zm, FBM=F)
+    Parameters[j,2] <- whittle$coefficients[1]
+    Parameters[j,3] <- whittle$coefficients[2]
+  }
+  close(pb) # close the progress bar
+  
+  # Saving data to csv
+  Parameters <- as.data.frame(Parameters)
+  write.csv(Parameters, file.path(output_table_path, 
+                                "TC1_monthly_H_all.csv"))
+
+```
+
+```{r, echo = F}
+Parameters <- read.csv("./tbl/TC1_monthly_H_all.csv")
+```
+
+```{r TC1 - H estimation with full monthly data printing}
+kable(Parameters, digits=3, align='c', escape = F,
+      col.names = c(" Weather station", "$H_c$", "$H_w$", "$SE(H_w)$"))
+```
+
+Due to the fact that the monthly time series are quite long, the estimates of the Hurst parameter are quite precise. From Table C1 we note that the difference between the characteristic function estimates and the Whittle estimates of the Hurst parameter are only significantly different in a few cases.
+
+***
+
+### Table C2. Estimates and test statistics based on annual data
+
+```{r TC2. Annual Chi square test building, eval=FALSE}
+
+Q_Hc <- NULL
+Q_Hw <- NULL
+Hc_vec <- NULL
+Hw_vec <- NULL
+Hw_se_vec <- NULL
+for (j in 1:nja){ 
+  data <- read.delim(data_dir_all[j], header=F, na.strings=99)
+  Xj <- data[,14]
+  Zj <- scale(Xj[!is.na(Xj)])
+  TT <- length(Zj)
+  whittle <- WhittleEst(Zj)
+  Hc <- estim.cf.H(Yj=Zj, FBM=F)
+  Hw <- whittle$coefficients[1]
+  Hw_se <- whittle$coefficients[2]
+  Q_Hc <- c(Qstat(Zj, H=Hc, TT=TT), Q_Hc)
+  Q_Hw <- c(Qstat(Zj, H=Hw, TT=TT), Q_Hw)
+  Hc_vec <- c(Hc_vec, Hc)
+  Hw_vec <- c(Hw_vec, Hw)
+  Hw_se_vec <- c(Hw_se_vec, Hw_se)
+}
+
+#star <- ifelse(Q>1.96|Q<(-1.96), "*", "")
+annual_Qt_all <- data.frame(City=stationame_all, Hc=Hc_vec, Q_Hc=Q_Hc, 
+                             Hw=Hw_vec, Hw_se=Hw_se_vec, Q_Hw=Q_Hw)
+                            
+write.csv(annual_Qt_all, file.path(output_table_path, 
+                                "TC2_annual_Qt_all.csv"), row.names=F)
+
+```
+
+```{r, echo = F}
+annual_Qt_all <- read.csv("./tbl/TC2_annual_Qt_all.csv")
+```
+
+```{r TC2. Annual Chi square test reading}
+kable(annual_Qt_all, digits=3, align='c', escape = F,
+      col.names = c(" Weather station", "$H_c$", "$Q(H_c)$", 
+                    "$H_w$", "$SE(H_w)$", "$Q(H_w)$"))
+```
+
+From the results in Table C2 we note that the estimates of the Hurst parameter based on annual data are, on average, higher than the corresponding estimates based on monthly data. Furthermore, we see that data from 9 weather stations reject the FGN hypothesis when using the characteristic function estimate of the Hurst parameter whereas data from 6 weather stations reject the FGN when using the Whittle estimate of the Hurst parameter.
+
+***
+
+### Table C3. Estimates and test statistics based on Moberg et al. (2005) time series
+
+```{r NM. Moberg estimates, eval = F}
+TT <- length(Xj_m)
+mu <- mean(Xj_m)
+sd <- sd(Xj_m)
+mu_c <- estim.cf.mu(Zj=Xj_m)
+sigma_c <- estim.cf.sigma(Yj=Xj_m, FBM=F)
+Hc <- estim.cf.H(Yj=Zj_m, FBM=F)
+Hw <- estim.w.H(Zj_m)
+Hw_SE <- WhittleEst(Zj_m)$coefficient[2]
+Q.Hc <- Qstat(Zj_m, H=Hc, TT=TT)
+Q.Hw <- Qstat(Zj_m, H=Hw, TT=TT)
+
+
+moberg_estimates <- data.frame(c(mu, sd, mu_c, sigma_c, Hc, Hw, Hw_SE, Q.Hc, Q.Hw))
+rownames(moberg_estimates) <- c("Mu", "Sigma", "Mu_c", "Sigma_c",
+                                 "Hc", "Hw", "Hw_SE", "Q.Hc", "Q.Hw")
+colnames(moberg_estimates) <- "Estimates"
+
+Hc <- estim.cf.H(Yj=Zj_m, FBM=F)
+Hw <- estim.w.H(Zj_m)
+Hw_SE <- WhittleEst(Zj_m)$coefficient[2]
+Q.Hc <- Qstat(Zj_m, H=Hc, TT=TT)
+Q.Hw <- Qstat(Zj_m, H=Hw, TT=TT)
+
+write.csv(moberg_estimates, file.path(output_table_path, 
+                                "TC3_moberg_estimates.csv"))
+
+```
+
+```{r, echo = F}
+moberg_estimates <- read.csv("./tbl/TC3_moberg_estimates.csv")
+```
+
+```{r TC3. Moberg estimates reading}
+moberg_estimates[,1] <- c("$\\mu$", "$\\sigma$", "$\\mu_c$", "$\\sigma_c$",
+                   "$H_c$", "$H_w$", "$SE(H_w)$", "$Q(H_c)$",  "$Q(H_w)$")  
+kable(moberg_estimates, digits=3, align='c' , escape = F,
+      col.names = c("Parameters and statistics", "Value"))
+```
+
+The results of Table C3 show that the FGN model is rejected for the Moberg data when the respective estimated Hurst parameters are used.
+
+***
+
+## Table C4. Chi-square statistics based on the data of Moberg et al. (2009)
+
+```{r TC4. Moberg grid, eval=F}
+Hvec <- seq(0.92, 0.98, by=0.01)
+
+Qt <- NULL
+  for (Hval in Hvec){
+    Qt <- c(Qt, Qstat(Zj_m, H=Hval, TT=TT))    
+  }
+
+moberg_Qt_grid <- data.frame(H=Hvec, Qt)
+
+write.csv(moberg_Qt_grid, row.names=F, file.path(output_table_path, 
+                                "TC4_moberg_Qt_grid.csv"))
+
+```
+
+```{r, echo = F}
+moberg_Qt_grid <- read.csv("./tbl/TC4_moberg_Qt_grid.csv")
+```
+
+```{r TC4. Moberg grid reading}
+kable(moberg_Qt_grid, digits=3, align='c',
+      col.names = c("H", "Q(H)"))
+```
+
+The results of Table C4 shows that the power of the Q test is high (conditional on the FGN model). In particular, when H = 0.95 then Q(H) $\in$ (-1.96, 1.96) whereas when H equals 0.94 or 0.96 (or further away from 0.95) then Q(H) $\notin$ (-1.96, 1.96) which means rejection of FGN. 
+
+
+***
+
+## Table C5. Stationarity test. Moberg data
+
+```{r TC5. Moberg stationarity test, eval = F}
+
+Stationary_moberg <- matrix(0, nrow=2, ncol=3)
+colnames(Stationary_moberg) <- c("test.stat","test.res","test.criterion")
+rownames(Stationary_moberg) <- c("Sign: 0.05", "Sign: 0.1")
+
+
+sign_level <- c(0.05, 0.1)
+
+for (j in 1:2) {
+        station_res <- unsys.station.test(Xj_m, M=2000,
+                                          sig.lev = sign_level[j])
+        Stationary_moberg[j,1] <- station_res$test.stat
+        Stationary_moberg[j,2] <- station_res$test.res 
+        Stationary_moberg[j,3] <- station_res$test.criterion
+        }
+
+Stationary_moberg <- as.data.frame(Stationary_moberg)
+
+
+# sum(Stationary_all_annual$test.res)
+
+write.csv(Stationary_moberg,
+          file.path(output_table_path, "TC5_Stationarity_moberg.csv"))
+
+```
+
+```{r, echo = F}
+Stationary_moberg <- read.csv("./tbl/TC5_Stationarity_moberg.csv")
+```
+
+
+```{r TC5. Moberg stationarity test reading}
+rownames(Stationary_moberg) <- c("Significance level: 0.05", 
+                                       "Significance level: 0.1")
+Stationary_moberg$X <- NULL
+
+Stationary_moberg$test.res <- replace(Stationary_moberg$test.res,
+                                            Stationary_moberg$test.res==0, 
+                                            "no rejection")
+                            
+kable(Stationary_moberg, digits=3, align='c',
+      col.names = c( "Test statistic", "Test result", "Test criterion"))
+```
+
+
+***
+
+
+## Table C6. Stationarity test. Annual data
+
+```{r TC6. Annual stationarity test, eval = F}
+
+Stationary_all_annual <- matrix(0, nrow=nja, ncol=3)
+colnames(Stationary_all_annual) <- c("test.stat","test.res","test.criterion")
+rownames(Stationary_all_annual) <- paste0(all$Country, ",", all$Station)
+
+for (j in 1:nja) {
+        #--- 1. Data reading 
+        data <- read.delim(data_dir_all[j], header=F, na.strings=99)
+          Xj <- data[,14] 
+          Zj <- Xj[!is.na(Xj)]
+        #--- 2. Estimation
+        station_res <- unsys.station.test(Zj, M=2000, sig.lev = 0.01)
+        Stationary_all_annual[j,1] <- station_res$test.stat
+        Stationary_all_annual[j,2] <- station_res$test.res 
+        Stationary_all_annual[j,3] <- station_res$test.criterion
+        }
+
+Stationary_all_annual <- as.data.frame(Stationary_all_annual)
+
+# sum(Stationary_all_annual$test.res)
+
+write.csv(Stationary_all_annual,
+          file.path(output_table_path, "TC6_Stationarity_all_annual.csv"))
+
+```
+
+```{r, echo = F}
+Stationary_moberg <- read.csv("./tbl/TC6_Stationarity_all_annual.csv")
+```
+
+
+```{r TC6. Annual stationarity test reading}
+Stationary_moberg %>%
+  mutate(test.res = case_when(test.res == 0 ~ "no rejection",
+                         test.res == 1 ~ "rejection")) %>%
+kable(digits=3, align='c',
+      col.names = c(" Weather station", "Test statistic", 
+                    "Test result", "Test criterion"))
+```
+
+
+From Table C6 we note that only in one case (Djupivogur, Iceland) do the data reject the stationarity hypothesis.
+
+
+***
+
+## Table C7. Stationarity test. Monthly data
+
+```{r TC5. Monthly stationarity test, eval = F}
+Stationarity_all <- matrix(0, nrow=nja, ncol=3)
+colnames(Stationarity_all) <- c("test.stat","test.res","test.criterion")
+rownames(Stationarity_all) <- paste0(all$Country, ",", all$Station)
+
+for (j in 1:nja) {
+        #--- 1. Data reading 
+        data <- read.delim(data_dir_all[j], header=F, na.strings=99)
+        Zm <- monthlyAdj(data, scale=T)$Zm
+        
+        #--- 2. Estimation
+        station_res <- unsys.station.test(Zm, M=2000, sig.lev = 0.01)
+        Stationarity_all[j,1] <- station_res$test.stat
+        Stationarity_all[j,2] <- station_res$test.res 
+        Stationarity_all[j,3] <- station_res$test.criterion
+        }
+
+Stationarity_all <- as.data.frame(Stationarity_all)
+
+# sum(Stationarity_all$test.res)
+
+write.csv(Stationarity_all, file.path(output_table_path, 
+                                "TC7.Stationarity_all.csv"))
+
+```
+
+```{r, echo = F}
+Stationarity_all <- read.csv("./tbl/TC6_Stationarity_all_annual.csv")
+```
+
+```{r TC7. Monthly stationarity test reading}
+Stationarity_all %>%
+  mutate(test.res = case_when(test.res == 0 ~ "no rejection",
+                         test.res == 1 ~ "rejection")) %>%
+kable(digits=3, align='c',
+      col.names = c(" Weather station", "Test statistic", "Test result", 
+                    "Test criterion"))
+```
+
+
+Table C7 shows that stationarity (based on the default option of Cho’s test) is rejected for data from 14 weather stations when monthly time series are used.
+
+***
+
+## Table C8. Estimation of H using the Wavelet Lifting estimator. Monthly data 
+
+```{r, eval = F}
+# Wavelet estimation for all time series
+Parameters <- data.frame()
+for (j in 1:nja) {
+        #--- 1. Data reading 
+        data <- read.delim(data_dir_all[j], header=F, na.strings=99)
+        Zm <- monthlyAdj(data, scale=T)$Zm
+        timeindex <- which(!is.na(data[,2:13]))
+        nmiss <- sum(is.na(Zm))
+        #--- 2. Estimation
+        Hvec <- c(liftHurst(Zm, grid=timeindex), nmiss)
+        Parameters <- rbind(Parameters, Hvec)
+        }
+
+colnames(Parameters) <- c("Beta", "Hl", "Sd_Hl", "Lo_Hl", "Hi_Hl", "Missing")
+Parameters <- cbind(stationame_all, Parameters)
+saveRDS(Parameters, file.path(output_supporting_path, "wavelet_H_all.rds"))
+
+# Comparison between Wavelet and Whittle estimator
+Hl_tbl <- readRDS(file.path(output_supporting_path, "wavelet_H_all.rds"))
+Hw_tbl <- read.csv(file.path(output_table_path, "TC1_monthly_H_all.csv")) %>%
+  rename(stationame_all = X)
+H_comparison_tbl <- Hl_tbl %>%
+  left_join(Hw_tbl) %>%
+  select(-c(Beta, Missing)) %>%
+  mutate(Lo_Hw = Hw - 3*SE_Hw,
+         Hi_Hw = Hw + 3*SE_Hw,
+         overlap = case_when(Hi_Hl < Lo_Hw | Hi_Hw < Lo_Hl ~ 0,
+                                 TRUE ~ 1))
+
+# Q statistics for Whittle and Wavelet estimator for all time series
+H_comparison_tbl$Q_Hl <- NA
+H_comparison_tbl$Q_Hw <- NA
+for (j in 1:nja){
+ data <- read.delim(data_dir_all[j], header=F, na.strings=99)
+ Zm <- monthlyAdj(data, scale=T)$Zm
+ TT <- length(Zm)
+ Hl <- H_comparison_tbl[j, "Hl"]
+ Hw <- H_comparison_tbl[j, "Hw"]
+ H_comparison_tbl[j, "Q_Hl"] <- Qstat(Zm, H=Hl, TT=TT)
+ H_comparison_tbl[j, "Q_Hw"] <- Qstat(Zm, H=Hw, TT=TT)
+}
+
+# Saving Whittle vs Wavalet estimation table
+write.csv(H_comparison_tbl, 
+          file.path(output_table_path, "TC8_monthly_all_H_wavelet.csv"))
+```
+
+```{r, echo = F}
+H_comparison_tbl <- read.csv("./tbl/TC8_monthly_all_H_wavelet.csv")
+```
+
+```{r TC8. Wavelet and Whittle estimator comparison}
+H_comparison_tbl %>%
+  select(stationame_all, Hl, Q_Hl) %>%
+  kable(digits=3, align='c',
+      col.names = c("Weather station", "$H_{wav}$", "$Q(H_{wav})$"))
+```
+
+
+***
+
+## Figure C1. Comparison between the Wavelet Lifting and the Whittle estimator
+
+Wavelet Lifting vs Whittle estimates of H, with 95% confidence bands
+
+
+```{r FC1. Wavelet and Whittle graphical comparison, fig.height=8, fig.align= "c", eval = F}
+# Long data format
+H_comparison_tbl_long <- data.frame(
+  City = rep(1:96, 2),
+    City_label = rep(H_comparison_tbl$stationame_all, 2),
+    Method = rep(c("Wavelet", "Whittle"), each = 96),
+    H = c(H_comparison_tbl$Hl, H_comparison_tbl$Hw),
+    Low = c(H_comparison_tbl$Lo_Hl, H_comparison_tbl$Lo_Hw),
+    High = c(H_comparison_tbl$Hi_Hl, H_comparison_tbl$Hi_Hw)
+  )
+
+# Plot
+H_comparison_tbl_long %>%
+  ggplot() +
+  geom_line(aes(x = City, y = H, col = Method)) +
+  geom_ribbon(aes(x = City, ymin = Low, ymax = High,
+                  fill = Method), alpha = 0.3) +
+  scale_x_continuous(breaks=1:96, 
+                     labels=stationame_all) +
+  theme_minimal() +
+   theme(#axis.text.x = element_text(angle = 90, size = 2),
+         axis.text.y = element_text(size = 5)) +
+  coord_flip() +
+  labs(# title = "Whittle vs Wavelet Lifting estimates of H", 
+       # subtitle = "with 95% confidence intervals",
+       x = "")
+```
+
+```{r, echo = F,  out.width = "80%"}
+include_graphics("/img/temperature/FC1_H_wavelet_whittle_plot.png")
+```
+
+

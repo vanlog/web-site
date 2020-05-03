@@ -1,0 +1,162 @@
+---
+title: Appendix B - Summary data information
+author: 'Mariachiara Fortuna'
+date: '2020-04-23'
+slug: appendix-b-d
+categories: 
+  - research
+tags: 
+  - research
+  - temperature
+  - FGN
+  - R
+---
+
+
+**Affiliations:** 
+
+John K. Dagsvik, Statistics Norway, Research Department; 
+
+Mariachiara Fortuna, freelance statistician, Turin; 
+
+Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology. 
+
+
+\vspace{0.5cm}
+
+**Corresponding author:**
+
+John K. Dagsvik, E-mail: john.dagsvik@ssb.no
+
+Mariachiara Fortuna, E-mail: mariachiara.fortuna1@gmail.com (reference for code and analysis)
+
+
+
+
+```{r global options, echo=F}
+knitr::opts_chunk$set(
+  echo = TRUE, # Set to TRUE for pdf with code
+  message=FALSE,
+  warning = FALSE)
+longrun <- FALSE
+```
+
+
+
+```{r loading libraries, warning = F, message = F}
+require(knitr)
+require(dplyr)
+require(ggplot2)
+require(tidyr)
+# require(tempFGN)
+
+```
+
+
+```{r path building, eval = F}
+# DATA PATH
+data_final_path <- file.path("data","final")
+data_supporting_path <- file.path("data", "supporting")
+data_moberg_path <- file.path("data", "moberg")
+
+# OUTPUT PATH
+output_supporting_path <- file.path("output", "supporting")
+output_table_path <- file.path("output", "table")
+output_figure_path <- file.path("output", "figure")
+output_temporary_path <- file.path("output", "temporary")
+output_manipuated_path <- file.path("output", "manipulated")
+```
+
+
+```{r data reading, eval = F}
+
+# ACCESS TO SELECTED TIME SERIES
+selected <- read.csv(file.path(data_supporting_path, "T0.SelInfo.csv"), sep=";", dec=",")
+country_sel <- selected$Country
+station_sel <- selected$Station
+njs <- nrow(selected)
+data_dir_sel <- file.path(data_final_path, country_sel, paste0(station_sel, ".txt"))
+stationame_sel <- paste0(country_sel,", ",station_sel)
+
+# ACCESS TO ALL THE TIME SERIES
+all <- read.csv(file.path(data_supporting_path, "T0.TempInfo.csv"), sep=";", dec=",")
+country_all <- all$Country
+station_all <- all$Station
+nja <- nrow(all)
+data_dir_all <- file.path(data_final_path, country_all, paste0(station_all, ".txt"))
+stationame_all <- paste0(country_all,", ",station_all)
+
+# ACCESS TO MOBERG DATA
+moberg <- read.table(file.path(data_moberg_path, "Moberg data.txt"),
+                   header = T, na.strings = 99)
+Year_m <- moberg[, 1]
+Xj_m <- moberg[, 2]
+Zj_m <- scale(Xj_m)
+Yj_m <- cumsum(Zj_m)
+```
+  
+***
+***
+
+# APPENDIX B - SUMMARY DATA INFORMATION
+
+### Figure B1. Plots of temperature series for 9 selected cities
+
+```{r FB1. Selected Temperature plot for pdf saving, eval=FALSE}
+
+par(mfrow=c(3,1))
+for (j in 1:njs){ 
+        data <- read.delim(data_dir_sel[j], header=F, na.strings=99)
+        Xj <- data[,14]
+        Year <- data[,1]
+        temperaturePlot(Xj=Xj, Year=Year, break.val=1960,
+                        main=paste("Temperature time series for",
+                                   stationame_sel[j]), cex.axis=1.2,
+                        cex.lab=1.2, cex.main=1.4)
+        }
+```
+
+
+<embed src="/img/temperature/FB1_selected_temperature_plot.pdf" width="70%" height="775" type="application/pdf" />
+
+***
+
+###  Table B1. Summary information about data
+
+```{r TB1. All info table building, eval = F}
+all_info <- NULL
+for (j in 1:nja){ 
+    data <- read.delim(data_dir_all[j], header=F, na.strings=99)
+    dataM <- monthlyAdj(data, scale = T) 
+    # Compute information for a given station
+    station_info <- dataM %>%
+    summarize(Station = stationame_all[j],
+            First_Year = min(year(Time)),
+            Last_Year  = max(year(Time)),
+            Years = Last_Year-First_Year+1,
+            Nonmiss_Months = n(),
+            Full_Lenght = 12*Years + month(max(Time)) - month(min(Time)),
+            Missing_Months = Full_Lenght - Nonmiss_Months # Check it
+            )
+# Create the information data.frame
+    all_info <- rbind(all_info, station_info)
+}
+
+# Write table
+write.csv(all_info, file.path(output_table_path, "TB1_all_info_table.csv"), row.names=F)
+```
+
+```{r, echo = F}
+all_info <- read.csv("./tbl/TB1_all_info_table.csv")
+```
+
+
+```{r TB1. All info table reading}
+all_info %>%
+  select(-Full_Lenght) %>%
+kable(digits=3, align='c',
+      col.names = c(" Weather station", "First year", "Last year", "Years",
+                    "Nonmissing months", "Missing months"))
+```
+
+

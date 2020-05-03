@@ -1,0 +1,76 @@
+---
+title: Appendix E - Temperature stations infographics
+author: ''
+date: '2020-04-23'
+slug: appendix-e
+order: 3
+categories:
+  - R
+tags:
+  - plot
+  - regression
+---
+
+
+
+<p><strong>Affiliations:</strong></p>
+<p>John K. Dagsvik, Statistics Norway, Research Department;</p>
+<p>Mariachiara Fortuna, freelance statistician, Turin;</p>
+<p>Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.</p>
+
+<p><strong>Corresponding author:</strong></p>
+<p>John K. Dagsvik, E-mail: <a href="mailto:john.dagsvik@ssb.no">john.dagsvik@ssb.no</a></p>
+<p>Mariachiara Fortuna, E-mail: <a href="mailto:mariachiara.fortuna1@gmail.com">mariachiara.fortuna1@gmail.com</a> (reference for code and analysis)</p>
+<pre class="r"><code>require(knitr)
+require(dplyr)
+require(ggplot2)
+require(tidyr)
+# require(tempFGN)</code></pre>
+<pre class="r"><code># DATA PATH
+data_final_path &lt;- file.path(&quot;data&quot;,&quot;final&quot;)
+data_supporting_path &lt;- file.path(&quot;data&quot;, &quot;supporting&quot;)
+data_moberg_path &lt;- file.path(&quot;data&quot;, &quot;moberg&quot;)
+
+# OUTPUT PATH
+output_supporting_path &lt;- file.path(&quot;output&quot;, &quot;supporting&quot;)
+output_table_path &lt;- file.path(&quot;output&quot;, &quot;table&quot;)
+output_figure_path &lt;- file.path(&quot;output&quot;, &quot;figure&quot;)
+output_temporary_path &lt;- file.path(&quot;output&quot;, &quot;temporary&quot;)
+output_manipuated_path &lt;- file.path(&quot;output&quot;, &quot;manipulated&quot;)</code></pre>
+<pre class="r"><code># ACCESS TO ALL THE TIME SERIES
+all &lt;- read.csv(file.path(data_supporting_path, &quot;T0.TempInfo.csv&quot;), sep=&quot;;&quot;, dec=&quot;,&quot;)
+country_all &lt;- all$Country
+station_all &lt;- all$Station
+nja &lt;- nrow(all)
+data_dir_all &lt;- file.path(data_final_path, country_all, paste0(station_all, &quot;.txt&quot;))
+stationame_all &lt;- paste0(country_all,&quot;, &quot;,station_all)</code></pre>
+<pre class="r"><code>for (j in 1:nja){ 
+  
+  data &lt;- read.delim(data_dir_all[j], header=F, na.strings=99)
+  dataM &lt;- monthlyAdj(data, scale=T)
+  Zm &lt;- dataM$Zm 
+  Ym &lt;- cumsum(Zm)
+  
+  par(oma=c(0, 0, 2, 0))
+  
+  par(fig=c(0, 0.5, 0.66, 0.96), cex=0.6)
+  maps::map(&#39;world&#39;, ylim=c(-60,90), mar=c(2,2,2,2))
+  points(all$Lon[j], all$Lat[j], col=2, pch=16, cex=2)
+  
+  par(fig=c(0.5, 1, 0.62, 0.98), cex=0.6, 
+      bty=&quot;l&quot;, mar=c(6,4,5,2), new=T)
+  autocorrPlot(Zm, H=&quot;cfH&quot;, 
+               cex.axis=1, cex.lab=1, cex.main=1.1, cex.dots=1.2)$plot
+  
+  par(fig=c(0, 1, 0.33, 0.63), mar=c(3,4,5,2), bty=&quot;l&quot;, cex=0.7, new=T)
+  blueRedPlot(Time=dataM$Time, Zj= Zm, break.val=1960, ic=NULL)
+  
+  par(fig=c(0,0.5,0,0.33), cex=0.7, new=T)
+  fgtSelfSim(Yj=Ym)$plot
+  
+  par(fig=c(0.5,1,0,0.33), cex=0.7, new=T)
+  fgtNormality(Yj=Ym)$plot
+  
+  title(stationame_all[j], outer=T, cex.main=1.5)
+}</code></pre>
+<embed src="/img/temperature/FE1.Final_appendix_sheet.pdf" width="70%" height="775" type="application/pdf" />

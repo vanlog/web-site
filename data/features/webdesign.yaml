@@ -1,0 +1,5 @@
+weight: 2
+name: "Data"
+icon: "fas fa-table"
+url: ""
+description: "Temperature time series from all around the world, available as monthly figures + Moberg reconstructed temperature"

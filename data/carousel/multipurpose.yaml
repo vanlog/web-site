@@ -1,0 +1,9 @@
+weight: 1
+title: "Temperature paper"
+description: >
+  <ul class="list-style-none">
+    <li>Temperatures as fractals</li>
+    <li>Analysis and tests on ~100  temperature time series</li>
+    <li>From the JRSS published paper</li>
+  </ul>
+image: "img/carousel/template-homepage.png"

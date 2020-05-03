@@ -1,0 +1,5 @@
+weight: 3
+name: "Functions"
+icon: "fas fa-code"
+url: ""
+description: "R functions supporting the temperature paper: data exploration, stationarity and FGN testing, bootstrap simulations"

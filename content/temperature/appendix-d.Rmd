@@ -1,0 +1,403 @@
+---
+title: Appendix D - Properties of the estimators
+author: 'Mariachiara Fortuna'
+date: '2020-04-24'
+slug: appendix-d
+categories: 
+  - research
+tags: 
+  - research
+  - temperature
+  - FGN
+  - R
+---
+
+**Affiliations:** 
+
+John K. Dagsvik, Statistics Norway, Research Department; 
+
+Mariachiara Fortuna, freelance statistician, Turin; 
+
+Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology. 
+
+
+\vspace{0.5cm}
+
+**Corresponding author:**
+
+John K. Dagsvik, E-mail: john.dagsvik@ssb.no
+
+Mariachiara Fortuna, E-mail: mariachiara.fortuna1@gmail.com (reference for code and analysis)
+
+
+
+
+```{r global options, echo=F}
+knitr::opts_chunk$set(
+  echo = TRUE, # Set to TRUE for pdf with code
+  message=FALSE,
+  warning = FALSE)
+longrun <- FALSE
+```
+
+
+
+```{r loading libraries, warning = F, message = F}
+require(knitr)
+require(dplyr)
+require(ggplot2)
+require(tidyr)
+# require(tempFGN)
+
+```
+
+
+```{r path building, eval = F}
+# DATA PATH
+data_final_path <- file.path("data","final")
+data_supporting_path <- file.path("data", "supporting")
+data_moberg_path <- file.path("data", "moberg")
+
+# OUTPUT PATH
+output_supporting_path <- file.path("output", "supporting")
+output_table_path <- file.path("output", "table")
+output_figure_path <- file.path("output", "figure")
+output_temporary_path <- file.path("output", "temporary")
+output_manipuated_path <- file.path("output", "manipulated")
+```
+
+
+```{r data reading, eval = F}
+
+# ACCESS TO SELECTED TIME SERIES
+selected <- read.csv(file.path(data_supporting_path, "T0.SelInfo.csv"), sep=";", dec=",")
+country_sel <- selected$Country
+station_sel <- selected$Station
+njs <- nrow(selected)
+data_dir_sel <- file.path(data_final_path, country_sel, paste0(station_sel, ".txt"))
+stationame_sel <- paste0(country_sel,", ",station_sel)
+
+# ACCESS TO ALL THE TIME SERIES
+all <- read.csv(file.path(data_supporting_path, "T0.TempInfo.csv"), sep=";", dec=",")
+country_all <- all$Country
+station_all <- all$Station
+nja <- nrow(all)
+data_dir_all <- file.path(data_final_path, country_all, paste0(station_all, ".txt"))
+stationame_all <- paste0(country_all,", ",station_all)
+
+# ACCESS TO MOBERG DATA
+moberg <- read.table(file.path(data_moberg_path, "Moberg data.txt"),
+                   header = T, na.strings = 99)
+Year_m <- moberg[, 1]
+Xj_m <- moberg[, 2]
+Zj_m <- scale(Xj_m)
+Yj_m <- cumsum(Zj_m)
+```
+
+
+## Table D1, D2, D3. Tables D1, D2, D3. Properties of different estimators of the FGN model. Bootstrap simulations
+
+
+The following tables show the results of the bootstrap simultations for different estimators of $\mu$, $\sigma$, $H$ and $\alpha$, given the FGN model with H equal to 0.7, 0.8, 0.9, 0.95.
+
+Each bootstrap estimate is based on 1,000 simulated FGN series of length 2,000.
+
+```{r Bootstrap estimation for given H, eval=FALSE}
+
+#--- 1. Parameters choice
+Hvec <- c(0.7, 0.8, 0.9, 0.95)
+N <- 1000
+Tlenght <- 2000 
+estimator_names <- c("Mu_c", "Mu_ML", "Sigma_c", "Sigma_ML", "H_c", "H_ML", 
+                     "Alpha_c", "Q_Stat", "Mean", "Sd")
+
+start <- Sys.time()
+
+#--- 2. Bootstrap estimation
+for (j in 1:4){
+          H <- Hvec[j]
+          start <- Sys.time()
+          print(paste0("----- H = ", H, " ----- ", Sys.time()))
+          Parameters <- matrix(0, nrow=N, ncol=10)
+          colnames(Parameters) <- estimator_names
+          #--- 3a. Estimation for given H
+          for (i in 1:N){
+                         Zjsim <- simFGN0(Tlenght, H)
+                         reg <- estim.cf.reg(Yj=Zjsim, FBM=F)
+                         Hw <- estim.w.H(Zjsim)
+                         mu_ML <- FgnMean(Zjsim, H=Hw, sigma=1)
+                         Parameters[i,1] <- estim.cf.mu(Zj=Zjsim)
+                         Parameters[i,2] <- mu_ML
+                         Parameters[i,3] <- reg["Sigma"]
+                         Parameters[i,4] <- FgnVar(Zjsim, mu_ML)
+                         Parameters[i,5] <- reg["H"]
+                         Parameters[i,6] <- Hw
+                         Parameters[i,7] <- estim.cf.alpha(Yj=Zjsim, FBM=T)
+                         Parameters[i,8] <- Qstat(Zjsim, H=H, TT=Tlenght)
+                         Parameters[i,9] <- mean(Zjsim)
+                         Parameters[i,10] <- sd(Zjsim)
+          }
+          write.csv(Parameters, file.path(output_supporting_path, 
+                                paste0("TD1.2.3_Full_Estimator_Tab_H=", H,".csv"))) 
+
+          print(Sys.time() - start)
+}
+
+```
+
+
+```{r Bootstrap aggregation: parameters mean and SE, eval=FALSE}
+#--- 1. Matrix building
+Hvec <- c(0.7, 0.8, 0.9, 0.95)
+estimator_names <- c("Mu_c", "Mu_ML", "Sigma_c", "Sigma_ML", "H_c", "H_ML", 
+                     "Alpha_c", "Q_Stat")
+Boots_Estim <- matrix(0, nrow=4, ncol=8)
+ colnames(Boots_Estim) <- estimator_names
+ rownames(Boots_Estim) <- Hvec
+Boots_SE <- Boots_Estim
+
+# 2. Estimation computing 
+for (j in 1:4){ 
+      H <- Hvec[j]
+      Parameters <- read.csv(file.path(output_supporting_path, 
+                                paste0("TD1.2.3_Full_Estimator_Tab_H=", H,".csv")))[,2:9]  
+                 estim <- apply(Parameters, 2, mean)
+                 SE <- apply(Parameters, 2, sd)
+                 Boots_Estim[j,] <- estim
+                 Boots_SE[j,] <- SE
+      }
+  
+
+Boots_Estim <- as.data.frame(Boots_Estim)
+Boots_SE <- as.data.frame(Boots_SE)
+
+write.csv(Boots_Estim, file.path(output_supporting_path, 
+                                "TD1.2.3_properties_boots_estim.csv")) 
+write.csv(Boots_SE, file.path(output_supporting_path, 
+                                "TD1.2.3_properties_boots_SE.csv")) 
+```
+
+
+
+
+
+### Table D1. Results of the bootstrap simulations for estimators of $\mu$ and $\sigma$
+
+
+* *$\mu_c$* is the characteristic function estimator for the mean, and *$SE(\mu_c)$* is its bootstrap simulation standard error
+
+* *$\mu_{ML}$* is the maximum likelihood estimator for the mean, and *$SE(\mu_{ML})$* is its bootstrap standard error
+
+* *$\sigma_c$* is the characteristic function estimator for the standard deviation, and *$SE(\sigma_{ML})$* is its bootstrap standard error
+
+* *$\sigma_{ML}$* is the maximum likelihood estimator for the standard deviation, and *$SE(\sigma_{ML})$* is its bootstrap standard error
+
+
+```{r, echo = F}
+Boots_Estim <- read.csv("./tbl/TD1.2.3_properties_boots_estim.csv")
+Boots_SE <- read.csv("./tbl/TD1.2.3_properties_boots_SE.csv")
+```
+
+
+
+```{r TD1. Mu and sigma table}
+
+
+TD1a <- data.frame(
+  H = Boots_Estim[,1],
+  Mu_c = Boots_Estim$Mu_c,
+  Mu_c_SE = Boots_Estim$Mu_c,
+  Mu_ML = Boots_Estim$Mu_ML,
+  Mu_ML_SE = Boots_Estim$Mu_ML
+  )
+
+TD1b <- data.frame(
+  H = Boots_Estim[,1],
+  Sigma_c = Boots_Estim$Sigma_c,
+  Sigma_c_SE = Boots_SE$Sigma_c,
+  Sigma_ML = Boots_Estim$Sigma_ML,
+  Sigma_ML_SE = Boots_SE$Sigma_ML
+  )
+
+
+kable(TD1a, digits=3, align='c', escape = F,
+      col.names = c("H", "$\\mu_c$", "$SE(\\mu_c)$",
+                    "$\\mu_{ML}$", "$SE(\\mu_{ML})$"))
+kable(TD1b, digits=3, align='c', escape = F,
+      col.names = c("H", "$\\sigma_c$", "$SE(\\sigma_c)$",
+                    "$\\sigma_{ML}$", "$SE(\\sigma_{ML})$"))
+```
+
+The results in Table D1 show that the standard errors of the respective estimators for the mean increase substantially when H increases. Also the estimators for $\sigma$ become severely downward biased.
+
+***
+
+### Table D2. Bootstrap simulations results for the *H* parameter 
+
+* $H_c$ is the characteristic function estimator for the H parameter, and $SE(H_c)$ is its bootstrap standard error
+
+* *$H_w$* is the Whittle estimator for the the H parameter, and *$SE(\mu_{ML})$* is its bootstrap standard error
+
+```{r TD2. H table}
+#=== TD2 READING and BUILDING 
+
+TD2 <- data.frame(
+  H = Boots_Estim[,1],
+  H_c = Boots_Estim$H_c,
+  H_c_SE = Boots_SE$H_c,
+  H_ML = Boots_Estim$H_ML,
+  H_ML_SE = Boots_SE$H_ML
+  )
+
+
+kable(TD2, digits=3, align='c', escape = F,
+      col.names = c("H", "$H_c$", "$SE(H_c)$",
+                    "$H_{ML}$", "$SE(H_{ML})$"))
+```
+
+Table D2 shows that the characteristic function estimator becomes downward biased as H increases. 
+
+***
+
+### Table D3. Bootstrap simulations results for the $\alpha$ parameter of the stable distribution
+
+*$\alpha_c$* is the characteristic function estimator for the $\alpha$ parameter, and *$SE(\alpha_c)$* is its bootstrap standard error
+
+```{r TD3. Alpha table}
+#=== TD3 READING and BUILDING 
+
+TD3 <- data.frame(
+  H = Boots_Estim[,1],
+  Alpha_c = Boots_Estim$Alpha_c,
+  Alpha_c_SE = Boots_SE$Alpha_c
+  )
+
+# rownames(TD3) <- TD123.bootsMuSigmaEstim[,1]
+
+kable(TD3, digits=3, align='c', escape = F,
+      col.names = c("H", "$\\alpha_c$", "$SE(\\alpha_c)$"))
+```
+
+The results in Table D3 show that the characteristic function estimator in this case performs very well at any level of H.
+
+***
+
+## Figure D1 and D2. Graphical test of asymptotic normality of the characteristic function estimators
+
+Bootstrap estimates based on 1,000 simulated FGN series of length 2,000.  
+
+```{r FD1. Qqplot - Ch. fun. estimators, eval = F}
+# 3x3 plot matrix
+
+par(mfrow=c(3, 3))
+# Testing for different H values
+  for(H in c(0.7, 0.8, 0.9)){
+    # Data reading: estimators value during bootstrap simulations
+    Parameters <- read.csv(file.path(output_supporting_path, 
+                                paste0("TD1.2.3_Full_Estimator_Tab_H=", H,".csv")))
+    # Q-qplot
+    qqnorm(Parameters$mu_c, main=paste("Mu qqplot - H =", H))
+    qqnorm(Parameters$Sigma_c, main=paste("Sigma qqplot - H =", H))
+    qqnorm(Parameters$H_c, main=paste("H qqplot - H =", H))
+  }
+dev.off()
+```
+
+<embed src="/img/temperature/FD1_estimators_qqplot.pdf" width="70%" height="775" type="application/pdf" />
+
+***
+
+
+```{r FD2. Hist - Ch. fun. estimators, eval = F}
+par(mfrow=c(3, 3))
+# Testing for different H values
+for(H in c(0.7, 0.8, 0.9)){
+  # Data reading: estimators value during bootstrap simulations
+  Parameters <- read.csv(file.path(output_supporting_path, 
+                                   paste0("TD1.2.3_Full_Estimator_Tab_H=", H,".csv")))
+  # Histograms
+  hist(Parameters$Mu_c, breaks = 25, col ="black", 
+       main=paste("Mu distribution - H =", H), xlab=NULL) 
+  abline(v=0, col=2)
+  hist(Parameters$Sigma_c, breaks = 25, col ="black", 
+       main=paste("Sigma distribution - H =", H), xlab=NULL)
+  abline(v=1, col=2)
+  hist(Parameters$H_c, breaks = 25, col ="black", 
+       main=paste("H distribution - H =", H), xlab=NULL)
+  abline(v=H, col=2)
+}
+```
+
+
+<embed src="/img/temperature/FD2_estimators_hist.pdf" width="70%" height="775" type="application/pdf" />
+
+
+***
+
+## Figure D3. Graphical test of the distribution of the Chi-Square statistics Q when estimated H values are inserted
+
+
+Bootstrap estimates based on 1,000 simulated FGN series of length 2,000.
+
+H estimated by the Whittle method.
+
+```{r FD3. Bootstrap estimation of Q with given Hw, eval=FALSE}
+
+#--- 1. Parameters choice
+Hvec <- c(0.8, 0.9)
+N <- 1000
+Tlenght <- 2000 
+estimator_names <- c("Hw", "Q.Hw")
+
+start <- Sys.time()
+
+#--- 2. Bootstrap estimation
+for (H in Hvec){
+          start <- Sys.time()
+          print(paste0("----- H = ", H, " ----- ", Sys.time()))
+          Parameters <- matrix(0, nrow=N, ncol=2)
+          colnames(Parameters) <- estimator_names
+          #--- 3a. Estimation for given H
+          for (i in 1:N){
+                         Zjsim <- simFGN0(Tlenght, H)
+                         Hw <- estim.w.H(Zjsim)
+                         mu_ML <- FgnMean(Zjsim, H=Hw, sigma=1)
+                         Parameters[i,1] <- Hw
+                         Parameters[i,2] <- Qstat(Zjsim, H=Hw, TT=Tlenght)
+          }
+          write.csv(Parameters, file.path(output_supporting_path, 
+                                paste0("FD3_Q.Hw_Estimation_H=", H,".csv"))) 
+
+          print(Sys.time() - start)
+}
+
+```
+
+
+\vspace{1cm}
+
+```{r FD3. Q dist given Hw: hist and N test, eval = F}
+
+par(mfrow=c(2, 2))
+# Testing for different H values
+  for(H in c(0.8, 0.9)){ 
+    # Data reading: estimators value during bootstrap simulations
+    Q_Stat <- read.csv(file.path(output_supporting_path, 
+                                paste0("FD3_Q.Hw_Estimation_H=", H,".csv")))$Q.Hw
+    # Q-qplot
+   hist(Q_Stat, breaks = 100, col ="black", 
+        main=paste("Q distribution - H =", H), xlab=NULL)    
+   abline(v=0, col=2)
+   fgtNormality(Yj=cumsum(Q_Stat), xmax=0.7, main=paste("- H = ", H), cex.dots=1.5,
+                     cex.axis=1,cex.main=1.2)$plot
+  }
+
+```
+
+
+
+```{r FD3. Printing, out.width = "70%"}
+include_graphics("/img/temperature/FD3_Qstat_distribution_Hw.png")
+```
+
+Figure D3 shows that Q is approximately normally distributed when H = 0.8 whereas the distribution becomes skew to the right when H = 0.9. (similar to a stable distribution that is totally skew to the right) 
