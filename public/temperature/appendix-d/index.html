@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Appendix D - Properties of the estimators</title>
+  <meta name="author" content="Mariachiara Fortuna" />
+  
+  
+  
+  
+  <meta name="keywords" content="devows, hugo, go, research, temperature, FGN, R">
+  
+  
+  <meta name="description" content="Site template made by devcows using hugo">
+
+  <meta name="generator" content="Hugo 0.69.0" />
+
+  
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+  
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Temperature">
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:locale" content="en_us">
+  <meta property="og:site_name" content="Temperature">
+  <meta property="og:title" content="Appendix D - Properties of the estimators">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/temperature/appendix-d/" />
+  <meta property="og:description" content="Site template made by devcows using hugo">
+  <meta property="og:image" content="/img/sharing-default.png">
+  <meta property="og:image:type" content="image/png">
+  
+  
+  
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="420">
+  
+  
+  <meta property="og:updated_time" content="2020-04-24T00:00:00Z">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@GoHugoIO">
+  <meta name="twitter:title" content="Appendix D - Properties of the estimators">
+  
+  <meta name="twitter:image" content="/img/sharing-default.png">
+  
+  <meta name="twitter:description" content="Site template made by devcows using hugo">
+  
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/logo-vanlog-small.png" alt="Appendix D - Properties of the estimators logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-vanlog-small.png" alt="Appendix D - Properties of the estimators logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Appendix D - Properties of the estimators - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">Home</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/blog/">Blog</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/faq/">FAQ</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contact/">Contact</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown active">
+                    
+                    <a href="/temperature/">Temperature</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/paper/">Paper</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Appendix D - Properties of the estimators</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        
+                          <p class="text-muted text-uppercase mb-small text-right">
+                            By <a href="#">Mariachiara Fortuna</a>
+                             | 
+                            April 24, 2020
+                          </p>
+                        
+
+                        <div id="post-content">
+                          
+
+
+<p><strong>Affiliations:</strong></p>
+<p>John K. Dagsvik, Statistics Norway, Research Department;</p>
+<p>Mariachiara Fortuna, freelance statistician, Turin;</p>
+<p>Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.</p>
+
+<p><strong>Corresponding author:</strong></p>
+<p>John K. Dagsvik, E-mail: <a href="mailto:john.dagsvik@ssb.no">john.dagsvik@ssb.no</a></p>
+<p>Mariachiara Fortuna, E-mail: <a href="mailto:mariachiara.fortuna1@gmail.com">mariachiara.fortuna1@gmail.com</a> (reference for code and analysis)</p>
+<pre class="r"><code>require(knitr)
+require(dplyr)
+require(ggplot2)
+require(tidyr)
+# require(tempFGN)</code></pre>
+<pre class="r"><code># DATA PATH
+data_final_path &lt;- file.path(&quot;data&quot;,&quot;final&quot;)
+data_supporting_path &lt;- file.path(&quot;data&quot;, &quot;supporting&quot;)
+data_moberg_path &lt;- file.path(&quot;data&quot;, &quot;moberg&quot;)
+
+# OUTPUT PATH
+output_supporting_path &lt;- file.path(&quot;output&quot;, &quot;supporting&quot;)
+output_table_path &lt;- file.path(&quot;output&quot;, &quot;table&quot;)
+output_figure_path &lt;- file.path(&quot;output&quot;, &quot;figure&quot;)
+output_temporary_path &lt;- file.path(&quot;output&quot;, &quot;temporary&quot;)
+output_manipuated_path &lt;- file.path(&quot;output&quot;, &quot;manipulated&quot;)</code></pre>
+<pre class="r"><code># ACCESS TO SELECTED TIME SERIES
+selected &lt;- read.csv(file.path(data_supporting_path, &quot;T0.SelInfo.csv&quot;), sep=&quot;;&quot;, dec=&quot;,&quot;)
+country_sel &lt;- selected$Country
+station_sel &lt;- selected$Station
+njs &lt;- nrow(selected)
+data_dir_sel &lt;- file.path(data_final_path, country_sel, paste0(station_sel, &quot;.txt&quot;))
+stationame_sel &lt;- paste0(country_sel,&quot;, &quot;,station_sel)
+
+# ACCESS TO ALL THE TIME SERIES
+all &lt;- read.csv(file.path(data_supporting_path, &quot;T0.TempInfo.csv&quot;), sep=&quot;;&quot;, dec=&quot;,&quot;)
+country_all &lt;- all$Country
+station_all &lt;- all$Station
+nja &lt;- nrow(all)
+data_dir_all &lt;- file.path(data_final_path, country_all, paste0(station_all, &quot;.txt&quot;))
+stationame_all &lt;- paste0(country_all,&quot;, &quot;,station_all)
+
+# ACCESS TO MOBERG DATA
+moberg &lt;- read.table(file.path(data_moberg_path, &quot;Moberg data.txt&quot;),
+                   header = T, na.strings = 99)
+Year_m &lt;- moberg[, 1]
+Xj_m &lt;- moberg[, 2]
+Zj_m &lt;- scale(Xj_m)
+Yj_m &lt;- cumsum(Zj_m)</code></pre>
+<div id="table-d1-d2-d3.-tables-d1-d2-d3.-properties-of-different-estimators-of-the-fgn-model.-bootstrap-simulations" class="section level2">
+<h2>Table D1, D2, D3. Tables D1, D2, D3. Properties of different estimators of the FGN model. Bootstrap simulations</h2>
+<p>The following tables show the results of the bootstrap simultations for different estimators of <span class="math inline">\(\mu\)</span>, <span class="math inline">\(\sigma\)</span>, <span class="math inline">\(H\)</span> and <span class="math inline">\(\alpha\)</span>, given the FGN model with H equal to 0.7, 0.8, 0.9, 0.95.</p>
+<p>Each bootstrap estimate is based on 1,000 simulated FGN series of length 2,000.</p>
+<pre class="r"><code>#--- 1. Parameters choice
+Hvec &lt;- c(0.7, 0.8, 0.9, 0.95)
+N &lt;- 1000
+Tlenght &lt;- 2000 
+estimator_names &lt;- c(&quot;Mu_c&quot;, &quot;Mu_ML&quot;, &quot;Sigma_c&quot;, &quot;Sigma_ML&quot;, &quot;H_c&quot;, &quot;H_ML&quot;, 
+                     &quot;Alpha_c&quot;, &quot;Q_Stat&quot;, &quot;Mean&quot;, &quot;Sd&quot;)
+
+start &lt;- Sys.time()
+
+#--- 2. Bootstrap estimation
+for (j in 1:4){
+          H &lt;- Hvec[j]
+          start &lt;- Sys.time()
+          print(paste0(&quot;----- H = &quot;, H, &quot; ----- &quot;, Sys.time()))
+          Parameters &lt;- matrix(0, nrow=N, ncol=10)
+          colnames(Parameters) &lt;- estimator_names
+          #--- 3a. Estimation for given H
+          for (i in 1:N){
+                         Zjsim &lt;- simFGN0(Tlenght, H)
+                         reg &lt;- estim.cf.reg(Yj=Zjsim, FBM=F)
+                         Hw &lt;- estim.w.H(Zjsim)
+                         mu_ML &lt;- FgnMean(Zjsim, H=Hw, sigma=1)
+                         Parameters[i,1] &lt;- estim.cf.mu(Zj=Zjsim)
+                         Parameters[i,2] &lt;- mu_ML
+                         Parameters[i,3] &lt;- reg[&quot;Sigma&quot;]
+                         Parameters[i,4] &lt;- FgnVar(Zjsim, mu_ML)
+                         Parameters[i,5] &lt;- reg[&quot;H&quot;]
+                         Parameters[i,6] &lt;- Hw
+                         Parameters[i,7] &lt;- estim.cf.alpha(Yj=Zjsim, FBM=T)
+                         Parameters[i,8] &lt;- Qstat(Zjsim, H=H, TT=Tlenght)
+                         Parameters[i,9] &lt;- mean(Zjsim)
+                         Parameters[i,10] &lt;- sd(Zjsim)
+          }
+          write.csv(Parameters, file.path(output_supporting_path, 
+                                paste0(&quot;TD1.2.3_Full_Estimator_Tab_H=&quot;, H,&quot;.csv&quot;))) 
+
+          print(Sys.time() - start)
+}</code></pre>
+<pre class="r"><code>#--- 1. Matrix building
+Hvec &lt;- c(0.7, 0.8, 0.9, 0.95)
+estimator_names &lt;- c(&quot;Mu_c&quot;, &quot;Mu_ML&quot;, &quot;Sigma_c&quot;, &quot;Sigma_ML&quot;, &quot;H_c&quot;, &quot;H_ML&quot;, 
+                     &quot;Alpha_c&quot;, &quot;Q_Stat&quot;)
+Boots_Estim &lt;- matrix(0, nrow=4, ncol=8)
+ colnames(Boots_Estim) &lt;- estimator_names
+ rownames(Boots_Estim) &lt;- Hvec
+Boots_SE &lt;- Boots_Estim
+
+# 2. Estimation computing 
+for (j in 1:4){ 
+      H &lt;- Hvec[j]
+      Parameters &lt;- read.csv(file.path(output_supporting_path, 
+                                paste0(&quot;TD1.2.3_Full_Estimator_Tab_H=&quot;, H,&quot;.csv&quot;)))[,2:9]  
+                 estim &lt;- apply(Parameters, 2, mean)
+                 SE &lt;- apply(Parameters, 2, sd)
+                 Boots_Estim[j,] &lt;- estim
+                 Boots_SE[j,] &lt;- SE
+      }
+  
+
+Boots_Estim &lt;- as.data.frame(Boots_Estim)
+Boots_SE &lt;- as.data.frame(Boots_SE)
+
+write.csv(Boots_Estim, file.path(output_supporting_path, 
+                                &quot;TD1.2.3_properties_boots_estim.csv&quot;)) 
+write.csv(Boots_SE, file.path(output_supporting_path, 
+                                &quot;TD1.2.3_properties_boots_SE.csv&quot;)) </code></pre>
+<div id="table-d1.-results-of-the-bootstrap-simulations-for-estimators-of-mu-and-sigma" class="section level3">
+<h3>Table D1. Results of the bootstrap simulations for estimators of <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span></h3>
+<ul>
+<li><p><em><span class="math inline">\(\mu_c\)</span></em> is the characteristic function estimator for the mean, and <em><span class="math inline">\(SE(\mu_c)\)</span></em> is its bootstrap simulation standard error</p></li>
+<li><p><em><span class="math inline">\(\mu_{ML}\)</span></em> is the maximum likelihood estimator for the mean, and <em><span class="math inline">\(SE(\mu_{ML})\)</span></em> is its bootstrap standard error</p></li>
+<li><p><em><span class="math inline">\(\sigma_c\)</span></em> is the characteristic function estimator for the standard deviation, and <em><span class="math inline">\(SE(\sigma_{ML})\)</span></em> is its bootstrap standard error</p></li>
+<li><p><em><span class="math inline">\(\sigma_{ML}\)</span></em> is the maximum likelihood estimator for the standard deviation, and <em><span class="math inline">\(SE(\sigma_{ML})\)</span></em> is its bootstrap standard error</p></li>
+</ul>
+<pre class="r"><code>TD1a &lt;- data.frame(
+  H = Boots_Estim[,1],
+  Mu_c = Boots_Estim$Mu_c,
+  Mu_c_SE = Boots_Estim$Mu_c,
+  Mu_ML = Boots_Estim$Mu_ML,
+  Mu_ML_SE = Boots_Estim$Mu_ML
+  )
+
+TD1b &lt;- data.frame(
+  H = Boots_Estim[,1],
+  Sigma_c = Boots_Estim$Sigma_c,
+  Sigma_c_SE = Boots_SE$Sigma_c,
+  Sigma_ML = Boots_Estim$Sigma_ML,
+  Sigma_ML_SE = Boots_SE$Sigma_ML
+  )
+
+
+kable(TD1a, digits=3, align=&#39;c&#39;, escape = F,
+      col.names = c(&quot;H&quot;, &quot;$\\mu_c$&quot;, &quot;$SE(\\mu_c)$&quot;,
+                    &quot;$\\mu_{ML}$&quot;, &quot;$SE(\\mu_{ML})$&quot;))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="center">H</th>
+<th align="center"><span class="math inline">\(\mu_c\)</span></th>
+<th align="center"><span class="math inline">\(SE(\mu_c)\)</span></th>
+<th align="center"><span class="math inline">\(\mu_{ML}\)</span></th>
+<th align="center"><span class="math inline">\(SE(\mu_{ML})\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.70</td>
+<td align="center">0.002</td>
+<td align="center">0.002</td>
+<td align="center">0.002</td>
+<td align="center">0.002</td>
+</tr>
+<tr class="even">
+<td align="center">0.80</td>
+<td align="center">-0.001</td>
+<td align="center">-0.001</td>
+<td align="center">-0.001</td>
+<td align="center">-0.001</td>
+</tr>
+<tr class="odd">
+<td align="center">0.90</td>
+<td align="center">-0.012</td>
+<td align="center">-0.012</td>
+<td align="center">-0.011</td>
+<td align="center">-0.011</td>
+</tr>
+<tr class="even">
+<td align="center">0.95</td>
+<td align="center">-0.024</td>
+<td align="center">-0.024</td>
+<td align="center">-0.021</td>
+<td align="center">-0.021</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>kable(TD1b, digits=3, align=&#39;c&#39;, escape = F,
+      col.names = c(&quot;H&quot;, &quot;$\\sigma_c$&quot;, &quot;$SE(\\sigma_c)$&quot;,
+                    &quot;$\\sigma_{ML}$&quot;, &quot;$SE(\\sigma_{ML})$&quot;))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="center">H</th>
+<th align="center"><span class="math inline">\(\sigma_c\)</span></th>
+<th align="center"><span class="math inline">\(SE(\sigma_c)\)</span></th>
+<th align="center"><span class="math inline">\(\sigma_{ML}\)</span></th>
+<th align="center"><span class="math inline">\(SE(\sigma_{ML})\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.70</td>
+<td align="center">0.994</td>
+<td align="center">0.039</td>
+<td align="center">0.990</td>
+<td align="center">0.039</td>
+</tr>
+<tr class="even">
+<td align="center">0.80</td>
+<td align="center">0.956</td>
+<td align="center">0.053</td>
+<td align="center">0.950</td>
+<td align="center">0.056</td>
+</tr>
+<tr class="odd">
+<td align="center">0.90</td>
+<td align="center">0.793</td>
+<td align="center">0.080</td>
+<td align="center">0.789</td>
+<td align="center">0.086</td>
+</tr>
+<tr class="even">
+<td align="center">0.95</td>
+<td align="center">0.535</td>
+<td align="center">0.073</td>
+<td align="center">0.534</td>
+<td align="center">0.077</td>
+</tr>
+</tbody>
+</table>
+<p>The results in Table D1 show that the standard errors of the respective estimators for the mean increase substantially when H increases. Also the estimators for <span class="math inline">\(\sigma\)</span> become severely downward biased.</p>
+<hr />
+</div>
+<div id="table-d2.-bootstrap-simulations-results-for-the-h-parameter" class="section level3">
+<h3>Table D2. Bootstrap simulations results for the <em>H</em> parameter</h3>
+<ul>
+<li><p><span class="math inline">\(H_c\)</span> is the characteristic function estimator for the H parameter, and <span class="math inline">\(SE(H_c)\)</span> is its bootstrap standard error</p></li>
+<li><p><em><span class="math inline">\(H_w\)</span></em> is the Whittle estimator for the the H parameter, and <em><span class="math inline">\(SE(\mu_{ML})\)</span></em> is its bootstrap standard error</p></li>
+</ul>
+<pre class="r"><code>#=== TD2 READING and BUILDING 
+
+TD2 &lt;- data.frame(
+  H = Boots_Estim[,1],
+  H_c = Boots_Estim$H_c,
+  H_c_SE = Boots_SE$H_c,
+  H_ML = Boots_Estim$H_ML,
+  H_ML_SE = Boots_SE$H_ML
+  )
+
+
+kable(TD2, digits=3, align=&#39;c&#39;, escape = F,
+      col.names = c(&quot;H&quot;, &quot;$H_c$&quot;, &quot;$SE(H_c)$&quot;,
+                    &quot;$H_{ML}$&quot;, &quot;$SE(H_{ML})$&quot;))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="center">H</th>
+<th align="center"><span class="math inline">\(H_c\)</span></th>
+<th align="center"><span class="math inline">\(SE(H_c)\)</span></th>
+<th align="center"><span class="math inline">\(H_{ML}\)</span></th>
+<th align="center"><span class="math inline">\(SE(H_{ML})\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.70</td>
+<td align="center">0.693</td>
+<td align="center">0.019</td>
+<td align="center">0.700</td>
+<td align="center">0.015</td>
+</tr>
+<tr class="even">
+<td align="center">0.80</td>
+<td align="center">0.781</td>
+<td align="center">0.021</td>
+<td align="center">0.799</td>
+<td align="center">0.015</td>
+</tr>
+<tr class="odd">
+<td align="center">0.90</td>
+<td align="center">0.860</td>
+<td align="center">0.023</td>
+<td align="center">0.899</td>
+<td align="center">0.015</td>
+</tr>
+<tr class="even">
+<td align="center">0.95</td>
+<td align="center">0.891</td>
+<td align="center">0.021</td>
+<td align="center">0.947</td>
+<td align="center">0.014</td>
+</tr>
+</tbody>
+</table>
+<p>Table D2 shows that the characteristic function estimator becomes downward biased as H increases.</p>
+<hr />
+</div>
+<div id="table-d3.-bootstrap-simulations-results-for-the-alpha-parameter-of-the-stable-distribution" class="section level3">
+<h3>Table D3. Bootstrap simulations results for the <span class="math inline">\(\alpha\)</span> parameter of the stable distribution</h3>
+<p><em><span class="math inline">\(\alpha_c\)</span></em> is the characteristic function estimator for the <span class="math inline">\(\alpha\)</span> parameter, and <em><span class="math inline">\(SE(\alpha_c)\)</span></em> is its bootstrap standard error</p>
+<pre class="r"><code>#=== TD3 READING and BUILDING 
+
+TD3 &lt;- data.frame(
+  H = Boots_Estim[,1],
+  Alpha_c = Boots_Estim$Alpha_c,
+  Alpha_c_SE = Boots_SE$Alpha_c
+  )
+
+# rownames(TD3) &lt;- TD123.bootsMuSigmaEstim[,1]
+
+kable(TD3, digits=3, align=&#39;c&#39;, escape = F,
+      col.names = c(&quot;H&quot;, &quot;$\\alpha_c$&quot;, &quot;$SE(\\alpha_c)$&quot;))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="center">H</th>
+<th align="center"><span class="math inline">\(\alpha_c\)</span></th>
+<th align="center"><span class="math inline">\(SE(\alpha_c)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.70</td>
+<td align="center">2</td>
+<td align="center">0.003</td>
+</tr>
+<tr class="even">
+<td align="center">0.80</td>
+<td align="center">2</td>
+<td align="center">0.002</td>
+</tr>
+<tr class="odd">
+<td align="center">0.90</td>
+<td align="center">2</td>
+<td align="center">0.001</td>
+</tr>
+<tr class="even">
+<td align="center">0.95</td>
+<td align="center">2</td>
+<td align="center">0.001</td>
+</tr>
+</tbody>
+</table>
+<p>The results in Table D3 show that the characteristic function estimator in this case performs very well at any level of H.</p>
+<hr />
+</div>
+</div>
+<div id="figure-d1-and-d2.-graphical-test-of-asymptotic-normality-of-the-characteristic-function-estimators" class="section level2">
+<h2>Figure D1 and D2. Graphical test of asymptotic normality of the characteristic function estimators</h2>
+<p>Bootstrap estimates based on 1,000 simulated FGN series of length 2,000.</p>
+<pre class="r"><code># 3x3 plot matrix
+
+par(mfrow=c(3, 3))
+# Testing for different H values
+  for(H in c(0.7, 0.8, 0.9)){
+    # Data reading: estimators value during bootstrap simulations
+    Parameters &lt;- read.csv(file.path(output_supporting_path, 
+                                paste0(&quot;TD1.2.3_Full_Estimator_Tab_H=&quot;, H,&quot;.csv&quot;)))
+    # Q-qplot
+    qqnorm(Parameters$mu_c, main=paste(&quot;Mu qqplot - H =&quot;, H))
+    qqnorm(Parameters$Sigma_c, main=paste(&quot;Sigma qqplot - H =&quot;, H))
+    qqnorm(Parameters$H_c, main=paste(&quot;H qqplot - H =&quot;, H))
+  }
+dev.off()</code></pre>
+<embed src="/img/temperature/FD1_estimators_qqplot.pdf" width="70%" height="775" type="application/pdf" />
+<hr />
+<pre class="r"><code>par(mfrow=c(3, 3))
+# Testing for different H values
+for(H in c(0.7, 0.8, 0.9)){
+  # Data reading: estimators value during bootstrap simulations
+  Parameters &lt;- read.csv(file.path(output_supporting_path, 
+                                   paste0(&quot;TD1.2.3_Full_Estimator_Tab_H=&quot;, H,&quot;.csv&quot;)))
+  # Histograms
+  hist(Parameters$Mu_c, breaks = 25, col =&quot;black&quot;, 
+       main=paste(&quot;Mu distribution - H =&quot;, H), xlab=NULL) 
+  abline(v=0, col=2)
+  hist(Parameters$Sigma_c, breaks = 25, col =&quot;black&quot;, 
+       main=paste(&quot;Sigma distribution - H =&quot;, H), xlab=NULL)
+  abline(v=1, col=2)
+  hist(Parameters$H_c, breaks = 25, col =&quot;black&quot;, 
+       main=paste(&quot;H distribution - H =&quot;, H), xlab=NULL)
+  abline(v=H, col=2)
+}</code></pre>
+<embed src="/img/temperature/FD2_estimators_hist.pdf" width="70%" height="775" type="application/pdf" />
+<hr />
+</div>
+<div id="figure-d3.-graphical-test-of-the-distribution-of-the-chi-square-statistics-q-when-estimated-h-values-are-inserted" class="section level2">
+<h2>Figure D3. Graphical test of the distribution of the Chi-Square statistics Q when estimated H values are inserted</h2>
+<p>Bootstrap estimates based on 1,000 simulated FGN series of length 2,000.</p>
+<p>H estimated by the Whittle method.</p>
+<pre class="r"><code>#--- 1. Parameters choice
+Hvec &lt;- c(0.8, 0.9)
+N &lt;- 1000
+Tlenght &lt;- 2000 
+estimator_names &lt;- c(&quot;Hw&quot;, &quot;Q.Hw&quot;)
+
+start &lt;- Sys.time()
+
+#--- 2. Bootstrap estimation
+for (H in Hvec){
+          start &lt;- Sys.time()
+          print(paste0(&quot;----- H = &quot;, H, &quot; ----- &quot;, Sys.time()))
+          Parameters &lt;- matrix(0, nrow=N, ncol=2)
+          colnames(Parameters) &lt;- estimator_names
+          #--- 3a. Estimation for given H
+          for (i in 1:N){
+                         Zjsim &lt;- simFGN0(Tlenght, H)
+                         Hw &lt;- estim.w.H(Zjsim)
+                         mu_ML &lt;- FgnMean(Zjsim, H=Hw, sigma=1)
+                         Parameters[i,1] &lt;- Hw
+                         Parameters[i,2] &lt;- Qstat(Zjsim, H=Hw, TT=Tlenght)
+          }
+          write.csv(Parameters, file.path(output_supporting_path, 
+                                paste0(&quot;FD3_Q.Hw_Estimation_H=&quot;, H,&quot;.csv&quot;))) 
+
+          print(Sys.time() - start)
+}</code></pre>
+
+<pre class="r"><code>par(mfrow=c(2, 2))
+# Testing for different H values
+  for(H in c(0.8, 0.9)){ 
+    # Data reading: estimators value during bootstrap simulations
+    Q_Stat &lt;- read.csv(file.path(output_supporting_path, 
+                                paste0(&quot;FD3_Q.Hw_Estimation_H=&quot;, H,&quot;.csv&quot;)))$Q.Hw
+    # Q-qplot
+   hist(Q_Stat, breaks = 100, col =&quot;black&quot;, 
+        main=paste(&quot;Q distribution - H =&quot;, H), xlab=NULL)    
+   abline(v=0, col=2)
+   fgtNormality(Yj=cumsum(Q_Stat), xmax=0.7, main=paste(&quot;- H = &quot;, H), cex.dots=1.5,
+                     cex.axis=1,cex.main=1.2)$plot
+  }</code></pre>
+<pre class="r"><code>include_graphics(&quot;/img/temperature/FD3_Qstat_distribution_Hw.png&quot;)</code></pre>
+<p><img src="/img/temperature/FD3_Qstat_distribution_Hw.png" width="70%" /></p>
+<p>Figure D3 shows that Q is approximately normally distributed when H = 0.8 whereas the distribution becomes skew to the right when H = 0.9. (similar to a stable distribution that is totally skew to the right)</p>
+</div>
+
+                        </div>
+                        
+                        
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "devcows" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            
+            <li>
+                <a href="/categories/r">r (1)</a>
+            </li>
+            
+            <li>
+                <a href="/categories/research">research (5)</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            
+            <li>
+                <a href="/tags/fgn"><i class="fas fa-tags"></i> fgn</a>
+            </li>
+            
+            <li>
+                <a href="/tags/plot"><i class="fas fa-tags"></i> plot</a>
+            </li>
+            
+            <li>
+                <a href="/tags/r"><i class="fas fa-tags"></i> r</a>
+            </li>
+            
+            <li>
+                <a href="/tags/regression"><i class="fas fa-tags"></i> regression</a>
+            </li>
+            
+            <li>
+                <a href="/tags/research"><i class="fas fa-tags"></i> research</a>
+            </li>
+            
+            <li>
+                <a href="/tags/temperature"><i class="fas fa-tags"></i> temperature</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+             
+            <h4>Recent posts</h4>
+
+            <div class="blog-entries">
+                
+            </div>
+
+            <hr class="hidden-md hidden-lg">
+             
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <p class="text-uppercase"><strong>Universal Ltd.</strong>
+        <br>13/25 New Avenue
+        <br>Newtown upon River
+        <br>45Y 73J
+        <br>England
+        <br>
+        <strong>Great Britain</strong>
+      </p>
+      
+
+            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2015 - 2016, YourCompany; all rights reserved.</p>
+            
+            <p class="pull-right">
+              Template by <a href="https://bootstrapious.com/p/universal-business-e-commerce-template">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y&v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+
+
+<script src="/js/owl.carousel.min.js"></script>
+
+
+
+  </body>
+</html>

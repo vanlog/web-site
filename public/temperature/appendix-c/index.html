@@ -1,0 +1,3996 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Appendix C - Estimation and test results</title>
+  <meta name="author" content="Mariachiara Fortuna" />
+  
+  
+  
+  
+  <meta name="keywords" content="devows, hugo, go, research, temperature, FGN, R">
+  
+  
+  <meta name="description" content="Site template made by devcows using hugo">
+
+  <meta name="generator" content="Hugo 0.69.0" />
+
+  
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+  
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Temperature">
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:locale" content="en_us">
+  <meta property="og:site_name" content="Temperature">
+  <meta property="og:title" content="Appendix C - Estimation and test results">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/temperature/appendix-c/" />
+  <meta property="og:description" content="Site template made by devcows using hugo">
+  <meta property="og:image" content="/img/sharing-default.png">
+  <meta property="og:image:type" content="image/png">
+  
+  
+  
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="420">
+  
+  
+  <meta property="og:updated_time" content="2020-04-23T00:00:00Z">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@GoHugoIO">
+  <meta name="twitter:title" content="Appendix C - Estimation and test results">
+  
+  <meta name="twitter:image" content="/img/sharing-default.png">
+  
+  <meta name="twitter:description" content="Site template made by devcows using hugo">
+  
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/logo-vanlog-small.png" alt="Appendix C - Estimation and test results logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-vanlog-small.png" alt="Appendix C - Estimation and test results logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Appendix C - Estimation and test results - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">Home</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/blog/">Blog</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/faq/">FAQ</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contact/">Contact</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown active">
+                    
+                    <a href="/temperature/">Temperature</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/paper/">Paper</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Appendix C - Estimation and test results</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        
+                          <p class="text-muted text-uppercase mb-small text-right">
+                            By <a href="#">Mariachiara Fortuna</a>
+                             | 
+                            April 23, 2020
+                          </p>
+                        
+
+                        <div id="post-content">
+                          
+
+
+<p><strong>Affiliations:</strong></p>
+<p>John K. Dagsvik, Statistics Norway, Research Department;</p>
+<p>Mariachiara Fortuna, freelance statistician, Turin;</p>
+<p>Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.</p>
+
+<p><strong>Corresponding author:</strong></p>
+<p>John K. Dagsvik, E-mail: <a href="mailto:john.dagsvik@ssb.no">john.dagsvik@ssb.no</a></p>
+<p>Mariachiara Fortuna, E-mail: <a href="mailto:mariachiara.fortuna1@gmail.com">mariachiara.fortuna1@gmail.com</a> (reference for code and analysis)</p>
+<pre class="r"><code>require(knitr)
+require(dplyr)
+require(ggplot2)
+require(tidyr)
+# require(tempFGN)</code></pre>
+<pre class="r"><code># DATA PATH
+data_final_path &lt;- file.path(&quot;data&quot;,&quot;final&quot;)
+data_supporting_path &lt;- file.path(&quot;data&quot;, &quot;supporting&quot;)
+data_moberg_path &lt;- file.path(&quot;data&quot;, &quot;moberg&quot;)
+
+# OUTPUT PATH
+output_supporting_path &lt;- file.path(&quot;output&quot;, &quot;supporting&quot;)
+output_table_path &lt;- file.path(&quot;output&quot;, &quot;table&quot;)
+output_figure_path &lt;- file.path(&quot;output&quot;, &quot;figure&quot;)
+output_temporary_path &lt;- file.path(&quot;output&quot;, &quot;temporary&quot;)
+output_manipuated_path &lt;- file.path(&quot;output&quot;, &quot;manipulated&quot;)</code></pre>
+<pre class="r"><code># ACCESS TO SELECTED TIME SERIES
+selected &lt;- read.csv(file.path(data_supporting_path, &quot;T0.SelInfo.csv&quot;), sep=&quot;;&quot;, dec=&quot;,&quot;)
+country_sel &lt;- selected$Country
+station_sel &lt;- selected$Station
+njs &lt;- nrow(selected)
+data_dir_sel &lt;- file.path(data_final_path, country_sel, paste0(station_sel, &quot;.txt&quot;))
+stationame_sel &lt;- paste0(country_sel,&quot;, &quot;,station_sel)
+
+# ACCESS TO ALL THE TIME SERIES
+all &lt;- read.csv(file.path(data_supporting_path, &quot;T0.TempInfo.csv&quot;), sep=&quot;;&quot;, dec=&quot;,&quot;)
+country_all &lt;- all$Country
+station_all &lt;- all$Station
+nja &lt;- nrow(all)
+data_dir_all &lt;- file.path(data_final_path, country_all, paste0(station_all, &quot;.txt&quot;))
+stationame_all &lt;- paste0(country_all,&quot;, &quot;,station_all)
+
+# ACCESS TO MOBERG DATA
+moberg &lt;- read.table(file.path(data_moberg_path, &quot;Moberg data.txt&quot;),
+                   header = T, na.strings = 99)
+Year_m &lt;- moberg[, 1]
+Xj_m &lt;- moberg[, 2]
+Zj_m &lt;- scale(Xj_m)
+Yj_m &lt;- cumsum(Zj_m)</code></pre>
+<div id="appendix-c---estimation-and-test-results" class="section level1">
+<h1>APPENDIX C - ESTIMATION AND TEST RESULTS</h1>
+<div id="table-c1.-estimation-results-when-using-the-characteristic-function-estimator-and-the-whittle-method.-monthly-data." class="section level3">
+<h3>Table C1. Estimation results when using the characteristic function estimator and the Whittle method. Monthly data.</h3>
+<pre class="r"><code>  # Parameters table
+  Parameters &lt;- matrix(0, nrow=nja, ncol=3)
+  colnames(Parameters) &lt;- c(&quot;Hc&quot;, &quot;Hw&quot;, &quot;SE_Hw&quot;)
+  rownames(Parameters) &lt;- stationame_all
+  
+  pb &lt;- txtProgressBar() # Start the progress bar
+
+  for (j in 1:nja){
+    
+    setTxtProgressBar(pb, j/nja) # Update the progress bar
+    
+    # Data reading 
+    data &lt;- read.delim(data_dir_all[j], header=F, na.strings=99)
+    Zm &lt;- monthlyAdj(data, scale=T)$Zm
+    
+    # Estimation
+    whittle &lt;- WhittleEst(Zm)
+    Parameters[j,1] &lt;- estim.cf.H(Yj=Zm, FBM=F)
+    Parameters[j,2] &lt;- whittle$coefficients[1]
+    Parameters[j,3] &lt;- whittle$coefficients[2]
+  }
+  close(pb) # close the progress bar
+  
+  # Saving data to csv
+  Parameters &lt;- as.data.frame(Parameters)
+  write.csv(Parameters, file.path(output_table_path, 
+                                &quot;TC1_monthly_H_all.csv&quot;))</code></pre>
+<pre class="r"><code>kable(Parameters, digits=3, align=&#39;c&#39;, escape = F,
+      col.names = c(&quot; Weather station&quot;, &quot;$H_c$&quot;, &quot;$H_w$&quot;, &quot;$SE(H_w)$&quot;))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Weather station</th>
+<th align="center"><span class="math inline">\(H_c\)</span></th>
+<th align="center"><span class="math inline">\(H_w\)</span></th>
+<th align="center"><span class="math inline">\(SE(H_w)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Argentina, Buenos Aires</td>
+<td align="center">0.785</td>
+<td align="center">0.713</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">Australia, Adelaide</td>
+<td align="center">0.696</td>
+<td align="center">0.662</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">Australia, Alice Springs</td>
+<td align="center">0.700</td>
+<td align="center">0.683</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="even">
+<td align="center">Australia, Cap Otway</td>
+<td align="center">0.803</td>
+<td align="center">0.744</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">Austria, Kremsmunster</td>
+<td align="center">0.655</td>
+<td align="center">0.651</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">Austria, Vienna</td>
+<td align="center">0.684</td>
+<td align="center">0.659</td>
+<td align="center">0.015</td>
+</tr>
+<tr class="odd">
+<td align="center">Belgium, Uccle</td>
+<td align="center">0.660</td>
+<td align="center">0.643</td>
+<td align="center">0.014</td>
+</tr>
+<tr class="even">
+<td align="center">Canada, Winnipeg</td>
+<td align="center">0.654</td>
+<td align="center">0.660</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">Croatia, Zagreb</td>
+<td align="center">0.654</td>
+<td align="center">0.650</td>
+<td align="center">0.015</td>
+</tr>
+<tr class="even">
+<td align="center">Czech Republic, Prague</td>
+<td align="center">0.684</td>
+<td align="center">0.670</td>
+<td align="center">0.012</td>
+</tr>
+<tr class="odd">
+<td align="center">Denmark, Copenhagen</td>
+<td align="center">0.755</td>
+<td align="center">0.758</td>
+<td align="center">0.013</td>
+</tr>
+<tr class="even">
+<td align="center">Denmark, Vestervig</td>
+<td align="center">0.725</td>
+<td align="center">0.763</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">Egypt, Alexandria</td>
+<td align="center">0.773</td>
+<td align="center">0.798</td>
+<td align="center">0.018</td>
+</tr>
+<tr class="even">
+<td align="center">France, Nantes</td>
+<td align="center">0.643</td>
+<td align="center">0.643</td>
+<td align="center">0.015</td>
+</tr>
+<tr class="odd">
+<td align="center">France, Paris</td>
+<td align="center">0.733</td>
+<td align="center">0.672</td>
+<td align="center">0.012</td>
+</tr>
+<tr class="even">
+<td align="center">Germany, Berlin</td>
+<td align="center">0.664</td>
+<td align="center">0.662</td>
+<td align="center">0.012</td>
+</tr>
+<tr class="odd">
+<td align="center">Germany, Hohenpeissenberg</td>
+<td align="center">0.617</td>
+<td align="center">0.605</td>
+<td align="center">0.012</td>
+</tr>
+<tr class="even">
+<td align="center">Germany, Karlsruhe</td>
+<td align="center">0.642</td>
+<td align="center">0.629</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">Greece, Athens</td>
+<td align="center">0.682</td>
+<td align="center">0.698</td>
+<td align="center">0.015</td>
+</tr>
+<tr class="even">
+<td align="center">Greenland, Illulisat</td>
+<td align="center">0.738</td>
+<td align="center">0.725</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">Greenland, Ivittuut</td>
+<td align="center">0.782</td>
+<td align="center">0.751</td>
+<td align="center">0.020</td>
+</tr>
+<tr class="even">
+<td align="center">Hungary, Budapest</td>
+<td align="center">0.627</td>
+<td align="center">0.645</td>
+<td align="center">0.012</td>
+</tr>
+<tr class="odd">
+<td align="center">Iceland, Djupivogur</td>
+<td align="center">0.762</td>
+<td align="center">0.736</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">Iceland, Reykjavik</td>
+<td align="center">0.731</td>
+<td align="center">0.711</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">India, Agra</td>
+<td align="center">0.731</td>
+<td align="center">0.753</td>
+<td align="center">0.019</td>
+</tr>
+<tr class="even">
+<td align="center">India, Allahabad</td>
+<td align="center">0.699</td>
+<td align="center">0.694</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="odd">
+<td align="center">India, Bombay</td>
+<td align="center">0.783</td>
+<td align="center">0.788</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="even">
+<td align="center">India, Indore</td>
+<td align="center">0.734</td>
+<td align="center">0.709</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="odd">
+<td align="center">India, Madras</td>
+<td align="center">0.751</td>
+<td align="center">0.753</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="even">
+<td align="center">India, Nagpur</td>
+<td align="center">0.697</td>
+<td align="center">0.708</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="odd">
+<td align="center">Israel, Jerusalem</td>
+<td align="center">0.685</td>
+<td align="center">0.699</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">Italy, Bologna</td>
+<td align="center">0.702</td>
+<td align="center">0.698</td>
+<td align="center">0.014</td>
+</tr>
+<tr class="odd">
+<td align="center">Italy, Milan</td>
+<td align="center">0.724</td>
+<td align="center">0.709</td>
+<td align="center">0.012</td>
+</tr>
+<tr class="even">
+<td align="center">Japan, Hiroshima</td>
+<td align="center">0.731</td>
+<td align="center">0.733</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="odd">
+<td align="center">Japan, Nagasaki</td>
+<td align="center">0.738</td>
+<td align="center">0.715</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="even">
+<td align="center">Japan, Tokyo</td>
+<td align="center">0.795</td>
+<td align="center">0.744</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">Kazakhstan, Kazalinsk</td>
+<td align="center">0.609</td>
+<td align="center">0.655</td>
+<td align="center">0.018</td>
+</tr>
+<tr class="even">
+<td align="center">Luxembourg, Luxembourg</td>
+<td align="center">0.675</td>
+<td align="center">0.658</td>
+<td align="center">0.014</td>
+</tr>
+<tr class="odd">
+<td align="center">New Zealand, Wellington</td>
+<td align="center">0.774</td>
+<td align="center">0.752</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Andoya</td>
+<td align="center">0.723</td>
+<td align="center">0.725</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Bergen</td>
+<td align="center">0.678</td>
+<td align="center">0.687</td>
+<td align="center">0.015</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Bodo</td>
+<td align="center">0.680</td>
+<td align="center">0.698</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Dombas</td>
+<td align="center">0.633</td>
+<td align="center">0.664</td>
+<td align="center">0.015</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Karasjok</td>
+<td align="center">0.655</td>
+<td align="center">0.679</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Mandal</td>
+<td align="center">0.682</td>
+<td align="center">0.724</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Oksoy Lighthouse</td>
+<td align="center">0.719</td>
+<td align="center">0.771</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Ona</td>
+<td align="center">0.711</td>
+<td align="center">0.749</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Oslo</td>
+<td align="center">0.693</td>
+<td align="center">0.724</td>
+<td align="center">0.014</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Roros</td>
+<td align="center">0.667</td>
+<td align="center">0.695</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Tromso</td>
+<td align="center">0.670</td>
+<td align="center">0.690</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Utsira</td>
+<td align="center">0.735</td>
+<td align="center">0.768</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Vardo</td>
+<td align="center">0.765</td>
+<td align="center">0.751</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">Pakistan, Lahore</td>
+<td align="center">0.649</td>
+<td align="center">0.693</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">Portugal, Lisbon</td>
+<td align="center">0.769</td>
+<td align="center">0.710</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="odd">
+<td align="center">Romania, Sulina</td>
+<td align="center">0.653</td>
+<td align="center">0.699</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="even">
+<td align="center">Russia, Archangelsk</td>
+<td align="center">0.675</td>
+<td align="center">0.661</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">Russia, Sort</td>
+<td align="center">0.640</td>
+<td align="center">0.694</td>
+<td align="center">0.018</td>
+</tr>
+<tr class="even">
+<td align="center">Russia, St Petersburg</td>
+<td align="center">0.697</td>
+<td align="center">0.696</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="odd">
+<td align="center">Spain, Gibraltar</td>
+<td align="center">0.773</td>
+<td align="center">0.765</td>
+<td align="center">0.015</td>
+</tr>
+<tr class="even">
+<td align="center">Sweden, Bromma</td>
+<td align="center">0.694</td>
+<td align="center">0.736</td>
+<td align="center">0.012</td>
+</tr>
+<tr class="odd">
+<td align="center">Sweden, Stockholm</td>
+<td align="center">0.681</td>
+<td align="center">0.721</td>
+<td align="center">0.012</td>
+</tr>
+<tr class="even">
+<td align="center">Sweden, Tullinge</td>
+<td align="center">0.672</td>
+<td align="center">0.727</td>
+<td align="center">0.012</td>
+</tr>
+<tr class="odd">
+<td align="center">Sweden, Uppsala</td>
+<td align="center">0.690</td>
+<td align="center">0.718</td>
+<td align="center">0.011</td>
+</tr>
+<tr class="even">
+<td align="center">Switzerland, Basel</td>
+<td align="center">0.625</td>
+<td align="center">0.622</td>
+<td align="center">0.012</td>
+</tr>
+<tr class="odd">
+<td align="center">Switzerland, Geneva</td>
+<td align="center">0.693</td>
+<td align="center">0.667</td>
+<td align="center">0.012</td>
+</tr>
+<tr class="even">
+<td align="center">UK, Aberdeen</td>
+<td align="center">0.691</td>
+<td align="center">0.704</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="odd">
+<td align="center">UK, Belfast</td>
+<td align="center">0.650</td>
+<td align="center">0.665</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">UK, Cambridge</td>
+<td align="center">0.678</td>
+<td align="center">0.673</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">UK, Durham</td>
+<td align="center">0.698</td>
+<td align="center">0.686</td>
+<td align="center">0.015</td>
+</tr>
+<tr class="even">
+<td align="center">UK, Edinbourg</td>
+<td align="center">0.644</td>
+<td align="center">0.670</td>
+<td align="center">0.013</td>
+</tr>
+<tr class="odd">
+<td align="center">UK, London</td>
+<td align="center">0.721</td>
+<td align="center">0.686</td>
+<td align="center">0.015</td>
+</tr>
+<tr class="even">
+<td align="center">UK, Plymouth</td>
+<td align="center">0.624</td>
+<td align="center">0.676</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Atlanta</td>
+<td align="center">0.632</td>
+<td align="center">0.641</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Bismarck</td>
+<td align="center">0.655</td>
+<td align="center">0.640</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Boise</td>
+<td align="center">0.654</td>
+<td align="center">0.656</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Boston</td>
+<td align="center">0.693</td>
+<td align="center">0.670</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Chattanooga</td>
+<td align="center">0.637</td>
+<td align="center">0.647</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Cincinatti</td>
+<td align="center">0.656</td>
+<td align="center">0.645</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Columbus</td>
+<td align="center">0.629</td>
+<td align="center">0.631</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Concord</td>
+<td align="center">0.687</td>
+<td align="center">0.662</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Des Moines</td>
+<td align="center">0.626</td>
+<td align="center">0.632</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Detroit</td>
+<td align="center">0.659</td>
+<td align="center">0.653</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Dodge City</td>
+<td align="center">0.626</td>
+<td align="center">0.611</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Fargo</td>
+<td align="center">0.656</td>
+<td align="center">0.655</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Galveston</td>
+<td align="center">0.662</td>
+<td align="center">0.688</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Indianapolis</td>
+<td align="center">0.611</td>
+<td align="center">0.622</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Jacksonville</td>
+<td align="center">0.608</td>
+<td align="center">0.651</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Knoxville</td>
+<td align="center">0.624</td>
+<td align="center">0.630</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Las Vegas</td>
+<td align="center">0.643</td>
+<td align="center">0.647</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Madison</td>
+<td align="center">0.641</td>
+<td align="center">0.647</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Marquette</td>
+<td align="center">0.688</td>
+<td align="center">0.686</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Milwaukee</td>
+<td align="center">0.689</td>
+<td align="center">0.676</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Mobile</td>
+<td align="center">0.617</td>
+<td align="center">0.651</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Nashville</td>
+<td align="center">0.581</td>
+<td align="center">0.603</td>
+<td align="center">0.016</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, New Orleans</td>
+<td align="center">0.696</td>
+<td align="center">0.695</td>
+<td align="center">0.017</td>
+</tr>
+<tr class="even">
+<td align="center">USA, New York</td>
+<td align="center">0.745</td>
+<td align="center">0.699</td>
+<td align="center">0.014</td>
+</tr>
+</tbody>
+</table>
+<p>Due to the fact that the monthly time series are quite long, the estimates of the Hurst parameter are quite precise. From Table C1 we note that the difference between the characteristic function estimates and the Whittle estimates of the Hurst parameter are only significantly different in a few cases.</p>
+<hr />
+</div>
+<div id="table-c2.-estimates-and-test-statistics-based-on-annual-data" class="section level3">
+<h3>Table C2. Estimates and test statistics based on annual data</h3>
+<pre class="r"><code>Q_Hc &lt;- NULL
+Q_Hw &lt;- NULL
+Hc_vec &lt;- NULL
+Hw_vec &lt;- NULL
+Hw_se_vec &lt;- NULL
+for (j in 1:nja){ 
+  data &lt;- read.delim(data_dir_all[j], header=F, na.strings=99)
+  Xj &lt;- data[,14]
+  Zj &lt;- scale(Xj[!is.na(Xj)])
+  TT &lt;- length(Zj)
+  whittle &lt;- WhittleEst(Zj)
+  Hc &lt;- estim.cf.H(Yj=Zj, FBM=F)
+  Hw &lt;- whittle$coefficients[1]
+  Hw_se &lt;- whittle$coefficients[2]
+  Q_Hc &lt;- c(Qstat(Zj, H=Hc, TT=TT), Q_Hc)
+  Q_Hw &lt;- c(Qstat(Zj, H=Hw, TT=TT), Q_Hw)
+  Hc_vec &lt;- c(Hc_vec, Hc)
+  Hw_vec &lt;- c(Hw_vec, Hw)
+  Hw_se_vec &lt;- c(Hw_se_vec, Hw_se)
+}
+
+#star &lt;- ifelse(Q&gt;1.96|Q&lt;(-1.96), &quot;*&quot;, &quot;&quot;)
+annual_Qt_all &lt;- data.frame(City=stationame_all, Hc=Hc_vec, Q_Hc=Q_Hc, 
+                             Hw=Hw_vec, Hw_se=Hw_se_vec, Q_Hw=Q_Hw)
+                            
+write.csv(annual_Qt_all, file.path(output_table_path, 
+                                &quot;TC2_annual_Qt_all.csv&quot;), row.names=F)</code></pre>
+<pre class="r"><code>kable(annual_Qt_all, digits=3, align=&#39;c&#39;, escape = F,
+      col.names = c(&quot; Weather station&quot;, &quot;$H_c$&quot;, &quot;$Q(H_c)$&quot;, 
+                    &quot;$H_w$&quot;, &quot;$SE(H_w)$&quot;, &quot;$Q(H_w)$&quot;))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Weather station</th>
+<th align="center"><span class="math inline">\(H_c\)</span></th>
+<th align="center"><span class="math inline">\(Q(H_c)\)</span></th>
+<th align="center"><span class="math inline">\(H_w\)</span></th>
+<th align="center"><span class="math inline">\(SE(H_w)\)</span></th>
+<th align="center"><span class="math inline">\(Q(H_w)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Argentina, Buenos Aires</td>
+<td align="center">0.951</td>
+<td align="center">4.960</td>
+<td align="center">0.938</td>
+<td align="center">0.055</td>
+<td align="center">-0.222</td>
+</tr>
+<tr class="even">
+<td align="center">Australia, Adelaide</td>
+<td align="center">0.882</td>
+<td align="center">2.511</td>
+<td align="center">0.781</td>
+<td align="center">0.058</td>
+<td align="center">0.336</td>
+</tr>
+<tr class="odd">
+<td align="center">Australia, Alice Springs</td>
+<td align="center">0.647</td>
+<td align="center">-0.040</td>
+<td align="center">0.708</td>
+<td align="center">0.058</td>
+<td align="center">0.062</td>
+</tr>
+<tr class="even">
+<td align="center">Australia, Cap Otway</td>
+<td align="center">0.905</td>
+<td align="center">0.222</td>
+<td align="center">0.869</td>
+<td align="center">0.059</td>
+<td align="center">0.157</td>
+</tr>
+<tr class="odd">
+<td align="center">Austria, Kremsmunster</td>
+<td align="center">0.728</td>
+<td align="center">-0.679</td>
+<td align="center">0.782</td>
+<td align="center">0.058</td>
+<td align="center">0.273</td>
+</tr>
+<tr class="even">
+<td align="center">Austria, Vienna</td>
+<td align="center">0.811</td>
+<td align="center">-0.527</td>
+<td align="center">0.806</td>
+<td align="center">0.055</td>
+<td align="center">-0.270</td>
+</tr>
+<tr class="odd">
+<td align="center">Belgium, Uccle</td>
+<td align="center">0.740</td>
+<td align="center">-0.086</td>
+<td align="center">0.739</td>
+<td align="center">0.050</td>
+<td align="center">0.011</td>
+</tr>
+<tr class="even">
+<td align="center">Canada, Winnipeg</td>
+<td align="center">0.713</td>
+<td align="center">0.346</td>
+<td align="center">0.728</td>
+<td align="center">0.058</td>
+<td align="center">0.174</td>
+</tr>
+<tr class="odd">
+<td align="center">Croatia, Zagreb</td>
+<td align="center">0.723</td>
+<td align="center">0.888</td>
+<td align="center">0.780</td>
+<td align="center">0.055</td>
+<td align="center">-0.144</td>
+</tr>
+<tr class="even">
+<td align="center">Czech Republic, Prague</td>
+<td align="center">0.745</td>
+<td align="center">0.442</td>
+<td align="center">0.716</td>
+<td align="center">0.043</td>
+<td align="center">0.012</td>
+</tr>
+<tr class="odd">
+<td align="center">Denmark, Copenhagen</td>
+<td align="center">0.817</td>
+<td align="center">0.092</td>
+<td align="center">0.753</td>
+<td align="center">0.045</td>
+<td align="center">0.007</td>
+</tr>
+<tr class="even">
+<td align="center">Denmark, Vestervig</td>
+<td align="center">0.699</td>
+<td align="center">0.093</td>
+<td align="center">0.733</td>
+<td align="center">0.056</td>
+<td align="center">0.008</td>
+</tr>
+<tr class="odd">
+<td align="center">Egypt, Alexandria</td>
+<td align="center">0.882</td>
+<td align="center">0.224</td>
+<td align="center">0.862</td>
+<td align="center">0.064</td>
+<td align="center">0.010</td>
+</tr>
+<tr class="even">
+<td align="center">France, Nantes</td>
+<td align="center">0.738</td>
+<td align="center">-0.494</td>
+<td align="center">0.720</td>
+<td align="center">0.052</td>
+<td align="center">0.120</td>
+</tr>
+<tr class="odd">
+<td align="center">France, Paris</td>
+<td align="center">0.873</td>
+<td align="center">0.574</td>
+<td align="center">0.802</td>
+<td align="center">0.042</td>
+<td align="center">-0.010</td>
+</tr>
+<tr class="even">
+<td align="center">Germany, Berlin</td>
+<td align="center">0.726</td>
+<td align="center">-0.053</td>
+<td align="center">0.712</td>
+<td align="center">0.041</td>
+<td align="center">-0.041</td>
+</tr>
+<tr class="odd">
+<td align="center">Germany, Hohenpeissenberg</td>
+<td align="center">0.701</td>
+<td align="center">1.053</td>
+<td align="center">0.684</td>
+<td align="center">0.043</td>
+<td align="center">-0.338</td>
+</tr>
+<tr class="even">
+<td align="center">Germany, Karlsruhe</td>
+<td align="center">0.728</td>
+<td align="center">0.209</td>
+<td align="center">0.819</td>
+<td align="center">0.059</td>
+<td align="center">0.172</td>
+</tr>
+<tr class="odd">
+<td align="center">Greece, Athens</td>
+<td align="center">0.754</td>
+<td align="center">0.863</td>
+<td align="center">0.788</td>
+<td align="center">0.054</td>
+<td align="center">0.094</td>
+</tr>
+<tr class="even">
+<td align="center">Greenland, Illulisat</td>
+<td align="center">0.806</td>
+<td align="center">0.839</td>
+<td align="center">0.805</td>
+<td align="center">0.057</td>
+<td align="center">0.000</td>
+</tr>
+<tr class="odd">
+<td align="center">Greenland, Ivittuut</td>
+<td align="center">0.797</td>
+<td align="center">-0.202</td>
+<td align="center">0.804</td>
+<td align="center">0.071</td>
+<td align="center">-0.273</td>
+</tr>
+<tr class="even">
+<td align="center">Hungary, Budapest</td>
+<td align="center">0.682</td>
+<td align="center">0.288</td>
+<td align="center">0.663</td>
+<td align="center">0.043</td>
+<td align="center">-0.115</td>
+</tr>
+<tr class="odd">
+<td align="center">Iceland, Djupivogur</td>
+<td align="center">0.852</td>
+<td align="center">0.084</td>
+<td align="center">0.841</td>
+<td align="center">0.058</td>
+<td align="center">0.332</td>
+</tr>
+<tr class="even">
+<td align="center">Iceland, Reykjavik</td>
+<td align="center">0.889</td>
+<td align="center">0.996</td>
+<td align="center">0.885</td>
+<td align="center">0.057</td>
+<td align="center">0.146</td>
+</tr>
+<tr class="odd">
+<td align="center">India, Agra</td>
+<td align="center">0.802</td>
+<td align="center">-0.281</td>
+<td align="center">0.844</td>
+<td align="center">0.066</td>
+<td align="center">0.184</td>
+</tr>
+<tr class="even">
+<td align="center">India, Allahabad</td>
+<td align="center">0.706</td>
+<td align="center">-1.135</td>
+<td align="center">0.807</td>
+<td align="center">0.059</td>
+<td align="center">-0.839</td>
+</tr>
+<tr class="odd">
+<td align="center">India, Bombay</td>
+<td align="center">0.793</td>
+<td align="center">-0.072</td>
+<td align="center">0.887</td>
+<td align="center">0.059</td>
+<td align="center">0.087</td>
+</tr>
+<tr class="even">
+<td align="center">India, Indore</td>
+<td align="center">0.820</td>
+<td align="center">-0.303</td>
+<td align="center">0.899</td>
+<td align="center">0.059</td>
+<td align="center">-0.534</td>
+</tr>
+<tr class="odd">
+<td align="center">India, Madras</td>
+<td align="center">0.775</td>
+<td align="center">-0.511</td>
+<td align="center">0.906</td>
+<td align="center">0.059</td>
+<td align="center">-0.328</td>
+</tr>
+<tr class="even">
+<td align="center">India, Nagpur</td>
+<td align="center">0.610</td>
+<td align="center">-0.424</td>
+<td align="center">0.727</td>
+<td align="center">0.058</td>
+<td align="center">-0.158</td>
+</tr>
+<tr class="odd">
+<td align="center">Israel, Jerusalem</td>
+<td align="center">0.702</td>
+<td align="center">0.022</td>
+<td align="center">0.654</td>
+<td align="center">0.057</td>
+<td align="center">-0.060</td>
+</tr>
+<tr class="even">
+<td align="center">Italy, Bologna</td>
+<td align="center">0.819</td>
+<td align="center">0.602</td>
+<td align="center">0.845</td>
+<td align="center">0.048</td>
+<td align="center">-0.723</td>
+</tr>
+<tr class="odd">
+<td align="center">Italy, Milan</td>
+<td align="center">0.851</td>
+<td align="center">-1.014</td>
+<td align="center">0.826</td>
+<td align="center">0.043</td>
+<td align="center">-0.281</td>
+</tr>
+<tr class="even">
+<td align="center">Japan, Hiroshima</td>
+<td align="center">0.798</td>
+<td align="center">-0.165</td>
+<td align="center">0.738</td>
+<td align="center">0.059</td>
+<td align="center">-0.267</td>
+</tr>
+<tr class="odd">
+<td align="center">Japan, Nagasaki</td>
+<td align="center">0.823</td>
+<td align="center">0.026</td>
+<td align="center">0.761</td>
+<td align="center">0.058</td>
+<td align="center">0.014</td>
+</tr>
+<tr class="even">
+<td align="center">Japan, Tokyo</td>
+<td align="center">0.926</td>
+<td align="center">-0.235</td>
+<td align="center">0.851</td>
+<td align="center">0.058</td>
+<td align="center">-0.086</td>
+</tr>
+<tr class="odd">
+<td align="center">Kazakhstan, Kazalinsk</td>
+<td align="center">0.611</td>
+<td align="center">-0.250</td>
+<td align="center">0.563</td>
+<td align="center">0.061</td>
+<td align="center">-0.216</td>
+</tr>
+<tr class="even">
+<td align="center">Luxembourg, Luxembourg</td>
+<td align="center">0.815</td>
+<td align="center">-1.068</td>
+<td align="center">0.825</td>
+<td align="center">0.051</td>
+<td align="center">1.062</td>
+</tr>
+<tr class="odd">
+<td align="center">New Zealand, Wellington</td>
+<td align="center">0.810</td>
+<td align="center">-0.618</td>
+<td align="center">0.919</td>
+<td align="center">0.060</td>
+<td align="center">-0.296</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Andoya</td>
+<td align="center">0.773</td>
+<td align="center">0.049</td>
+<td align="center">0.761</td>
+<td align="center">0.055</td>
+<td align="center">-0.013</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Bergen</td>
+<td align="center">0.783</td>
+<td align="center">-0.377</td>
+<td align="center">0.717</td>
+<td align="center">0.053</td>
+<td align="center">0.206</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Bodo</td>
+<td align="center">0.700</td>
+<td align="center">-0.289</td>
+<td align="center">0.682</td>
+<td align="center">0.054</td>
+<td align="center">-0.130</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Dombas</td>
+<td align="center">0.679</td>
+<td align="center">3.476</td>
+<td align="center">0.637</td>
+<td align="center">0.053</td>
+<td align="center">3.275</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Karasjok</td>
+<td align="center">0.655</td>
+<td align="center">-0.386</td>
+<td align="center">0.652</td>
+<td align="center">0.056</td>
+<td align="center">0.627</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Mandal</td>
+<td align="center">0.620</td>
+<td align="center">-0.499</td>
+<td align="center">0.625</td>
+<td align="center">0.054</td>
+<td align="center">0.368</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Oksoy Lighthouse</td>
+<td align="center">0.666</td>
+<td align="center">-0.126</td>
+<td align="center">0.672</td>
+<td align="center">0.055</td>
+<td align="center">0.156</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Ona</td>
+<td align="center">0.674</td>
+<td align="center">-0.139</td>
+<td align="center">0.702</td>
+<td align="center">0.056</td>
+<td align="center">0.030</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Oslo</td>
+<td align="center">0.692</td>
+<td align="center">0.464</td>
+<td align="center">0.699</td>
+<td align="center">0.047</td>
+<td align="center">-0.130</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Roros</td>
+<td align="center">0.727</td>
+<td align="center">-0.333</td>
+<td align="center">0.688</td>
+<td align="center">0.055</td>
+<td align="center">-0.229</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Tromso</td>
+<td align="center">0.616</td>
+<td align="center">-0.318</td>
+<td align="center">0.641</td>
+<td align="center">0.054</td>
+<td align="center">0.005</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Utsira</td>
+<td align="center">0.738</td>
+<td align="center">-0.094</td>
+<td align="center">0.753</td>
+<td align="center">0.055</td>
+<td align="center">-0.040</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Vardo</td>
+<td align="center">0.724</td>
+<td align="center">-0.053</td>
+<td align="center">0.770</td>
+<td align="center">0.054</td>
+<td align="center">-0.017</td>
+</tr>
+<tr class="odd">
+<td align="center">Pakistan, Lahore</td>
+<td align="center">0.659</td>
+<td align="center">0.047</td>
+<td align="center">0.743</td>
+<td align="center">0.057</td>
+<td align="center">0.020</td>
+</tr>
+<tr class="even">
+<td align="center">Portugal, Lisbon</td>
+<td align="center">0.933</td>
+<td align="center">0.211</td>
+<td align="center">0.931</td>
+<td align="center">0.060</td>
+<td align="center">-0.221</td>
+</tr>
+<tr class="odd">
+<td align="center">Romania, Sulina</td>
+<td align="center">0.591</td>
+<td align="center">0.121</td>
+<td align="center">0.631</td>
+<td align="center">0.057</td>
+<td align="center">-0.121</td>
+</tr>
+<tr class="even">
+<td align="center">Russia, Archangelsk</td>
+<td align="center">0.707</td>
+<td align="center">1.187</td>
+<td align="center">0.746</td>
+<td align="center">0.058</td>
+<td align="center">-0.369</td>
+</tr>
+<tr class="odd">
+<td align="center">Russia, Sort</td>
+<td align="center">0.594</td>
+<td align="center">0.722</td>
+<td align="center">0.581</td>
+<td align="center">0.062</td>
+<td align="center">0.431</td>
+</tr>
+<tr class="even">
+<td align="center">Russia, St Petersburg</td>
+<td align="center">0.670</td>
+<td align="center">-0.161</td>
+<td align="center">0.706</td>
+<td align="center">0.058</td>
+<td align="center">7.045</td>
+</tr>
+<tr class="odd">
+<td align="center">Spain, Gibraltar</td>
+<td align="center">0.787</td>
+<td align="center">-0.075</td>
+<td align="center">0.855</td>
+<td align="center">0.056</td>
+<td align="center">0.283</td>
+</tr>
+<tr class="even">
+<td align="center">Sweden, Bromma</td>
+<td align="center">0.688</td>
+<td align="center">0.202</td>
+<td align="center">0.690</td>
+<td align="center">0.041</td>
+<td align="center">-0.043</td>
+</tr>
+<tr class="odd">
+<td align="center">Sweden, Stockholm</td>
+<td align="center">0.614</td>
+<td align="center">5.121</td>
+<td align="center">0.632</td>
+<td align="center">0.041</td>
+<td align="center">-0.940</td>
+</tr>
+<tr class="even">
+<td align="center">Sweden, Tullinge</td>
+<td align="center">0.624</td>
+<td align="center">1.523</td>
+<td align="center">0.622</td>
+<td align="center">0.041</td>
+<td align="center">-0.312</td>
+</tr>
+<tr class="odd">
+<td align="center">Sweden, Uppsala</td>
+<td align="center">0.715</td>
+<td align="center">1.135</td>
+<td align="center">0.710</td>
+<td align="center">0.040</td>
+<td align="center">-0.291</td>
+</tr>
+<tr class="even">
+<td align="center">Switzerland, Basel</td>
+<td align="center">0.664</td>
+<td align="center">0.558</td>
+<td align="center">0.720</td>
+<td align="center">0.042</td>
+<td align="center">-0.753</td>
+</tr>
+<tr class="odd">
+<td align="center">Switzerland, Geneva</td>
+<td align="center">0.845</td>
+<td align="center">-0.537</td>
+<td align="center">0.818</td>
+<td align="center">0.042</td>
+<td align="center">0.563</td>
+</tr>
+<tr class="even">
+<td align="center">UK, Aberdeen</td>
+<td align="center">0.771</td>
+<td align="center">0.268</td>
+<td align="center">0.767</td>
+<td align="center">0.058</td>
+<td align="center">-0.245</td>
+</tr>
+<tr class="odd">
+<td align="center">UK, Belfast</td>
+<td align="center">0.707</td>
+<td align="center">-0.576</td>
+<td align="center">0.727</td>
+<td align="center">0.058</td>
+<td align="center">0.252</td>
+</tr>
+<tr class="even">
+<td align="center">UK, Cambridge</td>
+<td align="center">0.773</td>
+<td align="center">-1.596</td>
+<td align="center">0.781</td>
+<td align="center">0.056</td>
+<td align="center">4.131</td>
+</tr>
+<tr class="odd">
+<td align="center">UK, Durham</td>
+<td align="center">0.771</td>
+<td align="center">-0.656</td>
+<td align="center">0.761</td>
+<td align="center">0.052</td>
+<td align="center">3.554</td>
+</tr>
+<tr class="even">
+<td align="center">UK, Edinbourg</td>
+<td align="center">0.605</td>
+<td align="center">-1.430</td>
+<td align="center">0.626</td>
+<td align="center">0.045</td>
+<td align="center">2.282</td>
+</tr>
+<tr class="odd">
+<td align="center">UK, London</td>
+<td align="center">0.798</td>
+<td align="center">-0.543</td>
+<td align="center">0.809</td>
+<td align="center">0.053</td>
+<td align="center">1.394</td>
+</tr>
+<tr class="even">
+<td align="center">UK, Plymouth</td>
+<td align="center">0.559</td>
+<td align="center">0.268</td>
+<td align="center">0.671</td>
+<td align="center">0.058</td>
+<td align="center">1.633</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Atlanta</td>
+<td align="center">0.766</td>
+<td align="center">2.043</td>
+<td align="center">0.725</td>
+<td align="center">0.058</td>
+<td align="center">1.774</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Bismarck</td>
+<td align="center">0.749</td>
+<td align="center">1.135</td>
+<td align="center">0.761</td>
+<td align="center">0.058</td>
+<td align="center">0.631</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Boise</td>
+<td align="center">0.725</td>
+<td align="center">-0.017</td>
+<td align="center">0.698</td>
+<td align="center">0.057</td>
+<td align="center">-0.281</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Boston</td>
+<td align="center">0.728</td>
+<td align="center">0.389</td>
+<td align="center">0.724</td>
+<td align="center">0.058</td>
+<td align="center">0.541</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Chattanooga</td>
+<td align="center">0.744</td>
+<td align="center">0.715</td>
+<td align="center">0.695</td>
+<td align="center">0.057</td>
+<td align="center">0.684</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Cincinatti</td>
+<td align="center">0.758</td>
+<td align="center">-0.108</td>
+<td align="center">0.718</td>
+<td align="center">0.058</td>
+<td align="center">0.685</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Columbus</td>
+<td align="center">0.705</td>
+<td align="center">-1.449</td>
+<td align="center">0.702</td>
+<td align="center">0.057</td>
+<td align="center">0.248</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Concord</td>
+<td align="center">0.790</td>
+<td align="center">0.012</td>
+<td align="center">0.729</td>
+<td align="center">0.058</td>
+<td align="center">-0.255</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Des Moines</td>
+<td align="center">0.621</td>
+<td align="center">0.042</td>
+<td align="center">0.623</td>
+<td align="center">0.056</td>
+<td align="center">-0.247</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Detroit</td>
+<td align="center">0.707</td>
+<td align="center">1.846</td>
+<td align="center">0.663</td>
+<td align="center">0.057</td>
+<td align="center">-1.948</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Dodge City</td>
+<td align="center">0.648</td>
+<td align="center">0.123</td>
+<td align="center">0.715</td>
+<td align="center">0.058</td>
+<td align="center">-0.191</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Fargo</td>
+<td align="center">0.738</td>
+<td align="center">2.083</td>
+<td align="center">0.725</td>
+<td align="center">0.058</td>
+<td align="center">0.948</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Galveston</td>
+<td align="center">0.674</td>
+<td align="center">-0.566</td>
+<td align="center">0.666</td>
+<td align="center">0.057</td>
+<td align="center">-0.104</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Indianapolis</td>
+<td align="center">0.667</td>
+<td align="center">1.495</td>
+<td align="center">0.658</td>
+<td align="center">0.057</td>
+<td align="center">-0.726</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Jacksonville</td>
+<td align="center">0.664</td>
+<td align="center">0.212</td>
+<td align="center">0.618</td>
+<td align="center">0.056</td>
+<td align="center">-0.423</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Knoxville</td>
+<td align="center">0.744</td>
+<td align="center">-0.773</td>
+<td align="center">0.680</td>
+<td align="center">0.057</td>
+<td align="center">0.267</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Las Vegas</td>
+<td align="center">0.707</td>
+<td align="center">-0.310</td>
+<td align="center">0.694</td>
+<td align="center">0.060</td>
+<td align="center">-0.100</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Madison</td>
+<td align="center">0.673</td>
+<td align="center">-0.336</td>
+<td align="center">0.682</td>
+<td align="center">0.057</td>
+<td align="center">-0.347</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Marquette</td>
+<td align="center">0.694</td>
+<td align="center">-0.026</td>
+<td align="center">0.716</td>
+<td align="center">0.058</td>
+<td align="center">-0.167</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Milwaukee</td>
+<td align="center">0.683</td>
+<td align="center">-1.088</td>
+<td align="center">0.755</td>
+<td align="center">0.058</td>
+<td align="center">-0.247</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Mobile</td>
+<td align="center">0.678</td>
+<td align="center">3.408</td>
+<td align="center">0.672</td>
+<td align="center">0.057</td>
+<td align="center">0.667</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Nashville</td>
+<td align="center">0.609</td>
+<td align="center">-0.240</td>
+<td align="center">0.625</td>
+<td align="center">0.057</td>
+<td align="center">0.360</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, New Orleans</td>
+<td align="center">0.861</td>
+<td align="center">4.034</td>
+<td align="center">0.812</td>
+<td align="center">0.058</td>
+<td align="center">-0.570</td>
+</tr>
+<tr class="even">
+<td align="center">USA, New York</td>
+<td align="center">0.907</td>
+<td align="center">4.772</td>
+<td align="center">0.843</td>
+<td align="center">0.049</td>
+<td align="center">2.002</td>
+</tr>
+</tbody>
+</table>
+<p>From the results in Table C2 we note that the estimates of the Hurst parameter based on annual data are, on average, higher than the corresponding estimates based on monthly data. Furthermore, we see that data from 9 weather stations reject the FGN hypothesis when using the characteristic function estimate of the Hurst parameter whereas data from 6 weather stations reject the FGN when using the Whittle estimate of the Hurst parameter.</p>
+<hr />
+</div>
+<div id="table-c3.-estimates-and-test-statistics-based-on-moberg-et-al.-2005-time-series" class="section level3">
+<h3>Table C3. Estimates and test statistics based on Moberg et al. (2005) time series</h3>
+<pre class="r"><code>TT &lt;- length(Xj_m)
+mu &lt;- mean(Xj_m)
+sd &lt;- sd(Xj_m)
+mu_c &lt;- estim.cf.mu(Zj=Xj_m)
+sigma_c &lt;- estim.cf.sigma(Yj=Xj_m, FBM=F)
+Hc &lt;- estim.cf.H(Yj=Zj_m, FBM=F)
+Hw &lt;- estim.w.H(Zj_m)
+Hw_SE &lt;- WhittleEst(Zj_m)$coefficient[2]
+Q.Hc &lt;- Qstat(Zj_m, H=Hc, TT=TT)
+Q.Hw &lt;- Qstat(Zj_m, H=Hw, TT=TT)
+
+
+moberg_estimates &lt;- data.frame(c(mu, sd, mu_c, sigma_c, Hc, Hw, Hw_SE, Q.Hc, Q.Hw))
+rownames(moberg_estimates) &lt;- c(&quot;Mu&quot;, &quot;Sigma&quot;, &quot;Mu_c&quot;, &quot;Sigma_c&quot;,
+                                 &quot;Hc&quot;, &quot;Hw&quot;, &quot;Hw_SE&quot;, &quot;Q.Hc&quot;, &quot;Q.Hw&quot;)
+colnames(moberg_estimates) &lt;- &quot;Estimates&quot;
+
+Hc &lt;- estim.cf.H(Yj=Zj_m, FBM=F)
+Hw &lt;- estim.w.H(Zj_m)
+Hw_SE &lt;- WhittleEst(Zj_m)$coefficient[2]
+Q.Hc &lt;- Qstat(Zj_m, H=Hc, TT=TT)
+Q.Hw &lt;- Qstat(Zj_m, H=Hw, TT=TT)
+
+write.csv(moberg_estimates, file.path(output_table_path, 
+                                &quot;TC3_moberg_estimates.csv&quot;))</code></pre>
+<pre class="r"><code>moberg_estimates[,1] &lt;- c(&quot;$\\mu$&quot;, &quot;$\\sigma$&quot;, &quot;$\\mu_c$&quot;, &quot;$\\sigma_c$&quot;,
+                   &quot;$H_c$&quot;, &quot;$H_w$&quot;, &quot;$SE(H_w)$&quot;, &quot;$Q(H_c)$&quot;,  &quot;$Q(H_w)$&quot;)  
+kable(moberg_estimates, digits=3, align=&#39;c&#39; , escape = F,
+      col.names = c(&quot;Parameters and statistics&quot;, &quot;Value&quot;))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Parameters and statistics</th>
+<th align="center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\mu\)</span></td>
+<td align="center">-0.354</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\sigma\)</span></td>
+<td align="center">0.220</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\mu_c\)</span></td>
+<td align="center">-0.354</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\sigma_c\)</span></td>
+<td align="center">0.051</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(H_c\)</span></td>
+<td align="center">0.917</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(H_w\)</span></td>
+<td align="center">0.990</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(SE(H_w)\)</span></td>
+<td align="center">0.015</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(Q(H_c)\)</span></td>
+<td align="center">-11.205</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(Q(H_w)\)</span></td>
+<td align="center">104.220</td>
+</tr>
+</tbody>
+</table>
+<p>The results of Table C3 show that the FGN model is rejected for the Moberg data when the respective estimated Hurst parameters are used.</p>
+<hr />
+</div>
+<div id="table-c4.-chi-square-statistics-based-on-the-data-of-moberg-et-al.-2009" class="section level2">
+<h2>Table C4. Chi-square statistics based on the data of Moberg et al. (2009)</h2>
+<pre class="r"><code>Hvec &lt;- seq(0.92, 0.98, by=0.01)
+
+Qt &lt;- NULL
+  for (Hval in Hvec){
+    Qt &lt;- c(Qt, Qstat(Zj_m, H=Hval, TT=TT))    
+  }
+
+moberg_Qt_grid &lt;- data.frame(H=Hvec, Qt)
+
+write.csv(moberg_Qt_grid, row.names=F, file.path(output_table_path, 
+                                &quot;TC4_moberg_Qt_grid.csv&quot;))</code></pre>
+<pre class="r"><code>kable(moberg_Qt_grid, digits=3, align=&#39;c&#39;,
+      col.names = c(&quot;H&quot;, &quot;Q(H)&quot;))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="center">H</th>
+<th align="center">Q(H)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.92</td>
+<td align="center">-10.595</td>
+</tr>
+<tr class="even">
+<td align="center">0.93</td>
+<td align="center">-8.332</td>
+</tr>
+<tr class="odd">
+<td align="center">0.94</td>
+<td align="center">-5.274</td>
+</tr>
+<tr class="even">
+<td align="center">0.95</td>
+<td align="center">-0.946</td>
+</tr>
+<tr class="odd">
+<td align="center">0.96</td>
+<td align="center">5.599</td>
+</tr>
+<tr class="even">
+<td align="center">0.97</td>
+<td align="center">16.575</td>
+</tr>
+<tr class="odd">
+<td align="center">0.98</td>
+<td align="center">38.621</td>
+</tr>
+</tbody>
+</table>
+<p>The results of Table C4 shows that the power of the Q test is high (conditional on the FGN model). In particular, when H = 0.95 then Q(H) <span class="math inline">\(\in\)</span> (-1.96, 1.96) whereas when H equals 0.94 or 0.96 (or further away from 0.95) then Q(H) <span class="math inline">\(\notin\)</span> (-1.96, 1.96) which means rejection of FGN.</p>
+<hr />
+</div>
+<div id="table-c5.-stationarity-test.-moberg-data" class="section level2">
+<h2>Table C5. Stationarity test. Moberg data</h2>
+<pre class="r"><code>Stationary_moberg &lt;- matrix(0, nrow=2, ncol=3)
+colnames(Stationary_moberg) &lt;- c(&quot;test.stat&quot;,&quot;test.res&quot;,&quot;test.criterion&quot;)
+rownames(Stationary_moberg) &lt;- c(&quot;Sign: 0.05&quot;, &quot;Sign: 0.1&quot;)
+
+
+sign_level &lt;- c(0.05, 0.1)
+
+for (j in 1:2) {
+        station_res &lt;- unsys.station.test(Xj_m, M=2000,
+                                          sig.lev = sign_level[j])
+        Stationary_moberg[j,1] &lt;- station_res$test.stat
+        Stationary_moberg[j,2] &lt;- station_res$test.res 
+        Stationary_moberg[j,3] &lt;- station_res$test.criterion
+        }
+
+Stationary_moberg &lt;- as.data.frame(Stationary_moberg)
+
+
+# sum(Stationary_all_annual$test.res)
+
+write.csv(Stationary_moberg,
+          file.path(output_table_path, &quot;TC5_Stationarity_moberg.csv&quot;))</code></pre>
+<pre class="r"><code>rownames(Stationary_moberg) &lt;- c(&quot;Significance level: 0.05&quot;, 
+                                       &quot;Significance level: 0.1&quot;)
+Stationary_moberg$X &lt;- NULL
+
+Stationary_moberg$test.res &lt;- replace(Stationary_moberg$test.res,
+                                            Stationary_moberg$test.res==0, 
+                                            &quot;no rejection&quot;)
+                            
+kable(Stationary_moberg, digits=3, align=&#39;c&#39;,
+      col.names = c( &quot;Test statistic&quot;, &quot;Test result&quot;, &quot;Test criterion&quot;))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="center">Test statistic</th>
+<th align="center">Test result</th>
+<th align="center">Test criterion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Significance level: 0.05</td>
+<td align="center">3.397</td>
+<td align="center">no rejection</td>
+<td align="center">5.494</td>
+</tr>
+<tr class="even">
+<td>Significance level: 0.1</td>
+<td align="center">3.430</td>
+<td align="center">no rejection</td>
+<td align="center">5.350</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+<div id="table-c6.-stationarity-test.-annual-data" class="section level2">
+<h2>Table C6. Stationarity test. Annual data</h2>
+<pre class="r"><code>Stationary_all_annual &lt;- matrix(0, nrow=nja, ncol=3)
+colnames(Stationary_all_annual) &lt;- c(&quot;test.stat&quot;,&quot;test.res&quot;,&quot;test.criterion&quot;)
+rownames(Stationary_all_annual) &lt;- paste0(all$Country, &quot;,&quot;, all$Station)
+
+for (j in 1:nja) {
+        #--- 1. Data reading 
+        data &lt;- read.delim(data_dir_all[j], header=F, na.strings=99)
+          Xj &lt;- data[,14] 
+          Zj &lt;- Xj[!is.na(Xj)]
+        #--- 2. Estimation
+        station_res &lt;- unsys.station.test(Zj, M=2000, sig.lev = 0.01)
+        Stationary_all_annual[j,1] &lt;- station_res$test.stat
+        Stationary_all_annual[j,2] &lt;- station_res$test.res 
+        Stationary_all_annual[j,3] &lt;- station_res$test.criterion
+        }
+
+Stationary_all_annual &lt;- as.data.frame(Stationary_all_annual)
+
+# sum(Stationary_all_annual$test.res)
+
+write.csv(Stationary_all_annual,
+          file.path(output_table_path, &quot;TC6_Stationarity_all_annual.csv&quot;))</code></pre>
+<pre class="r"><code>Stationary_moberg %&gt;%
+  mutate(test.res = case_when(test.res == 0 ~ &quot;no rejection&quot;,
+                         test.res == 1 ~ &quot;rejection&quot;)) %&gt;%
+kable(digits=3, align=&#39;c&#39;,
+      col.names = c(&quot; Weather station&quot;, &quot;Test statistic&quot;, 
+                    &quot;Test result&quot;, &quot;Test criterion&quot;))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Weather station</th>
+<th align="center">Test statistic</th>
+<th align="center">Test result</th>
+<th align="center">Test criterion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Argentina,Buenos Aires</td>
+<td align="center">3.086</td>
+<td align="center">no rejection</td>
+<td align="center">5.865</td>
+</tr>
+<tr class="even">
+<td align="center">Australia,Adelaide</td>
+<td align="center">3.282</td>
+<td align="center">no rejection</td>
+<td align="center">5.878</td>
+</tr>
+<tr class="odd">
+<td align="center">Australia,Alice Springs</td>
+<td align="center">3.947</td>
+<td align="center">no rejection</td>
+<td align="center">5.802</td>
+</tr>
+<tr class="even">
+<td align="center">Australia,Cap Otway</td>
+<td align="center">3.719</td>
+<td align="center">no rejection</td>
+<td align="center">5.788</td>
+</tr>
+<tr class="odd">
+<td align="center">Austria,Kremsmunster</td>
+<td align="center">3.229</td>
+<td align="center">no rejection</td>
+<td align="center">5.742</td>
+</tr>
+<tr class="even">
+<td align="center">Austria,Vienna</td>
+<td align="center">2.722</td>
+<td align="center">no rejection</td>
+<td align="center">5.747</td>
+</tr>
+<tr class="odd">
+<td align="center">Belgium,Uccle</td>
+<td align="center">3.905</td>
+<td align="center">no rejection</td>
+<td align="center">5.941</td>
+</tr>
+<tr class="even">
+<td align="center">Canada,Winnipeg</td>
+<td align="center">3.593</td>
+<td align="center">no rejection</td>
+<td align="center">5.628</td>
+</tr>
+<tr class="odd">
+<td align="center">Croatia,Zagreb</td>
+<td align="center">4.149</td>
+<td align="center">no rejection</td>
+<td align="center">5.813</td>
+</tr>
+<tr class="even">
+<td align="center">Czech Republic,Prague</td>
+<td align="center">4.066</td>
+<td align="center">no rejection</td>
+<td align="center">5.971</td>
+</tr>
+<tr class="odd">
+<td align="center">Denmark,Copenhagen</td>
+<td align="center">3.912</td>
+<td align="center">no rejection</td>
+<td align="center">5.957</td>
+</tr>
+<tr class="even">
+<td align="center">Denmark,Vestervig</td>
+<td align="center">3.926</td>
+<td align="center">no rejection</td>
+<td align="center">5.864</td>
+</tr>
+<tr class="odd">
+<td align="center">Egypt,Alexandria</td>
+<td align="center">5.144</td>
+<td align="center">no rejection</td>
+<td align="center">5.493</td>
+</tr>
+<tr class="even">
+<td align="center">France,Nantes</td>
+<td align="center">3.805</td>
+<td align="center">no rejection</td>
+<td align="center">5.855</td>
+</tr>
+<tr class="odd">
+<td align="center">France,Paris</td>
+<td align="center">4.139</td>
+<td align="center">no rejection</td>
+<td align="center">5.952</td>
+</tr>
+<tr class="even">
+<td align="center">Germany,Berlin</td>
+<td align="center">4.309</td>
+<td align="center">no rejection</td>
+<td align="center">5.976</td>
+</tr>
+<tr class="odd">
+<td align="center">Germany,Hohenpeissenberg</td>
+<td align="center">3.038</td>
+<td align="center">no rejection</td>
+<td align="center">5.987</td>
+</tr>
+<tr class="even">
+<td align="center">Germany,Karlsruhe</td>
+<td align="center">2.600</td>
+<td align="center">no rejection</td>
+<td align="center">5.717</td>
+</tr>
+<tr class="odd">
+<td align="center">Greece,Athens</td>
+<td align="center">3.658</td>
+<td align="center">no rejection</td>
+<td align="center">5.581</td>
+</tr>
+<tr class="even">
+<td align="center">Greenland,Illulisat</td>
+<td align="center">3.716</td>
+<td align="center">no rejection</td>
+<td align="center">5.865</td>
+</tr>
+<tr class="odd">
+<td align="center">Greenland,Ivittuut</td>
+<td align="center">3.042</td>
+<td align="center">no rejection</td>
+<td align="center">5.740</td>
+</tr>
+<tr class="even">
+<td align="center">Hungary,Budapest</td>
+<td align="center">3.673</td>
+<td align="center">no rejection</td>
+<td align="center">5.941</td>
+</tr>
+<tr class="odd">
+<td align="center">Iceland,Djupivogur</td>
+<td align="center">6.377</td>
+<td align="center">rejection</td>
+<td align="center">5.849</td>
+</tr>
+<tr class="even">
+<td align="center">Iceland,Reykjavik</td>
+<td align="center">3.259</td>
+<td align="center">no rejection</td>
+<td align="center">5.717</td>
+</tr>
+<tr class="odd">
+<td align="center">India,Agra</td>
+<td align="center">4.363</td>
+<td align="center">no rejection</td>
+<td align="center">5.828</td>
+</tr>
+<tr class="even">
+<td align="center">India,Allahabad</td>
+<td align="center">2.495</td>
+<td align="center">no rejection</td>
+<td align="center">5.822</td>
+</tr>
+<tr class="odd">
+<td align="center">India,Bombay</td>
+<td align="center">4.361</td>
+<td align="center">no rejection</td>
+<td align="center">5.878</td>
+</tr>
+<tr class="even">
+<td align="center">India,Indore</td>
+<td align="center">2.763</td>
+<td align="center">no rejection</td>
+<td align="center">5.892</td>
+</tr>
+<tr class="odd">
+<td align="center">India,Madras</td>
+<td align="center">4.714</td>
+<td align="center">no rejection</td>
+<td align="center">5.718</td>
+</tr>
+<tr class="even">
+<td align="center">India,Nagpur</td>
+<td align="center">3.669</td>
+<td align="center">no rejection</td>
+<td align="center">5.869</td>
+</tr>
+<tr class="odd">
+<td align="center">Israel,Jerusalem</td>
+<td align="center">3.665</td>
+<td align="center">no rejection</td>
+<td align="center">5.821</td>
+</tr>
+<tr class="even">
+<td align="center">Italy,Bologna</td>
+<td align="center">4.363</td>
+<td align="center">no rejection</td>
+<td align="center">5.907</td>
+</tr>
+<tr class="odd">
+<td align="center">Italy,Milan</td>
+<td align="center">4.002</td>
+<td align="center">no rejection</td>
+<td align="center">5.935</td>
+</tr>
+<tr class="even">
+<td align="center">Japan,Hiroshima</td>
+<td align="center">2.940</td>
+<td align="center">no rejection</td>
+<td align="center">5.333</td>
+</tr>
+<tr class="odd">
+<td align="center">Japan,Nagasaki</td>
+<td align="center">2.960</td>
+<td align="center">no rejection</td>
+<td align="center">5.637</td>
+</tr>
+<tr class="even">
+<td align="center">Japan,Tokyo</td>
+<td align="center">2.550</td>
+<td align="center">no rejection</td>
+<td align="center">5.569</td>
+</tr>
+<tr class="odd">
+<td align="center">Kazakhstan,Kazalinsk</td>
+<td align="center">3.289</td>
+<td align="center">no rejection</td>
+<td align="center">5.751</td>
+</tr>
+<tr class="even">
+<td align="center">Luxembourg,Luxembourg</td>
+<td align="center">3.368</td>
+<td align="center">no rejection</td>
+<td align="center">5.902</td>
+</tr>
+<tr class="odd">
+<td align="center">New Zealand,Wellington</td>
+<td align="center">3.390</td>
+<td align="center">no rejection</td>
+<td align="center">5.606</td>
+</tr>
+<tr class="even">
+<td align="center">Norway,Andoya</td>
+<td align="center">4.493</td>
+<td align="center">no rejection</td>
+<td align="center">5.914</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway,Bergen</td>
+<td align="center">2.312</td>
+<td align="center">no rejection</td>
+<td align="center">5.861</td>
+</tr>
+<tr class="even">
+<td align="center">Norway,Bodo</td>
+<td align="center">4.287</td>
+<td align="center">no rejection</td>
+<td align="center">5.896</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway,Dombas</td>
+<td align="center">5.485</td>
+<td align="center">no rejection</td>
+<td align="center">5.867</td>
+</tr>
+<tr class="even">
+<td align="center">Norway,Karasjok</td>
+<td align="center">3.920</td>
+<td align="center">no rejection</td>
+<td align="center">5.821</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway,Mandal</td>
+<td align="center">3.929</td>
+<td align="center">no rejection</td>
+<td align="center">5.924</td>
+</tr>
+<tr class="even">
+<td align="center">Norway,Oksoy Lighthouse</td>
+<td align="center">4.187</td>
+<td align="center">no rejection</td>
+<td align="center">5.873</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway,Ona</td>
+<td align="center">3.902</td>
+<td align="center">no rejection</td>
+<td align="center">5.894</td>
+</tr>
+<tr class="even">
+<td align="center">Norway,Oslo</td>
+<td align="center">3.286</td>
+<td align="center">no rejection</td>
+<td align="center">5.928</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway,Roros</td>
+<td align="center">3.352</td>
+<td align="center">no rejection</td>
+<td align="center">5.832</td>
+</tr>
+<tr class="even">
+<td align="center">Norway,Tromso</td>
+<td align="center">3.834</td>
+<td align="center">no rejection</td>
+<td align="center">5.871</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway,Utsira</td>
+<td align="center">2.863</td>
+<td align="center">no rejection</td>
+<td align="center">5.868</td>
+</tr>
+<tr class="even">
+<td align="center">Norway,Vardo</td>
+<td align="center">2.742</td>
+<td align="center">no rejection</td>
+<td align="center">5.867</td>
+</tr>
+<tr class="odd">
+<td align="center">Pakistan,Lahore</td>
+<td align="center">2.830</td>
+<td align="center">no rejection</td>
+<td align="center">5.889</td>
+</tr>
+<tr class="even">
+<td align="center">Portugal,Lisbon</td>
+<td align="center">4.938</td>
+<td align="center">no rejection</td>
+<td align="center">5.784</td>
+</tr>
+<tr class="odd">
+<td align="center">Romania,Sulina</td>
+<td align="center">2.957</td>
+<td align="center">no rejection</td>
+<td align="center">5.396</td>
+</tr>
+<tr class="even">
+<td align="center">Russia,Archangelsk</td>
+<td align="center">3.720</td>
+<td align="center">no rejection</td>
+<td align="center">5.683</td>
+</tr>
+<tr class="odd">
+<td align="center">Russia,Sort</td>
+<td align="center">3.222</td>
+<td align="center">no rejection</td>
+<td align="center">5.437</td>
+</tr>
+<tr class="even">
+<td align="center">Russia,St Petersburg</td>
+<td align="center">3.695</td>
+<td align="center">no rejection</td>
+<td align="center">5.852</td>
+</tr>
+<tr class="odd">
+<td align="center">Spain,Gibraltar</td>
+<td align="center">5.704</td>
+<td align="center">no rejection</td>
+<td align="center">5.867</td>
+</tr>
+<tr class="even">
+<td align="center">Sweden,Bromma</td>
+<td align="center">3.244</td>
+<td align="center">no rejection</td>
+<td align="center">5.963</td>
+</tr>
+<tr class="odd">
+<td align="center">Sweden,Stockholm</td>
+<td align="center">3.083</td>
+<td align="center">no rejection</td>
+<td align="center">5.955</td>
+</tr>
+<tr class="even">
+<td align="center">Sweden,Tullinge</td>
+<td align="center">3.508</td>
+<td align="center">no rejection</td>
+<td align="center">5.950</td>
+</tr>
+<tr class="odd">
+<td align="center">Sweden,Uppsala</td>
+<td align="center">3.182</td>
+<td align="center">no rejection</td>
+<td align="center">5.920</td>
+</tr>
+<tr class="even">
+<td align="center">Switzerland,Basel</td>
+<td align="center">4.411</td>
+<td align="center">no rejection</td>
+<td align="center">5.961</td>
+</tr>
+<tr class="odd">
+<td align="center">Switzerland,Geneva</td>
+<td align="center">4.266</td>
+<td align="center">no rejection</td>
+<td align="center">5.955</td>
+</tr>
+<tr class="even">
+<td align="center">UK,Aberdeen</td>
+<td align="center">2.114</td>
+<td align="center">no rejection</td>
+<td align="center">5.818</td>
+</tr>
+<tr class="odd">
+<td align="center">UK,Belfast</td>
+<td align="center">2.766</td>
+<td align="center">no rejection</td>
+<td align="center">5.846</td>
+</tr>
+<tr class="even">
+<td align="center">UK,Cambridge</td>
+<td align="center">2.815</td>
+<td align="center">no rejection</td>
+<td align="center">5.863</td>
+</tr>
+<tr class="odd">
+<td align="center">UK,Durham</td>
+<td align="center">2.867</td>
+<td align="center">no rejection</td>
+<td align="center">5.930</td>
+</tr>
+<tr class="even">
+<td align="center">UK,Edinbourg</td>
+<td align="center">3.406</td>
+<td align="center">no rejection</td>
+<td align="center">5.914</td>
+</tr>
+<tr class="odd">
+<td align="center">UK,London</td>
+<td align="center">4.037</td>
+<td align="center">no rejection</td>
+<td align="center">5.909</td>
+</tr>
+<tr class="even">
+<td align="center">UK,Plymouth</td>
+<td align="center">4.379</td>
+<td align="center">no rejection</td>
+<td align="center">5.852</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Atlanta</td>
+<td align="center">3.985</td>
+<td align="center">no rejection</td>
+<td align="center">5.897</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Bismarck</td>
+<td align="center">3.510</td>
+<td align="center">no rejection</td>
+<td align="center">5.635</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Boise</td>
+<td align="center">3.839</td>
+<td align="center">no rejection</td>
+<td align="center">5.567</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Boston</td>
+<td align="center">3.373</td>
+<td align="center">no rejection</td>
+<td align="center">5.828</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Chattanooga</td>
+<td align="center">3.835</td>
+<td align="center">no rejection</td>
+<td align="center">5.863</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Cincinatti</td>
+<td align="center">4.886</td>
+<td align="center">no rejection</td>
+<td align="center">5.860</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Columbus</td>
+<td align="center">3.413</td>
+<td align="center">no rejection</td>
+<td align="center">5.831</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Concord</td>
+<td align="center">2.573</td>
+<td align="center">no rejection</td>
+<td align="center">5.911</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Des Moines</td>
+<td align="center">2.397</td>
+<td align="center">no rejection</td>
+<td align="center">5.799</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Detroit</td>
+<td align="center">3.542</td>
+<td align="center">no rejection</td>
+<td align="center">5.841</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Dodge City</td>
+<td align="center">2.791</td>
+<td align="center">no rejection</td>
+<td align="center">5.799</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Fargo</td>
+<td align="center">2.176</td>
+<td align="center">no rejection</td>
+<td align="center">5.584</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Galveston</td>
+<td align="center">2.841</td>
+<td align="center">no rejection</td>
+<td align="center">5.879</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Indianapolis</td>
+<td align="center">3.422</td>
+<td align="center">no rejection</td>
+<td align="center">5.825</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Jacksonville</td>
+<td align="center">3.743</td>
+<td align="center">no rejection</td>
+<td align="center">5.800</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Knoxville</td>
+<td align="center">2.886</td>
+<td align="center">no rejection</td>
+<td align="center">5.866</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Las Vegas</td>
+<td align="center">2.441</td>
+<td align="center">no rejection</td>
+<td align="center">5.746</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Madison</td>
+<td align="center">2.792</td>
+<td align="center">no rejection</td>
+<td align="center">5.842</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Marquette</td>
+<td align="center">3.198</td>
+<td align="center">no rejection</td>
+<td align="center">5.843</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Milwaukee</td>
+<td align="center">2.621</td>
+<td align="center">no rejection</td>
+<td align="center">5.819</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Mobile</td>
+<td align="center">2.741</td>
+<td align="center">no rejection</td>
+<td align="center">5.887</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Nashville</td>
+<td align="center">3.836</td>
+<td align="center">no rejection</td>
+<td align="center">5.858</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,New Orleans</td>
+<td align="center">2.708</td>
+<td align="center">no rejection</td>
+<td align="center">5.859</td>
+</tr>
+<tr class="even">
+<td align="center">USA,New York</td>
+<td align="center">4.448</td>
+<td align="center">no rejection</td>
+<td align="center">5.617</td>
+</tr>
+</tbody>
+</table>
+<p>From Table C6 we note that only in one case (Djupivogur, Iceland) do the data reject the stationarity hypothesis.</p>
+<hr />
+</div>
+<div id="table-c7.-stationarity-test.-monthly-data" class="section level2">
+<h2>Table C7. Stationarity test. Monthly data</h2>
+<pre class="r"><code>Stationarity_all &lt;- matrix(0, nrow=nja, ncol=3)
+colnames(Stationarity_all) &lt;- c(&quot;test.stat&quot;,&quot;test.res&quot;,&quot;test.criterion&quot;)
+rownames(Stationarity_all) &lt;- paste0(all$Country, &quot;,&quot;, all$Station)
+
+for (j in 1:nja) {
+        #--- 1. Data reading 
+        data &lt;- read.delim(data_dir_all[j], header=F, na.strings=99)
+        Zm &lt;- monthlyAdj(data, scale=T)$Zm
+        
+        #--- 2. Estimation
+        station_res &lt;- unsys.station.test(Zm, M=2000, sig.lev = 0.01)
+        Stationarity_all[j,1] &lt;- station_res$test.stat
+        Stationarity_all[j,2] &lt;- station_res$test.res 
+        Stationarity_all[j,3] &lt;- station_res$test.criterion
+        }
+
+Stationarity_all &lt;- as.data.frame(Stationarity_all)
+
+# sum(Stationarity_all$test.res)
+
+write.csv(Stationarity_all, file.path(output_table_path, 
+                                &quot;TC7.Stationarity_all.csv&quot;))</code></pre>
+<pre class="r"><code>Stationarity_all %&gt;%
+  mutate(test.res = case_when(test.res == 0 ~ &quot;no rejection&quot;,
+                         test.res == 1 ~ &quot;rejection&quot;)) %&gt;%
+kable(digits=3, align=&#39;c&#39;,
+      col.names = c(&quot; Weather station&quot;, &quot;Test statistic&quot;, &quot;Test result&quot;, 
+                    &quot;Test criterion&quot;))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Weather station</th>
+<th align="center">Test statistic</th>
+<th align="center">Test result</th>
+<th align="center">Test criterion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Argentina,Buenos Aires</td>
+<td align="center">3.086</td>
+<td align="center">no rejection</td>
+<td align="center">5.865</td>
+</tr>
+<tr class="even">
+<td align="center">Australia,Adelaide</td>
+<td align="center">3.282</td>
+<td align="center">no rejection</td>
+<td align="center">5.878</td>
+</tr>
+<tr class="odd">
+<td align="center">Australia,Alice Springs</td>
+<td align="center">3.947</td>
+<td align="center">no rejection</td>
+<td align="center">5.802</td>
+</tr>
+<tr class="even">
+<td align="center">Australia,Cap Otway</td>
+<td align="center">3.719</td>
+<td align="center">no rejection</td>
+<td align="center">5.788</td>
+</tr>
+<tr class="odd">
+<td align="center">Austria,Kremsmunster</td>
+<td align="center">3.229</td>
+<td align="center">no rejection</td>
+<td align="center">5.742</td>
+</tr>
+<tr class="even">
+<td align="center">Austria,Vienna</td>
+<td align="center">2.722</td>
+<td align="center">no rejection</td>
+<td align="center">5.747</td>
+</tr>
+<tr class="odd">
+<td align="center">Belgium,Uccle</td>
+<td align="center">3.905</td>
+<td align="center">no rejection</td>
+<td align="center">5.941</td>
+</tr>
+<tr class="even">
+<td align="center">Canada,Winnipeg</td>
+<td align="center">3.593</td>
+<td align="center">no rejection</td>
+<td align="center">5.628</td>
+</tr>
+<tr class="odd">
+<td align="center">Croatia,Zagreb</td>
+<td align="center">4.149</td>
+<td align="center">no rejection</td>
+<td align="center">5.813</td>
+</tr>
+<tr class="even">
+<td align="center">Czech Republic,Prague</td>
+<td align="center">4.066</td>
+<td align="center">no rejection</td>
+<td align="center">5.971</td>
+</tr>
+<tr class="odd">
+<td align="center">Denmark,Copenhagen</td>
+<td align="center">3.912</td>
+<td align="center">no rejection</td>
+<td align="center">5.957</td>
+</tr>
+<tr class="even">
+<td align="center">Denmark,Vestervig</td>
+<td align="center">3.926</td>
+<td align="center">no rejection</td>
+<td align="center">5.864</td>
+</tr>
+<tr class="odd">
+<td align="center">Egypt,Alexandria</td>
+<td align="center">5.144</td>
+<td align="center">no rejection</td>
+<td align="center">5.493</td>
+</tr>
+<tr class="even">
+<td align="center">France,Nantes</td>
+<td align="center">3.805</td>
+<td align="center">no rejection</td>
+<td align="center">5.855</td>
+</tr>
+<tr class="odd">
+<td align="center">France,Paris</td>
+<td align="center">4.139</td>
+<td align="center">no rejection</td>
+<td align="center">5.952</td>
+</tr>
+<tr class="even">
+<td align="center">Germany,Berlin</td>
+<td align="center">4.309</td>
+<td align="center">no rejection</td>
+<td align="center">5.976</td>
+</tr>
+<tr class="odd">
+<td align="center">Germany,Hohenpeissenberg</td>
+<td align="center">3.038</td>
+<td align="center">no rejection</td>
+<td align="center">5.987</td>
+</tr>
+<tr class="even">
+<td align="center">Germany,Karlsruhe</td>
+<td align="center">2.600</td>
+<td align="center">no rejection</td>
+<td align="center">5.717</td>
+</tr>
+<tr class="odd">
+<td align="center">Greece,Athens</td>
+<td align="center">3.658</td>
+<td align="center">no rejection</td>
+<td align="center">5.581</td>
+</tr>
+<tr class="even">
+<td align="center">Greenland,Illulisat</td>
+<td align="center">3.716</td>
+<td align="center">no rejection</td>
+<td align="center">5.865</td>
+</tr>
+<tr class="odd">
+<td align="center">Greenland,Ivittuut</td>
+<td align="center">3.042</td>
+<td align="center">no rejection</td>
+<td align="center">5.740</td>
+</tr>
+<tr class="even">
+<td align="center">Hungary,Budapest</td>
+<td align="center">3.673</td>
+<td align="center">no rejection</td>
+<td align="center">5.941</td>
+</tr>
+<tr class="odd">
+<td align="center">Iceland,Djupivogur</td>
+<td align="center">6.377</td>
+<td align="center">rejection</td>
+<td align="center">5.849</td>
+</tr>
+<tr class="even">
+<td align="center">Iceland,Reykjavik</td>
+<td align="center">3.259</td>
+<td align="center">no rejection</td>
+<td align="center">5.717</td>
+</tr>
+<tr class="odd">
+<td align="center">India,Agra</td>
+<td align="center">4.363</td>
+<td align="center">no rejection</td>
+<td align="center">5.828</td>
+</tr>
+<tr class="even">
+<td align="center">India,Allahabad</td>
+<td align="center">2.495</td>
+<td align="center">no rejection</td>
+<td align="center">5.822</td>
+</tr>
+<tr class="odd">
+<td align="center">India,Bombay</td>
+<td align="center">4.361</td>
+<td align="center">no rejection</td>
+<td align="center">5.878</td>
+</tr>
+<tr class="even">
+<td align="center">India,Indore</td>
+<td align="center">2.763</td>
+<td align="center">no rejection</td>
+<td align="center">5.892</td>
+</tr>
+<tr class="odd">
+<td align="center">India,Madras</td>
+<td align="center">4.714</td>
+<td align="center">no rejection</td>
+<td align="center">5.718</td>
+</tr>
+<tr class="even">
+<td align="center">India,Nagpur</td>
+<td align="center">3.669</td>
+<td align="center">no rejection</td>
+<td align="center">5.869</td>
+</tr>
+<tr class="odd">
+<td align="center">Israel,Jerusalem</td>
+<td align="center">3.665</td>
+<td align="center">no rejection</td>
+<td align="center">5.821</td>
+</tr>
+<tr class="even">
+<td align="center">Italy,Bologna</td>
+<td align="center">4.363</td>
+<td align="center">no rejection</td>
+<td align="center">5.907</td>
+</tr>
+<tr class="odd">
+<td align="center">Italy,Milan</td>
+<td align="center">4.002</td>
+<td align="center">no rejection</td>
+<td align="center">5.935</td>
+</tr>
+<tr class="even">
+<td align="center">Japan,Hiroshima</td>
+<td align="center">2.940</td>
+<td align="center">no rejection</td>
+<td align="center">5.333</td>
+</tr>
+<tr class="odd">
+<td align="center">Japan,Nagasaki</td>
+<td align="center">2.960</td>
+<td align="center">no rejection</td>
+<td align="center">5.637</td>
+</tr>
+<tr class="even">
+<td align="center">Japan,Tokyo</td>
+<td align="center">2.550</td>
+<td align="center">no rejection</td>
+<td align="center">5.569</td>
+</tr>
+<tr class="odd">
+<td align="center">Kazakhstan,Kazalinsk</td>
+<td align="center">3.289</td>
+<td align="center">no rejection</td>
+<td align="center">5.751</td>
+</tr>
+<tr class="even">
+<td align="center">Luxembourg,Luxembourg</td>
+<td align="center">3.368</td>
+<td align="center">no rejection</td>
+<td align="center">5.902</td>
+</tr>
+<tr class="odd">
+<td align="center">New Zealand,Wellington</td>
+<td align="center">3.390</td>
+<td align="center">no rejection</td>
+<td align="center">5.606</td>
+</tr>
+<tr class="even">
+<td align="center">Norway,Andoya</td>
+<td align="center">4.493</td>
+<td align="center">no rejection</td>
+<td align="center">5.914</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway,Bergen</td>
+<td align="center">2.312</td>
+<td align="center">no rejection</td>
+<td align="center">5.861</td>
+</tr>
+<tr class="even">
+<td align="center">Norway,Bodo</td>
+<td align="center">4.287</td>
+<td align="center">no rejection</td>
+<td align="center">5.896</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway,Dombas</td>
+<td align="center">5.485</td>
+<td align="center">no rejection</td>
+<td align="center">5.867</td>
+</tr>
+<tr class="even">
+<td align="center">Norway,Karasjok</td>
+<td align="center">3.920</td>
+<td align="center">no rejection</td>
+<td align="center">5.821</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway,Mandal</td>
+<td align="center">3.929</td>
+<td align="center">no rejection</td>
+<td align="center">5.924</td>
+</tr>
+<tr class="even">
+<td align="center">Norway,Oksoy Lighthouse</td>
+<td align="center">4.187</td>
+<td align="center">no rejection</td>
+<td align="center">5.873</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway,Ona</td>
+<td align="center">3.902</td>
+<td align="center">no rejection</td>
+<td align="center">5.894</td>
+</tr>
+<tr class="even">
+<td align="center">Norway,Oslo</td>
+<td align="center">3.286</td>
+<td align="center">no rejection</td>
+<td align="center">5.928</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway,Roros</td>
+<td align="center">3.352</td>
+<td align="center">no rejection</td>
+<td align="center">5.832</td>
+</tr>
+<tr class="even">
+<td align="center">Norway,Tromso</td>
+<td align="center">3.834</td>
+<td align="center">no rejection</td>
+<td align="center">5.871</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway,Utsira</td>
+<td align="center">2.863</td>
+<td align="center">no rejection</td>
+<td align="center">5.868</td>
+</tr>
+<tr class="even">
+<td align="center">Norway,Vardo</td>
+<td align="center">2.742</td>
+<td align="center">no rejection</td>
+<td align="center">5.867</td>
+</tr>
+<tr class="odd">
+<td align="center">Pakistan,Lahore</td>
+<td align="center">2.830</td>
+<td align="center">no rejection</td>
+<td align="center">5.889</td>
+</tr>
+<tr class="even">
+<td align="center">Portugal,Lisbon</td>
+<td align="center">4.938</td>
+<td align="center">no rejection</td>
+<td align="center">5.784</td>
+</tr>
+<tr class="odd">
+<td align="center">Romania,Sulina</td>
+<td align="center">2.957</td>
+<td align="center">no rejection</td>
+<td align="center">5.396</td>
+</tr>
+<tr class="even">
+<td align="center">Russia,Archangelsk</td>
+<td align="center">3.720</td>
+<td align="center">no rejection</td>
+<td align="center">5.683</td>
+</tr>
+<tr class="odd">
+<td align="center">Russia,Sort</td>
+<td align="center">3.222</td>
+<td align="center">no rejection</td>
+<td align="center">5.437</td>
+</tr>
+<tr class="even">
+<td align="center">Russia,St Petersburg</td>
+<td align="center">3.695</td>
+<td align="center">no rejection</td>
+<td align="center">5.852</td>
+</tr>
+<tr class="odd">
+<td align="center">Spain,Gibraltar</td>
+<td align="center">5.704</td>
+<td align="center">no rejection</td>
+<td align="center">5.867</td>
+</tr>
+<tr class="even">
+<td align="center">Sweden,Bromma</td>
+<td align="center">3.244</td>
+<td align="center">no rejection</td>
+<td align="center">5.963</td>
+</tr>
+<tr class="odd">
+<td align="center">Sweden,Stockholm</td>
+<td align="center">3.083</td>
+<td align="center">no rejection</td>
+<td align="center">5.955</td>
+</tr>
+<tr class="even">
+<td align="center">Sweden,Tullinge</td>
+<td align="center">3.508</td>
+<td align="center">no rejection</td>
+<td align="center">5.950</td>
+</tr>
+<tr class="odd">
+<td align="center">Sweden,Uppsala</td>
+<td align="center">3.182</td>
+<td align="center">no rejection</td>
+<td align="center">5.920</td>
+</tr>
+<tr class="even">
+<td align="center">Switzerland,Basel</td>
+<td align="center">4.411</td>
+<td align="center">no rejection</td>
+<td align="center">5.961</td>
+</tr>
+<tr class="odd">
+<td align="center">Switzerland,Geneva</td>
+<td align="center">4.266</td>
+<td align="center">no rejection</td>
+<td align="center">5.955</td>
+</tr>
+<tr class="even">
+<td align="center">UK,Aberdeen</td>
+<td align="center">2.114</td>
+<td align="center">no rejection</td>
+<td align="center">5.818</td>
+</tr>
+<tr class="odd">
+<td align="center">UK,Belfast</td>
+<td align="center">2.766</td>
+<td align="center">no rejection</td>
+<td align="center">5.846</td>
+</tr>
+<tr class="even">
+<td align="center">UK,Cambridge</td>
+<td align="center">2.815</td>
+<td align="center">no rejection</td>
+<td align="center">5.863</td>
+</tr>
+<tr class="odd">
+<td align="center">UK,Durham</td>
+<td align="center">2.867</td>
+<td align="center">no rejection</td>
+<td align="center">5.930</td>
+</tr>
+<tr class="even">
+<td align="center">UK,Edinbourg</td>
+<td align="center">3.406</td>
+<td align="center">no rejection</td>
+<td align="center">5.914</td>
+</tr>
+<tr class="odd">
+<td align="center">UK,London</td>
+<td align="center">4.037</td>
+<td align="center">no rejection</td>
+<td align="center">5.909</td>
+</tr>
+<tr class="even">
+<td align="center">UK,Plymouth</td>
+<td align="center">4.379</td>
+<td align="center">no rejection</td>
+<td align="center">5.852</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Atlanta</td>
+<td align="center">3.985</td>
+<td align="center">no rejection</td>
+<td align="center">5.897</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Bismarck</td>
+<td align="center">3.510</td>
+<td align="center">no rejection</td>
+<td align="center">5.635</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Boise</td>
+<td align="center">3.839</td>
+<td align="center">no rejection</td>
+<td align="center">5.567</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Boston</td>
+<td align="center">3.373</td>
+<td align="center">no rejection</td>
+<td align="center">5.828</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Chattanooga</td>
+<td align="center">3.835</td>
+<td align="center">no rejection</td>
+<td align="center">5.863</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Cincinatti</td>
+<td align="center">4.886</td>
+<td align="center">no rejection</td>
+<td align="center">5.860</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Columbus</td>
+<td align="center">3.413</td>
+<td align="center">no rejection</td>
+<td align="center">5.831</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Concord</td>
+<td align="center">2.573</td>
+<td align="center">no rejection</td>
+<td align="center">5.911</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Des Moines</td>
+<td align="center">2.397</td>
+<td align="center">no rejection</td>
+<td align="center">5.799</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Detroit</td>
+<td align="center">3.542</td>
+<td align="center">no rejection</td>
+<td align="center">5.841</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Dodge City</td>
+<td align="center">2.791</td>
+<td align="center">no rejection</td>
+<td align="center">5.799</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Fargo</td>
+<td align="center">2.176</td>
+<td align="center">no rejection</td>
+<td align="center">5.584</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Galveston</td>
+<td align="center">2.841</td>
+<td align="center">no rejection</td>
+<td align="center">5.879</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Indianapolis</td>
+<td align="center">3.422</td>
+<td align="center">no rejection</td>
+<td align="center">5.825</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Jacksonville</td>
+<td align="center">3.743</td>
+<td align="center">no rejection</td>
+<td align="center">5.800</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Knoxville</td>
+<td align="center">2.886</td>
+<td align="center">no rejection</td>
+<td align="center">5.866</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Las Vegas</td>
+<td align="center">2.441</td>
+<td align="center">no rejection</td>
+<td align="center">5.746</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Madison</td>
+<td align="center">2.792</td>
+<td align="center">no rejection</td>
+<td align="center">5.842</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Marquette</td>
+<td align="center">3.198</td>
+<td align="center">no rejection</td>
+<td align="center">5.843</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Milwaukee</td>
+<td align="center">2.621</td>
+<td align="center">no rejection</td>
+<td align="center">5.819</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,Mobile</td>
+<td align="center">2.741</td>
+<td align="center">no rejection</td>
+<td align="center">5.887</td>
+</tr>
+<tr class="even">
+<td align="center">USA,Nashville</td>
+<td align="center">3.836</td>
+<td align="center">no rejection</td>
+<td align="center">5.858</td>
+</tr>
+<tr class="odd">
+<td align="center">USA,New Orleans</td>
+<td align="center">2.708</td>
+<td align="center">no rejection</td>
+<td align="center">5.859</td>
+</tr>
+<tr class="even">
+<td align="center">USA,New York</td>
+<td align="center">4.448</td>
+<td align="center">no rejection</td>
+<td align="center">5.617</td>
+</tr>
+</tbody>
+</table>
+<p>Table C7 shows that stationarity (based on the default option of Cho’s test) is rejected for data from 14 weather stations when monthly time series are used.</p>
+<hr />
+</div>
+<div id="table-c8.-estimation-of-h-using-the-wavelet-lifting-estimator.-monthly-data" class="section level2">
+<h2>Table C8. Estimation of H using the Wavelet Lifting estimator. Monthly data</h2>
+<pre class="r"><code># Wavelet estimation for all time series
+Parameters &lt;- data.frame()
+for (j in 1:nja) {
+        #--- 1. Data reading 
+        data &lt;- read.delim(data_dir_all[j], header=F, na.strings=99)
+        Zm &lt;- monthlyAdj(data, scale=T)$Zm
+        timeindex &lt;- which(!is.na(data[,2:13]))
+        nmiss &lt;- sum(is.na(Zm))
+        #--- 2. Estimation
+        Hvec &lt;- c(liftHurst(Zm, grid=timeindex), nmiss)
+        Parameters &lt;- rbind(Parameters, Hvec)
+        }
+
+colnames(Parameters) &lt;- c(&quot;Beta&quot;, &quot;Hl&quot;, &quot;Sd_Hl&quot;, &quot;Lo_Hl&quot;, &quot;Hi_Hl&quot;, &quot;Missing&quot;)
+Parameters &lt;- cbind(stationame_all, Parameters)
+saveRDS(Parameters, file.path(output_supporting_path, &quot;wavelet_H_all.rds&quot;))
+
+# Comparison between Wavelet and Whittle estimator
+Hl_tbl &lt;- readRDS(file.path(output_supporting_path, &quot;wavelet_H_all.rds&quot;))
+Hw_tbl &lt;- read.csv(file.path(output_table_path, &quot;TC1_monthly_H_all.csv&quot;)) %&gt;%
+  rename(stationame_all = X)
+H_comparison_tbl &lt;- Hl_tbl %&gt;%
+  left_join(Hw_tbl) %&gt;%
+  select(-c(Beta, Missing)) %&gt;%
+  mutate(Lo_Hw = Hw - 3*SE_Hw,
+         Hi_Hw = Hw + 3*SE_Hw,
+         overlap = case_when(Hi_Hl &lt; Lo_Hw | Hi_Hw &lt; Lo_Hl ~ 0,
+                                 TRUE ~ 1))
+
+# Q statistics for Whittle and Wavelet estimator for all time series
+H_comparison_tbl$Q_Hl &lt;- NA
+H_comparison_tbl$Q_Hw &lt;- NA
+for (j in 1:nja){
+ data &lt;- read.delim(data_dir_all[j], header=F, na.strings=99)
+ Zm &lt;- monthlyAdj(data, scale=T)$Zm
+ TT &lt;- length(Zm)
+ Hl &lt;- H_comparison_tbl[j, &quot;Hl&quot;]
+ Hw &lt;- H_comparison_tbl[j, &quot;Hw&quot;]
+ H_comparison_tbl[j, &quot;Q_Hl&quot;] &lt;- Qstat(Zm, H=Hl, TT=TT)
+ H_comparison_tbl[j, &quot;Q_Hw&quot;] &lt;- Qstat(Zm, H=Hw, TT=TT)
+}
+
+# Saving Whittle vs Wavalet estimation table
+write.csv(H_comparison_tbl, 
+          file.path(output_table_path, &quot;TC8_monthly_all_H_wavelet.csv&quot;))</code></pre>
+<pre class="r"><code>H_comparison_tbl %&gt;%
+  select(stationame_all, Hl, Q_Hl) %&gt;%
+  kable(digits=3, align=&#39;c&#39;,
+      col.names = c(&quot;Weather station&quot;, &quot;$H_{wav}$&quot;, &quot;$Q(H_{wav})$&quot;))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Weather station</th>
+<th align="center"><span class="math inline">\(H_{wav}\)</span></th>
+<th align="center"><span class="math inline">\(Q(H_{wav})\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Argentina, Buenos Aires</td>
+<td align="center">0.622</td>
+<td align="center">-5.299</td>
+</tr>
+<tr class="even">
+<td align="center">Australia, Adelaide</td>
+<td align="center">0.622</td>
+<td align="center">-1.906</td>
+</tr>
+<tr class="odd">
+<td align="center">Australia, Alice Springs</td>
+<td align="center">0.643</td>
+<td align="center">-1.490</td>
+</tr>
+<tr class="even">
+<td align="center">Australia, Cap Otway</td>
+<td align="center">0.696</td>
+<td align="center">-4.644</td>
+</tr>
+<tr class="odd">
+<td align="center">Austria, Kremsmunster</td>
+<td align="center">0.602</td>
+<td align="center">-1.606</td>
+</tr>
+<tr class="even">
+<td align="center">Austria, Vienna</td>
+<td align="center">0.610</td>
+<td align="center">-2.172</td>
+</tr>
+<tr class="odd">
+<td align="center">Belgium, Uccle</td>
+<td align="center">0.595</td>
+<td align="center">-1.695</td>
+</tr>
+<tr class="even">
+<td align="center">Canada, Winnipeg</td>
+<td align="center">0.615</td>
+<td align="center">-1.349</td>
+</tr>
+<tr class="odd">
+<td align="center">Croatia, Zagreb</td>
+<td align="center">0.609</td>
+<td align="center">-1.449</td>
+</tr>
+<tr class="even">
+<td align="center">Czech Republic, Prague</td>
+<td align="center">0.625</td>
+<td align="center">-2.273</td>
+</tr>
+<tr class="odd">
+<td align="center">Denmark, Copenhagen</td>
+<td align="center">0.694</td>
+<td align="center">-4.464</td>
+</tr>
+<tr class="even">
+<td align="center">Denmark, Vestervig</td>
+<td align="center">0.699</td>
+<td align="center">-2.392</td>
+</tr>
+<tr class="odd">
+<td align="center">Egypt, Alexandria</td>
+<td align="center">0.740</td>
+<td align="center">-3.498</td>
+</tr>
+<tr class="even">
+<td align="center">France, Nantes</td>
+<td align="center">0.602</td>
+<td align="center">-1.312</td>
+</tr>
+<tr class="odd">
+<td align="center">France, Paris</td>
+<td align="center">0.603</td>
+<td align="center">-4.348</td>
+</tr>
+<tr class="even">
+<td align="center">Germany, Berlin</td>
+<td align="center">0.621</td>
+<td align="center">-1.907</td>
+</tr>
+<tr class="odd">
+<td align="center">Germany, Hohenpeissenberg</td>
+<td align="center">0.567</td>
+<td align="center">-1.001</td>
+</tr>
+<tr class="even">
+<td align="center">Germany, Karlsruhe</td>
+<td align="center">0.569</td>
+<td align="center">-1.383</td>
+</tr>
+<tr class="odd">
+<td align="center">Greece, Athens</td>
+<td align="center">0.657</td>
+<td align="center">-1.622</td>
+</tr>
+<tr class="even">
+<td align="center">Greenland, Illulisat</td>
+<td align="center">0.664</td>
+<td align="center">-2.943</td>
+</tr>
+<tr class="odd">
+<td align="center">Greenland, Ivittuut</td>
+<td align="center">0.695</td>
+<td align="center">-2.970</td>
+</tr>
+<tr class="even">
+<td align="center">Hungary, Budapest</td>
+<td align="center">0.606</td>
+<td align="center">-1.260</td>
+</tr>
+<tr class="odd">
+<td align="center">Iceland, Djupivogur</td>
+<td align="center">0.668</td>
+<td align="center">-4.356</td>
+</tr>
+<tr class="even">
+<td align="center">Iceland, Reykjavik</td>
+<td align="center">0.644</td>
+<td align="center">-3.351</td>
+</tr>
+<tr class="odd">
+<td align="center">India, Agra</td>
+<td align="center">0.697</td>
+<td align="center">-2.155</td>
+</tr>
+<tr class="even">
+<td align="center">India, Allahabad</td>
+<td align="center">0.644</td>
+<td align="center">-1.767</td>
+</tr>
+<tr class="odd">
+<td align="center">India, Bombay</td>
+<td align="center">0.715</td>
+<td align="center">-4.660</td>
+</tr>
+<tr class="even">
+<td align="center">India, Indore</td>
+<td align="center">0.642</td>
+<td align="center">-2.954</td>
+</tr>
+<tr class="odd">
+<td align="center">India, Madras</td>
+<td align="center">0.688</td>
+<td align="center">-3.555</td>
+</tr>
+<tr class="even">
+<td align="center">India, Nagpur</td>
+<td align="center">0.665</td>
+<td align="center">-1.588</td>
+</tr>
+<tr class="odd">
+<td align="center">Israel, Jerusalem</td>
+<td align="center">0.652</td>
+<td align="center">-1.589</td>
+</tr>
+<tr class="even">
+<td align="center">Italy, Bologna</td>
+<td align="center">0.642</td>
+<td align="center">-3.037</td>
+</tr>
+<tr class="odd">
+<td align="center">Italy, Milan</td>
+<td align="center">0.642</td>
+<td align="center">-4.870</td>
+</tr>
+<tr class="even">
+<td align="center">Japan, Hiroshima</td>
+<td align="center">0.665</td>
+<td align="center">-2.826</td>
+</tr>
+<tr class="odd">
+<td align="center">Japan, Nagasaki</td>
+<td align="center">0.661</td>
+<td align="center">-2.904</td>
+</tr>
+<tr class="even">
+<td align="center">Japan, Tokyo</td>
+<td align="center">0.664</td>
+<td align="center">-5.614</td>
+</tr>
+<tr class="odd">
+<td align="center">Kazakhstan, Kazalinsk</td>
+<td align="center">0.619</td>
+<td align="center">-0.592</td>
+</tr>
+<tr class="even">
+<td align="center">Luxembourg, Luxembourg</td>
+<td align="center">0.606</td>
+<td align="center">-2.034</td>
+</tr>
+<tr class="odd">
+<td align="center">New Zealand, Wellington</td>
+<td align="center">0.703</td>
+<td align="center">-3.066</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Andoya</td>
+<td align="center">0.669</td>
+<td align="center">-2.437</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Bergen</td>
+<td align="center">0.635</td>
+<td align="center">-1.900</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Bodo</td>
+<td align="center">0.651</td>
+<td align="center">-1.500</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Dombas</td>
+<td align="center">0.618</td>
+<td align="center">-1.215</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Karasjok</td>
+<td align="center">0.634</td>
+<td align="center">-1.152</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Mandal</td>
+<td align="center">0.680</td>
+<td align="center">-0.963</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Oksoy Lighthouse</td>
+<td align="center">0.713</td>
+<td align="center">-1.528</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Ona</td>
+<td align="center">0.680</td>
+<td align="center">-2.199</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Oslo</td>
+<td align="center">0.671</td>
+<td align="center">-2.014</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Roros</td>
+<td align="center">0.641</td>
+<td align="center">-1.650</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Tromso</td>
+<td align="center">0.648</td>
+<td align="center">-1.162</td>
+</tr>
+<tr class="odd">
+<td align="center">Norway, Utsira</td>
+<td align="center">0.703</td>
+<td align="center">-2.522</td>
+</tr>
+<tr class="even">
+<td align="center">Norway, Vardo</td>
+<td align="center">0.694</td>
+<td align="center">-3.376</td>
+</tr>
+<tr class="odd">
+<td align="center">Pakistan, Lahore</td>
+<td align="center">0.649</td>
+<td align="center">-1.011</td>
+</tr>
+<tr class="even">
+<td align="center">Portugal, Lisbon</td>
+<td align="center">0.627</td>
+<td align="center">-4.469</td>
+</tr>
+<tr class="odd">
+<td align="center">Romania, Sulina</td>
+<td align="center">0.658</td>
+<td align="center">-0.876</td>
+</tr>
+<tr class="even">
+<td align="center">Russia, Archangelsk</td>
+<td align="center">0.610</td>
+<td align="center">-1.618</td>
+</tr>
+<tr class="odd">
+<td align="center">Russia, Sort</td>
+<td align="center">0.658</td>
+<td align="center">-0.460</td>
+</tr>
+<tr class="even">
+<td align="center">Russia, St Petersburg</td>
+<td align="center">0.643</td>
+<td align="center">-1.817</td>
+</tr>
+<tr class="odd">
+<td align="center">Spain, Gibraltar</td>
+<td align="center">0.707</td>
+<td align="center">-4.289</td>
+</tr>
+<tr class="even">
+<td align="center">Sweden, Bromma</td>
+<td align="center">0.687</td>
+<td align="center">-2.110</td>
+</tr>
+<tr class="odd">
+<td align="center">Sweden, Stockholm</td>
+<td align="center">0.673</td>
+<td align="center">-1.558</td>
+</tr>
+<tr class="even">
+<td align="center">Sweden, Tullinge</td>
+<td align="center">0.679</td>
+<td align="center">-1.350</td>
+</tr>
+<tr class="odd">
+<td align="center">Sweden, Uppsala</td>
+<td align="center">0.665</td>
+<td align="center">-2.545</td>
+</tr>
+<tr class="even">
+<td align="center">Switzerland, Basel</td>
+<td align="center">0.585</td>
+<td align="center">-1.229</td>
+</tr>
+<tr class="odd">
+<td align="center">Switzerland, Geneva</td>
+<td align="center">0.606</td>
+<td align="center">-3.239</td>
+</tr>
+<tr class="even">
+<td align="center">UK, Aberdeen</td>
+<td align="center">0.654</td>
+<td align="center">-1.924</td>
+</tr>
+<tr class="odd">
+<td align="center">UK, Belfast</td>
+<td align="center">0.621</td>
+<td align="center">-1.307</td>
+</tr>
+<tr class="even">
+<td align="center">UK, Cambridge</td>
+<td align="center">0.616</td>
+<td align="center">-2.031</td>
+</tr>
+<tr class="odd">
+<td align="center">UK, Durham</td>
+<td align="center">0.625</td>
+<td align="center">-2.584</td>
+</tr>
+<tr class="even">
+<td align="center">UK, Edinbourg</td>
+<td align="center">0.633</td>
+<td align="center">-0.943</td>
+</tr>
+<tr class="odd">
+<td align="center">UK, London</td>
+<td align="center">0.614</td>
+<td align="center">-3.479</td>
+</tr>
+<tr class="even">
+<td align="center">UK, Plymouth</td>
+<td align="center">0.644</td>
+<td align="center">-0.635</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Atlanta</td>
+<td align="center">0.607</td>
+<td align="center">-0.909</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Bismarck</td>
+<td align="center">0.598</td>
+<td align="center">-1.234</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Boise</td>
+<td align="center">0.616</td>
+<td align="center">-1.300</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Boston</td>
+<td align="center">0.617</td>
+<td align="center">-1.920</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Chattanooga</td>
+<td align="center">0.617</td>
+<td align="center">-0.855</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Cincinatti</td>
+<td align="center">0.614</td>
+<td align="center">-1.090</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Columbus</td>
+<td align="center">0.601</td>
+<td align="center">-0.866</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Concord</td>
+<td align="center">0.608</td>
+<td align="center">-1.973</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Des Moines</td>
+<td align="center">0.604</td>
+<td align="center">-0.734</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Detroit</td>
+<td align="center">0.614</td>
+<td align="center">-1.196</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Dodge City</td>
+<td align="center">0.582</td>
+<td align="center">-0.776</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Fargo</td>
+<td align="center">0.608</td>
+<td align="center">-1.420</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Galveston</td>
+<td align="center">0.646</td>
+<td align="center">-1.334</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Indianapolis</td>
+<td align="center">0.594</td>
+<td align="center">-0.666</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Jacksonville</td>
+<td align="center">0.621</td>
+<td align="center">-0.723</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Knoxville</td>
+<td align="center">0.592</td>
+<td align="center">-0.926</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Las Vegas</td>
+<td align="center">0.616</td>
+<td align="center">-0.933</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Madison</td>
+<td align="center">0.609</td>
+<td align="center">-1.009</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Marquette</td>
+<td align="center">0.630</td>
+<td align="center">-2.118</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Milwaukee</td>
+<td align="center">0.625</td>
+<td align="center">-1.860</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, Mobile</td>
+<td align="center">0.624</td>
+<td align="center">-0.638</td>
+</tr>
+<tr class="even">
+<td align="center">USA, Nashville</td>
+<td align="center">0.589</td>
+<td align="center">-0.382</td>
+</tr>
+<tr class="odd">
+<td align="center">USA, New Orleans</td>
+<td align="center">0.644</td>
+<td align="center">-2.132</td>
+</tr>
+<tr class="even">
+<td align="center">USA, New York</td>
+<td align="center">0.629</td>
+<td align="center">-4.211</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+<div id="figure-c1.-comparison-between-the-wavelet-lifting-and-the-whittle-estimator" class="section level2">
+<h2>Figure C1. Comparison between the Wavelet Lifting and the Whittle estimator</h2>
+<p>Wavelet Lifting vs Whittle estimates of H, with 95% confidence bands</p>
+<pre class="r"><code># Long data format
+H_comparison_tbl_long &lt;- data.frame(
+  City = rep(1:96, 2),
+    City_label = rep(H_comparison_tbl$stationame_all, 2),
+    Method = rep(c(&quot;Wavelet&quot;, &quot;Whittle&quot;), each = 96),
+    H = c(H_comparison_tbl$Hl, H_comparison_tbl$Hw),
+    Low = c(H_comparison_tbl$Lo_Hl, H_comparison_tbl$Lo_Hw),
+    High = c(H_comparison_tbl$Hi_Hl, H_comparison_tbl$Hi_Hw)
+  )
+
+# Plot
+H_comparison_tbl_long %&gt;%
+  ggplot() +
+  geom_line(aes(x = City, y = H, col = Method)) +
+  geom_ribbon(aes(x = City, ymin = Low, ymax = High,
+                  fill = Method), alpha = 0.3) +
+  scale_x_continuous(breaks=1:96, 
+                     labels=stationame_all) +
+  theme_minimal() +
+   theme(#axis.text.x = element_text(angle = 90, size = 2),
+         axis.text.y = element_text(size = 5)) +
+  coord_flip() +
+  labs(# title = &quot;Whittle vs Wavelet Lifting estimates of H&quot;, 
+       # subtitle = &quot;with 95% confidence intervals&quot;,
+       x = &quot;&quot;)</code></pre>
+<p><img src="/img/temperature/FC1_H_wavelet_whittle_plot.png" width="80%" /></p>
+</div>
+</div>
+
+                        </div>
+                        
+                        
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "devcows" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            
+            <li>
+                <a href="/categories/r">r (1)</a>
+            </li>
+            
+            <li>
+                <a href="/categories/research">research (5)</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            
+            <li>
+                <a href="/tags/fgn"><i class="fas fa-tags"></i> fgn</a>
+            </li>
+            
+            <li>
+                <a href="/tags/plot"><i class="fas fa-tags"></i> plot</a>
+            </li>
+            
+            <li>
+                <a href="/tags/r"><i class="fas fa-tags"></i> r</a>
+            </li>
+            
+            <li>
+                <a href="/tags/regression"><i class="fas fa-tags"></i> regression</a>
+            </li>
+            
+            <li>
+                <a href="/tags/research"><i class="fas fa-tags"></i> research</a>
+            </li>
+            
+            <li>
+                <a href="/tags/temperature"><i class="fas fa-tags"></i> temperature</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+             
+            <h4>Recent posts</h4>
+
+            <div class="blog-entries">
+                
+            </div>
+
+            <hr class="hidden-md hidden-lg">
+             
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <p class="text-uppercase"><strong>Universal Ltd.</strong>
+        <br>13/25 New Avenue
+        <br>Newtown upon River
+        <br>45Y 73J
+        <br>England
+        <br>
+        <strong>Great Britain</strong>
+      </p>
+      
+
+            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2015 - 2016, YourCompany; all rights reserved.</p>
+            
+            <p class="pull-right">
+              Template by <a href="https://bootstrapious.com/p/universal-business-e-commerce-template">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y&v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+
+
+<script src="/js/owl.carousel.min.js"></script>
+
+
+
+  </body>
+</html>

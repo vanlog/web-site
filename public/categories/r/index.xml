@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Temperature</title>
+    <link>/categories/r/</link>
+    <description>Recent content in R on Temperature</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Appendix E - Temperature stations infographics</title>
+      <link>/temperature/appendix-e/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/temperature/appendix-e/</guid>
+      <description>Affiliations:
+John K. Dagsvik, Statistics Norway, Research Department;
+Mariachiara Fortuna, freelance statistician, Turin;
+Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.
+Corresponding author:
+John K. Dagsvik, E-mail: john.dagsvik@ssb.no
+Mariachiara Fortuna, E-mail: mariachiara.fortuna1@gmail.com (reference for code and analysis)
+require(knitr) require(dplyr) require(ggplot2) require(tidyr) # require(tempFGN) # DATA PATH data_final_path &amp;lt;- file.path(&amp;quot;data&amp;quot;,&amp;quot;final&amp;quot;) data_supporting_path &amp;lt;- file.path(&amp;quot;data&amp;quot;, &amp;quot;supporting&amp;quot;) data_moberg_path &amp;lt;- file.path(&amp;quot;data&amp;quot;, &amp;quot;moberg&amp;quot;) # OUTPUT PATH output_supporting_path &amp;lt;- file.path(&amp;quot;output&amp;quot;, &amp;quot;supporting&amp;quot;) output_table_path &amp;lt;- file.</description>
+    </item>
+    
+  </channel>
+</rss>
