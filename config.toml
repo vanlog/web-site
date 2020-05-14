@@ -167,6 +167,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params.services]
     enable = true
+    
+[params.projects]
+    enable = true
+    title = "Our projects"
+    
 
 [params.testimonials]
     enable = true
