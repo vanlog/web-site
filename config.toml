@@ -160,6 +160,10 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params.intro]
     enable = true
+    title = "Who is Vanlog?"
+    text = "Vanlog is a group of data scientists born around a common goal: bringing the power of data everywhere, to small and medium businesses, public entities, research institutions. In 2020, you don't have to be Facebook or Netflix to enhance the value of your data. Our bet is to prove it to you."
+    link_text = "Discover more"
+    link_url = "https://www.vanlog.it"
 
 
 
