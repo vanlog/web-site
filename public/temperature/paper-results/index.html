@@ -235,8 +235,8 @@
 <p>Mariachiara Fortuna, freelance statistician, Turin;</p>
 <p>Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.</p>
 <p><strong>Corresponding author:</strong></p>
-<p>John K. Dagsvik, E-mail: <a href="mailto:john.dagsvik@ssb.no">john.dagsvik@ssb.no</a></p>
-<p>Mariachiara Fortuna, E-mail: <a href="mailto:mariachiara.fortuna@vanlog.it">mariachiara.fortuna@vanlog.it</a> (reference for code and analysis)</p>
+<p>John K. Dagsvik, E-mail: <a href="mailto:john.dagsvik@ssb.no" class="email">john.dagsvik@ssb.no</a></p>
+<p>Mariachiara Fortuna, E-mail: <a href="mailto:mariachiara.fortuna@vanlog.it" class="email">mariachiara.fortuna@vanlog.it</a> (reference for code and analysis)</p>
 <pre class="r"><code>#library(tempFGN)
 library(knitr)
 library(dplyr)
@@ -576,7 +576,6 @@ write.csv(monthly_Qt_sel, row.names=F,
 <h1>FIGURES</h1>
 <div id="figure-1.-illustration-of-statistical-self-similarity.-annual-temperature-for-paris" class="section level3">
 <h3>Figure 1. Illustration of statistical self-similarity. Annual temperature for Paris</h3>
-<p><img src="/img/temperature/F1.Self-similarity%20yearly%20monthly%20data.png" /><!-- --></p>
 <hr />
 </div>
 <div id="figure-2.-graphical-tests-of-self-similarity-and-normality" class="section level3">
@@ -599,9 +598,6 @@ for (j in 1:njs){
              cex.dots=1.5, cex.axis=1, cex.main=1.2, subtitle=F)
   fgtNormality(Yj=Ym,main=paste(&quot;-&quot;,stationame_sel[j]), cex.dots=1.5,
                cex.axis=1, cex.main=1.2)}</code></pre>
-<p><embed src="/img/temperature/F2_SelfSim_Norm_test_1.pdf" /><!-- --></p>
-<p><embed src="/img/temperature/F2_SelfSim_Norm_test_1.pdf" /><!-- --></p>
-<p><embed src="/img/temperature/F2_SelfSim_Norm_test_1.pdf" /><!-- --></p>
 <hr />
 </div>
 <div id="figure-3.-simulated-fgn-process-with-zero-mean-and-unit-variance" class="section level3">
@@ -613,16 +609,12 @@ for (H in c(0.7, 0.8, 0.9)){
   temperaturePlot(Xj = Xj, Year = 1:TT, main = paste0(&quot;FGN simulation, H=&quot;, H),
                   cex.lab = 1, cex.main = 1.2, cex.axis = 1)
 }</code></pre>
-<p><embed src="/img/temperature/F3_simulations_H_0.7.pdf" /><!-- --></p>
-<p><embed src="/img/temperature/F3_simulations_H_0.8.pdf" /><!-- --></p>
-<p><embed src="/img/temperature/F3_simulations_H_0.9.pdf" /><!-- --></p>
 <hr />
 </div>
 <div id="figure-4.-reconstructed-temperature-data-by-moberg-et-al.-2005a" class="section level3">
 <h3>Figure 4. Reconstructed temperature data by Moberg et al. (2005a)</h3>
 <pre class="r"><code>temperaturePlot(Xj = Xj_m, Year = Year_m, 
                   cex.lab = 1, cex.main = 1.2, cex.axis = 1)</code></pre>
-<p><img src="/img/temperature/F4_moberg_timeseries.png" /><!-- --></p>
 <hr />
 </div>
 <div id="figure-5.-test-of-self-similarity-and-normality" class="section level3">
@@ -630,9 +622,7 @@ for (H in c(0.7, 0.8, 0.9)){
 <p>Reconstructed temperature data by Moberg et al. (2005a)</p>
 <pre class="r"><code>fgtSelfSim(Yj = Yj_m, maxd=20, 
            cex.dots=1, cex.axis=1, cex.main=1)$plot</code></pre>
-<p><embed src="/img/temperature/F5a_moberg_SStest.pdf" /><!-- --></p>
 <pre class="r"><code>fgtNormality(Yj = Yj_m, cex.dots=1, cex.axis=1, cex.main=1)$plot</code></pre>
-<p><embed src="/img/temperature/F5b_moberg_Ntest.pdf" /><!-- --></p>
 <hr />
 </div>
 <div id="figure-6.-empirical-vs-fgn-autocorrelations" class="section level3">
@@ -695,7 +685,6 @@ unbiased_autocorr_tbl_long &lt;- unbiased_autocorr_tbl %&gt;%
   theme_minimal() +
   theme(legend.position = &quot;bottom&quot;) +
   labs(y = &quot;Autocorrelation&quot;)</code></pre>
-<p><img src="/img/temperature/F6_Moberg_autocorrelation.png" width="80%" /></p>
 </div>
 </div>
 

@@ -152,38 +152,34 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     tags = true
     search = true
 
-
-[params.see_more]
-    enable = true
-    icon = ""
-    title = "Temperature Fluctuation Paper"
-    subtitle = "This website is aimed at sharing all the materials related to the paper ”How does the temperature vary over time? Evidence on the stationary and fractal nature of temperature fluctuations”, by J.K. Dagsvik, M. Fortuna and S.H. Moen  "
-    link_url = "https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557"
-    link_text = "Read the paper"
-
-
 [params.carousel]
     enable = true
     # All carousel items are defined in their own files. You can find example items
     # at 'exampleSite/data/carousel'.
     # For more informtion take a look at the README.
 
-[params.features]
+[params.intro]
     enable = true
-    title = "Temperature paper materials"
-    # All features are defined in their own files. You can find example items
-    # at 'exampleSite/data/features'.
-    # For more informtion take a look at the README.
+    title = "Who is Vanlog?"
+    text = "Vanlog is a group of data scientists born around a common goal: bringing the power of data everywhere, to small and medium businesses, public entities, research institutions. In 2020, you don't have to be Facebook or Netflix to enhance the value of your data. Our bet is to prove it to you."
+    link_text = "Discover more"
+    link_url = "https://www.vanlog.it"
+
+[params.services]
+    enable = true
+    
+[params.projects]
+    enable = true
+    title = "Our projects"
+    
 
 [params.testimonials]
-    enable = true
+    enable = false
     # All testimonials are defined in their own files. You can find example items
     # at 'exampleSite/data/testimonials'.
     # For more informtion take a look at the README.
     title = "Testimonials"
     subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
-
-
 
 [params.clients]
     enable = true
@@ -193,7 +189,26 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     title = "Our Clients"
     subtitle = ""
 
+
+
+[params.see_more]
+    enable = true
+    icon = ""
+    title = "Temperature Fluctuation Paper"
+    subtitle = "This website is aimed at sharing all the materials related to the paper ”How does the temperature vary over time? Evidence on the stationary and fractal nature of temperature fluctuations”, by J.K. Dagsvik, M. Fortuna and S.H. Moen  "
+    link_url = "https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557"
+    link_text = "Read the paper"
+    
+    
+[params.features]
+    enable = true
+    title = "Temperature paper materials"
+    # All features are defined in their own files. You can find example items
+    # at 'exampleSite/data/features'.
+    # For more informtion take a look at the README.  
+    
 [params.recent_posts]
     enable = true
     title = "Reproducible research"
     subtitle = "This section contains all the results and appendix of the Temperature paper, together with the code that generated them. See the results, read the code, and, if you want, download the materials and reproduce everything by yourself"
+

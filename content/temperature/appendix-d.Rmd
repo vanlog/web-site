@@ -397,7 +397,7 @@ par(mfrow=c(2, 2))
 
 
 ```{r FD3. Printing, out.width = "70%"}
-include_graphics("/img/temperature/FD3_Qstat_distribution_Hw.png")
+# include_graphics("/img/temperature/FD3_Qstat_distribution_Hw.png")
 ```
 
 Figure D3 shows that Q is approximately normally distributed when H = 0.8 whereas the distribution becomes skew to the right when H = 0.9. (similar to a stable distribution that is totally skew to the right) 

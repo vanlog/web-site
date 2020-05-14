@@ -11,7 +11,7 @@
                 <p class="lead">{{ .Site.Params.see_more.subtitle | markdownify }}</p>
                 <p class="text-center">
                     {{ with .Site.Params.see_more.link_url }}
-                    <a href="{{ . }}" class="btn btn-template-transparent-black btn-lg">
+                    <a href="{{ . }}" class="btn btn-template-main">
                     {{ end }}
                         {{ with .Site.Params.see_more.link_text }}
                         {{ . | markdownify }}

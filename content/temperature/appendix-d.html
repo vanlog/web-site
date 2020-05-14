@@ -20,8 +20,8 @@ tags:
 <p>Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.</p>
 
 <p><strong>Corresponding author:</strong></p>
-<p>John K. Dagsvik, E-mail: <a href="mailto:john.dagsvik@ssb.no">john.dagsvik@ssb.no</a></p>
-<p>Mariachiara Fortuna, E-mail: <a href="mailto:mariachiara.fortuna1@gmail.com">mariachiara.fortuna1@gmail.com</a> (reference for code and analysis)</p>
+<p>John K. Dagsvik, E-mail: <a href="mailto:john.dagsvik@ssb.no" class="email">john.dagsvik@ssb.no</a></p>
+<p>Mariachiara Fortuna, E-mail: <a href="mailto:mariachiara.fortuna1@gmail.com" class="email">mariachiara.fortuna1@gmail.com</a> (reference for code and analysis)</p>
 <pre class="r"><code>require(knitr)
 require(dplyr)
 require(ggplot2)
@@ -445,7 +445,6 @@ for (H in Hvec){
    fgtNormality(Yj=cumsum(Q_Stat), xmax=0.7, main=paste(&quot;- H = &quot;, H), cex.dots=1.5,
                      cex.axis=1,cex.main=1.2)$plot
   }</code></pre>
-<pre class="r"><code>include_graphics(&quot;/img/temperature/FD3_Qstat_distribution_Hw.png&quot;)</code></pre>
-<p><img src="/img/temperature/FD3_Qstat_distribution_Hw.png" width="70%" /></p>
+<pre class="r"><code># include_graphics(&quot;/img/temperature/FD3_Qstat_distribution_Hw.png&quot;)</code></pre>
 <p>Figure D3 shows that Q is approximately normally distributed when H = 0.8 whereas the distribution becomes skew to the right when H = 0.9. (similar to a stable distribution that is totally skew to the right)</p>
 </div>

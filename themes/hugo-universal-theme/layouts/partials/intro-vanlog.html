@@ -1,0 +1,25 @@
+
+<section class="bar background-gray no-mb color-black text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading text-center">
+                    <h2> {{ .Site.Params.intro.title | markdownify }} </h2>
+                </div>
+                <p class="lead">{{ .Site.Params.intro.text | markdownify }}</p>
+                <p class="text-center">
+                    {{ with .Site.Params.intro.link_url }}
+                    <a href="{{ . }}" class="btn btn-template-transparent-black btn-lg">
+                    {{ end }}
+                        {{ with .Site.Params.intro.link_text }}
+                        {{ . | markdownify }}
+                        {{ end }}
+                    {{ with .Site.Params.intro.link_url }}
+                    </a>
+                    {{ end }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /.bar -->

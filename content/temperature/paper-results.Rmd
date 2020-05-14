@@ -288,7 +288,7 @@ kable(monthly_Qt_sel, digits=3, align='c',
 ### Figure 1. Illustration of statistical self-similarity. Annual temperature for Paris
 
 ```{r F1. Printing, echo = F}
-include_graphics("/img/temperature/F1.Self-similarity yearly monthly data.png")
+# include_graphics("/img/temperature/F1.Self-similarity yearly monthly data.png")
 ```
 
 ***
@@ -324,16 +324,16 @@ for (j in 1:njs){
 
 
 ```{r F2. Printing page 1, echo = F, fig.height=4}
-include_graphics("/img/temperature/F2_SelfSim_Norm_test_1.pdf")
+# include_graphics("/img/temperature/F2_SelfSim_Norm_test_1.pdf")
 ```
 
 ```{r F2. Printing page 2, echo = F}
-include_graphics("/img/temperature/F2_SelfSim_Norm_test_1.pdf")
+# include_graphics("/img/temperature/F2_SelfSim_Norm_test_1.pdf")
 ```
 
 
 ```{r F2. Printing page 3, echo = F}
-include_graphics("/img/temperature/F2_SelfSim_Norm_test_1.pdf")
+# include_graphics("/img/temperature/F2_SelfSim_Norm_test_1.pdf")
 ```
 
 ***
@@ -351,15 +351,15 @@ for (H in c(0.7, 0.8, 0.9)){
 ```
 
 ```{r F3.1, echo = F}
-include_graphics("/img/temperature/F3_simulations_H_0.7.pdf")
+# include_graphics("/img/temperature/F3_simulations_H_0.7.pdf")
 ```
 
 ```{r F3.2, echo = F}
-include_graphics("/img/temperature/F3_simulations_H_0.8.pdf")
+# include_graphics("/img/temperature/F3_simulations_H_0.8.pdf")
 ```
 
 ```{r F3.3, echo = F}
-include_graphics("/img/temperature/F3_simulations_H_0.9.pdf")
+# include_graphics("/img/temperature/F3_simulations_H_0.9.pdf")
 ```
 
 
@@ -375,7 +375,7 @@ temperaturePlot(Xj = Xj_m, Year = Year_m,
 
 
 ```{r F4, echo = F}
-include_graphics("/img/temperature/F4_moberg_timeseries.png")
+# include_graphics("/img/temperature/F4_moberg_timeseries.png")
 ```
 
 
@@ -393,7 +393,7 @@ fgtSelfSim(Yj = Yj_m, maxd=20,
 
 
 ```{r F5a, echo = F}
-include_graphics("/img/temperature/F5a_moberg_SStest.pdf")
+# include_graphics("/img/temperature/F5a_moberg_SStest.pdf")
 ```
 
 
@@ -403,7 +403,7 @@ fgtNormality(Yj = Yj_m, cex.dots=1, cex.axis=1, cex.main=1)$plot
 
 
 ```{r F5b, echo = F}
-include_graphics("/img/temperature/F5b_moberg_Ntest.pdf")
+# include_graphics("/img/temperature/F5b_moberg_Ntest.pdf")
 ```
 
 ***
@@ -484,5 +484,5 @@ unbiased_autocorr_tbl_long <- unbiased_autocorr_tbl %>%
 
 
 ```{r F6, out.width = "80%", echo = F}
-include_graphics("/img/temperature/F6_Moberg_autocorrelation.png")
+# include_graphics("/img/temperature/F6_Moberg_autocorrelation.png")
 ```
