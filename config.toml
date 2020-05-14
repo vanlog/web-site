@@ -165,14 +165,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     link_text = "Discover more"
     link_url = "https://www.vanlog.it"
 
-
-
-[params.features]
+[params.services]
     enable = true
-    title = "Temperature paper materials"
-    # All features are defined in their own files. You can find example items
-    # at 'exampleSite/data/features'.
-    # For more informtion take a look at the README.
 
 [params.testimonials]
     enable = true
@@ -182,8 +176,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     title = "Testimonials"
     subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
 
-
-
 [params.clients]
     enable = true
     # All clients are defined in their own files. You can find example items
@@ -192,10 +184,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     title = "Our Clients"
     subtitle = ""
 
-[params.recent_posts]
-    enable = true
-    title = "Reproducible research"
-    subtitle = "This section contains all the results and appendix of the Temperature paper, together with the code that generated them. See the results, read the code, and, if you want, download the materials and reproduce everything by yourself"
 
 
 [params.see_more]
@@ -205,3 +193,17 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     subtitle = "This website is aimed at sharing all the materials related to the paper ”How does the temperature vary over time? Evidence on the stationary and fractal nature of temperature fluctuations”, by J.K. Dagsvik, M. Fortuna and S.H. Moen  "
     link_url = "https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557"
     link_text = "Read the paper"
+    
+    
+[params.features]
+    enable = true
+    title = "Temperature paper materials"
+    # All features are defined in their own files. You can find example items
+    # at 'exampleSite/data/features'.
+    # For more informtion take a look at the README.  
+    
+[params.recent_posts]
+    enable = true
+    title = "Reproducible research"
+    subtitle = "This section contains all the results and appendix of the Temperature paper, together with the code that generated them. See the results, read the code, and, if you want, download the materials and reproduce everything by yourself"
+
