@@ -152,21 +152,16 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     tags = true
     search = true
 
-
-[params.see_more]
-    enable = true
-    icon = ""
-    title = "Temperature Fluctuation Paper"
-    subtitle = "This website is aimed at sharing all the materials related to the paper ”How does the temperature vary over time? Evidence on the stationary and fractal nature of temperature fluctuations”, by J.K. Dagsvik, M. Fortuna and S.H. Moen  "
-    link_url = "https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557"
-    link_text = "Read the paper"
-
-
 [params.carousel]
     enable = true
     # All carousel items are defined in their own files. You can find example items
     # at 'exampleSite/data/carousel'.
     # For more informtion take a look at the README.
+
+[params.intro]
+    enable = true
+
+
 
 [params.features]
     enable = true
@@ -197,3 +192,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     enable = true
     title = "Reproducible research"
     subtitle = "This section contains all the results and appendix of the Temperature paper, together with the code that generated them. See the results, read the code, and, if you want, download the materials and reproduce everything by yourself"
+
+
+[params.see_more]
+    enable = true
+    icon = ""
+    title = "Temperature Fluctuation Paper"
+    subtitle = "This website is aimed at sharing all the materials related to the paper ”How does the temperature vary over time? Evidence on the stationary and fractal nature of temperature fluctuations”, by J.K. Dagsvik, M. Fortuna and S.H. Moen  "
+    link_url = "https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557"
+    link_text = "Read the paper"

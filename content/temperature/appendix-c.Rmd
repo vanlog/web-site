@@ -516,8 +516,11 @@ H_comparison_tbl_long %>%
        x = "")
 ```
 
+<img alt = 'my new screenshot' width='80%' src='/img/temperature/FC1_H_wavelet_whittle_plot.png' />
+
+
 ```{r, echo = F,  out.width = "80%"}
-include_graphics("/img/temperature/FC1_H_wavelet_whittle_plot.png")
+#include_graphics("/img/temperature/FC1_H_wavelet_whittle_plot.png")
 ```
 
 
