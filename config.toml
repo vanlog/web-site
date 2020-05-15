@@ -161,12 +161,28 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [params.intro]
     enable = true
     title = "Who is Vanlog?"
-    text = "Vanlog is a group of data scientists born around a common goal: bringing the power of data everywhere, to small and medium businesses, public entities, research institutions. In 2020, you don't have to be Facebook or Netflix to enhance the value of your data. Our bet is to prove it to you."
-    link_text = "Discover more"
+    text = """ <p class="lead"> Vanlog is a group of data scientists born around a common goal: <strong>bringing the power of data everywhere</strong>
+        <br> to small and medium businesses, public entities, research institutions.
+        <br> In 2020, you don't have to be Facebook or Netflix to enhance the value of your data. 
+        Our bet is to prove it to you.
+        </p>
+        
+        <p class="lead"> We believe in <strong>open source solutions</strong> : 
+        open source packages incorporate the frontier research at a rate that close softwares cannot keep. 
+        Furthermore, they do not have licensing costs, and can be affordable for everyone.
+        <br> We specializes in <strong> R </strong>, the open source programming language for statistical solutions. 
+        </p>
+        
+        <p class="lead"> During the last years we have worked with <strong>multinational corporations, startups, universities, media agencies, institutions. </strong> 
+        If you want a showcase of our works, <a href = "https://www.vanlog.it"> write us a line. <a>
+        
+        """
+    link_text = "Discover more"    
     link_url = "https://www.vanlog.it"
 
 [params.services]
     enable = true
+    title = "Our services"
     
 [params.projects]
     enable = true
@@ -182,7 +198,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
 
 [params.clients]
-    enable = true
+    enable = false
     # All clients are defined in their own files. You can find example items
     # at 'exampleSite/data/clients'.
     # For more informtion take a look at the README.
