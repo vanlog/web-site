@@ -133,7 +133,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
         </p>
         
         <p class="lead"> During the last years we have worked with <strong>multinational corporations, startups, universities, media agencies, institutions. </strong> 
-        If you want a showcase of our works, <a href = "./contact"> write us a line. <a>
+        If you want a showcase of our works, <a href = "./contact"> <strong> write us a line. </strong> <a>
         
         """
     link_text = "Discover more"    
