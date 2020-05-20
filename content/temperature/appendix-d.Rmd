@@ -27,14 +27,14 @@ Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.
 
 John K. Dagsvik, E-mail: john.dagsvik@ssb.no
 
-Mariachiara Fortuna, E-mail: mariachiara.fortuna1@gmail.com (reference for code and analysis)
+Mariachiara Fortuna, E-mail: mariachiara.fortuna@vanlog.it (reference for code and analysis)
 
 
 
 
 ```{r global options, echo=F}
 knitr::opts_chunk$set(
-  echo = TRUE, # Set to TRUE for pdf with code
+  echo = FALSE, # Set to TRUE for pdf with code
   message=FALSE,
   warning = FALSE)
 longrun <- FALSE
@@ -47,6 +47,7 @@ require(knitr)
 require(dplyr)
 require(ggplot2)
 require(tidyr)
+library(kableExtra)
 # require(tempFGN)
 
 ```
@@ -95,7 +96,7 @@ Yj_m <- cumsum(Zj_m)
 ```
 
 
-## Table D1, D2, D3. Tables D1, D2, D3. Properties of different estimators of the FGN model. Bootstrap simulations
+## Table D1, D2, D3. Properties of different estimators of the FGN model. Bootstrap simulations
 
 
 The following tables show the results of the bootstrap simultations for different estimators of $\mu$, $\sigma$, $H$ and $\alpha$, given the FGN model with H equal to 0.7, 0.8, 0.9, 0.95.
@@ -222,10 +223,13 @@ TD1b <- data.frame(
 
 kable(TD1a, digits=3, align='c', escape = F,
       col.names = c("H", "$\\mu_c$", "$SE(\\mu_c)$",
-                    "$\\mu_{ML}$", "$SE(\\mu_{ML})$"))
+                    "$\\mu_{ML}$", "$SE(\\mu_{ML})$"))%>%
+  kable_styling()
+
 kable(TD1b, digits=3, align='c', escape = F,
       col.names = c("H", "$\\sigma_c$", "$SE(\\sigma_c)$",
-                    "$\\sigma_{ML}$", "$SE(\\sigma_{ML})$"))
+                    "$\\sigma_{ML}$", "$SE(\\sigma_{ML})$")) %>%
+  kable_styling()
 ```
 
 The results in Table D1 show that the standard errors of the respective estimators for the mean increase substantially when H increases. Also the estimators for $\sigma$ become severely downward biased.
@@ -252,7 +256,8 @@ TD2 <- data.frame(
 
 kable(TD2, digits=3, align='c', escape = F,
       col.names = c("H", "$H_c$", "$SE(H_c)$",
-                    "$H_{ML}$", "$SE(H_{ML})$"))
+                    "$H_{ML}$", "$SE(H_{ML})$")) %>%
+  kable_styling()
 ```
 
 Table D2 shows that the characteristic function estimator becomes downward biased as H increases. 
@@ -275,7 +280,8 @@ TD3 <- data.frame(
 # rownames(TD3) <- TD123.bootsMuSigmaEstim[,1]
 
 kable(TD3, digits=3, align='c', escape = F,
-      col.names = c("H", "$\\alpha_c$", "$SE(\\alpha_c)$"))
+      col.names = c("H", "$\\alpha_c$", "$SE(\\alpha_c)$")) %>%
+  kable_styling()
 ```
 
 The results in Table D3 show that the characteristic function estimator in this case performs very well at any level of H.
@@ -394,10 +400,7 @@ par(mfrow=c(2, 2))
 
 ```
 
+<img width='70%' src='/img/temperature/FD3_Qstat_distribution_Hw.png' />
 
-
-```{r FD3. Printing, out.width = "70%"}
-# include_graphics("/img/temperature/FD3_Qstat_distribution_Hw.png")
-```
 
 Figure D3 shows that Q is approximately normally distributed when H = 0.8 whereas the distribution becomes skew to the right when H = 0.9. (similar to a stable distribution that is totally skew to the right) 

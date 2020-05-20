@@ -1,10 +1,10 @@
 ---
 banner: img/banners/banner-1.jpg
-title: Paper Results
+title: Temperature fluctuation paper - Main Results
 author: 'Mariachiara Fortuna'
-date: '2020-04-17'
+date: '2020-05-17'
 slug: paper-results
-summary: This section contains all the results included in the Temperature paper, along with the code that generated them
+summary: This section contains all the results included in the Temperature fluctuations paper
 categories: 
   - research
 tags: 
@@ -39,7 +39,7 @@ Mariachiara Fortuna, E-mail: mariachiara.fortuna@vanlog.it (reference for code a
 
 ```{r global options, echo=F}
 knitr::opts_chunk$set(
-  echo = T,
+  echo = FALSE,
   message=FALSE,
   warning = FALSE)
 longrun <- FALSE
@@ -53,6 +53,7 @@ library(knitr)
 library(dplyr)
 library(tidyr)
 library(ggplot2)
+library(kableExtra)
 ```
 
 ```{r path building, eval = F}
@@ -237,7 +238,8 @@ T1_ext <- read.csv("./tbl/T1ext_selected_parameters_estimation.csv",
 ```{r T1. Reading}
 kable(T1_ext, digits=3, align='c', escape = T,
       col.names = c("City", "H_c", "SE(H_c)", "H_w", "SE(H_w)",
-                    "Ann. H_c", "Ann. H_w", "Ann. SE(H_w)"))
+                    "Ann. H_c", "Ann. H_w", "Ann. SE(H_w)")) %>%
+  kable_styling()
 ```
 
 
@@ -276,7 +278,8 @@ monthly_Qt_sel <- read.csv("./tbl/T2_monthly_Qt_sel.csv")
 
 ```{r T2. Selected Chi square test reading}
 kable(monthly_Qt_sel, digits=3, align='c',
-      col.names = c("City", "$Q(H_c)$", "$Q(H_w)$"))
+      col.names = c("City", "$Q(H_c)$", "$Q(H_w)$")) %>%
+  kable_styling()
 ```
 
 
@@ -287,9 +290,7 @@ kable(monthly_Qt_sel, digits=3, align='c',
 
 ### Figure 1. Illustration of statistical self-similarity. Annual temperature for Paris
 
-```{r F1. Printing, echo = F}
-# include_graphics("/img/temperature/F1.Self-similarity yearly monthly data.png")
-```
+<embed src="/img/temperature/F1.Self-similarity yearly monthly data.png" width="70%"/>
 
 ***
 
@@ -321,20 +322,7 @@ for (j in 1:njs){
                cex.axis=1, cex.main=1.2)}
 ```
 
-
-
-```{r F2. Printing page 1, echo = F, fig.height=4}
-# include_graphics("/img/temperature/F2_SelfSim_Norm_test_1.pdf")
-```
-
-```{r F2. Printing page 2, echo = F}
-# include_graphics("/img/temperature/F2_SelfSim_Norm_test_1.pdf")
-```
-
-
-```{r F2. Printing page 3, echo = F}
-# include_graphics("/img/temperature/F2_SelfSim_Norm_test_1.pdf")
-```
+<embed src="/img/temperature/F2_selected_SS_N_test_plot.pdf" width="70%" height="775" />
 
 ***
 
@@ -350,17 +338,7 @@ for (H in c(0.7, 0.8, 0.9)){
 }
 ```
 
-```{r F3.1, echo = F}
-# include_graphics("/img/temperature/F3_simulations_H_0.7.pdf")
-```
-
-```{r F3.2, echo = F}
-# include_graphics("/img/temperature/F3_simulations_H_0.8.pdf")
-```
-
-```{r F3.3, echo = F}
-# include_graphics("/img/temperature/F3_simulations_H_0.9.pdf")
-```
+<embed src="/img/temperature/F3_FGN_simulation.pdf" width="70%" height="775" />
 
 
 ***
@@ -378,6 +356,7 @@ temperaturePlot(Xj = Xj_m, Year = Year_m,
 # include_graphics("/img/temperature/F4_moberg_timeseries.png")
 ```
 
+<embed src="/img/temperature/F4_moberg_timeseries.png" width="70%" />
 
 ***
 
@@ -396,15 +375,14 @@ fgtSelfSim(Yj = Yj_m, maxd=20,
 # include_graphics("/img/temperature/F5a_moberg_SStest.pdf")
 ```
 
+<embed src="/img/temperature/F5a_moberg_SStest.pdf" width="70%" height="375" />
 
 ```{r F5b. Moberg N plot, eval = F}
 fgtNormality(Yj = Yj_m, cex.dots=1, cex.axis=1, cex.main=1)$plot
 ```
 
 
-```{r F5b, echo = F}
-# include_graphics("/img/temperature/F5b_moberg_Ntest.pdf")
-```
+<embed src="/img/temperature/F5b_moberg_Ntest.pdf" width="70%" height="375" />
 
 ***
 
@@ -483,6 +461,4 @@ unbiased_autocorr_tbl_long <- unbiased_autocorr_tbl %>%
 ```
 
 
-```{r F6, out.width = "80%", echo = F}
-# include_graphics("/img/temperature/F6_Moberg_autocorrelation.png")
-```
+<embed src="/img/temperature/F6_Moberg_autocorrelation.png" width="70%" />

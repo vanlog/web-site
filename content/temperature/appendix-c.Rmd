@@ -1,8 +1,9 @@
 ---
 title: Appendix C - Estimation and test results
 author: 'Mariachiara Fortuna'
-date: '2020-04-23'
+date: '2020-05-01'
 slug: appendix-b-d
+summary: H estimation by Whittle and Wavelet estimators. Chi square statistics and stationarity tests  
 categories: 
   - research
 tags: 
@@ -28,14 +29,14 @@ Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.
 
 John K. Dagsvik, E-mail: john.dagsvik@ssb.no
 
-Mariachiara Fortuna, E-mail: mariachiara.fortuna1@gmail.com (reference for code and analysis)
+Mariachiara Fortuna, E-mail: mariachiara.fortuna@vanlog.it (reference for code and analysis)
 
 
 
 
 ```{r global options, echo=F}
 knitr::opts_chunk$set(
-  echo = TRUE, # Set to TRUE for pdf with code
+  echo = FALSE, # Set to TRUE for pdf with code
   message=FALSE,
   warning = FALSE)
 longrun <- FALSE
@@ -48,6 +49,7 @@ require(knitr)
 require(dplyr)
 require(ggplot2)
 require(tidyr)
+library(kableExtra)
 # require(tempFGN)
 
 ```
@@ -97,8 +99,6 @@ Yj_m <- cumsum(Zj_m)
   
 
 
-# APPENDIX C - ESTIMATION AND TEST RESULTS
-
 
 ###  Table C1. Estimation results when using the characteristic function estimator and the Whittle method. Monthly data. 
 
@@ -141,7 +141,8 @@ Parameters <- read.csv("./tbl/TC1_monthly_H_all.csv")
 
 ```{r TC1 - H estimation with full monthly data printing}
 kable(Parameters, digits=3, align='c', escape = F,
-      col.names = c(" Weather station", "$H_c$", "$H_w$", "$SE(H_w)$"))
+      col.names = c(" Weather station", "$H_c$", "$H_w$", "$SE(H_w)$")) %>%
+  kable_styling()
 ```
 
 Due to the fact that the monthly time series are quite long, the estimates of the Hurst parameter are quite precise. From Table C1 we note that the difference between the characteristic function estimates and the Whittle estimates of the Hurst parameter are only significantly different in a few cases.
@@ -189,7 +190,8 @@ annual_Qt_all <- read.csv("./tbl/TC2_annual_Qt_all.csv")
 ```{r TC2. Annual Chi square test reading}
 kable(annual_Qt_all, digits=3, align='c', escape = F,
       col.names = c(" Weather station", "$H_c$", "$Q(H_c)$", 
-                    "$H_w$", "$SE(H_w)$", "$Q(H_w)$"))
+                    "$H_w$", "$SE(H_w)$", "$Q(H_w)$")) %>%
+  kable_styling()
 ```
 
 From the results in Table C2 we note that the estimates of the Hurst parameter based on annual data are, on average, higher than the corresponding estimates based on monthly data. Furthermore, we see that data from 9 weather stations reject the FGN hypothesis when using the characteristic function estimate of the Hurst parameter whereas data from 6 weather stations reject the FGN when using the Whittle estimate of the Hurst parameter.
@@ -235,7 +237,8 @@ moberg_estimates <- read.csv("./tbl/TC3_moberg_estimates.csv")
 moberg_estimates[,1] <- c("$\\mu$", "$\\sigma$", "$\\mu_c$", "$\\sigma_c$",
                    "$H_c$", "$H_w$", "$SE(H_w)$", "$Q(H_c)$",  "$Q(H_w)$")  
 kable(moberg_estimates, digits=3, align='c' , escape = F,
-      col.names = c("Parameters and statistics", "Value"))
+      col.names = c("Parameters and statistics", "Value")) %>%
+  kable_styling()
 ```
 
 The results of Table C3 show that the FGN model is rejected for the Moberg data when the respective estimated Hurst parameters are used.
@@ -265,7 +268,8 @@ moberg_Qt_grid <- read.csv("./tbl/TC4_moberg_Qt_grid.csv")
 
 ```{r TC4. Moberg grid reading}
 kable(moberg_Qt_grid, digits=3, align='c',
-      col.names = c("H", "Q(H)"))
+      col.names = c("H", "Q(H)")) %>%
+  kable_styling()
 ```
 
 The results of Table C4 shows that the power of the Q test is high (conditional on the FGN model). In particular, when H = 0.95 then Q(H) $\in$ (-1.96, 1.96) whereas when H equals 0.94 or 0.96 (or further away from 0.95) then Q(H) $\notin$ (-1.96, 1.96) which means rejection of FGN. 
@@ -317,7 +321,8 @@ Stationary_moberg$test.res <- replace(Stationary_moberg$test.res,
                                             "no rejection")
                             
 kable(Stationary_moberg, digits=3, align='c',
-      col.names = c( "Test statistic", "Test result", "Test criterion"))
+      col.names = c( "Test statistic", "Test result", "Test criterion")) %>%
+  kable_styling()
 ```
 
 
@@ -364,7 +369,8 @@ Stationary_moberg %>%
                          test.res == 1 ~ "rejection")) %>%
 kable(digits=3, align='c',
       col.names = c(" Weather station", "Test statistic", 
-                    "Test result", "Test criterion"))
+                    "Test result", "Test criterion")) %>%
+  kable_styling()
 ```
 
 
@@ -411,7 +417,8 @@ Stationarity_all %>%
                          test.res == 1 ~ "rejection")) %>%
 kable(digits=3, align='c',
       col.names = c(" Weather station", "Test statistic", "Test result", 
-                    "Test criterion"))
+                    "Test criterion")) %>%
+  kable_styling()
 ```
 
 
@@ -477,7 +484,8 @@ H_comparison_tbl <- read.csv("./tbl/TC8_monthly_all_H_wavelet.csv")
 H_comparison_tbl %>%
   select(stationame_all, Hl, Q_Hl) %>%
   kable(digits=3, align='c',
-      col.names = c("Weather station", "$H_{wav}$", "$Q(H_{wav})$"))
+      col.names = c("Weather station", "$H_{wav}$", "$Q(H_{wav})$")) %>%
+  kable_styling()
 ```
 
 
@@ -516,7 +524,7 @@ H_comparison_tbl_long %>%
        x = "")
 ```
 
-<img alt = 'my new screenshot' width='80%' src='/img/temperature/FC1_H_wavelet_whittle_plot.png' />
+<img width='80%' src='/img/temperature/FC1_H_wavelet_whittle_plot.png' />
 
 
 ```{r, echo = F,  out.width = "80%"}

@@ -6,10 +6,37 @@
     <description>Recent content on Temperature</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Temperature fluctuation paper - Main Results</title>
+      <link>/temperature/paper-results/</link>
+      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/temperature/paper-results/</guid>
+      <description>This section contains all the results included in the Temperature fluctuations paper</description>
+    </item>
+    
+    <item>
+      <title>Appendix B - Summary data information</title>
+      <link>/temperature/appendix-b/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/temperature/appendix-b/</guid>
+      <description>Information on the weather stations, lenght of the related time series and missing data</description>
+    </item>
+    
+    <item>
+      <title>Appendix C - Estimation and test results</title>
+      <link>/temperature/appendix-c/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/temperature/appendix-c/</guid>
+      <description>H estimation by Whittle and Wavelet estimators. Chi square statistics and stationarity tests</description>
+    </item>
     
     <item>
       <title>Appendix D - Properties of the estimators</title>
@@ -23,40 +50,8 @@ Mariachiara Fortuna, freelance statistician, Turin;
 Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.
 Corresponding author:
 John K. Dagsvik, E-mail: john.dagsvik@ssb.no
-Mariachiara Fortuna, E-mail: mariachiara.fortuna1@gmail.com (reference for code and analysis)
-require(knitr) require(dplyr) require(ggplot2) require(tidyr) # require(tempFGN) # DATA PATH data_final_path &amp;lt;- file.path(&amp;quot;data&amp;quot;,&amp;quot;final&amp;quot;) data_supporting_path &amp;lt;- file.path(&amp;quot;data&amp;quot;, &amp;quot;supporting&amp;quot;) data_moberg_path &amp;lt;- file.path(&amp;quot;data&amp;quot;, &amp;quot;moberg&amp;quot;) # OUTPUT PATH output_supporting_path &amp;lt;- file.path(&amp;quot;output&amp;quot;, &amp;quot;supporting&amp;quot;) output_table_path &amp;lt;- file.</description>
-    </item>
-    
-    <item>
-      <title>Appendix B - Summary data information</title>
-      <link>/temperature/appendix-b/</link>
-      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/temperature/appendix-b/</guid>
-      <description>Affiliations:
-John K. Dagsvik, Statistics Norway, Research Department;
-Mariachiara Fortuna, freelance statistician, Turin;
-Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.
-Corresponding author:
-John K. Dagsvik, E-mail: john.dagsvik@ssb.no
-Mariachiara Fortuna, E-mail: mariachiara.fortuna1@gmail.com (reference for code and analysis)
-require(knitr) require(dplyr) require(ggplot2) require(tidyr) # require(tempFGN) # DATA PATH data_final_path &amp;lt;- file.path(&amp;quot;data&amp;quot;,&amp;quot;final&amp;quot;) data_supporting_path &amp;lt;- file.path(&amp;quot;data&amp;quot;, &amp;quot;supporting&amp;quot;) data_moberg_path &amp;lt;- file.path(&amp;quot;data&amp;quot;, &amp;quot;moberg&amp;quot;) # OUTPUT PATH output_supporting_path &amp;lt;- file.path(&amp;quot;output&amp;quot;, &amp;quot;supporting&amp;quot;) output_table_path &amp;lt;- file.</description>
-    </item>
-    
-    <item>
-      <title>Appendix C - Estimation and test results</title>
-      <link>/temperature/appendix-c/</link>
-      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/temperature/appendix-c/</guid>
-      <description>Affiliations:
-John K. Dagsvik, Statistics Norway, Research Department;
-Mariachiara Fortuna, freelance statistician, Turin;
-Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.
-Corresponding author:
-John K. Dagsvik, E-mail: john.dagsvik@ssb.no
-Mariachiara Fortuna, E-mail: mariachiara.fortuna1@gmail.com (reference for code and analysis)
-require(knitr) require(dplyr) require(ggplot2) require(tidyr) # require(tempFGN) # DATA PATH data_final_path &amp;lt;- file.path(&amp;quot;data&amp;quot;,&amp;quot;final&amp;quot;) data_supporting_path &amp;lt;- file.path(&amp;quot;data&amp;quot;, &amp;quot;supporting&amp;quot;) data_moberg_path &amp;lt;- file.path(&amp;quot;data&amp;quot;, &amp;quot;moberg&amp;quot;) # OUTPUT PATH output_supporting_path &amp;lt;- file.path(&amp;quot;output&amp;quot;, &amp;quot;supporting&amp;quot;) output_table_path &amp;lt;- file.</description>
+Mariachiara Fortuna, E-mail: mariachiara.fortuna@vanlog.it (reference for code and analysis)
+Table D1, D2, D3. Properties of different estimators of the FGN model. Bootstrap simulations The following tables show the results of the bootstrap simultations for different estimators of \(\mu\), \(\sigma\), \(H\) and \(\alpha\), given the FGN model with H equal to 0.</description>
     </item>
     
     <item>
@@ -99,15 +94,6 @@ require(knitr) require(dplyr) require(ggplot2) require(tidyr) # require(tempFGN)
       <guid>/temperature/temperature-data/</guid>
       <description>Since the goal of this work was to study the temperatures fluctuations over time, we needed long temperatures time series, possibly for more than one weather station.
 We found a great solution in the data collected by Sigmund H. Moen, co-author of this paper and creator of the web page www.rimfrost.no, where most of the record are freely available. The data consist in a big amount of temperatures time series, certified by NASA, for more than 100 countries, giving a total of 1258 weather stations; the time series are available as yearly, monthly and even three-times-a-day observations, and the length of the time series may vary greatly from station to station: while some of them are less than ten years long, the longer time series, from the city of Upssala in Sweden, is 290 years long, with monthly data from 1722 to 2012, at the time were the data were collected.</description>
-    </item>
-    
-    <item>
-      <title>Paper Results</title>
-      <link>/temperature/paper-results/</link>
-      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/temperature/paper-results/</guid>
-      <description>This section contains all the results included in the Temperature paper, along with the code that generated them</description>
     </item>
     
     <item>

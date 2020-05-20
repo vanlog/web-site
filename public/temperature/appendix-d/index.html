@@ -207,6 +207,7 @@
 
                         <div id="post-content">
                           
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
 
 
 <p><strong>Affiliations:</strong></p>
@@ -216,116 +217,11 @@
 
 <p><strong>Corresponding author:</strong></p>
 <p>John K. Dagsvik, E-mail: <a href="mailto:john.dagsvik@ssb.no" class="email">john.dagsvik@ssb.no</a></p>
-<p>Mariachiara Fortuna, E-mail: <a href="mailto:mariachiara.fortuna1@gmail.com" class="email">mariachiara.fortuna1@gmail.com</a> (reference for code and analysis)</p>
-<pre class="r"><code>require(knitr)
-require(dplyr)
-require(ggplot2)
-require(tidyr)
-# require(tempFGN)</code></pre>
-<pre class="r"><code># DATA PATH
-data_final_path &lt;- file.path(&quot;data&quot;,&quot;final&quot;)
-data_supporting_path &lt;- file.path(&quot;data&quot;, &quot;supporting&quot;)
-data_moberg_path &lt;- file.path(&quot;data&quot;, &quot;moberg&quot;)
-
-# OUTPUT PATH
-output_supporting_path &lt;- file.path(&quot;output&quot;, &quot;supporting&quot;)
-output_table_path &lt;- file.path(&quot;output&quot;, &quot;table&quot;)
-output_figure_path &lt;- file.path(&quot;output&quot;, &quot;figure&quot;)
-output_temporary_path &lt;- file.path(&quot;output&quot;, &quot;temporary&quot;)
-output_manipuated_path &lt;- file.path(&quot;output&quot;, &quot;manipulated&quot;)</code></pre>
-<pre class="r"><code># ACCESS TO SELECTED TIME SERIES
-selected &lt;- read.csv(file.path(data_supporting_path, &quot;T0.SelInfo.csv&quot;), sep=&quot;;&quot;, dec=&quot;,&quot;)
-country_sel &lt;- selected$Country
-station_sel &lt;- selected$Station
-njs &lt;- nrow(selected)
-data_dir_sel &lt;- file.path(data_final_path, country_sel, paste0(station_sel, &quot;.txt&quot;))
-stationame_sel &lt;- paste0(country_sel,&quot;, &quot;,station_sel)
-
-# ACCESS TO ALL THE TIME SERIES
-all &lt;- read.csv(file.path(data_supporting_path, &quot;T0.TempInfo.csv&quot;), sep=&quot;;&quot;, dec=&quot;,&quot;)
-country_all &lt;- all$Country
-station_all &lt;- all$Station
-nja &lt;- nrow(all)
-data_dir_all &lt;- file.path(data_final_path, country_all, paste0(station_all, &quot;.txt&quot;))
-stationame_all &lt;- paste0(country_all,&quot;, &quot;,station_all)
-
-# ACCESS TO MOBERG DATA
-moberg &lt;- read.table(file.path(data_moberg_path, &quot;Moberg data.txt&quot;),
-                   header = T, na.strings = 99)
-Year_m &lt;- moberg[, 1]
-Xj_m &lt;- moberg[, 2]
-Zj_m &lt;- scale(Xj_m)
-Yj_m &lt;- cumsum(Zj_m)</code></pre>
-<div id="table-d1-d2-d3.-tables-d1-d2-d3.-properties-of-different-estimators-of-the-fgn-model.-bootstrap-simulations" class="section level2">
-<h2>Table D1, D2, D3. Tables D1, D2, D3. Properties of different estimators of the FGN model. Bootstrap simulations</h2>
+<p>Mariachiara Fortuna, E-mail: <a href="mailto:mariachiara.fortuna@vanlog.it" class="email">mariachiara.fortuna@vanlog.it</a> (reference for code and analysis)</p>
+<div id="table-d1-d2-d3.-properties-of-different-estimators-of-the-fgn-model.-bootstrap-simulations" class="section level2">
+<h2>Table D1, D2, D3. Properties of different estimators of the FGN model. Bootstrap simulations</h2>
 <p>The following tables show the results of the bootstrap simultations for different estimators of <span class="math inline">\(\mu\)</span>, <span class="math inline">\(\sigma\)</span>, <span class="math inline">\(H\)</span> and <span class="math inline">\(\alpha\)</span>, given the FGN model with H equal to 0.7, 0.8, 0.9, 0.95.</p>
 <p>Each bootstrap estimate is based on 1,000 simulated FGN series of length 2,000.</p>
-<pre class="r"><code>#--- 1. Parameters choice
-Hvec &lt;- c(0.7, 0.8, 0.9, 0.95)
-N &lt;- 1000
-Tlenght &lt;- 2000 
-estimator_names &lt;- c(&quot;Mu_c&quot;, &quot;Mu_ML&quot;, &quot;Sigma_c&quot;, &quot;Sigma_ML&quot;, &quot;H_c&quot;, &quot;H_ML&quot;, 
-                     &quot;Alpha_c&quot;, &quot;Q_Stat&quot;, &quot;Mean&quot;, &quot;Sd&quot;)
-
-start &lt;- Sys.time()
-
-#--- 2. Bootstrap estimation
-for (j in 1:4){
-          H &lt;- Hvec[j]
-          start &lt;- Sys.time()
-          print(paste0(&quot;----- H = &quot;, H, &quot; ----- &quot;, Sys.time()))
-          Parameters &lt;- matrix(0, nrow=N, ncol=10)
-          colnames(Parameters) &lt;- estimator_names
-          #--- 3a. Estimation for given H
-          for (i in 1:N){
-                         Zjsim &lt;- simFGN0(Tlenght, H)
-                         reg &lt;- estim.cf.reg(Yj=Zjsim, FBM=F)
-                         Hw &lt;- estim.w.H(Zjsim)
-                         mu_ML &lt;- FgnMean(Zjsim, H=Hw, sigma=1)
-                         Parameters[i,1] &lt;- estim.cf.mu(Zj=Zjsim)
-                         Parameters[i,2] &lt;- mu_ML
-                         Parameters[i,3] &lt;- reg[&quot;Sigma&quot;]
-                         Parameters[i,4] &lt;- FgnVar(Zjsim, mu_ML)
-                         Parameters[i,5] &lt;- reg[&quot;H&quot;]
-                         Parameters[i,6] &lt;- Hw
-                         Parameters[i,7] &lt;- estim.cf.alpha(Yj=Zjsim, FBM=T)
-                         Parameters[i,8] &lt;- Qstat(Zjsim, H=H, TT=Tlenght)
-                         Parameters[i,9] &lt;- mean(Zjsim)
-                         Parameters[i,10] &lt;- sd(Zjsim)
-          }
-          write.csv(Parameters, file.path(output_supporting_path, 
-                                paste0(&quot;TD1.2.3_Full_Estimator_Tab_H=&quot;, H,&quot;.csv&quot;))) 
-
-          print(Sys.time() - start)
-}</code></pre>
-<pre class="r"><code>#--- 1. Matrix building
-Hvec &lt;- c(0.7, 0.8, 0.9, 0.95)
-estimator_names &lt;- c(&quot;Mu_c&quot;, &quot;Mu_ML&quot;, &quot;Sigma_c&quot;, &quot;Sigma_ML&quot;, &quot;H_c&quot;, &quot;H_ML&quot;, 
-                     &quot;Alpha_c&quot;, &quot;Q_Stat&quot;)
-Boots_Estim &lt;- matrix(0, nrow=4, ncol=8)
- colnames(Boots_Estim) &lt;- estimator_names
- rownames(Boots_Estim) &lt;- Hvec
-Boots_SE &lt;- Boots_Estim
-
-# 2. Estimation computing 
-for (j in 1:4){ 
-      H &lt;- Hvec[j]
-      Parameters &lt;- read.csv(file.path(output_supporting_path, 
-                                paste0(&quot;TD1.2.3_Full_Estimator_Tab_H=&quot;, H,&quot;.csv&quot;)))[,2:9]  
-                 estim &lt;- apply(Parameters, 2, mean)
-                 SE &lt;- apply(Parameters, 2, sd)
-                 Boots_Estim[j,] &lt;- estim
-                 Boots_SE[j,] &lt;- SE
-      }
-  
-
-Boots_Estim &lt;- as.data.frame(Boots_Estim)
-Boots_SE &lt;- as.data.frame(Boots_SE)
-
-write.csv(Boots_Estim, file.path(output_supporting_path, 
-                                &quot;TD1.2.3_properties_boots_estim.csv&quot;)) 
-write.csv(Boots_SE, file.path(output_supporting_path, 
-                                &quot;TD1.2.3_properties_boots_SE.csv&quot;)) </code></pre>
 <div id="table-d1.-results-of-the-bootstrap-simulations-for-estimators-of-mu-and-sigma" class="section level3">
 <h3>Table D1. Results of the bootstrap simulations for estimators of <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span></h3>
 <ul>
@@ -334,108 +230,185 @@ write.csv(Boots_SE, file.path(output_supporting_path,
 <li><p><em><span class="math inline">\(\sigma_c\)</span></em> is the characteristic function estimator for the standard deviation, and <em><span class="math inline">\(SE(\sigma_{ML})\)</span></em> is its bootstrap standard error</p></li>
 <li><p><em><span class="math inline">\(\sigma_{ML}\)</span></em> is the maximum likelihood estimator for the standard deviation, and <em><span class="math inline">\(SE(\sigma_{ML})\)</span></em> is its bootstrap standard error</p></li>
 </ul>
-<pre class="r"><code>TD1a &lt;- data.frame(
-  H = Boots_Estim[,1],
-  Mu_c = Boots_Estim$Mu_c,
-  Mu_c_SE = Boots_Estim$Mu_c,
-  Mu_ML = Boots_Estim$Mu_ML,
-  Mu_ML_SE = Boots_Estim$Mu_ML
-  )
-
-TD1b &lt;- data.frame(
-  H = Boots_Estim[,1],
-  Sigma_c = Boots_Estim$Sigma_c,
-  Sigma_c_SE = Boots_SE$Sigma_c,
-  Sigma_ML = Boots_Estim$Sigma_ML,
-  Sigma_ML_SE = Boots_SE$Sigma_ML
-  )
-
-
-kable(TD1a, digits=3, align=&#39;c&#39;, escape = F,
-      col.names = c(&quot;H&quot;, &quot;$\\mu_c$&quot;, &quot;$SE(\\mu_c)$&quot;,
-                    &quot;$\\mu_{ML}$&quot;, &quot;$SE(\\mu_{ML})$&quot;))</code></pre>
-<table>
+<table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
-<tr class="header">
-<th align="center">H</th>
-<th align="center"><span class="math inline">\(\mu_c\)</span></th>
-<th align="center"><span class="math inline">\(SE(\mu_c)\)</span></th>
-<th align="center"><span class="math inline">\(\mu_{ML}\)</span></th>
-<th align="center"><span class="math inline">\(SE(\mu_{ML})\)</span></th>
+<tr>
+<th style="text-align:center;">
+H
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(\mu_c\)</span>
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(SE(\mu_c)\)</span>
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(\mu_{ML}\)</span>
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(SE(\mu_{ML})\)</span>
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="center">0.70</td>
-<td align="center">0.002</td>
-<td align="center">0.002</td>
-<td align="center">0.002</td>
-<td align="center">0.002</td>
+<tr>
+<td style="text-align:center;">
+0.70
+</td>
+<td style="text-align:center;">
+0.002
+</td>
+<td style="text-align:center;">
+0.002
+</td>
+<td style="text-align:center;">
+0.002
+</td>
+<td style="text-align:center;">
+0.002
+</td>
 </tr>
-<tr class="even">
-<td align="center">0.80</td>
-<td align="center">-0.001</td>
-<td align="center">-0.001</td>
-<td align="center">-0.001</td>
-<td align="center">-0.001</td>
+<tr>
+<td style="text-align:center;">
+0.80
+</td>
+<td style="text-align:center;">
+-0.001
+</td>
+<td style="text-align:center;">
+-0.001
+</td>
+<td style="text-align:center;">
+-0.001
+</td>
+<td style="text-align:center;">
+-0.001
+</td>
 </tr>
-<tr class="odd">
-<td align="center">0.90</td>
-<td align="center">-0.012</td>
-<td align="center">-0.012</td>
-<td align="center">-0.011</td>
-<td align="center">-0.011</td>
+<tr>
+<td style="text-align:center;">
+0.90
+</td>
+<td style="text-align:center;">
+-0.012
+</td>
+<td style="text-align:center;">
+-0.012
+</td>
+<td style="text-align:center;">
+-0.011
+</td>
+<td style="text-align:center;">
+-0.011
+</td>
 </tr>
-<tr class="even">
-<td align="center">0.95</td>
-<td align="center">-0.024</td>
-<td align="center">-0.024</td>
-<td align="center">-0.021</td>
-<td align="center">-0.021</td>
+<tr>
+<td style="text-align:center;">
+0.95
+</td>
+<td style="text-align:center;">
+-0.024
+</td>
+<td style="text-align:center;">
+-0.024
+</td>
+<td style="text-align:center;">
+-0.021
+</td>
+<td style="text-align:center;">
+-0.021
+</td>
 </tr>
 </tbody>
 </table>
-<pre class="r"><code>kable(TD1b, digits=3, align=&#39;c&#39;, escape = F,
-      col.names = c(&quot;H&quot;, &quot;$\\sigma_c$&quot;, &quot;$SE(\\sigma_c)$&quot;,
-                    &quot;$\\sigma_{ML}$&quot;, &quot;$SE(\\sigma_{ML})$&quot;))</code></pre>
-<table>
+<table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
-<tr class="header">
-<th align="center">H</th>
-<th align="center"><span class="math inline">\(\sigma_c\)</span></th>
-<th align="center"><span class="math inline">\(SE(\sigma_c)\)</span></th>
-<th align="center"><span class="math inline">\(\sigma_{ML}\)</span></th>
-<th align="center"><span class="math inline">\(SE(\sigma_{ML})\)</span></th>
+<tr>
+<th style="text-align:center;">
+H
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(\sigma_c\)</span>
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(SE(\sigma_c)\)</span>
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(\sigma_{ML}\)</span>
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(SE(\sigma_{ML})\)</span>
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="center">0.70</td>
-<td align="center">0.994</td>
-<td align="center">0.039</td>
-<td align="center">0.990</td>
-<td align="center">0.039</td>
+<tr>
+<td style="text-align:center;">
+0.70
+</td>
+<td style="text-align:center;">
+0.994
+</td>
+<td style="text-align:center;">
+0.039
+</td>
+<td style="text-align:center;">
+0.990
+</td>
+<td style="text-align:center;">
+0.039
+</td>
 </tr>
-<tr class="even">
-<td align="center">0.80</td>
-<td align="center">0.956</td>
-<td align="center">0.053</td>
-<td align="center">0.950</td>
-<td align="center">0.056</td>
+<tr>
+<td style="text-align:center;">
+0.80
+</td>
+<td style="text-align:center;">
+0.956
+</td>
+<td style="text-align:center;">
+0.053
+</td>
+<td style="text-align:center;">
+0.950
+</td>
+<td style="text-align:center;">
+0.056
+</td>
 </tr>
-<tr class="odd">
-<td align="center">0.90</td>
-<td align="center">0.793</td>
-<td align="center">0.080</td>
-<td align="center">0.789</td>
-<td align="center">0.086</td>
+<tr>
+<td style="text-align:center;">
+0.90
+</td>
+<td style="text-align:center;">
+0.793
+</td>
+<td style="text-align:center;">
+0.080
+</td>
+<td style="text-align:center;">
+0.789
+</td>
+<td style="text-align:center;">
+0.086
+</td>
 </tr>
-<tr class="even">
-<td align="center">0.95</td>
-<td align="center">0.535</td>
-<td align="center">0.073</td>
-<td align="center">0.534</td>
-<td align="center">0.077</td>
+<tr>
+<td style="text-align:center;">
+0.95
+</td>
+<td style="text-align:center;">
+0.535
+</td>
+<td style="text-align:center;">
+0.073
+</td>
+<td style="text-align:center;">
+0.534
+</td>
+<td style="text-align:center;">
+0.077
+</td>
 </tr>
 </tbody>
 </table>
@@ -448,58 +421,94 @@ kable(TD1a, digits=3, align=&#39;c&#39;, escape = F,
 <li><p><span class="math inline">\(H_c\)</span> is the characteristic function estimator for the H parameter, and <span class="math inline">\(SE(H_c)\)</span> is its bootstrap standard error</p></li>
 <li><p><em><span class="math inline">\(H_w\)</span></em> is the Whittle estimator for the the H parameter, and <em><span class="math inline">\(SE(\mu_{ML})\)</span></em> is its bootstrap standard error</p></li>
 </ul>
-<pre class="r"><code>#=== TD2 READING and BUILDING 
-
-TD2 &lt;- data.frame(
-  H = Boots_Estim[,1],
-  H_c = Boots_Estim$H_c,
-  H_c_SE = Boots_SE$H_c,
-  H_ML = Boots_Estim$H_ML,
-  H_ML_SE = Boots_SE$H_ML
-  )
-
-
-kable(TD2, digits=3, align=&#39;c&#39;, escape = F,
-      col.names = c(&quot;H&quot;, &quot;$H_c$&quot;, &quot;$SE(H_c)$&quot;,
-                    &quot;$H_{ML}$&quot;, &quot;$SE(H_{ML})$&quot;))</code></pre>
-<table>
+<table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
-<tr class="header">
-<th align="center">H</th>
-<th align="center"><span class="math inline">\(H_c\)</span></th>
-<th align="center"><span class="math inline">\(SE(H_c)\)</span></th>
-<th align="center"><span class="math inline">\(H_{ML}\)</span></th>
-<th align="center"><span class="math inline">\(SE(H_{ML})\)</span></th>
+<tr>
+<th style="text-align:center;">
+H
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(H_c\)</span>
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(SE(H_c)\)</span>
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(H_{ML}\)</span>
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(SE(H_{ML})\)</span>
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="center">0.70</td>
-<td align="center">0.693</td>
-<td align="center">0.019</td>
-<td align="center">0.700</td>
-<td align="center">0.015</td>
+<tr>
+<td style="text-align:center;">
+0.70
+</td>
+<td style="text-align:center;">
+0.693
+</td>
+<td style="text-align:center;">
+0.019
+</td>
+<td style="text-align:center;">
+0.700
+</td>
+<td style="text-align:center;">
+0.015
+</td>
 </tr>
-<tr class="even">
-<td align="center">0.80</td>
-<td align="center">0.781</td>
-<td align="center">0.021</td>
-<td align="center">0.799</td>
-<td align="center">0.015</td>
+<tr>
+<td style="text-align:center;">
+0.80
+</td>
+<td style="text-align:center;">
+0.781
+</td>
+<td style="text-align:center;">
+0.021
+</td>
+<td style="text-align:center;">
+0.799
+</td>
+<td style="text-align:center;">
+0.015
+</td>
 </tr>
-<tr class="odd">
-<td align="center">0.90</td>
-<td align="center">0.860</td>
-<td align="center">0.023</td>
-<td align="center">0.899</td>
-<td align="center">0.015</td>
+<tr>
+<td style="text-align:center;">
+0.90
+</td>
+<td style="text-align:center;">
+0.860
+</td>
+<td style="text-align:center;">
+0.023
+</td>
+<td style="text-align:center;">
+0.899
+</td>
+<td style="text-align:center;">
+0.015
+</td>
 </tr>
-<tr class="even">
-<td align="center">0.95</td>
-<td align="center">0.891</td>
-<td align="center">0.021</td>
-<td align="center">0.947</td>
-<td align="center">0.014</td>
+<tr>
+<td style="text-align:center;">
+0.95
+</td>
+<td style="text-align:center;">
+0.891
+</td>
+<td style="text-align:center;">
+0.021
+</td>
+<td style="text-align:center;">
+0.947
+</td>
+<td style="text-align:center;">
+0.014
+</td>
 </tr>
 </tbody>
 </table>
@@ -509,46 +518,64 @@ kable(TD2, digits=3, align=&#39;c&#39;, escape = F,
 <div id="table-d3.-bootstrap-simulations-results-for-the-alpha-parameter-of-the-stable-distribution" class="section level3">
 <h3>Table D3. Bootstrap simulations results for the <span class="math inline">\(\alpha\)</span> parameter of the stable distribution</h3>
 <p><em><span class="math inline">\(\alpha_c\)</span></em> is the characteristic function estimator for the <span class="math inline">\(\alpha\)</span> parameter, and <em><span class="math inline">\(SE(\alpha_c)\)</span></em> is its bootstrap standard error</p>
-<pre class="r"><code>#=== TD3 READING and BUILDING 
-
-TD3 &lt;- data.frame(
-  H = Boots_Estim[,1],
-  Alpha_c = Boots_Estim$Alpha_c,
-  Alpha_c_SE = Boots_SE$Alpha_c
-  )
-
-# rownames(TD3) &lt;- TD123.bootsMuSigmaEstim[,1]
-
-kable(TD3, digits=3, align=&#39;c&#39;, escape = F,
-      col.names = c(&quot;H&quot;, &quot;$\\alpha_c$&quot;, &quot;$SE(\\alpha_c)$&quot;))</code></pre>
-<table>
+<table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
-<tr class="header">
-<th align="center">H</th>
-<th align="center"><span class="math inline">\(\alpha_c\)</span></th>
-<th align="center"><span class="math inline">\(SE(\alpha_c)\)</span></th>
+<tr>
+<th style="text-align:center;">
+H
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(\alpha_c\)</span>
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(SE(\alpha_c)\)</span>
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="center">0.70</td>
-<td align="center">2</td>
-<td align="center">0.003</td>
+<tr>
+<td style="text-align:center;">
+0.70
+</td>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+0.003
+</td>
 </tr>
-<tr class="even">
-<td align="center">0.80</td>
-<td align="center">2</td>
-<td align="center">0.002</td>
+<tr>
+<td style="text-align:center;">
+0.80
+</td>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+0.002
+</td>
 </tr>
-<tr class="odd">
-<td align="center">0.90</td>
-<td align="center">2</td>
-<td align="center">0.001</td>
+<tr>
+<td style="text-align:center;">
+0.90
+</td>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+0.001
+</td>
 </tr>
-<tr class="even">
-<td align="center">0.95</td>
-<td align="center">2</td>
-<td align="center">0.001</td>
+<tr>
+<td style="text-align:center;">
+0.95
+</td>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+0.001
+</td>
 </tr>
 </tbody>
 </table>
@@ -559,39 +586,8 @@ kable(TD3, digits=3, align=&#39;c&#39;, escape = F,
 <div id="figure-d1-and-d2.-graphical-test-of-asymptotic-normality-of-the-characteristic-function-estimators" class="section level2">
 <h2>Figure D1 and D2. Graphical test of asymptotic normality of the characteristic function estimators</h2>
 <p>Bootstrap estimates based on 1,000 simulated FGN series of length 2,000.</p>
-<pre class="r"><code># 3x3 plot matrix
-
-par(mfrow=c(3, 3))
-# Testing for different H values
-  for(H in c(0.7, 0.8, 0.9)){
-    # Data reading: estimators value during bootstrap simulations
-    Parameters &lt;- read.csv(file.path(output_supporting_path, 
-                                paste0(&quot;TD1.2.3_Full_Estimator_Tab_H=&quot;, H,&quot;.csv&quot;)))
-    # Q-qplot
-    qqnorm(Parameters$mu_c, main=paste(&quot;Mu qqplot - H =&quot;, H))
-    qqnorm(Parameters$Sigma_c, main=paste(&quot;Sigma qqplot - H =&quot;, H))
-    qqnorm(Parameters$H_c, main=paste(&quot;H qqplot - H =&quot;, H))
-  }
-dev.off()</code></pre>
 <embed src="/img/temperature/FD1_estimators_qqplot.pdf" width="70%" height="775" type="application/pdf" />
 <hr />
-<pre class="r"><code>par(mfrow=c(3, 3))
-# Testing for different H values
-for(H in c(0.7, 0.8, 0.9)){
-  # Data reading: estimators value during bootstrap simulations
-  Parameters &lt;- read.csv(file.path(output_supporting_path, 
-                                   paste0(&quot;TD1.2.3_Full_Estimator_Tab_H=&quot;, H,&quot;.csv&quot;)))
-  # Histograms
-  hist(Parameters$Mu_c, breaks = 25, col =&quot;black&quot;, 
-       main=paste(&quot;Mu distribution - H =&quot;, H), xlab=NULL) 
-  abline(v=0, col=2)
-  hist(Parameters$Sigma_c, breaks = 25, col =&quot;black&quot;, 
-       main=paste(&quot;Sigma distribution - H =&quot;, H), xlab=NULL)
-  abline(v=1, col=2)
-  hist(Parameters$H_c, breaks = 25, col =&quot;black&quot;, 
-       main=paste(&quot;H distribution - H =&quot;, H), xlab=NULL)
-  abline(v=H, col=2)
-}</code></pre>
 <embed src="/img/temperature/FD2_estimators_hist.pdf" width="70%" height="775" type="application/pdf" />
 <hr />
 </div>
@@ -599,48 +595,8 @@ for(H in c(0.7, 0.8, 0.9)){
 <h2>Figure D3. Graphical test of the distribution of the Chi-Square statistics Q when estimated H values are inserted</h2>
 <p>Bootstrap estimates based on 1,000 simulated FGN series of length 2,000.</p>
 <p>H estimated by the Whittle method.</p>
-<pre class="r"><code>#--- 1. Parameters choice
-Hvec &lt;- c(0.8, 0.9)
-N &lt;- 1000
-Tlenght &lt;- 2000 
-estimator_names &lt;- c(&quot;Hw&quot;, &quot;Q.Hw&quot;)
 
-start &lt;- Sys.time()
-
-#--- 2. Bootstrap estimation
-for (H in Hvec){
-          start &lt;- Sys.time()
-          print(paste0(&quot;----- H = &quot;, H, &quot; ----- &quot;, Sys.time()))
-          Parameters &lt;- matrix(0, nrow=N, ncol=2)
-          colnames(Parameters) &lt;- estimator_names
-          #--- 3a. Estimation for given H
-          for (i in 1:N){
-                         Zjsim &lt;- simFGN0(Tlenght, H)
-                         Hw &lt;- estim.w.H(Zjsim)
-                         mu_ML &lt;- FgnMean(Zjsim, H=Hw, sigma=1)
-                         Parameters[i,1] &lt;- Hw
-                         Parameters[i,2] &lt;- Qstat(Zjsim, H=Hw, TT=Tlenght)
-          }
-          write.csv(Parameters, file.path(output_supporting_path, 
-                                paste0(&quot;FD3_Q.Hw_Estimation_H=&quot;, H,&quot;.csv&quot;))) 
-
-          print(Sys.time() - start)
-}</code></pre>
-
-<pre class="r"><code>par(mfrow=c(2, 2))
-# Testing for different H values
-  for(H in c(0.8, 0.9)){ 
-    # Data reading: estimators value during bootstrap simulations
-    Q_Stat &lt;- read.csv(file.path(output_supporting_path, 
-                                paste0(&quot;FD3_Q.Hw_Estimation_H=&quot;, H,&quot;.csv&quot;)))$Q.Hw
-    # Q-qplot
-   hist(Q_Stat, breaks = 100, col =&quot;black&quot;, 
-        main=paste(&quot;Q distribution - H =&quot;, H), xlab=NULL)    
-   abline(v=0, col=2)
-   fgtNormality(Yj=cumsum(Q_Stat), xmax=0.7, main=paste(&quot;- H = &quot;, H), cex.dots=1.5,
-                     cex.axis=1,cex.main=1.2)$plot
-  }</code></pre>
-<pre class="r"><code># include_graphics(&quot;/img/temperature/FD3_Qstat_distribution_Hw.png&quot;)</code></pre>
+<p><img width='70%' src='/img/temperature/FD3_Qstat_distribution_Hw.png' /></p>
 <p>Figure D3 shows that Q is approximately normally distributed when H = 0.8 whereas the distribution becomes skew to the right when H = 0.9. (similar to a stable distribution that is totally skew to the right)</p>
 </div>
 
