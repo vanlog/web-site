@@ -192,6 +192,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     
 [params.recent_posts]
     enable = true
-    title = "Reproducible results"
-    subtitle = "This section contains all the results and appendix of the Temperature paper, together with the code that generated them. See the results, read the code, and, if you want, download the materials and reproduce everything by yourself"
+    title = "Results"
+    subtitle = "This section contains all the results and the appendices of the Temperature fluctuations paper. All the results may be reproduced via their free code and data, see above sections Data and Code"
 

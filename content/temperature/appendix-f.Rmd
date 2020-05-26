@@ -1,4 +1,5 @@
 ---
+banner: img/temperature/banner_F_selection.png
 title: Appendix F - Selection procedure
 author: 'Mariachiara Fortuna'
 date: '2020-04-23'

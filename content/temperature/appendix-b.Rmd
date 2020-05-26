@@ -1,4 +1,5 @@
 ---
+banner: img/temperature/banner_B_datainfo.png
 title: Appendix B - Summary data information
 author: 'Mariachiara Fortuna'
 date: '2020-05-06'

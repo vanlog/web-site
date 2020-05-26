@@ -1,9 +1,10 @@
 ---
+banner: img/temperature/banner_C_tests.png
 title: Appendix C - Estimation and test results
 author: 'Mariachiara Fortuna'
 date: '2020-05-01'
 slug: appendix-b-d
-summary: H estimation by Whittle and Wavelet estimators. Chi square statistics and stationarity tests  
+summary: H estimation by Whittle and Wavelet estimators. Chi square statistics and stationarity tests
 categories: 
   - research
 tags: 
