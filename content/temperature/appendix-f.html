@@ -13,6 +13,7 @@ tags:
   - R
 ---
 
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
 
 
 <p><strong>Affiliations:</strong></p>
@@ -23,8 +24,1060 @@ tags:
 <p><strong>Corresponding author:</strong></p>
 <p>John K. Dagsvik, E-mail: <a href="mailto:john.dagsvik@ssb.no" class="email">john.dagsvik@ssb.no</a></p>
 <p>Mariachiara Fortuna, E-mail: <a href="mailto:mariachiara.fortuna1@gmail.com" class="email">mariachiara.fortuna1@gmail.com</a> (reference for code and analysis)</p>
-<pre class="r"><code>require(knitr)
-require(dplyr)
-require(ggplot2)
-require(tidyr)
-# require(tempFGN)</code></pre>
+<hr />
+<div id="raw-data-organization" class="section level2">
+<h2>Raw data organization</h2>
+<p>The data used in this project were collected by <strong>Sigmund Hov Moen</strong>, and are available in the <strong>Rimfrost system</strong>, <a href="http://www.rimfrost.no/">www.rimfrost.no</a>.</p>
+<p>They consist of a large amount of monthly and annual temperature time series from all around the world.</p>
+<p>The raw data, as organized in the Rimfrost system, are collected in the folder “data/raw”.</p>
+<p>The “data/raw” folder contains 101 subfolders named with the English or the Norwegian name of the countries included in the Rimfrost system.</p>
+<p>Each country folder contains the temperature time series for each weather station included in the Rimfrost system.</p>
+</div>
+<div id="data-structure" class="section level2">
+<h2>Data structure</h2>
+<p>Each time series is collected in a separate txt file, usually named with the Norwegian name of the weather station.</p>
+<p>Each file is structured as follow:</p>
+<ul>
+<li><p>Column 1: <strong>Year</strong></p></li>
+<li><p>Columns 2-13: <strong>Monthly temperatures</strong> in that year, from January to December</p></li>
+<li><p>Column 14: <strong>Average annual temperature</strong>, measured as mean of the monthly temperarures for that year</p></li>
+</ul>
+<p>There are no column names, and the missing data are usually recorded with the string <em>99</em> (but several exceptions are present).</p>
+<p>As an example, these are the first six rows of the <em>Paris.txt</em> file.</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+V1
+</th>
+<th style="text-align:right;">
+V2
+</th>
+<th style="text-align:right;">
+V3
+</th>
+<th style="text-align:right;">
+V4
+</th>
+<th style="text-align:right;">
+V5
+</th>
+<th style="text-align:right;">
+V6
+</th>
+<th style="text-align:right;">
+V7
+</th>
+<th style="text-align:right;">
+V8
+</th>
+<th style="text-align:right;">
+V9
+</th>
+<th style="text-align:right;">
+V10
+</th>
+<th style="text-align:right;">
+V11
+</th>
+<th style="text-align:right;">
+V12
+</th>
+<th style="text-align:right;">
+V13
+</th>
+<th style="text-align:right;">
+V14
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1757
+</td>
+<td style="text-align:right;">
+-0.33
+</td>
+<td style="text-align:right;">
+3.73
+</td>
+<td style="text-align:right;">
+6.03
+</td>
+<td style="text-align:right;">
+11.23
+</td>
+<td style="text-align:right;">
+14.53
+</td>
+<td style="text-align:right;">
+19.03
+</td>
+<td style="text-align:right;">
+24.63
+</td>
+<td style="text-align:right;">
+19.63
+</td>
+<td style="text-align:right;">
+16.23
+</td>
+<td style="text-align:right;">
+8.23
+</td>
+<td style="text-align:right;">
+9.03
+</td>
+<td style="text-align:right;">
+0.43
+</td>
+<td style="text-align:right;">
+11.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1758
+</td>
+<td style="text-align:right;">
+1.63
+</td>
+<td style="text-align:right;">
+3.93
+</td>
+<td style="text-align:right;">
+7.93
+</td>
+<td style="text-align:right;">
+10.03
+</td>
+<td style="text-align:right;">
+18.53
+</td>
+<td style="text-align:right;">
+20.33
+</td>
+<td style="text-align:right;">
+17.93
+</td>
+<td style="text-align:right;">
+20.83
+</td>
+<td style="text-align:right;">
+15.43
+</td>
+<td style="text-align:right;">
+9.83
+</td>
+<td style="text-align:right;">
+5.63
+</td>
+<td style="text-align:right;">
+3.13
+</td>
+<td style="text-align:right;">
+11.3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1759
+</td>
+<td style="text-align:right;">
+4.53
+</td>
+<td style="text-align:right;">
+6.03
+</td>
+<td style="text-align:right;">
+7.33
+</td>
+<td style="text-align:right;">
+11.73
+</td>
+<td style="text-align:right;">
+15.33
+</td>
+<td style="text-align:right;">
+19.43
+</td>
+<td style="text-align:right;">
+23.93
+</td>
+<td style="text-align:right;">
+20.43
+</td>
+<td style="text-align:right;">
+17.73
+</td>
+<td style="text-align:right;">
+12.63
+</td>
+<td style="text-align:right;">
+3.73
+</td>
+<td style="text-align:right;">
+3.13
+</td>
+<td style="text-align:right;">
+12.2
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1760
+</td>
+<td style="text-align:right;">
+0.23
+</td>
+<td style="text-align:right;">
+3.63
+</td>
+<td style="text-align:right;">
+6.63
+</td>
+<td style="text-align:right;">
+12.33
+</td>
+<td style="text-align:right;">
+16.03
+</td>
+<td style="text-align:right;">
+20.03
+</td>
+<td style="text-align:right;">
+21.63
+</td>
+<td style="text-align:right;">
+19.73
+</td>
+<td style="text-align:right;">
+18.73
+</td>
+<td style="text-align:right;">
+11.83
+</td>
+<td style="text-align:right;">
+7.53
+</td>
+<td style="text-align:right;">
+1.43
+</td>
+<td style="text-align:right;">
+11.6
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1761
+</td>
+<td style="text-align:right;">
+1.83
+</td>
+<td style="text-align:right;">
+6.33
+</td>
+<td style="text-align:right;">
+8.73
+</td>
+<td style="text-align:right;">
+10.83
+</td>
+<td style="text-align:right;">
+16.33
+</td>
+<td style="text-align:right;">
+19.53
+</td>
+<td style="text-align:right;">
+21.43
+</td>
+<td style="text-align:right;">
+21.93
+</td>
+<td style="text-align:right;">
+18.33
+</td>
+<td style="text-align:right;">
+10.43
+</td>
+<td style="text-align:right;">
+5.63
+</td>
+<td style="text-align:right;">
+6.43
+</td>
+<td style="text-align:right;">
+12.3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1762
+</td>
+<td style="text-align:right;">
+4.93
+</td>
+<td style="text-align:right;">
+4.03
+</td>
+<td style="text-align:right;">
+4.03
+</td>
+<td style="text-align:right;">
+13.83
+</td>
+<td style="text-align:right;">
+17.33
+</td>
+<td style="text-align:right;">
+19.93
+</td>
+<td style="text-align:right;">
+23.33
+</td>
+<td style="text-align:right;">
+19.63
+</td>
+<td style="text-align:right;">
+16.83
+</td>
+<td style="text-align:right;">
+9.83
+</td>
+<td style="text-align:right;">
+5.83
+</td>
+<td style="text-align:right;">
+2.63
+</td>
+<td style="text-align:right;">
+11.8
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="main-features-of-the-raw-data" class="section level2">
+<h2>Main features of the raw data</h2>
+<p>In order to select the set of suitable time series and explore their main features, we first provide a preliminary table with useful information (<em>T0_Information</em>). This table contains general information about all the available time series, namely:</p>
+<ul>
+<li><p><strong>Country</strong> and <strong>Station</strong> name for each time series</p></li>
+<li><p>Its <strong>Status</strong>. The Status variable provides the results of some validation checks about the data format. “OK” means that the time series passed the checks, “ERROR” means that it did not pass the checks (eg the file has a wrong number of columns)</p></li>
+<li><p><strong>From</strong> and <strong>To</strong> show the first and the last year of the recorded time series</p></li>
+<li><p><strong>Length</strong> shows the length in years of the time series</p></li>
+<li><p><strong>Missing</strong> shows the number of missing annual average temperature. NA means <em>Not Available</em></p></li>
+</ul>
+<p>As an example, consider the first 20 rows of the <em>T0_Information</em> table:</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Country
+</th>
+<th style="text-align:left;">
+Station
+</th>
+<th style="text-align:left;">
+Status
+</th>
+<th style="text-align:right;">
+From
+</th>
+<th style="text-align:right;">
+To
+</th>
+<th style="text-align:right;">
+Length
+</th>
+<th style="text-align:right;">
+Missing
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+afganistan
+</td>
+<td style="text-align:left;">
+herat
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1963
+</td>
+<td style="text-align:right;">
+1990
+</td>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:right;">
+16
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+afganistan
+</td>
+<td style="text-align:left;">
+kabul
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1961
+</td>
+<td style="text-align:right;">
+1992
+</td>
+<td style="text-align:right;">
+32
+</td>
+<td style="text-align:right;">
+12
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+afganistan
+</td>
+<td style="text-align:left;">
+mazar_i_sharif
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1964
+</td>
+<td style="text-align:right;">
+1992
+</td>
+<td style="text-align:right;">
+29
+</td>
+<td style="text-align:right;">
+11
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+algerie
+</td>
+<td style="text-align:left;">
+adrar
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1965
+</td>
+<td style="text-align:right;">
+2011
+</td>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+algerie
+</td>
+<td style="text-align:left;">
+alger_dar_elbeida
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1923
+</td>
+<td style="text-align:right;">
+2011
+</td>
+<td style="text-align:right;">
+89
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+algerie
+</td>
+<td style="text-align:left;">
+beni_abbes
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1931
+</td>
+<td style="text-align:right;">
+2011
+</td>
+<td style="text-align:right;">
+81
+</td>
+<td style="text-align:right;">
+25
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+algerie
+</td>
+<td style="text-align:left;">
+constantine
+</td>
+<td style="text-align:left;">
+ERROR
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+algerie
+</td>
+<td style="text-align:left;">
+el_golea
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1930
+</td>
+<td style="text-align:right;">
+2011
+</td>
+<td style="text-align:right;">
+82
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+algerie
+</td>
+<td style="text-align:left;">
+in_amenas
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1963
+</td>
+<td style="text-align:right;">
+2011
+</td>
+<td style="text-align:right;">
+49
+</td>
+<td style="text-align:right;">
+8
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+algerie
+</td>
+<td style="text-align:left;">
+in_salah
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1964
+</td>
+<td style="text-align:right;">
+2011
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+algerie
+</td>
+<td style="text-align:left;">
+oran
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1908
+</td>
+<td style="text-align:right;">
+2011
+</td>
+<td style="text-align:right;">
+104
+</td>
+<td style="text-align:right;">
+12
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+algerie
+</td>
+<td style="text-align:left;">
+tamanrasset
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1940
+</td>
+<td style="text-align:right;">
+2011
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+alpene
+</td>
+<td style="text-align:left;">
+andermatt
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1966
+</td>
+<td style="text-align:right;">
+2006
+</td>
+<td style="text-align:right;">
+41
+</td>
+<td style="text-align:right;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+alpene
+</td>
+<td style="text-align:left;">
+basel
+</td>
+<td style="text-align:left;">
+ERROR
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+alpene
+</td>
+<td style="text-align:left;">
+davos
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1901
+</td>
+<td style="text-align:right;">
+2006
+</td>
+<td style="text-align:right;">
+106
+</td>
+<td style="text-align:right;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+alpene
+</td>
+<td style="text-align:left;">
+engelberg
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1931
+</td>
+<td style="text-align:right;">
+2006
+</td>
+<td style="text-align:right;">
+76
+</td>
+<td style="text-align:right;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+alpene
+</td>
+<td style="text-align:left;">
+geneve_ecad
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1901
+</td>
+<td style="text-align:right;">
+2009
+</td>
+<td style="text-align:right;">
+109
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+alpene
+</td>
+<td style="text-align:left;">
+geneve
+</td>
+<td style="text-align:left;">
+ERROR
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+alpene
+</td>
+<td style="text-align:left;">
+graz
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1894
+</td>
+<td style="text-align:right;">
+2009
+</td>
+<td style="text-align:right;">
+116
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+alpene
+</td>
+<td style="text-align:left;">
+hohenpeissenberg
+</td>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+1781
+</td>
+<td style="text-align:right;">
+2009
+</td>
+<td style="text-align:right;">
+229
+</td>
+<td style="text-align:right;">
+2
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="raw-data-basic-exploration" class="section level2">
+<h2>Raw data basic exploration</h2>
+<p>The total number of availbale time series is <strong>1260</strong>.</p>
+<p>The table below provides a summary of the information given about each recorded variable:</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Status
+</th>
+<th style="text-align:left;">
+From
+</th>
+<th style="text-align:left;">
+To
+</th>
+<th style="text-align:left;">
+Length
+</th>
+<th style="text-align:left;">
+Missing
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+ERROR: 225
+</td>
+<td style="text-align:left;">
+Min. :1701
+</td>
+<td style="text-align:left;">
+Min. :1869
+</td>
+<td style="text-align:left;">
+Min. : 5.00
+</td>
+<td style="text-align:left;">
+Min. : 0.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+OK :1035
+</td>
+<td style="text-align:left;">
+1st Qu.:1890
+</td>
+<td style="text-align:left;">
+1st Qu.:2009
+</td>
+<td style="text-align:left;">
+1st Qu.: 61.00
+</td>
+<td style="text-align:left;">
+1st Qu.: 1.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+Median :1925
+</td>
+<td style="text-align:left;">
+Median :2011
+</td>
+<td style="text-align:left;">
+Median : 84.00
+</td>
+<td style="text-align:left;">
+Median : 2.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+Mean :1917
+</td>
+<td style="text-align:left;">
+Mean :2008
+</td>
+<td style="text-align:left;">
+Mean : 92.28
+</td>
+<td style="text-align:left;">
+Mean : 5.57
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+3rd Qu.:1949
+</td>
+<td style="text-align:left;">
+3rd Qu.:2012
+</td>
+<td style="text-align:left;">
+3rd Qu.:122.00
+</td>
+<td style="text-align:left;">
+3rd Qu.: 6.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+Max. :2002
+</td>
+<td style="text-align:left;">
+Max. :2012
+</td>
+<td style="text-align:left;">
+Max. :312.00
+</td>
+<td style="text-align:left;">
+Max. :104.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA’s :225
+</td>
+<td style="text-align:left;">
+NA’s :228
+</td>
+<td style="text-align:left;">
+NA’s :225
+</td>
+<td style="text-align:left;">
+NA’s :225
+</td>
+</tr>
+</tbody>
+</table>
+<p>The following graph shows all the available time series, sorted by first recorded year. The green dot represents the first recorded year, while the purple dot represents the last recorded year. The grey segment represents the length of the time series.</p>
+<div class="figure"><span id="fig:ts-lollipop"></span>
+<img src="/temperature/appendix-f_files/figure-html/ts-lollipop-1.png" alt="\label{fig:ts-lollipop} Time series plot" width="60%" />
+<p class="caption">
+Figure 1:  Time series plot
+</p>
+</div>
+<hr />
+</div>
+<div id="selection-process" class="section level1">
+<h1>SELECTION PROCESS</h1>
+<p>Given the wide variety of properties of the available time series, we decided to apply a multi-step automatic selection procedure to obtain a subset of series with specific characteristics.</p>
+<p>In any case, the full set of available time series (1260) is contained in the data/raw folder, and can be analyzed with the provided code.</p>
+<div id="multi-step-automatic-process" class="section level2">
+<h2>Multi-step automatic process</h2>
+<p>Briefly, the multi-step process was designed as follow:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Step 1 - Valid structure</strong>: selection of the time series with valid data structure</p></li>
+<li><p><strong>Step 2 - Length in years</strong>: selection of the time series with more than 105 recorded years</p></li>
+<li><p><strong>Step 3 - Recorded months</strong>: selection of the time series with more than 1280 recorded months (non missing)</p></li>
+<li><p><strong>Step 4 - Missing months</strong>: selection of the time series with less than 80 missing months</p></li>
+<li><p><strong>Step 5 - Length in months</strong>: selection of the time series with full monthly length not inferior to 1290 months</p></li>
+</ol>
+<div id="step-1---selection-by-valid-structure" class="section level3">
+<h3>Step 1 - Selection by valid structure</h3>
+<p>Using the information table previusly built (<em>T0_Information</em>), we selected all the time series with the variable <em>Status</em> equal to <em>OK</em>.</p>
+<p>Here the results of the selection procedure for valid structure (step 1):</p>
+<pre><code>##  Cleaning data - Step : 1 
+##  ************************************ 
+##  1035 accepted time series over 1260 
+##  Current step acceptance rate : 82.14 % 
+##  Loss from step 1: 17.86 %</code></pre>
+</div>
+<div id="step-2---selection-by-length-years" class="section level3">
+<h3>Step 2 - Selection by length (years)</h3>
+<p>The second step of our selection procedure was to identify all the time series that had more than 106 recorded years.</p>
+<p>The results of the second step of the selection procedure follows here:</p>
+<pre><code>##  Cleaning data - Step : 2 
+##  ************************************ 
+##  376 accepted time series over 1035 
+##  Current step acceptance rate : 36.33 % 
+##  Loss from step 1: 70.16 %</code></pre>
+<p>At this point, our subset consists of 376 weather stations.</p>
+</div>
+<div id="information-table-2---monthly-information" class="section level3">
+<h3>Information table 2 - Monthly information</h3>
+<p>In order to apply step 3-5 of the selection procedure, we need to gather information about the data at a monthly level.</p>
+<p>We then built a second information table, with the following fields:</p>
+<ul>
+<li><p><strong>Country</strong> and <strong>Station</strong> name for each time series</p></li>
+<li><p><strong>First_Year</strong> and <strong>First_Year</strong>, first and the last year of the recorded time series</p></li>
+<li><p><strong>Years</strong>, length in years of the time series</p></li>
+<li><p><strong>Months</strong>, number of available months (non missing)</p></li>
+<li><p><strong>Full_Length</strong>, number of months between the first recorded month and the last one.</p></li>
+<li><p><strong>Missing_M</strong>, number of missing months</p></li>
+</ul>
+</div>
+</div>
+</div>
