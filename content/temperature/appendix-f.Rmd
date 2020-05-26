@@ -346,7 +346,7 @@ knitr::knit_exit()
 
 
 
-```{r T02_Information2 building}
+```{r T02_Information2 building, eval = F}
 station_path <- file.path(data_raw_path, T0.2_Ylength$Country,
                           T0.2_Ylength$Station) %>%
   paste0(".txt")
