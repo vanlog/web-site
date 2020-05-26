@@ -125,16 +125,21 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [params.intro]
     enable = true
     title = "Who is Vanlog?"
-    text = """ <p class="lead"> Vanlog is a group of data scientists born around a common goal: <strong>bringing the power of data everywhere</strong>
-        <br> to small and medium businesses, public entities, research institutions.
-        <br> In 2020, you don't have to be Facebook or Netflix to enhance the value of your data. 
+    text = """ <p class="lead"> Vanlog is a collective of data scientists with a common goal: <strong>to bring the power of data everywhere.</strong>
+        <br> We provide small and medium businesses, public entities and research institutions with accurate analysis of raw data 
+        <br>along with powerful tools to understand reality by custom visualizations, mathematical models and automated systems.
+        <br> In 2020, you don't have to be Facebook or Netflix to unleash the value of your data. 
         Our bet is to prove it to you.
         </p>
         
-        <p class="lead"> We believe in <strong>open source solutions</strong> : 
-        open source packages incorporate the frontier research at a rate that close softwares cannot keep. 
-        Furthermore, they do not have licensing costs, and can be affordable for everyone.
-        <br> We specializes in <strong> R </strong>, the open source programming language for statistical solutions. 
+        <p class="lead"> We guide and support our customers through the <strong> whole process that lead to a data-driven solution</strong>, 
+        <br> from the definition of the business problem and the data audit, to the release of the final solution. 
+        <br> We support the data culture development through consultancy and training of new and existing data science teams.  
+        </p>
+        
+        <p class="lead"> From a technical point of view we believe in <strong>open source solutions</strong>: 
+        open source packages incorporate the frontier research at a rate that close softwares cannot keep at a lower cost. 
+        <br> While we specialize in the programming language R, our analysis and full-stack solutions are offered with Python and GNU/Linux as well, automated with the modern “DevOps” best practices.
         </p>
         
         <p class="lead"> During the last years we have worked with <strong>multinational corporations, startups, universities, media agencies, institutions. </strong> 
