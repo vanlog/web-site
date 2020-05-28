@@ -23,7 +23,7 @@ tags:
 
 <p><strong>Corresponding author:</strong></p>
 <p>John K. Dagsvik, E-mail: <a href="mailto:john.dagsvik@ssb.no" class="email">john.dagsvik@ssb.no</a></p>
-<p>Mariachiara Fortuna, E-mail: <a href="mailto:mariachiara.fortuna1@gmail.com" class="email">mariachiara.fortuna1@gmail.com</a> (reference for code and analysis)</p>
+<p>Mariachiara Fortuna, E-mail: <a href="mailto:mariachiara.fortuna@vanlog.it" class="email">mariachiara.fortuna@vanlog.it</a> (reference for code and analysis)</p>
 <hr />
 <div id="raw-data-organization" class="section level2">
 <h2>Raw data organization</h2>
@@ -1078,6 +1078,251 @@ Figure 1:  Time series plot
 <li><p><strong>Full_Length</strong>, number of months between the first recorded month and the last one.</p></li>
 <li><p><strong>Missing_M</strong>, number of missing months</p></li>
 </ul>
+<p>As an example, consider the the first 10 rows of the <em>T02_Information2</em> table:</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Country
+</th>
+<th style="text-align:left;">
+Station
+</th>
+<th style="text-align:right;">
+First_Year
+</th>
+<th style="text-align:right;">
+Last_Year
+</th>
+<th style="text-align:right;">
+Years
+</th>
+<th style="text-align:right;">
+Months
+</th>
+<th style="text-align:right;">
+Full_Lenght
+</th>
+<th style="text-align:right;">
+Missing_M
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+alpene
+</td>
+<td style="text-align:left;">
+geneve_ecad
+</td>
+<td style="text-align:right;">
+1901
+</td>
+<td style="text-align:right;">
+2009
+</td>
+<td style="text-align:right;">
+109
+</td>
+<td style="text-align:right;">
+1303
+</td>
+<td style="text-align:right;">
+1314
+</td>
+<td style="text-align:right;">
+11
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+alpene
+</td>
+<td style="text-align:left;">
+graz
+</td>
+<td style="text-align:right;">
+1894
+</td>
+<td style="text-align:right;">
+2009
+</td>
+<td style="text-align:right;">
+116
+</td>
+<td style="text-align:right;">
+1387
+</td>
+<td style="text-align:right;">
+1398
+</td>
+<td style="text-align:right;">
+11
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+alpene
+</td>
+<td style="text-align:left;">
+hohenpeissenberg
+</td>
+<td style="text-align:right;">
+1781
+</td>
+<td style="text-align:right;">
+2009
+</td>
+<td style="text-align:right;">
+229
+</td>
+<td style="text-align:right;">
+2741
+</td>
+<td style="text-align:right;">
+2754
+</td>
+<td style="text-align:right;">
+13
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+alpene
+</td>
+<td style="text-align:left;">
+innsbruck
+</td>
+<td style="text-align:right;">
+1877
+</td>
+<td style="text-align:right;">
+2009
+</td>
+<td style="text-align:right;">
+133
+</td>
+<td style="text-align:right;">
+1490
+</td>
+<td style="text-align:right;">
+1597
+</td>
+<td style="text-align:right;">
+107
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+alpene
+</td>
+<td style="text-align:left;">
+klagenfurt
+</td>
+<td style="text-align:right;">
+1881
+</td>
+<td style="text-align:right;">
+2009
+</td>
+<td style="text-align:right;">
+129
+</td>
+<td style="text-align:right;">
+1513
+</td>
+<td style="text-align:right;">
+1554
+</td>
+<td style="text-align:right;">
+41
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+alpene
+</td>
+<td style="text-align:left;">
+kremsmunster
+</td>
+<td style="text-align:right;">
+1876
+</td>
+<td style="text-align:right;">
+2009
+</td>
+<td style="text-align:right;">
+134
+</td>
+<td style="text-align:right;">
+1602
+</td>
+<td style="text-align:right;">
+1614
+</td>
+<td style="text-align:right;">
+12
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="step-3---selection-by-available-months" class="section level3">
+<h3>Step 3 - Selection by available months</h3>
+<p>We can now refine the selection procedure checking that the number of <em>non missing months</em> is superior to <em>1260</em>.</p>
+<p>Here the results of this selection step:</p>
+<pre><code>##  Cleaning data - Step : 3 
+##  ************************************ 
+##  329 accepted time series over 376 
+##  Current step acceptance rate : 87.5 % 
+##  Loss from step 1: 73.89 %</code></pre>
+</div>
+<div id="step-4---selection-by-missing-months" class="section level3">
+<h3>Step 4 - Selection by missing months</h3>
+<p>We can now exclude all the time series with number of <em>missing months</em> above <em>80</em>.</p>
+<p>Recall that the previous step was about non missing months: in this step we are avoiding time series that (although long), contain so many “holes” that they might compromise the data quality.</p>
+<p>Here the results of this selection step:</p>
+<pre><code>##  Cleaning data - Step : 3 
+##  ************************************ 
+##  278 accepted time series over 329 
+##  Current step acceptance rate : 84.5 % 
+##  Loss from step 1: 77.94 %</code></pre>
+</div>
+<div id="step-5---length-in-months" class="section level3">
+<h3>Step 5 - Length in months</h3>
+<p>The last step of the selection procedure is to check if the total length of the time series (from the first recorded month to the last one, missing included) is not inferior to 1290.</p>
+<p>Above the results:</p>
+<pre><code>##  Cleaning data - Step : 5 
+##  ************************************ 
+##  277 accepted time series over 278 
+##  Current step acceptance rate : 99.64 % 
+##  Loss from step 1: 78.02 %</code></pre>
+<p>At this point we have a subset of 277 waether stations, characterized by a valid data structure and a length and presence of missing observation below specific thresholds.</p>
+</div>
+</div>
+<div id="final-selection" class="section level2">
+<h2>Final selection</h2>
+<p>In order to select the final set of weather stations we proceded by manual inspection of all the time series.</p>
+<p>We excluded all the time series with substantial quality problems, such as those with extreme outliers and several consecutive missing over time intervals.</p>
+<p>In the final selection we tried as much as possible to select weather stations that were distributed across most parts of the world.</p>
+<!--- 
+### Consecutive missing data example - Cita
+
+
+
+
+### Outliers example - Vilnius
+
+
+
+-->
+<div id="final-data" class="section level3">
+<h3>Final data</h3>
+<p>Summary statistics of the selected of 96 time series is shown in Appendix B, table B1.</p>
+<p>There are two time series that did not pass the tests but we still included them in our analysis. One is from Ivittuut, Greenland, and the second one is from Uppsala, Sweden. The reason is that Greenland is of particular interest in the climate debate, and the temperature series from Uppsala is the longest time series ever recorded.</p>
+<p>All the selected time series are available in the data/final folder. All the names (country and stations) have been translated to English.</p>
+<p>We have highlighted results from 9 weather stations because they are well known cities with good quality of the temperature data.</p>
 </div>
 </div>
 </div>

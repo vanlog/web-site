@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>temperature on Temperature</title>
+    <title>temperature on Vanlog</title>
     <link>/tags/temperature/</link>
-    <description>Recent content in temperature on Temperature</description>
+    <description>Recent content in temperature on Vanlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
@@ -66,7 +66,7 @@ Mariachiara Fortuna, freelance statistician, Turin;
 Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.
 Corresponding author:
 John K. Dagsvik, E-mail: john.dagsvik@ssb.no
-Mariachiara Fortuna, E-mail: mariachiara.fortuna1@gmail.com (reference for code and analysis)
+Mariachiara Fortuna, E-mail: mariachiara.fortuna@vanlog.it (reference for code and analysis)
 Raw data organization The data used in this project were collected by Sigmund Hov Moen, and are available in the Rimfrost system, www.rimfrost.no.
 They consist of a large amount of monthly and annual temperature time series from all around the world.</description>
     </item>

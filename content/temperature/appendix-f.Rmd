@@ -29,7 +29,7 @@ Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.
 
 John K. Dagsvik, E-mail: john.dagsvik@ssb.no
 
-Mariachiara Fortuna, E-mail: mariachiara.fortuna1@gmail.com (reference for code and analysis)
+Mariachiara Fortuna, E-mail: mariachiara.fortuna@vanlog.it (reference for code and analysis)
 
 
 
@@ -339,9 +339,6 @@ We then built a second information table, with the following fields:
 * **Missing_M**, number of missing months
 
 
-```{r}
-knitr::knit_exit()
-```
 
 
 
@@ -403,12 +400,13 @@ As an example, consider the the first 10 rows of the *T02_Information2* table:
 
 ```{r T02_Information2 reading}
 
-T02_Information2 <- read.csv(file.path(output_table_path,
-                                      "T02_Information2.csv")) %>%
+T02_Information2 <- read.csv("./tbl/T02_Information2.csv") %>%
   select(-Stationame)
 
-kable(head(T02_Information2))
+kable(head(T02_Information2)) %>%
+  kable_styling()
 ```
+
 
 
 
@@ -473,9 +471,11 @@ We excluded all the time series with substantial quality problems, such as those
 In the final selection we tried as much as possible to select weather stations that were distributed across most parts of the world. 
  
 
+
+<!--- 
 ### Consecutive missing data example - Cita
 
-```{r cita data , fig.width=6, fig.height=4, fig.align="center"}
+```{r cita data , fig.width=6, fig.height=4, fig.align="center", eval =F}
 cita_data <- file.path(data_raw_path, "russland", "cita.txt")
 
 data <- read.delim(cita_data, header=F, na.strings=99)
@@ -487,7 +487,7 @@ dataM <- monthlyAdj(data, scale = T)
 
 ### Outliers example - Vilnius
 
-```{r vilnius data, fig.width=6, fig.height=4, fig.align="center"}
+```{r vilnius data, fig.width=6, fig.height=4, fig.align="center", eval =F }
 vilnius_data <- file.path(data_raw_path, "litauen", "villnius.txt")
 
 data <- read.delim(vilnius_data, header=F, na.strings=99)
@@ -496,6 +496,7 @@ dataM <- monthlyAdj(data, scale = T)
               main = "Lituania, Vilnius - ", cex.main=0.7)
 ```
 
+-->
 
 ### Final data
 

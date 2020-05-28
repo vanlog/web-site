@@ -38,11 +38,6 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/temperature/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
@@ -54,6 +49,11 @@
   
   <url>
     <loc>/temperature/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
