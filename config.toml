@@ -92,11 +92,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     logo = "img/vanlog_retina3.png"
     logo_small = "img/vanlog_retina3.png"
     address = """<p class="text-uppercase"><strong>Vanlog</strong>
-    <br> via Amedeo Peyron 19
-    <br> 10143 Torino (TO)
-    <br> ---
-    <br> via 
-    <br> Samarate (VA)  
+    <br> Torino 
+    <br> Milano  
       </p>
       """
     latitude = "45.075412"
