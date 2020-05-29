@@ -1,4 +1,4 @@
-baseurl = "https://tender-leavitt-fbeb45.netlify.app/"
+baseurl = "https://test.vanlog.it/"
 title = "Vanlog"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
