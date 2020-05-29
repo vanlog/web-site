@@ -1,4 +1,4 @@
-baseurl = "https://test.vanlog.it/"
+baseurl = "https://www.vanlog.it/"
 title = "Vanlog"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
