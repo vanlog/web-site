@@ -33,7 +33,7 @@ John K. Dagsvik, E-mail: john.dagsvik@ssb.no
 Mariachiara Fortuna, E-mail: mariachiara.fortuna@vanlog.it (reference for code and analysis)
 
 
-
+***
 
 ```{r global options, echo=F}
 knitr::opts_chunk$set(
@@ -278,7 +278,7 @@ The results of Table C4 shows that the power of the Q test is high (conditional 
 
 ***
 
-## Table C5. Stationarity test. Moberg data
+### Table C5. Stationarity test. Moberg data
 
 ```{r TC5. Moberg stationarity test, eval = F}
 
@@ -330,7 +330,7 @@ kable(Stationary_moberg, digits=3, align='c',
 ***
 
 
-## Table C6. Stationarity test. Annual data
+### Table C6. Stationarity test. Annual data
 
 ```{r TC6. Annual stationarity test, eval = F}
 
@@ -380,7 +380,7 @@ From Table C6 we note that only in one case (Djupivogur, Iceland) do the data re
 
 ***
 
-## Table C7. Stationarity test. Monthly data
+### Table C7. Stationarity test. Monthly data
 
 ```{r TC5. Monthly stationarity test, eval = F}
 Stationarity_all <- matrix(0, nrow=nja, ncol=3)
@@ -491,8 +491,9 @@ H_comparison_tbl %>%
 
 
 ***
+***
 
-## Figure C1. Comparison between the Wavelet Lifting and the Whittle estimator
+### Figure C1. Comparison between the Wavelet Lifting and the Whittle estimator
 
 Wavelet Lifting vs Whittle estimates of H, with 95% confidence bands
 

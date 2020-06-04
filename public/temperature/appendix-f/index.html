@@ -243,16 +243,17 @@
 <p>John K. Dagsvik, E-mail: <a href="mailto:john.dagsvik@ssb.no" class="email">john.dagsvik@ssb.no</a></p>
 <p>Mariachiara Fortuna, E-mail: <a href="mailto:mariachiara.fortuna@vanlog.it" class="email">mariachiara.fortuna@vanlog.it</a> (reference for code and analysis)</p>
 <hr />
-<div id="raw-data-organization" class="section level2">
-<h2>Raw data organization</h2>
+<div id="raw-data-organization" class="section level3">
+<h3>Raw data organization</h3>
 <p>The data used in this project were collected by <strong>Sigmund Hov Moen</strong>, and are available in the <strong>Rimfrost system</strong>, <a href="http://www.rimfrost.no/">www.rimfrost.no</a>.</p>
+<p>All the data are available in the tempFgn repository, see the <a href="temperature/temperature-data">temperature data section</a> for more.</p>
 <p>They consist of a large amount of monthly and annual temperature time series from all around the world.</p>
-<p>The raw data, as organized in the Rimfrost system, are collected in the folder “data/raw”.</p>
+<p>The raw data, as organized in the Rimfrost system, are collected in the folder “data/raw”</p>
 <p>The “data/raw” folder contains 101 subfolders named with the English or the Norwegian name of the countries included in the Rimfrost system.</p>
 <p>Each country folder contains the temperature time series for each weather station included in the Rimfrost system.</p>
 </div>
-<div id="data-structure" class="section level2">
-<h2>Data structure</h2>
+<div id="data-structure" class="section level3">
+<h3>Data structure</h3>
 <p>Each time series is collected in a separate txt file, usually named with the Norwegian name of the weather station.</p>
 <p>Each file is structured as follow:</p>
 <ul>
@@ -577,8 +578,8 @@ V14
 </tbody>
 </table>
 </div>
-<div id="main-features-of-the-raw-data" class="section level2">
-<h2>Main features of the raw data</h2>
+<div id="main-features-of-the-raw-data" class="section level3">
+<h3>Main features of the raw data</h3>
 <p>In order to select the set of suitable time series and explore their main features, we first provide a preliminary table with useful information (<em>T0_Information</em>). This table contains general information about all the available time series, namely:</p>
 <ul>
 <li><p><strong>Country</strong> and <strong>Station</strong> name for each time series</p></li>
@@ -1078,8 +1079,8 @@ OK
 </tbody>
 </table>
 </div>
-<div id="raw-data-basic-exploration" class="section level2">
-<h2>Raw data basic exploration</h2>
+<div id="raw-data-basic-exploration" class="section level3">
+<h3>Raw data basic exploration</h3>
 <p>The total number of availbale time series is <strong>1260</strong>.</p>
 <p>The table below provides a summary of the information given about each recorded variable:</p>
 <table class="table" style="margin-left: auto; margin-right: auto;">
@@ -1249,12 +1250,12 @@ Figure 1:  Time series plot
 </div>
 <hr />
 </div>
-<div id="selection-process" class="section level1">
-<h1>SELECTION PROCESS</h1>
+<div id="selection-process" class="section level2">
+<h2>SELECTION PROCESS</h2>
 <p>Given the wide variety of properties of the available time series, we decided to apply a multi-step automatic selection procedure to obtain a subset of series with specific characteristics.</p>
 <p>In any case, the full set of available time series (1260) is contained in the data/raw folder, and can be analyzed with the provided code.</p>
-<div id="multi-step-automatic-process" class="section level2">
-<h2>Multi-step automatic process</h2>
+<div id="multi-step-automatic-process" class="section level3">
+<h3>Multi-step automatic process</h3>
 <p>Briefly, the multi-step process was designed as follow:</p>
 <ol style="list-style-type: decimal">
 <li><p><strong>Step 1 - Valid structure</strong>: selection of the time series with valid data structure</p></li>
@@ -1263,6 +1264,7 @@ Figure 1:  Time series plot
 <li><p><strong>Step 4 - Missing months</strong>: selection of the time series with less than 80 missing months</p></li>
 <li><p><strong>Step 5 - Length in months</strong>: selection of the time series with full monthly length not inferior to 1290 months</p></li>
 </ol>
+</div>
 <div id="step-1---selection-by-valid-structure" class="section level3">
 <h3>Step 1 - Selection by valid structure</h3>
 <p>Using the information table previusly built (<em>T0_Information</em>), we selected all the time series with the variable <em>Status</em> equal to <em>OK</em>.</p>
@@ -1537,11 +1539,10 @@ kremsmunster
 -->
 <div id="final-data" class="section level3">
 <h3>Final data</h3>
-<p>Summary statistics of the selected of 96 time series is shown in Appendix B, table B1.</p>
+<p>Summary statistics of the selected of 96 time series is shown in <a href="/temperature/appendix-b">Appendix B</a>, table B1.</p>
 <p>There are two time series that did not pass the tests but we still included them in our analysis. One is from Ivittuut, Greenland, and the second one is from Uppsala, Sweden. The reason is that Greenland is of particular interest in the climate debate, and the temperature series from Uppsala is the longest time series ever recorded.</p>
 <p>All the selected time series are available in the data/final folder. All the names (country and stations) have been translated to English.</p>
 <p>We have highlighted results from 9 weather stations because they are well known cities with good quality of the temperature data.</p>
-</div>
 </div>
 </div>
 
@@ -1598,11 +1599,7 @@ kremsmunster
             
             
             <li>
-                <a href="/categories/r">r (1)</a>
-            </li>
-            
-            <li>
-                <a href="/categories/research">research (5)</a>
+                <a href="/categories/research">research (6)</a>
             </li>
             
         </ul>

@@ -44,14 +44,16 @@
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/temperature/appendix-d/</guid>
-      <description>Affiliations:
-John K. Dagsvik, Statistics Norway, Research Department;
-Mariachiara Fortuna, freelance statistician, Turin;
-Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.
-Corresponding author:
-John K. Dagsvik, E-mail: john.dagsvik@ssb.no
-Mariachiara Fortuna, E-mail: mariachiara.fortuna@vanlog.it (reference for code and analysis)
-Table D1, D2, D3. Properties of different estimators of the FGN model. Bootstrap simulations The following tables show the results of the bootstrap simultations for different estimators of \(\mu\), \(\sigma\), \(H\) and \(\alpha\), given the FGN model with H equal to 0.</description>
+      <description>Properties of different estimators of the FGN models, with boostrap simulations</description>
+    </item>
+    
+    <item>
+      <title>Appendix E - Temperature stations infographics</title>
+      <link>/temperature/appendix-e/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/temperature/appendix-e/</guid>
+      <description>Infographics on 96 weather stations, with temperature fluctuations, autocorrelation and statistical tests</description>
     </item>
     
     <item>
@@ -60,15 +62,7 @@ Table D1, D2, D3. Properties of different estimators of the FGN model. Bootstrap
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/temperature/appendix-f/</guid>
-      <description>Affiliations:
-John K. Dagsvik, Statistics Norway, Research Department;
-Mariachiara Fortuna, freelance statistician, Turin;
-Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.
-Corresponding author:
-John K. Dagsvik, E-mail: john.dagsvik@ssb.no
-Mariachiara Fortuna, E-mail: mariachiara.fortuna@vanlog.it (reference for code and analysis)
-Raw data organization The data used in this project were collected by Sigmund Hov Moen, and are available in the Rimfrost system, www.rimfrost.no.
-They consist of a large amount of monthly and annual temperature time series from all around the world.</description>
+      <description>Details on the selection procedure of the available temperature time series</description>
     </item>
     
   </channel>

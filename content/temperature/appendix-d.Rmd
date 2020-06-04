@@ -4,6 +4,7 @@ title: Appendix D - Properties of the estimators
 author: 'Mariachiara Fortuna'
 date: '2020-04-24'
 slug: appendix-d
+summary: Properties of different estimators of the FGN models, with boostrap simulations
 categories: 
   - research
 tags: 
@@ -30,7 +31,7 @@ John K. Dagsvik, E-mail: john.dagsvik@ssb.no
 
 Mariachiara Fortuna, E-mail: mariachiara.fortuna@vanlog.it (reference for code and analysis)
 
-
+***
 
 
 ```{r global options, echo=F}
@@ -97,7 +98,7 @@ Yj_m <- cumsum(Zj_m)
 ```
 
 
-## Table D1, D2, D3. Properties of different estimators of the FGN model. Bootstrap simulations
+### Table D1, D2, D3. Properties of different estimators of the FGN model. Bootstrap simulations
 
 
 The following tables show the results of the bootstrap simultations for different estimators of $\mu$, $\sigma$, $H$ and $\alpha$, given the FGN model with H equal to 0.7, 0.8, 0.9, 0.95.
@@ -289,7 +290,7 @@ The results in Table D3 show that the characteristic function estimator in this 
 
 ***
 
-## Figure D1 and D2. Graphical test of asymptotic normality of the characteristic function estimators
+### Figure D1 and D2. Graphical test of asymptotic normality of the characteristic function estimators
 
 Bootstrap estimates based on 1,000 simulated FGN series of length 2,000.  
 

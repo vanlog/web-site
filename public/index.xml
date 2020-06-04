@@ -44,14 +44,7 @@
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/temperature/appendix-d/</guid>
-      <description>Affiliations:
-John K. Dagsvik, Statistics Norway, Research Department;
-Mariachiara Fortuna, freelance statistician, Turin;
-Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.
-Corresponding author:
-John K. Dagsvik, E-mail: john.dagsvik@ssb.no
-Mariachiara Fortuna, E-mail: mariachiara.fortuna@vanlog.it (reference for code and analysis)
-Table D1, D2, D3. Properties of different estimators of the FGN model. Bootstrap simulations The following tables show the results of the bootstrap simultations for different estimators of \(\mu\), \(\sigma\), \(H\) and \(\alpha\), given the FGN model with H equal to 0.</description>
+      <description>Properties of different estimators of the FGN models, with boostrap simulations</description>
     </item>
     
     <item>
@@ -60,13 +53,7 @@ Table D1, D2, D3. Properties of different estimators of the FGN model. Bootstrap
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/temperature/appendix-e/</guid>
-      <description>Affiliations:
-John K. Dagsvik, Statistics Norway, Research Department;
-Mariachiara Fortuna, freelance statistician, Turin;
-Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.
-Corresponding author:
-John K. Dagsvik, E-mail: john.dagsvik@ssb.no
-Mariachiara Fortuna, E-mail: mariachiara.fortuna@vanlog.it (reference for code and analysis)</description>
+      <description>Infographics on 96 weather stations, with temperature fluctuations, autocorrelation and statistical tests</description>
     </item>
     
     <item>
@@ -75,15 +62,7 @@ Mariachiara Fortuna, E-mail: mariachiara.fortuna@vanlog.it (reference for code a
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/temperature/appendix-f/</guid>
-      <description>Affiliations:
-John K. Dagsvik, Statistics Norway, Research Department;
-Mariachiara Fortuna, freelance statistician, Turin;
-Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.
-Corresponding author:
-John K. Dagsvik, E-mail: john.dagsvik@ssb.no
-Mariachiara Fortuna, E-mail: mariachiara.fortuna@vanlog.it (reference for code and analysis)
-Raw data organization The data used in this project were collected by Sigmund Hov Moen, and are available in the Rimfrost system, www.rimfrost.no.
-They consist of a large amount of monthly and annual temperature time series from all around the world.</description>
+      <description>Details on the selection procedure of the available temperature time series</description>
     </item>
     
     <item>
@@ -92,8 +71,9 @@ They consist of a large amount of monthly and annual temperature time series fro
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/temperature/temperature-data/</guid>
-      <description>Since the goal of this work was to study the temperatures fluctuations over time, we needed long temperatures time series, possibly for more than one weather station.
-We found a great solution in the data collected by Sigmund H. Moen, co-author of this paper and creator of the web page www.rimfrost.no, where most of the record are freely available. The data consist in a big amount of temperatures time series, certified by NASA, for more than 100 countries, giving a total of 1258 weather stations; the time series are available as yearly, monthly and even three-times-a-day observations, and the length of the time series may vary greatly from station to station: while some of them are less than ten years long, the longer time series, from the city of Upssala in Sweden, is 290 years long, with monthly data from 1722 to 2012, at the time were the data were collected.</description>
+      <description>The goal of this section is to describe the data used in the Temperature Fluctuation paper and how these data are organized.
+All the data are available in the fgnTemp repository, and their organization strongly depend from the aim of teh temperature analysis that we have carried out.
+Since the goal of our work was to study the historical variation of the temperatures fluctuations, we needed long temperatures time series, possibly for several weather station.</description>
     </item>
     
     <item>
