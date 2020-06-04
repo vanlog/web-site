@@ -6,10 +6,28 @@
     <description>Recent content on Vanlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Temperature fluctuations - The Idea Behind</title>
+      <link>/temperature/temperature-code/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/temperature/temperature-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Temperature fluctuations - The Idea Behind</title>
+      <link>/temperature/temperature-idea/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/temperature/temperature-idea/</guid>
+      <description>Usually, looking at the time series of observed temperatures, we see graphs as the one below. These graphs show the temperature fluctuations over the past 150 years, where temperatures show a systematic increase. The length of the time series is a crucial feature for understanding temperature fluctuations, because temperatures show cycles that seem to persist for several decades: so, if we want to understand the amplitude of the climate fluctuations, the limited length of the time series may compromise our understanding of the phenomena.</description>
+    </item>
     
     <item>
       <title>Temperature fluctuation paper - Main Results</title>
