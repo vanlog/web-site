@@ -33,6 +33,11 @@
   </url>
   
   <url>
+    <loc>/research/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
@@ -43,12 +48,7 @@
   </url>
   
   <url>
-    <loc>/temperature/paper-results/</loc>
-    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/temperature/</loc>
+    <loc>/research/temperature/paper-results/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -58,27 +58,27 @@
   </url>
   
   <url>
-    <loc>/temperature/appendix-b/</loc>
+    <loc>/research/temperature/appendix-b-d/</loc>
     <lastmod>2020-05-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/temperature/appendix-c/</loc>
+    <loc>/research/temperature/appendix-b-d/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/temperature/appendix-d/</loc>
+    <loc>/research/temperature/appendix-d/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/temperature/appendix-e/</loc>
+    <loc>/research/temperature/appendix-e/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/temperature/appendix-f/</loc>
+    <loc>/research/temperature/appendix-f/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -93,7 +93,7 @@
   </url>
   
   <url>
-    <loc>/temperature/temperature-data/</loc>
+    <loc>/research/temperature/temperature-data/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url>
   

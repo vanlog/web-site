@@ -13,37 +13,37 @@
     
     <item>
       <title>Temperature fluctuation paper - Main Results</title>
-      <link>/temperature/paper-results/</link>
+      <link>/research/temperature/paper-results/</link>
       <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/temperature/paper-results/</guid>
+      <guid>/research/temperature/paper-results/</guid>
       <description>This section contains all the results included in the Temperature fluctuations paper</description>
     </item>
     
     <item>
       <title>Appendix B - Summary data information</title>
-      <link>/temperature/appendix-b/</link>
+      <link>/research/temperature/appendix-b-d/</link>
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/temperature/appendix-b/</guid>
+      <guid>/research/temperature/appendix-b-d/</guid>
       <description>Information on the weather stations, lenght of the related time series and missing data</description>
     </item>
     
     <item>
       <title>Appendix C - Estimation and test results</title>
-      <link>/temperature/appendix-c/</link>
+      <link>/research/temperature/appendix-b-d/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/temperature/appendix-c/</guid>
+      <guid>/research/temperature/appendix-b-d/</guid>
       <description>H estimation by Whittle and Wavelet estimators. Chi square statistics and stationarity tests</description>
     </item>
     
     <item>
       <title>Appendix D - Properties of the estimators</title>
-      <link>/temperature/appendix-d/</link>
+      <link>/research/temperature/appendix-d/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/temperature/appendix-d/</guid>
+      <guid>/research/temperature/appendix-d/</guid>
       <description>Affiliations:
 John K. Dagsvik, Statistics Norway, Research Department;
 Mariachiara Fortuna, freelance statistician, Turin;
@@ -56,10 +56,10 @@ Table D1, D2, D3. Properties of different estimators of the FGN model. Bootstrap
     
     <item>
       <title>Appendix F - Selection procedure</title>
-      <link>/temperature/appendix-f/</link>
+      <link>/research/temperature/appendix-f/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/temperature/appendix-f/</guid>
+      <guid>/research/temperature/appendix-f/</guid>
       <description>Affiliations:
 John K. Dagsvik, Statistics Norway, Research Department;
 Mariachiara Fortuna, freelance statistician, Turin;
