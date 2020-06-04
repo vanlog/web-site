@@ -176,7 +176,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     title = "Our Clients"
     subtitle = ""
 
-[params.see_more]
+[params.temp_see_more]
     enable = true
     icon = ""
     title = "Temperature Fluctuation Paper"
@@ -192,7 +192,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     # at 'exampleSite/data/features'.
     # For more informtion take a look at the README.  
     
-[params.recent_posts]
+[params.temp_appendix]
     enable = true
     title = "Results"
     subtitle = "This section contains all the results and the appendices of the Temperature fluctuations paper. All the results may be reproduced via their free code and data, see above sections Data and Code"
