@@ -32,7 +32,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.main]]
     identifier = "temperature"
     name = "temperature"
-    url  = "/temperature/"
+    url  = "research/temperature"
     weight = 3
 
 # Top bar social links menu

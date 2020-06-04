@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Temperature fluctuation paper - Main Results</title>
+  <meta name="author" content="Mariachiara Fortuna" />
+  
+  
+  
+  
+  <meta name="keywords" content="R, coding, research, temperature, FGN">
+  
+  
+  <meta name="description" content="">
+
+  <meta name="generator" content="Hugo 0.70.0" />
+
+  
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.vanlog.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+  
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Vanlog">
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:locale" content="en_us">
+  <meta property="og:site_name" content="Vanlog">
+  <meta property="og:title" content="Temperature fluctuation paper - Main Results">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/research/temperature/paper-results/" />
+  <meta property="og:description" content="">
+  <meta property="og:image" content="/img/temperature/banner_A_results.png">
+  <meta property="og:image:type" content="image/png">
+  
+  
+  
+    <meta property="og:image:width" content="372">
+    <meta property="og:image:height" content="218">
+  
+  
+  <meta property="og:updated_time" content="2020-05-17T00:00:00Z">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:title" content="Temperature fluctuation paper - Main Results">
+  
+  <meta name="twitter:image" content="/img/temperature/banner_A_results.png">
+  
+  <meta name="twitter:description" content="">
+  
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/vanlog_retina3.png" alt="Temperature fluctuation paper - Main Results logo" class="hidden-xs hidden-sm" >
+                    <img src="/img/vanlog_retina3.png" alt="Temperature fluctuation paper - Main Results logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Temperature fluctuation paper - Main Results - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">Home</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contact/">Contact</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="research/temperature">temperature</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Temperature fluctuation paper - Main Results</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        
+                          <p class="text-muted text-uppercase mb-small text-right">
+                            By <a href="#">Mariachiara Fortuna</a>
+                             | 
+                            May 17, 2020
+                          </p>
+                        
+
+                        <div id="post-content">
+                          
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+
+
+<p><strong>Affiliations:</strong></p>
+<p>John K. Dagsvik, Statistics Norway, Research Department;</p>
+<p>Mariachiara Fortuna, freelance statistician, Turin;</p>
+<p>Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.</p>
+<p><strong>Corresponding author:</strong></p>
+<p>John K. Dagsvik, E-mail: <a href="mailto:john.dagsvik@ssb.no" class="email">john.dagsvik@ssb.no</a></p>
+<p>Mariachiara Fortuna, E-mail: <a href="mailto:mariachiara.fortuna@vanlog.it" class="email">mariachiara.fortuna@vanlog.it</a> (reference for code and analysis)</p>
+<hr />
+<hr />
+<div id="tables" class="section level1">
+<h1>TABLES</h1>
+<div id="table-1.-parameter-estimation-for-the-selected-time-series" class="section level3">
+<h3>Table 1. Parameter estimation for the selected time series</h3>
+<p>Estimation results for selected cities based on characteristic function regression and Whittle MLE method. Monthly data.</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:center;">
+City
+</th>
+<th style="text-align:center;">
+H_c
+</th>
+<th style="text-align:center;">
+SE(H_c)
+</th>
+<th style="text-align:center;">
+H_w
+</th>
+<th style="text-align:center;">
+SE(H_w)
+</th>
+<th style="text-align:center;">
+Ann. H_c
+</th>
+<th style="text-align:center;">
+Ann. H_w
+</th>
+<th style="text-align:center;">
+Ann. SE(H_w)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+Germany, Berlin
+</td>
+<td style="text-align:center;">
+0.664
+</td>
+<td style="text-align:center;">
+0.009
+</td>
+<td style="text-align:center;">
+0.662
+</td>
+<td style="text-align:center;">
+0.012
+</td>
+<td style="text-align:center;">
+0.726
+</td>
+<td style="text-align:center;">
+0.712
+</td>
+<td style="text-align:center;">
+0.041
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Switzerland, Geneva
+</td>
+<td style="text-align:center;">
+0.693
+</td>
+<td style="text-align:center;">
+0.001
+</td>
+<td style="text-align:center;">
+0.667
+</td>
+<td style="text-align:center;">
+0.012
+</td>
+<td style="text-align:center;">
+0.845
+</td>
+<td style="text-align:center;">
+0.818
+</td>
+<td style="text-align:center;">
+0.042
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Switzerland, Basel
+</td>
+<td style="text-align:center;">
+0.625
+</td>
+<td style="text-align:center;">
+0.011
+</td>
+<td style="text-align:center;">
+0.622
+</td>
+<td style="text-align:center;">
+0.012
+</td>
+<td style="text-align:center;">
+0.664
+</td>
+<td style="text-align:center;">
+0.720
+</td>
+<td style="text-align:center;">
+0.042
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+France, Paris
+</td>
+<td style="text-align:center;">
+0.733
+</td>
+<td style="text-align:center;">
+0.010
+</td>
+<td style="text-align:center;">
+0.672
+</td>
+<td style="text-align:center;">
+0.012
+</td>
+<td style="text-align:center;">
+0.873
+</td>
+<td style="text-align:center;">
+0.802
+</td>
+<td style="text-align:center;">
+0.042
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Sweden, Stockholm
+</td>
+<td style="text-align:center;">
+0.681
+</td>
+<td style="text-align:center;">
+0.015
+</td>
+<td style="text-align:center;">
+0.721
+</td>
+<td style="text-align:center;">
+0.012
+</td>
+<td style="text-align:center;">
+0.614
+</td>
+<td style="text-align:center;">
+0.632
+</td>
+<td style="text-align:center;">
+0.041
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Italy, Milan
+</td>
+<td style="text-align:center;">
+0.724
+</td>
+<td style="text-align:center;">
+0.019
+</td>
+<td style="text-align:center;">
+0.709
+</td>
+<td style="text-align:center;">
+0.012
+</td>
+<td style="text-align:center;">
+0.851
+</td>
+<td style="text-align:center;">
+0.826
+</td>
+<td style="text-align:center;">
+0.043
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Czech Republic, Prague
+</td>
+<td style="text-align:center;">
+0.684
+</td>
+<td style="text-align:center;">
+0.015
+</td>
+<td style="text-align:center;">
+0.670
+</td>
+<td style="text-align:center;">
+0.012
+</td>
+<td style="text-align:center;">
+0.745
+</td>
+<td style="text-align:center;">
+0.716
+</td>
+<td style="text-align:center;">
+0.043
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Hungary, Budapest
+</td>
+<td style="text-align:center;">
+0.627
+</td>
+<td style="text-align:center;">
+0.011
+</td>
+<td style="text-align:center;">
+0.645
+</td>
+<td style="text-align:center;">
+0.012
+</td>
+<td style="text-align:center;">
+0.682
+</td>
+<td style="text-align:center;">
+0.663
+</td>
+<td style="text-align:center;">
+0.043
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Denmark, Copenhagen
+</td>
+<td style="text-align:center;">
+0.755
+</td>
+<td style="text-align:center;">
+0.051
+</td>
+<td style="text-align:center;">
+0.758
+</td>
+<td style="text-align:center;">
+0.013
+</td>
+<td style="text-align:center;">
+0.817
+</td>
+<td style="text-align:center;">
+0.753
+</td>
+<td style="text-align:center;">
+0.045
+</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+<div id="table-2.-selected-time-series-and-chi-square-test" class="section level3">
+<h3>Table 2. Selected time series and Chi-square test</h3>
+<p>Chi-square statistics of the FGN hypothesis for selected cities</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:center;">
+City
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(Q(H_c)\)</span>
+</th>
+<th style="text-align:center;">
+<span class="math inline">\(Q(H_w)\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+Germany, Berlin
+</td>
+<td style="text-align:center;">
+-0.518
+</td>
+<td style="text-align:center;">
+-0.626
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Switzerland, Geneva
+</td>
+<td style="text-align:center;">
+-0.222
+</td>
+<td style="text-align:center;">
+-1.622
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Switzerland, Basel
+</td>
+<td style="text-align:center;">
+-0.409
+</td>
+<td style="text-align:center;">
+-0.484
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+France, Paris
+</td>
+<td style="text-align:center;">
+1.286
+</td>
+<td style="text-align:center;">
+-2.791
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Sweden, Stockholm
+</td>
+<td style="text-align:center;">
+-1.209
+</td>
+<td style="text-align:center;">
+1.098
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Italy, Milan
+</td>
+<td style="text-align:center;">
+-1.339
+</td>
+<td style="text-align:center;">
+-2.335
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Czech Republic, Prague
+</td>
+<td style="text-align:center;">
+-0.198
+</td>
+<td style="text-align:center;">
+-0.855
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Hungary, Budapest
+</td>
+<td style="text-align:center;">
+-0.819
+</td>
+<td style="text-align:center;">
+-0.255
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Denmark, Copenhagen
+</td>
+<td style="text-align:center;">
+-1.006
+</td>
+<td style="text-align:center;">
+-0.693
+</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+</div>
+</div>
+<div id="figures" class="section level1">
+<h1>FIGURES</h1>
+<div id="figure-1.-illustration-of-statistical-self-similarity.-annual-temperature-for-paris" class="section level3">
+<h3>Figure 1. Illustration of statistical self-similarity. Annual temperature for Paris</h3>
+<embed src="/img/temperature/F1.Self-similarity yearly monthly data.png" width="70%"/>
+<hr />
+</div>
+<div id="figure-2.-graphical-tests-of-self-similarity-and-normality" class="section level3">
+<h3>Figure 2. Graphical tests of self-similarity and normality</h3>
+<embed src="/img/temperature/F2_selected_SS_N_test_plot.pdf" width="70%" height="775" />
+<hr />
+</div>
+<div id="figure-3.-simulated-fgn-process-with-zero-mean-and-unit-variance" class="section level3">
+<h3>Figure 3. Simulated FGN process with zero mean and unit variance</h3>
+<embed src="/img/temperature/F3_FGN_simulation.pdf" width="70%" height="775" />
+<hr />
+</div>
+<div id="figure-4.-reconstructed-temperature-data-by-moberg-et-al.-2005a" class="section level3">
+<h3>Figure 4. Reconstructed temperature data by Moberg et al. (2005a)</h3>
+<embed src="/img/temperature/F4_moberg_timeseries.png" width="70%" />
+<hr />
+</div>
+<div id="figure-5.-test-of-self-similarity-and-normality" class="section level3">
+<h3>Figure 5. Test of self-similarity and normality</h3>
+<p>Reconstructed temperature data by Moberg et al. (2005a)</p>
+<embed src="/img/temperature/F5a_moberg_SStest.pdf" width="70%" height="375" />
+<embed src="/img/temperature/F5b_moberg_Ntest.pdf" width="70%" height="375" />
+<hr />
+</div>
+<div id="figure-6.-empirical-vs-fgn-autocorrelations" class="section level3">
+<h3>Figure 6. Empirical vs FGN autocorrelations</h3>
+<p>Reconstructed temperature data by Moberg et al. (2005a)</p>
+<p>Empirical vs FGN autocorrelation with confidence bands. H=0.95</p>
+
+<embed src="/img/temperature/F6_Moberg_autocorrelation.png" width="70%" />
+</div>
+</div>
+
+                        </div>
+                        
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            
+            <li>
+                <a href="/categories/r">r (1)</a>
+            </li>
+            
+            <li>
+                <a href="/categories/research">research (5)</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            
+            <li>
+                <a href="/tags/fgn"><i class="fas fa-tags"></i> fgn</a>
+            </li>
+            
+            <li>
+                <a href="/tags/plot"><i class="fas fa-tags"></i> plot</a>
+            </li>
+            
+            <li>
+                <a href="/tags/r"><i class="fas fa-tags"></i> r</a>
+            </li>
+            
+            <li>
+                <a href="/tags/regression"><i class="fas fa-tags"></i> regression</a>
+            </li>
+            
+            <li>
+                <a href="/tags/research"><i class="fas fa-tags"></i> research</a>
+            </li>
+            
+            <li>
+                <a href="/tags/temperature"><i class="fas fa-tags"></i> temperature</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            Vanlog is a group of data scientists born around a common goal: bringing the power of data everywhere. We believe in open source solutions and we specializes in R, the programming language for statistical solutions
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+             
+            <h4>Recent posts</h4>
+
+            <div class="blog-entries">
+                
+            </div>
+
+            <hr class="hidden-md hidden-lg">
+             
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <p class="text-uppercase"><strong>Vanlog</strong>
+    <br> Torino 
+    <br> Milano  
+      </p>
+      
+
+            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2020, Vanlog; all rights reserved.</p>
+            
+            <p class="pull-right">
+              Template by <a href="https://bootstrapious.com/p/universal-business-e-commerce-template">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+
+
+<script src="/js/owl.carousel.min.js"></script>
+
+
+
+  </body>
+</html>
