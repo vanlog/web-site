@@ -185,7 +185,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     link_text = "Read the paper"
     
     
-[params.features]
+[params.temp_sections]
     enable = true
     title = "Temperature paper materials"
     # All features are defined in their own files. You can find example items

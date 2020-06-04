@@ -1,0 +1,5 @@
+weight: 3
+name: "Download the data"
+icon: "fas fa-table"
+url: "/temperature/temperature-data"
+description: "Temperature time series from all around the world, available as monthly figures and two-millennia reconstructed temperature by Moberg et al."

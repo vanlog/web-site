@@ -1,0 +1,5 @@
+weight: 2
+name: "Get the code"
+icon: "fas fa-code"
+url: "/temperature/temperature-code"
+description: "R functions supporting the Temperature Fluctuations paper: data exploration, stationarity and FGN testing, estimators performance"
