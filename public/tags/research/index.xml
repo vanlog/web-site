@@ -18,7 +18,7 @@
       
       <guid>/temperature/temperature-code/</guid>
       <description>The tempFGN github repository contains all the material related to the paper: How does temperature vary over time? Evidence on the stationary and fractal nature of temperature by John Dagsvik, Mariachiara Fortuna, Sigmund H. Moen
-All the materials are stored in the form of an R package. You can download or clone the repository and install the package: then all the functions will be available for usage. The same repository contains also all the online resources available as supplementary materials together with the paper, in pdf format.</description>
+All the materials are stored in the form of an R package. You can download or clone the repository and install the package: then all the functions will be available for usage. The same repository contains the online resources published as paper’s supplementary materials.</description>
     </item>
     
     <item>

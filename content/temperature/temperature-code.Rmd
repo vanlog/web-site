@@ -17,65 +17,56 @@ tags:
 
 The tempFGN github repository contains all the material related to the paper: [How does temperature vary over time? Evidence on the stationary and fractal nature of temperature](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557) by John Dagsvik, Mariachiara Fortuna, Sigmund H. Moen
 
-All the materials are stored in the form of an R package. You can download or clone the repository and install the package: then all the functions will be available for usage. The same repository contains also all the online resources available as supplementary materials together with the paper, in pdf format. The same resources are available also as RMarkdown files, to allow the reproduction of the results.
+All the materials are stored in the form of an R package. You can download or clone the repository and install the package: then all the functions will be available for usage. The same repository contains the online resources published as paper's supplementary materials. These resources are available as .pdf files as well as .RMarkdown files, to allow the results reproduction.
 
 
 ### tempFGN functions
 
-The functions 
+The functions developed for the Temperature Fluctuations paper are available installing the tempFGN package. As usual in the R packages, they are stored in the /R folder. They are divided into 5 groups:
+
+* Preprocessing: contains functions for manipulating the time series
+* Plots: contains functions for producting the temperature plots 
+* Estimators: contains functions for the parameters estimation
+* Autocorrelation: contains functions for the estimating the autocorrelation and correcting its bias
+* Test: contains functions for the inferential tests
 
 
+### Data
 
-The folder contains four online resources:
+All the data are store into the /inst/data folder. A wide description of the data and their organization can be found here.
 
-- The first online resource, "01_Supplementary_appendix.pdf", contains the paper Appendix B to F, and it is structured as follow:
-	* Appendix B: Summary data information
-	* Appendix C: Estimation and test results
-	* Appendix D: Property of the estimators
-	* Appendix E: Summary infographic for each weather station
-	* Appendix F: Selection process and cleaning procedure
 
-- The second online resource, "02_Supplementary_appendix_with_code.pdf", contains the R code used to produce the supplementary appendices along with the results
+### Online resources
 
-- The third online resource, "03_paper-results-with-code.pdf", contains all the results included in the paper, together with the code that generate them
+All the online resources and supplementary materials published with the paper are stored into the /inst folder. Each of these files is available as .pdf file and as .Rmd file, for a full reproducibility of all the analysis. 
 
-- The fourth online resource, "04_tempFGN-package-functions.pdf" contains all the functions developed for this paper written as plain text. All the functions are collected in the tempFGN R package.
+The folder contains the following materials:
 
-- The tempFGN-master folder, with supplementary materials for reproducibility. 
-This folder is a download from the tempFGN R package, accessible via Github under request (please email mariachiara.fortuna1@gmail.com). The R package includes all the materials developed for the "Temperature fluctuations" paper. More specifically it is structured as follows:
-
---- The R/ folder includes all the R functions created for this project, as estimators, tests, plots etc.
-
---- The inst/final folder contains data, outputs and Rmd files. In details:  
-
------- The .Rmd files that generate the 4 online resources.
-
------- The data/ folder. It contains:
-
---------- 1. The final/ folder, with all the data used in the paper
---------- 2. The moberg/ folder, with the moberg data
---------- 3. The raw/ folder, with the raw version of the data
---------- 4. The supporting/ folder, with supporting data useful for the computation
-
------- The output/ folder, with all the results produced and included in the paper. All the output are named as in the paper. It contains:
-
---------- 1. The figure/ folder, with all the figures contained either in the paper or in the appendix
---------- 2. The supporting/ folder, with tables that produce intermediate results
---------- 3. The table/ folder, with all the tables contained either in the paper or in the appendix
+* [Paper results](/temperature/paper-results)
+* [Appendix B](/temperature/appendix-b): Summary data information
+* [Appendix C](/temperature/appendix-c): Estimation and test results
+* [Appendix D](/temperature/appendix-d): Property of the estimators
+* [Appendix E](/temperature/appendix-e): Summary infographic for each weather station
+* [Appendix F](/temperature/appendix-f): Selection process and cleaning procedure
+* Functions code, written as plain text. This file was required as supplementary material for the paper publication.
 
 
 ================================================
 
-TO REPRODUCE PAPER/APPENDIX RESULTS 
 
-1. Open the tempFGN.Rproj file from RStudio
+#### TO REPRODUCE PAPER/APPENDIX RESULTS 
 
-2. Open the .Rmd file what you want to reproduce 
 
-3. Install the tempFGN package using the shortcut Ctrl+Shift+B  
+1. Clone or download the tempFGN package
 
-4. Execute the code
+2. Open the tempFGN.Rproj file from RStudio
+
+3. Build the tempFGN package (you can use the shortcut Ctrl+Shift+B)  
+
+4. Open the .Rmd file what you want to reproduce 
+
+5. Execute the code
 
 ================================================ 
 
-For questions or inquiries write an email to mariachiara.fortuna@vanlog.com
+For questions or inquiries write an email to mariachiara.fortuna@vanlog.it
