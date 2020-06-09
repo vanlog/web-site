@@ -31,7 +31,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     
 [[menu.main]]
     identifier = "temperature"
-    name = "temperature"
+    name = "research"
     url  = "/temperature/"
     weight = 3
 
@@ -176,23 +176,23 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     title = "Our Clients"
     subtitle = ""
 
-[params.see_more]
+[params.temp_see_more]
     enable = true
     icon = ""
-    title = "Temperature Fluctuation Paper"
-    subtitle = "This website is aimed at sharing all the materials related to the paper ”How does the temperature vary over time? Evidence on the stationary and fractal nature of temperature fluctuations”, by J.K. Dagsvik, M. Fortuna and S.H. Moen  "
+    title = "Temperature Fluctuation Project"
+    subtitle = "This website is aimed at sharing all the materials related to Temperature Fluctuations project by J.K. Dagsvik, M. Fortuna and S.H. Moen, a multi-years research project aimed at investigating the stationary and fractal nature of temperature fluctuations. The idea and the main results are summarised in the paper ”How does the temperature vary over time? Evidence on the stationary and fractal nature of temperature fluctuations”, during publication in Journal of the Royal Statistical Society, series A"
     link_url = "https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557"
     link_text = "Read the paper"
     
     
-[params.features]
+[params.temp_sections]
     enable = true
     title = "Temperature paper materials"
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
     # For more informtion take a look at the README.  
     
-[params.recent_posts]
+[params.temp_appendix]
     enable = true
     title = "Results"
     subtitle = "This section contains all the results and the appendices of the Temperature fluctuations paper. All the results may be reproduced via their free code and data, see above sections Data and Code"

@@ -30,9 +30,10 @@ Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.
 
 John K. Dagsvik, E-mail: john.dagsvik@ssb.no
 
-Mariachiara Fortuna, E-mail: mariachiara.fortuna1@gmail.com (reference for code and analysis)
+Mariachiara Fortuna, E-mail: mariachiara.fortuna@vanlog.it (reference for code and analysis)
 
 
+***
 
 
 ```{r global options, echo=F}
@@ -98,10 +99,9 @@ Zj_m <- scale(Xj_m)
 Yj_m <- cumsum(Zj_m)
 ```
   
-***
-***
 
-# APPENDIX B - SUMMARY DATA INFORMATION
+
+
 
 ### Figure B1. Plots of temperature series for 9 selected cities
 

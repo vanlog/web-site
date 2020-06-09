@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Temperature fluctuations - The Idea Behind</title>
+  <meta name="author" content="Mariachiara Fortuna" />
+  
+  
+  
+  
+  <meta name="keywords" content="R, coding, research, temperature, FGN, R package">
+  
+  
+  <meta name="description" content="">
+
+  <meta name="generator" content="Hugo 0.70.0" />
+
+  
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.vanlog.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+  
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Vanlog">
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:locale" content="en_us">
+  <meta property="og:site_name" content="Vanlog">
+  <meta property="og:title" content="Temperature fluctuations - The Idea Behind">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/temperature/temperature-idea/" />
+  <meta property="og:description" content="">
+  <meta property="og:image" content="/img/vanlog_retina_black.png">
+  <meta property="og:image:type" content="image/png">
+  
+  
+  
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="140">
+  
+  
+  <meta property="og:updated_time" content="2020-06-04T00:00:00Z">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:title" content="Temperature fluctuations - The Idea Behind">
+  
+  <meta name="twitter:image" content="/img/vanlog_retina_black.png">
+  
+  <meta name="twitter:description" content="">
+  
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/vanlog_retina3.png" alt="Temperature fluctuations - The Idea Behind logo" class="hidden-xs hidden-sm" >
+                    <img src="/img/vanlog_retina3.png" alt="Temperature fluctuations - The Idea Behind logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Temperature fluctuations - The Idea Behind - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">Home</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contact/">Contact</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/temperature/">research</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Temperature fluctuations - The Idea Behind</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        
+                          <p class="text-muted text-uppercase mb-small text-right">
+                            By <a href="#">Mariachiara Fortuna</a>
+                             | 
+                            June 4, 2020
+                          </p>
+                        
+
+                        <div id="post-content">
+                          
+
+
+<p>Usually, looking at the time series of observed temperatures, we see graphs as the one below. These graphs show the temperature fluctuations over the past 150 years, where temperatures show a systematic increase. The length of the time series is a crucial feature for understanding temperature fluctuations, because temperatures show cycles that seem to persist for several decades: so, if we want to understand the amplitude of the climate fluctuations, the limited length of the time series may compromise our understanding of the phenomena.</p>
+<p><img width='70%' src='/img/temperature/temperature-plot.png'/></p>
+<p>Luckily, temperature data are at times available for periods of time longer than 150 years. In fact, the invention of the thermometer dates back to the seventeenth century, and from the end of the eighteen century the meteorological measurements became systematic and accurate enough to start to produce valuable recordings. This is for instance the case of temperature time series from Uppsala, Sweden, whose records date back to 1722, or Berlin, from 1756, or Paris, from 1757, and several others from European countries.</p>
+<p>In recent years, moreover, there have been many attempts to reconstruct temperatures from earlier periods using proxy data, such as growth and density measures from tree rings, laminated sediment cores, annually resolved ice cores and others. These reconstructed data indicate that there have been very long local temperature trends over the last two millennia. For example, the reconstructed data by <a href="https://www.nature.com/articles/nature03265">Moberg, et al.</a> (Nature, 2005) show that temperatures in the Middle Ages were almost as high as the current ones. In the 16th century the temperature dropped to a minimum in the so-called small ice age, but then rose gradually to the current level, as visible in the figure below.</p>
+<p><img width='80%' src='/img/temperature/F4_moberg_timeseries.png'/></p>
+<p>In a recently concluded analysis ( <a href="https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557">How does temperature vary over time? Evidence on the stationary and fractal nature of temperature</a>, during publication in the Journal of the Royal Statistical Society, series A) we have performed a wide analysis to investigate the properties of the temperature fluctuations from a statistical point of view. We did not take into account any other component of the complex object that we call “climate”, nor tried to understand the impact of anthropic activities on climate or temperature. We focused solely on temperature variations, to analyze their cyclic fluctuations and try to characterize their behaviour. In order to achieve this goal, we have used the longest and cleanest monthly temperature time series available across large parts of the globe (96 weather stations in total), as well as the reconstructed data mentioned above. <a href="/temperature/temperature-data">Data</a>, <a href="/temperature/temperature-code">code</a> and <a href="/tags/temperature/">results</a> are all available in <a href="/tags/">this website</a>.</p>
+<p>Using various statistical methods, as well as a statistical model that can be justified by theoretical arguments, we find that all the temperature time series exhibit what is called a “long-term dependence”, a property that creates very long persistent trends.</p>
+<p>For example, from Figure 2 we see that this is the case for the reconstructed temperatures, which just shows a decreasing trend from approx. 1100 to approx. 1600. Our statistical analysis indicates that both such longer as well as shorter trends are a typical pattern for the temperature variations. Such a pattern is due in part to the fact that, according to our models, the temperature variations have what are called fractal properties. This means that the temperature variations are very irregular (cf. the figures above), and that the oscillation pattern is the same regardless of the time scale used. For example, the oscillation pattern during a month on average, will be the same as the oscillation pattern over a year, 10 years, or 500 years for that matter, but with different amplitudes. In other words, this oscillation pattern is such that there are “waves within the waves” where they have different length and amplitude but in a certain sense (fractal sense) the same qualitative properties. Furthermore, it follows that the co-variation between temperatures at two different times decreases slowly with the distance between the times. In other words, one can say that the temperature process has a built-in memory that is naturally erased, but it goes slowly. This type of model was first used by English engineer Harold Edwin Hurst in his studies of the Nile water flow in the 1950s. But it was Frenchman Benoit Mandelbrot who introduced the fractal concept and first formalized Hurst’s model layout. He later became famous for his articles and books in which he discusses fractal phenomena and forms in nature as well as models that can represent such properties.</p>
+<p>The presence of this very strong built-in memory (that we have found both in the observed and reconstructed time series) make the temperatures very persistent. If the temperature is high one day, it is not certain, but likely, that it is also high the next day*. But the same behaviour, due to the fractal property, holds also to a larger scale, such as year or decade. The presence of a rising trend over a long period of time does not necessarily mean that this trend will continue: at some point in time it will reverse, as we see in figure 2 for the decreasing trend from approx. 1100 to approx. 1600. Before this point, however, the trend can last for hundreds of years.
+As stated before, with our study we do not account for phenomena that are external to the temperature recordings in se. So, from a pure statistical perspective, we can conclude that air temperature data exhibit long range dependence and fractal properties, that lead to the presence of persistent trends that can last for centuries.</p>
+
+                        </div>
+                        
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            
+            <li>
+                <a href="/categories/research">research (9)</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            
+            <li>
+                <a href="/tags/fgn"><i class="fas fa-tags"></i> fgn</a>
+            </li>
+            
+            <li>
+                <a href="/tags/open-data"><i class="fas fa-tags"></i> open-data</a>
+            </li>
+            
+            <li>
+                <a href="/tags/plot"><i class="fas fa-tags"></i> plot</a>
+            </li>
+            
+            <li>
+                <a href="/tags/r"><i class="fas fa-tags"></i> r</a>
+            </li>
+            
+            <li>
+                <a href="/tags/r-package"><i class="fas fa-tags"></i> r-package</a>
+            </li>
+            
+            <li>
+                <a href="/tags/regression"><i class="fas fa-tags"></i> regression</a>
+            </li>
+            
+            <li>
+                <a href="/tags/research"><i class="fas fa-tags"></i> research</a>
+            </li>
+            
+            <li>
+                <a href="/tags/temperature"><i class="fas fa-tags"></i> temperature</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            Vanlog is a group of data scientists born around a common goal: bringing the power of data everywhere. We believe in open source solutions and we specializes in R, the programming language for statistical solutions
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+            
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <p class="text-uppercase"><strong>Vanlog</strong>
+    <br> Torino 
+    <br> Milano  
+      </p>
+      
+
+            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2020, Vanlog; all rights reserved.</p>
+            
+            <p class="pull-right">
+              Template by <a href="https://bootstrapious.com/p/universal-business-e-commerce-template">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+
+
+<script src="/js/owl.carousel.min.js"></script>
+
+
+
+  </body>
+</html>

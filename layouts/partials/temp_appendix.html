@@ -1,15 +1,15 @@
-{{ if isset .Site.Params "recent_posts" }}
-{{ if .Site.Params.recent_posts.enable }}
+{{ if isset .Site.Params "temp_appendix" }}
+{{ if .Site.Params.temp_appendix.enable }}
 <section class="bar background-white no-mb">
     <div class="container">
 
         <div class="col-md-12">
             <div class="heading text-center">
-                <h2>{{ .Site.Params.recent_posts.title | markdownify }}</h2>
+                <h2>{{ .Site.Params.temp_appendix.title | markdownify }}</h2>
             </div>
 
             <p class="lead">
-              {{ .Site.Params.recent_posts.subtitle | markdownify }}
+              {{ .Site.Params.temp_appendix.subtitle | markdownify }}
             </p>
 
             <!-- *** BLOG HOMEPAGE *** -->
@@ -37,12 +37,12 @@
 
                         <div class="content">
                             <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                            <p class="author-category">
+                            <!-- p class="author-category">
                             {{ with .Params.author }}
                             {{ i18n "authorBy" }} <a href="#">{{ . }}</a>
                             {{ end }}
                             {{ i18n "publishedOn" }} {{ .Date.Format .Site.Params.date_format }}
-                            </p>
+                            </p -->
                             <p class="intro">{{ .Params.summary }}</p>
                             <p class="read-more">
                               <a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>

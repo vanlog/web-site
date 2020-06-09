@@ -4,6 +4,7 @@ title: Appendix F - Selection procedure
 author: 'Mariachiara Fortuna'
 date: '2020-04-23'
 slug: appendix-f
+summary: Details on the selection procedure of the available temperature time series 
 categories: 
   - research
 tags: 
@@ -88,20 +89,22 @@ print_acceptance <- function(data_before, data_after,
 ```
 
 
-## Raw data organization
+### Raw data organization
 
-The data used in this project were collected by **Sigmund Hov Moen**, and are available in the **Rimfrost system**,  [www.rimfrost.no](http://www.rimfrost.no/).  
+The data used in this project were collected by **Sigmund Hov Moen**, and are available in the **Rimfrost system**,  [www.rimfrost.no](http://www.rimfrost.no/). 
+
+All the data are available in the tempFgn repository, see the [temperature data section](temperature/temperature-data) for more.   
 
 They consist of a large amount of monthly and annual temperature time series from all around the world. 
 
-The raw data, as organized in the Rimfrost system, are collected in the folder "data/raw". 
+The raw data, as organized in the Rimfrost system, are collected in the folder "data/raw"
 
 The "data/raw" folder contains 101 subfolders named with the English or the Norwegian name of the countries included in the Rimfrost system.
 
 Each country folder contains the temperature time series for each weather station included in the Rimfrost system. 
 
 
-## Data structure
+### Data structure
 
 Each time series is collected in a separate txt file, usually named with the Norwegian name of the weather station.
 
@@ -129,7 +132,7 @@ kable(head(Paris_data)) %>%
 
 
 
-## Main features of the raw data
+### Main features of the raw data
 
 
 In order to select the set of suitable time series and explore their main features, we first provide a preliminary table with useful information (*T0_Information*). This table contains general information about all the available time series, namely: 
@@ -223,7 +226,7 @@ kable(head(T0_Information, 20)) %>%
 
 
 
-## Raw data basic exploration
+### Raw data basic exploration
 
 The total number of availbale time series is **`r dim(T0_Information)[1]`**.
 
@@ -263,14 +266,14 @@ T0_Information %>%
 
 ***
 
-# SELECTION PROCESS
+## SELECTION PROCESS
 
 Given the wide variety of properties of the available time series, we decided to apply a multi-step automatic selection procedure to obtain a subset of series with specific characteristics.
 
 In any case, the full set of available time series (1260) is contained in the data/raw folder, and can be analyzed with the provided code.   
 
 
-## Multi-step automatic process
+### Multi-step automatic process
 
 
 Briefly, the multi-step process was designed as follow:
@@ -500,7 +503,7 @@ dataM <- monthlyAdj(data, scale = T)
 
 ### Final data
 
-Summary statistics of the selected of 96 time series is shown in Appendix B, table B1. 
+Summary statistics of the selected of 96 time series is shown in [Appendix B](/temperature/appendix-b), table B1. 
 
 There are two time series that did not pass the tests but we still included them in our analysis. One is from Ivittuut, Greenland, and the second one is from Uppsala, Sweden. The reason is that Greenland is of particular interest in the climate debate, and the temperature series from Uppsala is the longest time series ever recorded.
 

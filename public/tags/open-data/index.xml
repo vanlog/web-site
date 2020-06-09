@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>open data on Vanlog</title>
+    <link>/tags/open-data/</link>
+    <description>Recent content in open data on Vanlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/open-data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Temperature Data</title>
+      <link>/temperature/temperature-data/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/temperature/temperature-data/</guid>
+      <description>The goal of this section is to describe the data used in the Temperature Fluctuation paper and how these data are organized. All the data are available in the tempFGN repository, and their organization strongly depend from the aim of the analysis that we have carried out.
+Since the goal of our work was to study the historical variations of temperature fluctuations, we needed long temperatures time series, possibly for several weather station.</description>
+    </item>
+    
+  </channel>
+</rss>

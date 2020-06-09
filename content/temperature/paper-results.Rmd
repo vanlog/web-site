@@ -97,9 +97,9 @@ Yj_m <- cumsum(Zj_m)
 ```
 
 ***
-***
 
-# TABLES
+
+## TABLES
 
 ### Table 1. Parameter estimation for the selected time series
 
@@ -286,7 +286,7 @@ kable(monthly_Qt_sel, digits=3, align='c',
 ***
 ***
 
-# FIGURES
+## FIGURES
 
 ### Figure 1. Illustration of statistical self-similarity. Annual temperature for Paris
 

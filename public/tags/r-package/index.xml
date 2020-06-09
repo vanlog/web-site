@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R package on Vanlog</title>
+    <link>/tags/r-package/</link>
+    <description>Recent content in R package on Vanlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/r-package/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Temperature fluctuations - The Code</title>
+      <link>/temperature/temperature-code/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/temperature/temperature-code/</guid>
+      <description>The tempFGN github repository contains all the material related to the paper: How does temperature vary over time? Evidence on the stationary and fractal nature of temperature by John Dagsvik, Mariachiara Fortuna, Sigmund H. Moen
+All the materials are stored in the form of an R package. You can download or clone the repository and install the package: then all the functions will be available for usage. The same repository contains the online resources published as paper supplementary materials.</description>
+    </item>
+    
+    <item>
+      <title>Temperature fluctuations - The Idea Behind</title>
+      <link>/temperature/temperature-idea/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/temperature/temperature-idea/</guid>
+      <description>Usually, looking at the time series of observed temperatures, we see graphs as the one below. These graphs show the temperature fluctuations over the past 150 years, where temperatures show a systematic increase. The length of the time series is a crucial feature for understanding temperature fluctuations, because temperatures show cycles that seem to persist for several decades: so, if we want to understand the amplitude of the climate fluctuations, the limited length of the time series may compromise our understanding of the phenomena.</description>
+    </item>
+    
+  </channel>
+</rss>
