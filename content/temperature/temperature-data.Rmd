@@ -15,7 +15,7 @@ tags:
   - open data
 ---
 
-The goal of this section is to describe the data used in the [Temperature Fluctuation paper](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557) and how these data are organized. All the data are available in the fgnTemp repository, and their organization strongly depend from the aim of the analysis that we have carried out.
+The goal of this section is to describe the data used in the [Temperature Fluctuation paper](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557) and how these data are organized. All the data are available in the [tempFGN repository](https://github.com/vanlog/tempFGN), and their organization strongly depend from the aim of the analysis that we have carried out.
 
 Since the goal of our work was to study the historical variations of temperature fluctuations, we needed long temperatures time series, possibly for several weather station. 
 We found a great solution in the data collected by Sigmund H. Moen, co-author of the paper and creator of the web page [www.rimfrost.no](www.rimfrost.no), where most of the records are freely available. 
@@ -63,4 +63,4 @@ All the selected time series are available in the /final folder. All the names (
 
 #### Moberg data
 
-Temperature reconstructed time series from Moberg et al. are available in the /moberg folder 
+Temperature records reconstructed by [Moberg, et al.](https://www.nature.com/articles/nature03265) are available in the /moberg folder 

@@ -15,14 +15,14 @@ tags:
   - R package
 ---
 
-The tempFGN github repository contains all the material related to the paper: [How does temperature vary over time? Evidence on the stationary and fractal nature of temperature](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557) by John Dagsvik, Mariachiara Fortuna, Sigmund H. Moen
+The [tempFGN github repository](https://github.com/vanlog/tempFGN) contains all the material related to the paper: [How does temperature vary over time? Evidence on the stationary and fractal nature of temperature](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557) by John Dagsvik, Mariachiara Fortuna, Sigmund H. Moen
 
-All the materials are stored in the form of an R package. You can download or clone the repository and install the package: then all the functions will be available for usage. The same repository contains the online resources published as paper's supplementary materials. These resources are available as .pdf files as well as .RMarkdown files, to allow the results reproduction.
+All the materials are stored in the form of an R package. You can download or clone the repository and install the package: then all the functions will be available for usage. The same repository contains the online resources published as paper supplementary materials. These resources are available as .pdf files as well as .Rmd files, to allow the results reproduction.
 
 
 ### tempFGN functions
 
-The functions developed for the Temperature Fluctuations paper are available installing the tempFGN package. As usual in the R packages, they are stored in the /R folder. They are divided into 5 groups:
+The functions developed for the Temperature Fluctuations paper are available installing the [tempFGN package](https://github.com/vanlog/tempFGN). As usual for the R packages, the functions are stored in the /R folder. They are divided into 5 groups:
 
 * Preprocessing: contains functions for manipulating the time series
 * Plots: contains functions for producting the temperature plots 
@@ -33,7 +33,7 @@ The functions developed for the Temperature Fluctuations paper are available ins
 
 ### Data
 
-All the data are store into the /inst/data folder. A wide description of the data and their organization can be found here.
+All the data are store into the /inst/data folder. A wide description of the data and their organization can be found [here](/temperature/temperature-data).
 
 
 ### Online resources
@@ -45,8 +45,8 @@ The folder contains the following materials:
 * [Paper results](/temperature/paper-results)
 * [Appendix B](/temperature/appendix-b): Summary data information
 * [Appendix C](/temperature/appendix-c): Estimation and test results
-* [Appendix D](/temperature/appendix-d): Property of the estimators
-* [Appendix E](/temperature/appendix-e): Summary infographic for each weather station
+* [Appendix D](/temperature/appendix-d): Properties of the estimators
+* [Appendix E](/temperature/appendix-e): Summary infographics for each weather station
 * [Appendix F](/temperature/appendix-f): Selection process and cleaning procedure
 * Functions code, written as plain text. This file was required as supplementary material for the paper publication.
 
@@ -57,7 +57,7 @@ The folder contains the following materials:
 #### TO REPRODUCE PAPER/APPENDIX RESULTS 
 
 
-1. Clone or download the tempFGN package
+1. Clone or download the [tempFGN package](https://github.com/vanlog/tempFGN)
 
 2. Open the tempFGN.Rproj file from RStudio
 
