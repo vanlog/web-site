@@ -2,85 +2,85 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Vanlog</title>
-    <link>https://www.vanlog.it/tags/r/</link>
+    <link>/tags/r/</link>
     <description>Recent content in R on Vanlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.vanlog.it/tags/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Temperature fluctuations - The Code</title>
-      <link>https://www.vanlog.it/temperature/temperature-code/</link>
+      <link>/temperature/temperature-code/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.vanlog.it/temperature/temperature-code/</guid>
+      <guid>/temperature/temperature-code/</guid>
       <description>The tempFGN github repository contains all the material related to the paper: How does temperature vary over time? Evidence on the stationary and fractal nature of temperature by John Dagsvik, Mariachiara Fortuna, Sigmund H. Moen
 All the materials are stored in the form of an R package. You can download or clone the repository and install the package: then all the functions will be available for usage. The same repository contains the online resources published as paper supplementary materials.</description>
     </item>
     
     <item>
       <title>Temperature fluctuations - The Idea Behind</title>
-      <link>https://www.vanlog.it/temperature/temperature-idea/</link>
+      <link>/temperature/temperature-idea/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.vanlog.it/temperature/temperature-idea/</guid>
+      <guid>/temperature/temperature-idea/</guid>
       <description>Usually, looking at the time series of observed temperatures, we see graphs as the one below. These graphs show the temperature fluctuations over the past 150 years, where temperatures show a systematic increase. The length of the time series is a crucial feature for understanding temperature fluctuations, because temperatures show cycles that seem to persist for several decades: so, if we want to understand the amplitude of the climate fluctuations, the limited length of the time series may compromise our understanding of the phenomena.</description>
     </item>
     
     <item>
       <title>Temperature fluctuation paper - Main Results</title>
-      <link>https://www.vanlog.it/temperature/paper-results/</link>
+      <link>/temperature/paper-results/</link>
       <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.vanlog.it/temperature/paper-results/</guid>
+      <guid>/temperature/paper-results/</guid>
       <description>This section contains all the results included in the Temperature fluctuations paper</description>
     </item>
     
     <item>
       <title>Appendix B - Summary data information</title>
-      <link>https://www.vanlog.it/temperature/appendix-b/</link>
+      <link>/temperature/appendix-b/</link>
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.vanlog.it/temperature/appendix-b/</guid>
+      <guid>/temperature/appendix-b/</guid>
       <description>Information on the weather stations, lenght of the related time series and missing data</description>
     </item>
     
     <item>
       <title>Appendix C - Estimation and test results</title>
-      <link>https://www.vanlog.it/temperature/appendix-c/</link>
+      <link>/temperature/appendix-c/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.vanlog.it/temperature/appendix-c/</guid>
+      <guid>/temperature/appendix-c/</guid>
       <description>H estimation by Whittle and Wavelet estimators. Chi square statistics and stationarity tests</description>
     </item>
     
     <item>
       <title>Appendix D - Properties of the estimators</title>
-      <link>https://www.vanlog.it/temperature/appendix-d/</link>
+      <link>/temperature/appendix-d/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.vanlog.it/temperature/appendix-d/</guid>
+      <guid>/temperature/appendix-d/</guid>
       <description>Properties of different estimators of the FGN models, with boostrap simulations</description>
     </item>
     
     <item>
       <title>Appendix F - Selection procedure</title>
-      <link>https://www.vanlog.it/temperature/appendix-f/</link>
+      <link>/temperature/appendix-f/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.vanlog.it/temperature/appendix-f/</guid>
+      <guid>/temperature/appendix-f/</guid>
       <description>Details on the selection procedure of the available temperature time series</description>
     </item>
     
     <item>
       <title>Temperature Data</title>
-      <link>https://www.vanlog.it/temperature/temperature-data/</link>
+      <link>/temperature/temperature-data/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.vanlog.it/temperature/temperature-data/</guid>
+      <guid>/temperature/temperature-data/</guid>
       <description>The goal of this section is to describe the data used in the Temperature Fluctuation paper and how these data are organized. All the data are available in the tempFGN repository, and their organization strongly depend from the aim of the analysis that we have carried out.
 Since the goal of our work was to study the historical variations of temperature fluctuations, we needed long temperatures time series, possibly for several weather station.</description>
     </item>

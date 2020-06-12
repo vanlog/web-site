@@ -7,7 +7,7 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <title>R package</title>
+  <title>research</title>
   <meta name="author" content="Vanlog" />
   
   
@@ -66,9 +66,9 @@
   
   <meta property="og:locale" content="en_us">
   <meta property="og:site_name" content="Vanlog">
-  <meta property="og:title" content="R package">
+  <meta property="og:title" content="research">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="/tags/r-package/" />
+  <meta property="og:url" content="/categories/research/" />
   <meta property="og:description" content="">
   <meta property="og:image" content="/img/vanlog_retina_black.png">
   <meta property="og:image:type" content="image/png">
@@ -85,7 +85,7 @@
   
   <meta name="twitter:card" content="summary">
   
-  <meta name="twitter:title" content="R package">
+  <meta name="twitter:title" content="research">
   
   <meta name="twitter:image" content="/img/vanlog_retina_black.png">
   
@@ -108,9 +108,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="/">
-                    <img src="/img/vanlog_retina3.png" alt="R package logo" class="hidden-xs hidden-sm" >
-                    <img src="/img/vanlog_retina3.png" alt="R package logo" class="visible-xs visible-sm">
-                    <span class="sr-only">R package - go to homepage</span>
+                    <img src="/img/vanlog_retina3.png" alt="research logo" class="hidden-xs hidden-sm" >
+                    <img src="/img/vanlog_retina3.png" alt="research logo" class="visible-xs visible-sm">
+                    <span class="sr-only">research - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -142,6 +142,8 @@
                   
                   <li class="dropdown">
                     
+<<<<<<< cd653afbbbde324f1b1b078b6326636db7ed9ce9
+=======
                     <a href="/training/">training</a>
                     
                   </li>
@@ -149,6 +151,7 @@
                   
                   <li class="dropdown">
                     
+>>>>>>> ADD Training
                     <a href="/temperature/">research</a>
                     
                   </li>
@@ -212,7 +215,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>R package</h1>
+                <h1>research</h1>
             </div>
         </div>
     </div>
@@ -231,7 +234,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/temperature/temperature-code/">
+                                      <a href="/temperature/temperature-data/">
                                           
                                           <img src="/img/placeholder.png" class="img-responsive" alt="">
                                           
@@ -239,11 +242,11 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/temperature/temperature-code/">Temperature fluctuations - The Code</a></h2>
+                                    <h2><a href="/temperature/temperature-data/">Temperature Data</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">Mariachiara Fortuna</a>
+                                          By <a href="#"></a>
                                           
                                           
                                           
@@ -254,51 +257,13 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/temperature/temperature-code/"><i class="far fa-calendar"></i> June 4, 2020</a>
+                                            <a href="/temperature/temperature-data/"><i class="far fa-calendar"></i> April 23, 2020</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">The tempFGN github repository contains all the material related to the paper: How does temperature vary over time? Evidence on the stationary and fractal nature of temperature by John Dagsvik, Mariachiara Fortuna, Sigmund H. Moen
-All the materials are stored in the form of an R package. You can download or clone the repository and install the package: then all the functions will be available for usage. The same repository contains the online resources published as paper supplementary materials.</p>
-                                    <p class="read-more"><a href="/temperature/temperature-code/" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/temperature/temperature-idea/">
-                                          
-                                          <img src="/img/placeholder.png" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/temperature/temperature-idea/">Temperature fluctuations - The Idea Behind</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          By <a href="#">Mariachiara Fortuna</a>
-                                          
-                                          
-                                          
-                                          in <a href="/categories/research">research</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/temperature/temperature-idea/"><i class="far fa-calendar"></i> June 4, 2020</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">Usually, looking at the time series of observed temperatures, we see graphs as the one below. These graphs show the temperature fluctuations over the past 150 years, where temperatures show a systematic increase. The length of the time series is a crucial feature for understanding temperature fluctuations, because temperatures show cycles that seem to persist for several decades: so, if we want to understand the amplitude of the climate fluctuations, the limited length of the time series may compromise our understanding of the phenomena.</p>
-                                    <p class="read-more"><a href="/temperature/temperature-idea/" class="btn btn-template-main">Continue reading</a>
+                                    <p class="intro">The goal of this section is to describe the data used in the Temperature Fluctuation paper and how these data are organized. All the data are available in the tempFGN repository, and their organization strongly depend from the aim of the analysis that we have carried out.
+Since the goal of our work was to study the historical variations of temperature fluctuations, we needed long temperatures time series, possibly for several weather station.</p>
+                                    <p class="read-more"><a href="/temperature/temperature-data/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
                             </div>
@@ -307,7 +272,7 @@ All the materials are stored in the form of an R package. You can download or cl
 
                         <ul class="pager">
                             
-                            <li class="previous disabled"><a href="#">&larr; Newer</a></li>
+                            <li class="previous"><a href="/categories/research/">&larr; Newer</a></li>
                             
 
                             
@@ -362,8 +327,8 @@ All the materials are stored in the form of an R package. You can download or cl
         <ul class="nav nav-pills nav-stacked">
             
             
-            <li>
-                <a href="/categories/research">research (9)</a>
+            <li class="active">
+                <a href="/categories/research">research (11)</a>
             </li>
             
         </ul>
@@ -404,7 +369,7 @@ All the materials are stored in the form of an R package. You can download or cl
                 <a href="/tags/r"><i class="fas fa-tags"></i> r</a>
             </li>
             
-            <li class="active">
+            <li>
                 <a href="/tags/r-package"><i class="fas fa-tags"></i> r-package</a>
             </li>
             
@@ -519,6 +484,7 @@ All the materials are stored in the form of an R package. You can download or cl
     
 
     
+<<<<<<< cd653afbbbde324f1b1b078b6326636db7ed9ce9
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -532,6 +498,8 @@ if (!doNotTrack) {
 }
 </script>
 
+=======
+>>>>>>> ADD Training
 <script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 

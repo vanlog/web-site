@@ -7,7 +7,7 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <title>Appendix B - Summary data information</title>
+  <title>Appendix F - Selection procedure</title>
   <meta name="author" content="Mariachiara Fortuna" />
   
   
@@ -66,28 +66,28 @@
   
   <meta property="og:locale" content="en_us">
   <meta property="og:site_name" content="Vanlog">
-  <meta property="og:title" content="Appendix B - Summary data information">
+  <meta property="og:title" content="Appendix F - Selection procedure">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="/temperature/appendix-b.knit/" />
+  <meta property="og:url" content="/temperature/appendix-f.knit/" />
   <meta property="og:description" content="">
-  <meta property="og:image" content="/img/temperature/banner_B_datainfo.png">
+  <meta property="og:image" content="/img/temperature/banner_F_selection.png">
   <meta property="og:image:type" content="image/png">
   
   
   
-    <meta property="og:image:width" content="371">
-    <meta property="og:image:height" content="216">
+    <meta property="og:image:width" content="369">
+    <meta property="og:image:height" content="215">
   
   
-  <meta property="og:updated_time" content="2020-05-06T00:00:00Z">
+  <meta property="og:updated_time" content="2020-04-23T00:00:00Z">
   
 
   
   <meta name="twitter:card" content="summary">
   
-  <meta name="twitter:title" content="Appendix B - Summary data information">
+  <meta name="twitter:title" content="Appendix F - Selection procedure">
   
-  <meta name="twitter:image" content="/img/temperature/banner_B_datainfo.png">
+  <meta name="twitter:image" content="/img/temperature/banner_F_selection.png">
   
   <meta name="twitter:description" content="">
   
@@ -108,9 +108,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="/">
-                    <img src="/img/vanlog_retina3.png" alt="Appendix B - Summary data information logo" class="hidden-xs hidden-sm" >
-                    <img src="/img/vanlog_retina3.png" alt="Appendix B - Summary data information logo" class="visible-xs visible-sm">
-                    <span class="sr-only">Appendix B - Summary data information - go to homepage</span>
+                    <img src="/img/vanlog_retina3.png" alt="Appendix F - Selection procedure logo" class="hidden-xs hidden-sm" >
+                    <img src="/img/vanlog_retina3.png" alt="Appendix F - Selection procedure logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Appendix F - Selection procedure - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -136,6 +136,13 @@
                   <li class="dropdown">
                     
                     <a href="/contact/">Contact</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/training/">training</a>
                     
                   </li>
                   
@@ -205,7 +212,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Appendix B - Summary data information</h1>
+                <h1>Appendix F - Selection procedure</h1>
             </div>
         </div>
     </div>
@@ -225,7 +232,7 @@
                           <p class="text-muted text-uppercase mb-small text-right">
                             By <a href="#">Mariachiara Fortuna</a>
                              | 
-                            May 6, 2020
+                            April 23, 2020
                           </p>
                         
 
@@ -239,11 +246,159 @@
 <p>John K. Dagsvik, E-mail: <a href="mailto:john.dagsvik@ssb.no">john.dagsvik@ssb.no</a></p>
 <p>Mariachiara Fortuna, E-mail: <a href="mailto:mariachiara.fortuna@vanlog.it">mariachiara.fortuna@vanlog.it</a> (reference for code and analysis)</p>
 <hr>
-<h3 id="figure-b1-plots-of-temperature-series-for-9-selected-cities">Figure B1. Plots of temperature series for 9 selected cities</h3>
-<p><!-- raw HTML omitted --></p>
-<hr>
-<h3 id="table-b1-summary-information-about-data">Table B1. Summary information about data</h3>
+<h3 id="raw-data-organization">Raw data organization</h3>
+<p>The data used in this project were collected by <strong>Sigmund Hov Moen</strong>, and are available in the <strong>Rimfrost system</strong>,  <a href="http://www.rimfrost.no/">www.rimfrost.no</a>.</p>
+<p>All the data are available in the tempFgn repository, see the <a href="temperature/temperature-data">temperature data section</a> for more.</p>
+<p>They consist of a large amount of monthly and annual temperature time series from all around the world.</p>
+<p>The raw data, as organized in the Rimfrost system, are collected in the folder &ldquo;data/raw&rdquo;</p>
+<p>The &ldquo;data/raw&rdquo; folder contains 101 subfolders named with the English or the Norwegian name of the countries included in the Rimfrost system.</p>
+<p>Each country folder contains the temperature time series for each weather station included in the Rimfrost system.</p>
+<h3 id="data-structure">Data structure</h3>
+<p>Each time series is collected in a separate txt file, usually named with the Norwegian name of the weather station.</p>
+<p>Each file is structured as follow:</p>
+<ul>
+<li>
+<p>Column 1: <strong>Year</strong></p>
+</li>
+<li>
+<p>Columns 2-13: <strong>Monthly temperatures</strong> in that year, from January to December</p>
+</li>
+<li>
+<p>Column 14: <strong>Average annual temperature</strong>, measured as mean of the monthly temperarures for that year</p>
+</li>
+</ul>
+<p>There are no column names, and the missing data are usually recorded with the string <em>99</em> (but several exceptions are present).</p>
+<p>As an example, these are the first six rows of the <em>Paris.txt</em> file.</p>
 <!-- raw HTML omitted -->
+<h3 id="main-features-of-the-raw-data">Main features of the raw data</h3>
+<p>In order to select the set of suitable time series and explore their main features, we first provide a preliminary table with useful information (<em>T0_Information</em>). This table contains general information about all the available time series, namely:</p>
+<ul>
+<li>
+<p><strong>Country</strong> and <strong>Station</strong> name for each time series</p>
+</li>
+<li>
+<p>Its <strong>Status</strong>. The Status variable provides the results of some validation checks about the data format. &ldquo;OK&rdquo; means that the time series passed the checks, &ldquo;ERROR&rdquo; means that it did not pass the checks (eg the file has a wrong number of columns)</p>
+</li>
+<li>
+<p><strong>From</strong> and <strong>To</strong> show the first and the last year of the recorded time series</p>
+</li>
+<li>
+<p><strong>Length</strong> shows the length in years of the time series</p>
+</li>
+<li>
+<p><strong>Missing</strong> shows the number of missing annual average temperature. NA means <em>Not Available</em></p>
+</li>
+</ul>
+<p>As an example, consider the first 20 rows of the <em>T0_Information</em> table:</p>
+<!-- raw HTML omitted -->
+<h3 id="raw-data-basic-exploration">Raw data basic exploration</h3>
+<p>The total number of availbale time series is <strong>1260</strong>.</p>
+<p>The table below provides a summary of the information given about each recorded variable:</p>
+<!-- raw HTML omitted -->
+<p>The following graph shows all the available time series, sorted by first recorded year. The green dot represents the first recorded year, while the purple dot represents the last recorded year. The grey segment represents the length of the time series.</p>
+<!-- raw HTML omitted -->
+<hr>
+<h2 id="selection-process">SELECTION PROCESS</h2>
+<p>Given the wide variety of properties of the available time series, we decided to apply a multi-step automatic selection procedure to obtain a subset of series with specific characteristics.</p>
+<p>In any case, the full set of available time series (1260) is contained in the data/raw folder, and can be analyzed with the provided code.</p>
+<h3 id="multi-step-automatic-process">Multi-step automatic process</h3>
+<p>Briefly, the multi-step process was designed as follow:</p>
+<ol>
+<li>
+<p><strong>Step 1 - Valid structure</strong>: selection of the time series with valid data structure</p>
+</li>
+<li>
+<p><strong>Step 2 - Length in years</strong>: selection of the time series with more than 105 recorded years</p>
+</li>
+<li>
+<p><strong>Step 3 - Recorded months</strong>: selection of the time series with more than 1280 recorded months (non missing)</p>
+</li>
+<li>
+<p><strong>Step 4 - Missing months</strong>: selection of the time series with less than 80 missing months</p>
+</li>
+<li>
+<p><strong>Step 5 - Length in months</strong>: selection of the time series with full monthly length not inferior to 1290 months</p>
+</li>
+</ol>
+<h3 id="step-1---selection-by-valid-structure">Step 1 - Selection by valid structure</h3>
+<p>Using the information table previusly built (<em>T0_Information</em>), we selected all the time series with the variable <em>Status</em> equal to <em>OK</em>.</p>
+<p>Here the results of the selection procedure for valid structure (step 1):</p>
+<pre><code>##  Cleaning data - Step : 1 
+##  ************************************ 
+##  1035 accepted time series over 1260 
+##  Current step acceptance rate : 82.14 % 
+##  Loss from step 1: 17.86 %
+</code></pre><h3 id="step-2---selection-by-length-years">Step 2 - Selection by length (years)</h3>
+<p>The second step of our selection procedure was to identify all the time series that had more than 106 recorded years.</p>
+<p>The results of the second step of the selection procedure follows here:</p>
+<pre><code>##  Cleaning data - Step : 2 
+##  ************************************ 
+##  376 accepted time series over 1035 
+##  Current step acceptance rate : 36.33 % 
+##  Loss from step 1: 70.16 %
+</code></pre><p>At this point, our subset consists of 376 weather stations.</p>
+<h3 id="information-table-2---monthly-information">Information table 2 - Monthly information</h3>
+<p>In order to apply step 3-5 of the selection procedure, we need to gather information about the data at a monthly level.</p>
+<p>We then built a second information table, with the following fields:</p>
+<ul>
+<li>
+<p><strong>Country</strong> and <strong>Station</strong> name for each time series</p>
+</li>
+<li>
+<p><strong>First_Year</strong> and <strong>First_Year</strong>, first and the last year of the recorded time series</p>
+</li>
+<li>
+<p><strong>Years</strong>, length in years of the time series</p>
+</li>
+<li>
+<p><strong>Months</strong>, number of available months (non missing)</p>
+</li>
+<li>
+<p><strong>Full_Length</strong>, number of months between the first recorded month and the last one.</p>
+</li>
+<li>
+<p><strong>Missing_M</strong>, number of missing months</p>
+</li>
+</ul>
+<p>As an example, consider the the first 10 rows of the <em>T02_Information2</em> table:</p>
+<!-- raw HTML omitted -->
+<h3 id="step-3---selection-by-available-months">Step 3 - Selection by available months</h3>
+<p>We can now refine the selection procedure checking that the number of <em>non missing months</em> is superior to <em>1260</em>.</p>
+<p>Here the results of this selection step:</p>
+<pre><code>##  Cleaning data - Step : 3 
+##  ************************************ 
+##  329 accepted time series over 376 
+##  Current step acceptance rate : 87.5 % 
+##  Loss from step 1: 73.89 %
+</code></pre><h3 id="step-4---selection-by-missing-months">Step 4 - Selection by missing months</h3>
+<p>We can now exclude all the time series with number of <em>missing months</em> above <em>80</em>.</p>
+<p>Recall that the previous step was about non missing months: in this step we are avoiding time series that (although long), contain so many &ldquo;holes&rdquo; that they might compromise the data quality.</p>
+<p>Here the results of this selection step:</p>
+<pre><code>##  Cleaning data - Step : 3 
+##  ************************************ 
+##  278 accepted time series over 329 
+##  Current step acceptance rate : 84.5 % 
+##  Loss from step 1: 77.94 %
+</code></pre><h3 id="step-5---length-in-months">Step 5 - Length in months</h3>
+<p>The last step of the selection procedure is to check if the total length of the time series (from the first recorded month to the last one, missing included) is not inferior to 1290.</p>
+<p>Above the results:</p>
+<pre><code>##  Cleaning data - Step : 5 
+##  ************************************ 
+##  277 accepted time series over 278 
+##  Current step acceptance rate : 99.64 % 
+##  Loss from step 1: 78.02 %
+</code></pre><p>At this point we have a subset of 277 waether stations, characterized by a valid data structure and a length and presence of missing observation below specific thresholds.</p>
+<h2 id="final-selection">Final selection</h2>
+<p>In order to select the final set of weather stations we proceded by manual inspection of all the time series.</p>
+<p>We excluded all the time series with substantial quality problems, such as those with extreme outliers and several consecutive missing over time intervals.</p>
+<p>In the final selection we tried as much as possible to select weather stations that were distributed across most parts of the world.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="final-data">Final data</h3>
+<p>Summary statistics of the selected of 96 time series is shown in <a href="/temperature/appendix-b">Appendix B</a>, table B1.</p>
+<p>There are two time series that did not pass the tests but we still included them in our analysis. One is from Ivittuut, Greenland, and the second one is from Uppsala, Sweden. The reason is that Greenland is of particular interest in the climate debate, and the temperature series from Uppsala is the longest time series ever recorded.</p>
+<p>All the selected time series are available in the data/final folder. All the names (country and stations) have been translated to English.</p>
+<p>We have highlighted results from 9 weather stations because they are well known cities with good quality of the temperature data.</p>
 
                         </div>
                         
@@ -455,19 +610,6 @@
     
 
     
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-169285327-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
 <script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
