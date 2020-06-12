@@ -7,13 +7,13 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <title>Temperature Data</title>
-  <meta name="author" content="" />
+  <title>Appendix B - Summary data information</title>
+  <meta name="author" content="Mariachiara Fortuna" />
   
   
   
   
-  <meta name="keywords" content="R, coding, research, temperature, FGN, open data">
+  <meta name="keywords" content="R, coding, research, temperature, FGN">
   
   
   <meta name="description" content="">
@@ -55,7 +55,7 @@
   <link href="/css/owl.theme.css" rel="stylesheet">
 
   
-  <link rel="alternate" href="https://www.vanlog.it/index.xml" type="application/rss+xml" title="Vanlog">
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Vanlog">
 
   
   
@@ -66,28 +66,28 @@
   
   <meta property="og:locale" content="en_us">
   <meta property="og:site_name" content="Vanlog">
-  <meta property="og:title" content="Temperature Data">
+  <meta property="og:title" content="Appendix B - Summary data information">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.vanlog.it/temperature/temperature-data/" />
+  <meta property="og:url" content="/temperature/appendix-b.knit/" />
   <meta property="og:description" content="">
-  <meta property="og:image" content="https://www.vanlog.it/img/vanlog_retina_black.png">
+  <meta property="og:image" content="/img/temperature/banner_B_datainfo.png">
   <meta property="og:image:type" content="image/png">
   
   
   
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="140">
+    <meta property="og:image:width" content="371">
+    <meta property="og:image:height" content="216">
   
   
-  <meta property="og:updated_time" content="2020-04-23T00:00:00Z">
+  <meta property="og:updated_time" content="2020-05-06T00:00:00Z">
   
 
   
   <meta name="twitter:card" content="summary">
   
-  <meta name="twitter:title" content="Temperature Data">
+  <meta name="twitter:title" content="Appendix B - Summary data information">
   
-  <meta name="twitter:image" content="https://www.vanlog.it/img/vanlog_retina_black.png">
+  <meta name="twitter:image" content="/img/temperature/banner_B_datainfo.png">
   
   <meta name="twitter:description" content="">
   
@@ -108,9 +108,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="/">
-                    <img src="/img/vanlog_retina3.png" alt="Temperature Data logo" class="hidden-xs hidden-sm" >
-                    <img src="/img/vanlog_retina3.png" alt="Temperature Data logo" class="visible-xs visible-sm">
-                    <span class="sr-only">Temperature Data - go to homepage</span>
+                    <img src="/img/vanlog_retina3.png" alt="Appendix B - Summary data information logo" class="hidden-xs hidden-sm" >
+                    <img src="/img/vanlog_retina3.png" alt="Appendix B - Summary data information logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Appendix B - Summary data information - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -140,7 +140,7 @@
                   </li>
                   
                   
-                  <li class="dropdown">
+                  <li class="dropdown active">
                     
                     <a href="/temperature/">research</a>
                     
@@ -205,7 +205,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Temperature Data</h1>
+                <h1>Appendix B - Summary data information</h1>
             </div>
         </div>
     </div>
@@ -223,53 +223,27 @@
 
                         
                           <p class="text-muted text-uppercase mb-small text-right">
-                            
-                            
-                            April 23, 2020
+                            By <a href="#">Mariachiara Fortuna</a>
+                             | 
+                            May 6, 2020
                           </p>
                         
 
                         <div id="post-content">
-                          
-
-
-<p>The goal of this section is to describe the data used in the <a href="https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557">Temperature Fluctuation paper</a> and how these data are organized. All the data are available in the <a href="https://github.com/vanlog/tempFGN">tempFGN repository</a>, and their organization strongly depend from the aim of the analysis that we have carried out.</p>
-<p>Since the goal of our work was to study the historical variations of temperature fluctuations, we needed long temperatures time series, possibly for several weather station.
-We found a great solution in the data collected by Sigmund H. Moen, co-author of the paper and creator of the web page <a href="www.rimfrost.no">www.rimfrost.no</a>, where most of the records are freely available.</p>
-<p>The data consist in a big amount of temperatures time series, certified by NASA, for more than 100 countries, giving a total of 1258 weather stations. The time series are available as yearly, monthly and even three-times-a-day observations, and the length of the time series may vary greatly from station to station: while some of them are less than ten years long, the longer time series, from the city of Upssala in Sweden, is 290 years long, with monthly data from 1722 to 2012, at the time were the data were collected.</p>
-<p>The aim of our study was to establish if a Gaussian and self-similar model might be applied to the temperatures fluctuations. We decided to test this hypothesis on all the time series which met a list of selection criteria based on length and cleanness of the records. Details on the selection procedure are described in <a href="/temperature/appendix-f">Appendix F</a>.</p>
-<p>Furhtermore, in order to test the same hypothesis on a two millenia recostructed time series, we recurred to temperature data recostructed by <a href="https://www.nature.com/articles/nature03265">Moberg, et al.</a> (Nature, 2005).</p>
-<p>The /data folder in the fgnTemp repository contains all the data that were, in various measures, used to produce this paper.</p>
-<ul>
-<li>The <strong>original data</strong>, as collected from the Rimfrost system, are available in the /raw folder. It contains 1260 files, one for each collected time series.</li>
-<li>The <strong>time series selected</strong> and used in our analysis are stored in the /final folder. It contains a subset of 96 of the 1260 files, selected because they meet criteria of lenght and data quality as described in Appendix F.</li>
-<li>The <strong>Moberg reconstructed data</strong> are available in the /moberg folder.</li>
-</ul>
-<div id="temperature-time-series-data-structure" class="section level4">
-<h4>Temperature time series data structure</h4>
-<p>Each time series is collected in a separate .txt file, usually named with the Norwegian name of the weather station. There are no column names, and the missing data are usually recorded with the string 99 (but several exceptions are present). Each file is structured as follow:</p>
-<ul>
-<li>Column 1: Year</li>
-<li>Columns 2-13: Monthly temperatures in that year, from January to December</li>
-<li>Column 14: Average annual temperature, measured as mean of the monthly temperarures for that year</li>
-</ul>
-<p>As an example, these are the first six rows of the Paris.txt file.</p>
-<embed src="/img/temperature/Paris_head.png" width="70%" />
-</div>
-<div id="raw-folder" class="section level4">
-<h4>/raw folder</h4>
-<p>The /raw folder contains 101 subfolders named with the English or the Norwegian name of the countries included in the Rimfrost system.
-Each country folder contains the temperature time series for each weather station included in the Rimfrost system.</p>
-</div>
-<div id="final-folder" class="section level4">
-<h4>/final folder</h4>
-<p>Through the selection procedure described in Appendix F we selected a subset of 96 time series, which satisfy quality criteria as adequate length in years, lack of anomalies, reduced presence of missing records.<br />
-All the selected time series are available in the /final folder. All the names (country and stations) have been translated to English.</p>
-</div>
-<div id="moberg-data" class="section level4">
-<h4>Moberg data</h4>
-<p>Temperature records reconstructed by <a href="https://www.nature.com/articles/nature03265">Moberg, et al.</a> are available in the /moberg folder</p>
-</div>
+                          <p><strong>Affiliations:</strong></p>
+<p>John K. Dagsvik, Statistics Norway, Research Department;</p>
+<p>Mariachiara Fortuna, freelance statistician, Turin;</p>
+<p>Sigmund Hov Moen, Westerdals Oslo School of Arts, Communication and Technology.</p>
+<p>\vspace{0.5cm}</p>
+<p><strong>Corresponding author:</strong></p>
+<p>John K. Dagsvik, E-mail: <a href="mailto:john.dagsvik@ssb.no">john.dagsvik@ssb.no</a></p>
+<p>Mariachiara Fortuna, E-mail: <a href="mailto:mariachiara.fortuna@vanlog.it">mariachiara.fortuna@vanlog.it</a> (reference for code and analysis)</p>
+<hr>
+<h3 id="figure-b1-plots-of-temperature-series-for-9-selected-cities">Figure B1. Plots of temperature series for 9 selected cities</h3>
+<p><!-- raw HTML omitted --></p>
+<hr>
+<h3 id="table-b1-summary-information-about-data">Table B1. Summary information about data</h3>
+<!-- raw HTML omitted -->
 
                         </div>
                         
@@ -298,7 +272,7 @@ All the selected time series are available in the /final folder. All the names (
         <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
             <div class="input-group">
                 <input type="search" name="q" class="form-control" placeholder="Search">
-                <input type="hidden" name="sitesearch" value="https://www.vanlog.it/">
+                <input type="hidden" name="sitesearch" value="/">
                 <span class="input-group-btn">
                     <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
                 </span>
@@ -324,7 +298,7 @@ All the selected time series are available in the /final folder. All the names (
             
             
             <li>
-                <a href="/categories/research">research (9)</a>
+                <a href="/categories/research">research (11)</a>
             </li>
             
         </ul>

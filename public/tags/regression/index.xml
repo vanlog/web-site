@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>regression on Vanlog</title>
-    <link>/tags/regression/</link>
+    <link>https://www.vanlog.it/tags/regression/</link>
     <description>Recent content in regression on Vanlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/regression/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.vanlog.it/tags/regression/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Appendix E - Temperature stations infographics</title>
-      <link>/temperature/appendix-e/</link>
+      <link>https://www.vanlog.it/temperature/appendix-e/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/temperature/appendix-e/</guid>
+      <guid>https://www.vanlog.it/temperature/appendix-e/</guid>
       <description>Infographics on 96 weather stations, with temperature fluctuations, autocorrelation and statistical tests</description>
     </item>
     

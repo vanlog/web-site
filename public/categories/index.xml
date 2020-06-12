@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Vanlog</title>
-    <link>/categories/</link>
+    <link>https://www.vanlog.it/categories/</link>
     <description>Recent content in Categories on Vanlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.vanlog.it/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>research</title>
-      <link>/categories/research/</link>
+      <link>https://www.vanlog.it/categories/research/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/research/</guid>
+      <guid>https://www.vanlog.it/categories/research/</guid>
       <description></description>
     </item>
     
