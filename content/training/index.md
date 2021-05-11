@@ -8,9 +8,9 @@ toc: true
 
 ## Introduction
 
-This is our educational offer that ranges from courses for R beginners to specialization courses. The specialist offer covers both particular analysis areas and advanced programming techniques to use technology to achieve the desired results.
+This is Vanlog's educational offer that ranges from courses for R beginners to specialization courses. The specialist offer covers both particular analysis areas and advanced programming techniques to use technology to achieve the desired results.
 
-Our trainers have experience both in corporate and academic training, and they are active users of the techniques subjects of these courses for business solutions and research.
+Trainers have experience both in corporate and academic training, and they are active users of the techniques subjects of these courses for business solutions and research.
 
 ## Data Science Courses (2 day courses)
 
@@ -401,7 +401,7 @@ We will install this software on a Linux System and see how to best use the feat
 
 This course is not for Data Scientists, but for Operations. This is a fundamental course for professionals who need to set up the R servers for application or collaborative analysis.
 
-## Trainers
+## Trainer
 
 ### Andrea Melloncelli
 
