@@ -4,6 +4,8 @@
 
 https://www.r-bloggers.com/2022/01/switching-to-quarto-from-blogdown/
 
+Note: update the OS to Ubuntu 20.04 LTS in Netlify.
+
 
 ## Developer setup
 
