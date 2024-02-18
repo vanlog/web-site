@@ -7,13 +7,13 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <title>Temperature Data</title>
-  <meta name="author" content="" />
+  <title>Contact</title>
+  <meta name="author" content="Vanlog" />
   
   
   
   
-  <meta name="keywords" content="R, coding, research, temperature, FGN, open data">
+  <meta name="keywords" content="R, coding">
   
   
   <meta name="description" content="">
@@ -66,9 +66,9 @@
   
   <meta property="og:locale" content="en_us">
   <meta property="og:site_name" content="Vanlog">
-  <meta property="og:title" content="Temperature Data">
+  <meta property="og:title" content="Contact">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.vanlog.it/temperature/temperature-data/" />
+  <meta property="og:url" content="https://www.vanlog.it/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/" />
   <meta property="og:description" content="">
   <meta property="og:image" content="https://www.vanlog.it/img/vanlog_retina_black.png">
   <meta property="og:image:type" content="image/png">
@@ -79,13 +79,13 @@
     <meta property="og:image:height" content="140">
   
   
-  <meta property="og:updated_time" content="2020-04-23T00:00:00Z">
+  
   
 
   
   <meta name="twitter:card" content="summary">
   
-  <meta name="twitter:title" content="Temperature Data">
+  <meta name="twitter:title" content="Contact">
   
   <meta name="twitter:image" content="https://www.vanlog.it/img/vanlog_retina_black.png">
   
@@ -108,9 +108,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="/">
-                    <img src="/img/vanlog_retina3.png" alt="Temperature Data logo" class="hidden-xs hidden-sm" >
-                    <img src="/img/vanlog_retina3.png" alt="Temperature Data logo" class="visible-xs visible-sm">
-                    <span class="sr-only">Temperature Data - go to homepage</span>
+                    <img src="/img/vanlog_retina3.png" alt="Contact logo" class="hidden-xs hidden-sm" >
+                    <img src="/img/vanlog_retina3.png" alt="Contact logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Contact - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -212,7 +212,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Temperature Data</h1>
+                <h1>Contact</h1>
             </div>
         </div>
     </div>
@@ -220,172 +220,89 @@
 
 
         <div id="content">
-            <div class="container">
-
-                <div class="row">
-
-                    
-
-                    <div class="col-md-9" id="blog-post">
-
-                        
-                          <p class="text-muted text-uppercase mb-small text-right">
-                            
-                            
-                            April 23, 2020
-                          </p>
-                        
-
-                        <div id="post-content">
-                          <p>The goal of this section is to describe the data used in the <a href="https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557">Temperature Fluctuation paper</a> and how these data are organized. All the data are available in the <a href="https://github.com/vanlog/tempFGN">tempFGN repository</a>, and their organization strongly depend from the aim of the analysis that we have carried out.</p>
-<p>Since the goal of our work was to study the historical variations of temperature fluctuations, we needed long temperatures time series, possibly for several weather station.
-We found a great solution in the data collected by Sigmund H. Moen, co-author of the paper and creator of the web page <a href="www.rimfrost.no">www.rimfrost.no</a>, where most of the records are freely available.</p>
-<p>The data consist in a big amount of temperatures time series, certified by NASA, for more than 100 countries, giving a total of 1258 weather stations. The time series are available as yearly, monthly and even three-times-a-day observations, and the length of the time series may vary greatly from station to station: while some of them are less than ten years long, the longer time series, from the city of Upssala in Sweden, is 290 years long, with monthly data from 1722 to 2012, at the time were the data were collected.</p>
-<p>The aim of our study was to establish if a Gaussian and self-similar model might be applied to the temperatures fluctuations. We decided to test this hypothesis on all the time series which met a list of selection criteria based on length and cleanness of the records. Details on the selection procedure are described in <a href="/temperature/appendix-f">Appendix F</a>.</p>
-<p>Furhtermore, in order to test the same hypothesis on a two millenia recostructed time series, we recurred to temperature data recostructed by <a href="https://www.nature.com/articles/nature03265">Moberg, et al.</a> (Nature, 2005).</p>
-<p>The /data folder in the fgnTemp repository contains all the data that were, in various measures, used to produce this paper.</p>
-<ul>
-<li>The <strong>original data</strong>, as collected from the Rimfrost system, are available in the /raw folder. It contains 1260 files, one for each collected time series.</li>
-<li>The <strong>time series selected</strong> and used in our analysis are stored in the /final folder. It contains a subset of 96 of the 1260 files, selected because they meet criteria of lenght and data quality as described in Appendix F.</li>
-<li>The <strong>Moberg reconstructed data</strong> are available in the /moberg folder.</li>
-</ul>
-<h4 id="temperature-time-series-data-structure">Temperature time series data structure</h4>
-<p>Each time series is collected in a separate .txt file, usually named with the Norwegian name of the weather station. There are no column names, and the missing data are usually recorded with the string 99 (but several exceptions are present). Each file is structured as follow:</p>
-<ul>
-<li>Column 1: Year</li>
-<li>Columns 2-13: Monthly temperatures in that year, from January to December</li>
-<li>Column 14: Average annual temperature, measured as mean of the monthly temperarures for that year</li>
-</ul>
-<p>As an example, these are the first six rows of the Paris.txt file.</p>
-<embed src="/img/temperature/Paris_head.png" width="70%" />
-<h4 id="raw-folder">/raw folder</h4>
-<p>The /raw folder contains 101 subfolders named with the English or the Norwegian name of the countries included in the Rimfrost system.
-Each country folder contains the temperature time series for each weather station included in the Rimfrost system.</p>
-<h4 id="final-folder">/final folder</h4>
-<p>Through the selection procedure described in Appendix F we selected a subset of 96 time series, which satisfy quality criteria as adequate length in years, lack of anomalies, reduced presence of missing records.<br>
-All the selected time series are available in the /final folder. All the names (country and stations) have been translated to English.</p>
-<h4 id="moberg-data">Moberg data</h4>
-<p>Temperature records reconstructed by <a href="https://www.nature.com/articles/nature03265">Moberg, et al.</a> are available in the /moberg folder</p>
-
-                        </div>
-                        
-                        
-
-                    </div>
-                    
-
-                    
-
-                    
-
-                    <div class="col-md-3">
-
-                        
-
-                        
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-      <h3 class="panel-title">Search</h3>
-    </div>
-
-    <div class="panel-body">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
-            <div class="input-group">
-                <input type="search" name="q" class="form-control" placeholder="Search">
-                <input type="hidden" name="sitesearch" value="https://www.vanlog.it/">
-                <span class="input-group-btn">
-                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
-                </span>
-            </div>
-        </form>
-    </div>
-</div>
-
-
-
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">Categories</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
             
-            
-            <li>
-                <a href="/categories/research">research (2)</a>
-            </li>
-            
-        </ul>
-    </div>
 
-</div>
+              <div class="container" id="contact">
 
+    <div class="row">
+        <div class="col-md-8">
 
+            <section>
 
+                <p>If you are interested in training or consultancy projects or if you wish to explore how we can cooperate, write here a line in order to arrange a short introduction call.</p>
+<p>Let&rsquo;s get in touch!</p>
 
 
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">Tags</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/fgn"><i class="fas fa-tags"></i> fgn</a>
-            </li>
-            
-            <li>
-                <a href="/tags/open-data"><i class="fas fa-tags"></i> open-data</a>
-            </li>
-            
-            <li>
-                <a href="/tags/r"><i class="fas fa-tags"></i> r</a>
-            </li>
-            
-            <li>
-                <a href="/tags/research"><i class="fas fa-tags"></i> research</a>
-            </li>
-            
-            <li>
-                <a href="/tags/temperature"><i class="fas fa-tags"></i> temperature</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-                        
-
-                    </div>
-                    
-
-                    
-
-                </div>
                 
 
-            </div>
+                <div class="heading">
+                  <h3>Contact form</h3>
+                </div>
+
+                <div id="contact-message"></div>
+
+                <form  method="post" action="https://formspree.io/f/mgeprdnw">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                              <label for="name">Your Name</label>
+                                <input type="text" class="form-control" name="name" id="name" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="text" class="form-control" name="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                              <label for="message">Your Message</label>
+                                <textarea id="message" class="form-control" name="message" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 text-center">
+                          <button type="submit" class="btn btn-template-main"><i class="far fa-envelope"></i>Send Message</button>
+
+                        </div>
+                    </div>
+                    
+                </form>
+
+                
+
+            </section>
+
+        </div>
+
+        <div class="col-md-4">
+
+            
+            <section>
+
+              <h3 class="text-uppercase"> Address</h3>
+
+                <p class="text-uppercase">
+    <strong>Vanlog</strong><br> 
+      Milano  
+    </p>
+    
+
+            </section>
+
+            
+
+        </div>
+
+    </div>
+    
+</div>
+
+
+
+
+
             
         </div>
         

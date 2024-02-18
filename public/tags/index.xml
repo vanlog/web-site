@@ -2,86 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Vanlog</title>
-    <link>/tags/</link>
+    <link>https://www.vanlog.it/tags/</link>
     <description>Recent content in Tags on Vanlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.vanlog.it/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FGN</title>
-      <link>/tags/fgn/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/fgn/</guid>
+      <link>https://www.vanlog.it/tags/fgn/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.vanlog.it/tags/fgn/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r/</guid>
+      <link>https://www.vanlog.it/tags/r/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.vanlog.it/tags/r/</guid>
       <description></description>
     </item>
-    
-    <item>
-      <title>R package</title>
-      <link>/tags/r-package/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r-package/</guid>
-      <description></description>
-    </item>
-    
     <item>
       <title>research</title>
-      <link>/tags/research/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/research/</guid>
+      <link>https://www.vanlog.it/tags/research/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.vanlog.it/tags/research/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>temperature</title>
-      <link>/tags/temperature/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/temperature/</guid>
+      <link>https://www.vanlog.it/tags/temperature/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.vanlog.it/tags/temperature/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>open data</title>
-      <link>/tags/open-data/</link>
+      <link>https://www.vanlog.it/tags/open-data/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/open-data/</guid>
+      <guid>https://www.vanlog.it/tags/open-data/</guid>
       <description></description>
     </item>
-    
-    <item>
-      <title>plot</title>
-      <link>/tags/plot/</link>
-      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/plot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>regression</title>
-      <link>/tags/regression/</link>
-      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/regression/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

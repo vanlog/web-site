@@ -11,7 +11,7 @@ googleAnalytics = "UA-169285327-1"
 
 # Define the number of posts per page
 paginate = 10
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.qmd", "\\.ipynb$", "\\.py$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [menu]
 
@@ -208,3 +208,5 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     title = "Results"
     subtitle = "This section contains all the results and the appendices of the Temperature fluctuations paper. All the results may be reproduced via their free code and data, see above sections Data and Code"
 
+[markup.goldmark.renderer]
+    unsafe= true

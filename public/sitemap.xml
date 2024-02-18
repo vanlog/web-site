@@ -1,127 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/fgn/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/r-package/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/research/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/research/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/temperature/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/temperature/temperature-code/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/temperature/temperature-idea/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/temperature/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/temperature/paper-results/</loc>
-    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/temperature/appendix-b/</loc>
-    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/temperature/appendix-c/</loc>
+    <loc>https://www.vanlog.it/temperature/appendix-c/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/temperature/appendix-d/</loc>
-    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/temperature/appendix-e/</loc>
+  </url><url>
+    <loc>https://www.vanlog.it/categories/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.vanlog.it/tags/fgn/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.vanlog.it/tags/r/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.vanlog.it/tags/research/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.vanlog.it/categories/research/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.vanlog.it/tags/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.vanlog.it/tags/temperature/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.vanlog.it/temperature/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.vanlog.it/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.vanlog.it/tags/open-data/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/temperature/appendix-f/</loc>
+  </url><url>
+    <loc>https://www.vanlog.it/temperature/temperature-data/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.vanlog.it/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</loc>
+  </url><url>
+    <loc>https://www.vanlog.it/contact/</loc>
+  </url><url>
+    <loc>https://www.vanlog.it/faq/</loc>
+  </url><url>
+    <loc>https://www.vanlog.it/training/</loc>
   </url>
-  
-  <url>
-    <loc>/tags/open-data/</loc>
-    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/plot/</loc>
-    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/regression/</loc>
-    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/temperature/temperature-data/</loc>
-    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/contact/</loc>
-  </url>
-  
-  <url>
-    <loc>/faq/</loc>
-  </url>
-  
-  <url>
-    <loc>/training/</loc>
-  </url>
-  
 </urlset>
