@@ -2,128 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vanlog</title>
-    <link>/</link>
+    <link>https://www.vanlog.it/</link>
     <description>Recent content on Vanlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Temperature fluctuations - The Code</title>
-      <link>/temperature/temperature-code/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/temperature/temperature-code/</guid>
-      <description>The tempFGN github repository contains all the material related to the paper: How does temperature vary over time? Evidence on the stationary and fractal nature of temperature by John Dagsvik, Mariachiara Fortuna, Sigmund H. Moen
-All the materials are stored in the form of an R package. You can download or clone the repository and install the package: then all the functions will be available for usage. The same repository contains the online resources published as paper supplementary materials.</description>
-    </item>
-    
-    <item>
-      <title>Temperature fluctuations - The Idea Behind</title>
-      <link>/temperature/temperature-idea/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/temperature/temperature-idea/</guid>
-      <description>Usually, looking at the time series of observed temperatures, we see graphs as the one below. These graphs show the temperature fluctuations over the past 150 years, where temperatures show a systematic increase. The length of the time series is a crucial feature for understanding temperature fluctuations, because temperatures show cycles that seem to persist for several decades: so, if we want to understand the amplitude of the climate fluctuations, the limited length of the time series may compromise our understanding of the phenomena.</description>
-    </item>
-    
-    <item>
-      <title>Temperature fluctuation paper - Main Results</title>
-      <link>/temperature/paper-results/</link>
-      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/temperature/paper-results/</guid>
-      <description>This section contains all the results included in the Temperature fluctuations paper</description>
-    </item>
-    
-    <item>
-      <title>Appendix B - Summary data information</title>
-      <link>/temperature/appendix-b/</link>
-      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/temperature/appendix-b/</guid>
-      <description>Information on the weather stations, lenght of the related time series and missing data</description>
-    </item>
-    
+    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.vanlog.it/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Appendix C - Estimation and test results</title>
-      <link>/temperature/appendix-c/</link>
+      <link>https://www.vanlog.it/temperature/appendix-c/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/temperature/appendix-c/</guid>
+      <guid>https://www.vanlog.it/temperature/appendix-c/</guid>
       <description>H estimation by Whittle and Wavelet estimators. Chi square statistics and stationarity tests</description>
     </item>
-    
-    <item>
-      <title>Appendix D - Properties of the estimators</title>
-      <link>/temperature/appendix-d/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/temperature/appendix-d/</guid>
-      <description>Properties of different estimators of the FGN models, with boostrap simulations</description>
-    </item>
-    
-    <item>
-      <title>Appendix E - Temperature stations infographics</title>
-      <link>/temperature/appendix-e/</link>
-      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/temperature/appendix-e/</guid>
-      <description>Infographics on 96 weather stations, with temperature fluctuations, autocorrelation and statistical tests</description>
-    </item>
-    
-    <item>
-      <title>Appendix F - Selection procedure</title>
-      <link>/temperature/appendix-f/</link>
-      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/temperature/appendix-f/</guid>
-      <description>Details on the selection procedure of the available temperature time series</description>
-    </item>
-    
     <item>
       <title>Temperature Data</title>
-      <link>/temperature/temperature-data/</link>
+      <link>https://www.vanlog.it/temperature/temperature-data/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/temperature/temperature-data/</guid>
-      <description>The goal of this section is to describe the data used in the Temperature Fluctuation paper and how these data are organized. All the data are available in the tempFGN repository, and their organization strongly depend from the aim of the analysis that we have carried out.
-Since the goal of our work was to study the historical variations of temperature fluctuations, we needed long temperatures time series, possibly for several weather station.</description>
+      <guid>https://www.vanlog.it/temperature/temperature-data/</guid>
+      <description>The goal of this section is to describe the data used in the Temperature Fluctuation paper and how these data are organized. All the data are available in the tempFGN repository, and their organization strongly depend from the aim of the analysis that we have carried out.&#xA;Since the goal of our work was to study the historical variations of temperature fluctuations, we needed long temperatures time series, possibly for several weather station.</description>
     </item>
-    
     <item>
       <title>Contact</title>
-      <link>/contact/</link>
+      <link>https://www.vanlog.it/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/contact/</guid>
-      <description>Are you curious about something? Do you want a showcase of our works, or want to work with us?
-Let&amp;rsquo;s get in touch!</description>
+      <guid>https://www.vanlog.it/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</guid>
+      <description>If you are interested in training or consultancy projects or if you wish to explore how we can cooperate, write here a line in order to arrange a short introduction call.&#xA;Let&amp;rsquo;s get in touch!</description>
     </item>
-    
+    <item>
+      <title>Contact</title>
+      <link>https://www.vanlog.it/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.vanlog.it/contact/</guid>
+      <description>If you are interested in training or consultancy projects or if you wish to explore how we can cooperate, write here a line in order to arrange a short introduction call.&#xA;Let&amp;rsquo;s get in touch!</description>
+    </item>
     <item>
       <title>FAQ</title>
-      <link>/faq/</link>
+      <link>https://www.vanlog.it/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/faq/</guid>
-      <description>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER? Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</description>
+      <guid>https://www.vanlog.it/faq/</guid>
+      <description>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&#xA;1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER? Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</description>
     </item>
-    
     <item>
       <title>Training Courses</title>
-      <link>/training/</link>
+      <link>https://www.vanlog.it/training/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/training/</guid>
-      <description>Introduction This is our educational offer that ranges from courses for R beginners to specialization courses. The specialist offer covers both particular analysis areas and advanced programming techniques to use technology to achieve the desired results.
-Our trainers have experience both in corporate and academic training, and they are active users of the techniques subjects of these courses for business solutions and research.
-Data Science Courses (2 day courses) 1 .</description>
+      <guid>https://www.vanlog.it/training/</guid>
+      <description>Introduction This is Vanlog&amp;rsquo;s educational offer that ranges from courses for R beginners to specialization courses. The specialist offer covers both particular analysis areas and advanced programming techniques to use technology to achieve the desired results.&#xA;Trainers have experience both in corporate and academic training, and they are active users of the techniques subjects of these courses for business solutions and research.&#xA;Data Science Courses (2 day courses) 1 .</description>
     </item>
-    
   </channel>
 </rss>

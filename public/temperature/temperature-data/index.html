@@ -18,7 +18,7 @@
   
   <meta name="description" content="">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.122.0">
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -32,7 +32,7 @@
 
   
   
-    <link href="/css/style.vanlog.css" rel="stylesheet" id="theme-stylesheet">
+    <link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
   
 
   
@@ -55,7 +55,7 @@
   <link href="/css/owl.theme.css" rel="stylesheet">
 
   
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Vanlog">
+  <link rel="alternate" href="https://www.vanlog.it/index.xml" type="application/rss+xml" title="Vanlog">
 
   
   
@@ -68,9 +68,9 @@
   <meta property="og:site_name" content="Vanlog">
   <meta property="og:title" content="Temperature Data">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="/temperature/temperature-data/" />
+  <meta property="og:url" content="https://www.vanlog.it/temperature/temperature-data/" />
   <meta property="og:description" content="">
-  <meta property="og:image" content="/img/vanlog_retina_black.png">
+  <meta property="og:image" content="https://www.vanlog.it/img/vanlog_retina_black.png">
   <meta property="og:image:type" content="image/png">
   
   
@@ -87,7 +87,7 @@
   
   <meta name="twitter:title" content="Temperature Data">
   
-  <meta name="twitter:image" content="/img/vanlog_retina_black.png">
+  <meta name="twitter:image" content="https://www.vanlog.it/img/vanlog_retina_black.png">
   
   <meta name="twitter:description" content="">
   
@@ -237,10 +237,7 @@
                         
 
                         <div id="post-content">
-                          
-
-
-<p>The goal of this section is to describe the data used in the <a href="https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557">Temperature Fluctuation paper</a> and how these data are organized. All the data are available in the <a href="https://github.com/vanlog/tempFGN">tempFGN repository</a>, and their organization strongly depend from the aim of the analysis that we have carried out.</p>
+                          <p>The goal of this section is to describe the data used in the <a href="https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557">Temperature Fluctuation paper</a> and how these data are organized. All the data are available in the <a href="https://github.com/vanlog/tempFGN">tempFGN repository</a>, and their organization strongly depend from the aim of the analysis that we have carried out.</p>
 <p>Since the goal of our work was to study the historical variations of temperature fluctuations, we needed long temperatures time series, possibly for several weather station.
 We found a great solution in the data collected by Sigmund H. Moen, co-author of the paper and creator of the web page <a href="www.rimfrost.no">www.rimfrost.no</a>, where most of the records are freely available.</p>
 <p>The data consist in a big amount of temperatures time series, certified by NASA, for more than 100 countries, giving a total of 1258 weather stations. The time series are available as yearly, monthly and even three-times-a-day observations, and the length of the time series may vary greatly from station to station: while some of them are less than ten years long, the longer time series, from the city of Upssala in Sweden, is 290 years long, with monthly data from 1722 to 2012, at the time were the data were collected.</p>
@@ -252,8 +249,7 @@ We found a great solution in the data collected by Sigmund H. Moen, co-author of
 <li>The <strong>time series selected</strong> and used in our analysis are stored in the /final folder. It contains a subset of 96 of the 1260 files, selected because they meet criteria of lenght and data quality as described in Appendix F.</li>
 <li>The <strong>Moberg reconstructed data</strong> are available in the /moberg folder.</li>
 </ul>
-<div id="temperature-time-series-data-structure" class="section level4">
-<h4>Temperature time series data structure</h4>
+<h4 id="temperature-time-series-data-structure">Temperature time series data structure</h4>
 <p>Each time series is collected in a separate .txt file, usually named with the Norwegian name of the weather station. There are no column names, and the missing data are usually recorded with the string 99 (but several exceptions are present). Each file is structured as follow:</p>
 <ul>
 <li>Column 1: Year</li>
@@ -262,21 +258,14 @@ We found a great solution in the data collected by Sigmund H. Moen, co-author of
 </ul>
 <p>As an example, these are the first six rows of the Paris.txt file.</p>
 <embed src="/img/temperature/Paris_head.png" width="70%" />
-</div>
-<div id="raw-folder" class="section level4">
-<h4>/raw folder</h4>
+<h4 id="raw-folder">/raw folder</h4>
 <p>The /raw folder contains 101 subfolders named with the English or the Norwegian name of the countries included in the Rimfrost system.
 Each country folder contains the temperature time series for each weather station included in the Rimfrost system.</p>
-</div>
-<div id="final-folder" class="section level4">
-<h4>/final folder</h4>
-<p>Through the selection procedure described in Appendix F we selected a subset of 96 time series, which satisfy quality criteria as adequate length in years, lack of anomalies, reduced presence of missing records.<br />
+<h4 id="final-folder">/final folder</h4>
+<p>Through the selection procedure described in Appendix F we selected a subset of 96 time series, which satisfy quality criteria as adequate length in years, lack of anomalies, reduced presence of missing records.<br>
 All the selected time series are available in the /final folder. All the names (country and stations) have been translated to English.</p>
-</div>
-<div id="moberg-data" class="section level4">
-<h4>Moberg data</h4>
+<h4 id="moberg-data">Moberg data</h4>
 <p>Temperature records reconstructed by <a href="https://www.nature.com/articles/nature03265">Moberg, et al.</a> are available in the /moberg folder</p>
-</div>
 
                         </div>
                         
@@ -305,7 +294,7 @@ All the selected time series are available in the /final folder. All the names (
         <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
             <div class="input-group">
                 <input type="search" name="q" class="form-control" placeholder="Search">
-                <input type="hidden" name="sitesearch" value="/">
+                <input type="hidden" name="sitesearch" value="https://www.vanlog.it/">
                 <span class="input-group-btn">
                     <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
                 </span>
@@ -331,7 +320,7 @@ All the selected time series are available in the /final folder. All the names (
             
             
             <li>
-                <a href="/categories/research">research (9)</a>
+                <a href="/categories/research">research (2)</a>
             </li>
             
         </ul>
@@ -365,19 +354,7 @@ All the selected time series are available in the /final folder. All the names (
             </li>
             
             <li>
-                <a href="/tags/plot"><i class="fas fa-tags"></i> plot</a>
-            </li>
-            
-            <li>
                 <a href="/tags/r"><i class="fas fa-tags"></i> r</a>
-            </li>
-            
-            <li>
-                <a href="/tags/r-package"><i class="fas fa-tags"></i> r-package</a>
-            </li>
-            
-            <li>
-                <a href="/tags/regression"><i class="fas fa-tags"></i> regression</a>
             </li>
             
             <li>
@@ -420,7 +397,9 @@ All the selected time series are available in the /final folder. All the names (
         <div class="col-md-4 col-sm-6">
             <h4>About us</h4>
 
-            Vanlog is a group of data scientists born around a common goal: bringing the power of data everywhere. We believe in open source solutions and we specializes in R, the programming language for statistical solutions
+            Vanlog provides data based solutions using open source tools. 
+    Vanlog specializes in R, the programming language for statistical
+    solutions.
 
             <hr class="hidden-md hidden-lg hidden-sm">
 
@@ -440,11 +419,11 @@ All the selected time series are available in the /final folder. All the names (
 
           <h4>Contact</h4>
 
-            <p class="text-uppercase"><strong>Vanlog</strong>
-    <br> Torino 
-    <br> Milano  
-      </p>
-      
+            <p class="text-uppercase">
+    <strong>Vanlog</strong><br> 
+      Milano  
+    </p>
+    
 
             <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
 
@@ -488,7 +467,7 @@ All the selected time series are available in the /final folder. All the names (
     
 
     
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -500,7 +479,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 <script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
