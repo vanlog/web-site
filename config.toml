@@ -91,8 +91,7 @@ ignoreFiles = ["\\.qmd", "\\.ipynb$", "\\.py$", "\\.Rmd$", "\\.Rmarkdown$", "_fi
     contact_form_ajax = false
 
     about_us = """Vanlog provides data based solutions using open source tools. 
-    Vanlog specializes in R, the programming language for statistical
-    solutions."""
+    Vanlog specializes in AI and Python."""
     copyright = "Copyright (c) 2020, Vanlog; all rights reserved."
 
     # Format dates with Go's time formatting
