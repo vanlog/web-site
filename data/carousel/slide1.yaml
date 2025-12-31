@@ -1,8 +1,16 @@
 weight: 1
-title: "Data science for SMEs"
+title: "Turn company knowledge into an actionable asset."
 description: >
   <ul class="list-style-none">
-    <li>Automation, dashboards and machine learning for small and medium enterprises</li>
-    <li>and small and medium budgets</li>
+    <li>
+      We ingest documents, PDFs, and shared folders (and, when needed, email threads and chat logs) into a unified,
+      searchable knowledge base.
+    </li>
+    <li>
+      Teams get evidence-first answers with citations, plus summaries and checklists that follow your procedures.
+    </li>
+    <li>
+      Designed to stay up to date with your sources—no manual copy/paste knowledge management.
+    </li>
   </ul>
-image: ""
+image: "/img/knowledge-base-bg.png"

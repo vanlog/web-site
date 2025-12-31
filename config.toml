@@ -90,9 +90,11 @@ ignoreFiles = ["\\.qmd", "\\.ipynb$", "\\.py$", "\\.Rmd$", "\\.Rmarkdown$", "_fi
     email = "f/mgeprdnw"
     contact_form_ajax = false
 
-    about_us = """Vanlog provides data based solutions using open source tools. 
-    Vanlog specializes in R, the programming language for statistical
-    solutions."""
+    about_us = """Vanlog delivers AI and data-driven solutions to real business challenges. 
+    We specialize AI with Python and modern low-code platforms.
+
+    Our team combines technical expertise with a pragmatic approach: robust and maintainable solutions tailored to real business needs.
+    """
     copyright = "Copyright (c) 2020, Vanlog; all rights reserved."
 
     # Format dates with Go's time formatting
@@ -135,28 +137,19 @@ ignoreFiles = ["\\.qmd", "\\.ipynb$", "\\.py$", "\\.Rmd$", "\\.Rmarkdown$", "_fi
 
 [params.intro]
     enable = false
-    title = "Vanlog"
-    text = """ 
-      <p class="lead">Vanlog's purpose is to unleash <strong>the power of your data</strong>.<br>
-      Vanlog provides small and medium businesses, public entities and research institutions with accurate analysis of raw data<br>
-      along with powerful tools to understand reality by custom visualizations, mathematical models and automated systems.<br>
-      In 2020, you don't have to be Facebook or Netflix to unleash the value of your data. 
-      </p>
-      
-      <p class="lead">Vanlog guides and supports customers through the <strong> whole 
-      process that lead to a data-driven solution</strong>, 
-      <br> from the definition of the business problem and the data audit, to the release of the final solution. 
-      <br>Vanlog supports the data culture development through consultancy and training of new and existing data science teams.  
-      </p>
-        
-      <p class="lead"> From a technical point of view Vanlog specializes in the programming language R, analysis and 
-      full-stack solutions are offered with Python and GNU/Linux as well, automated with the modern “DevOps” best practices.
-      </p>
-        
-      <p class="lead"> During the last years Vanlog has worked with <strong>multinational corporations, startups, universities, media agencies, institutions. </strong> 
-      If you want a showcase of Vanlog works, <a href = "./contact"> <strong> write a line. </strong> <a>
-        
-      """
+    title = "Senior AI Product Studio"
+    text = """
+
+            <p class=\"lead\">Vanlog's mission is to unlock the value of your knowledge and workflows with custom AI agents.</p>
+
+            <p class=\"lead\">We help businesses, public organizations, and research teams automate processes, accelerate decision-making, and empower people—by connecting AI directly to your content and systems.</p>
+
+            <p class=\"lead\">From discovery to deployment, Vanlog guides you through every step: opportunity mapping, agent and retrieval design, integration, evaluation, and handover. We deliver solutions you own and control.</p>
+
+            <p>Our team brings deep experience in AI, product design, and software engineering. We work hands-on with your experts to ensure every agent is robust, transparent, and aligned with your goals.</p>
+
+            <p><strong>Evidence-first by default:</strong> answers with citations, predictable behavior, and clear limits. If you want to see what Vanlog can do, <a href=\"/contact\">just get in touch</a>.</p>
+        """
     link_text = "Discover more"    
     link_url = "https://www.vanlog.it"
 

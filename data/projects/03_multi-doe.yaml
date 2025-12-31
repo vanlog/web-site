@@ -1,0 +1,5 @@
+weight: 3
+image: "/img/projects/projec-multi-doe.png"
+title: "Multi DoE"
+url: "https://github.com/andreamelloncelli/multiDoE"
+description: "Open source package for multi-objective design of experiments and optimization in R. It implements different strategies for multi-objective optimization. Multi-criteria design of experiments algorithm that simultaneously optimizes up to six different criteria."

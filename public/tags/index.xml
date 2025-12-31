@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Vanlog</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://localhost:4473/tags/</link>
     <description>Recent content in Tags on Vanlog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4473/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FGN</title>
-      <link>http://localhost:1313/tags/fgn/</link>
+      <link>http://localhost:4473/tags/fgn/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/fgn/</guid>
+      <guid>http://localhost:4473/tags/fgn/</guid>
       <description></description>
     </item>
     <item>
       <title>R</title>
-      <link>http://localhost:1313/tags/r/</link>
+      <link>http://localhost:4473/tags/r/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/r/</guid>
+      <guid>http://localhost:4473/tags/r/</guid>
       <description></description>
     </item>
     <item>
       <title>Research</title>
-      <link>http://localhost:1313/tags/research/</link>
+      <link>http://localhost:4473/tags/research/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/research/</guid>
+      <guid>http://localhost:4473/tags/research/</guid>
       <description></description>
     </item>
     <item>
       <title>Temperature</title>
-      <link>http://localhost:1313/tags/temperature/</link>
+      <link>http://localhost:4473/tags/temperature/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/temperature/</guid>
+      <guid>http://localhost:4473/tags/temperature/</guid>
       <description></description>
     </item>
     <item>
       <title>Open Data</title>
-      <link>http://localhost:1313/tags/open-data/</link>
+      <link>http://localhost:4473/tags/open-data/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/open-data/</guid>
+      <guid>http://localhost:4473/tags/open-data/</guid>
       <description></description>
     </item>
   </channel>

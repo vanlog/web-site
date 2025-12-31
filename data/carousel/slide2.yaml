@@ -1,9 +1,15 @@
 weight: 2
-title: "Consulting firms support"
+title: "Automate workflows with AI agents."
 description: >
   <ul class="list-style-none">
-     <li>Technical support on new and on-going projects</li>
-     <li>Data science support on RFTs</li>
-     <li>Reverse engineering of the solutions on the market</li>
-   </ul>
-image: ""
+    <li>
+      We build AI agents that execute repeatable workflows by calling your APIs and tools—turning requests into actions.
+    </li>
+    <li>
+      Typical automations include ticket creation/updates, report generation, data entry, and notifications.
+    </li>
+    <li>
+      Evidence-first by default: agents log what they did and why, and can cite the sources they used.
+    </li>
+  </ul>
+image: "/img/agent-automation.png"

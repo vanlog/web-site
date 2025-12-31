@@ -1,0 +1,5 @@
+weight: 3
+name: "Workflow Automation Agents"
+icon: "fas fa-robot"
+# url: "/services/workflow-automation/"
+description: "AI agents that execute repeatable workflows by calling your tools and APIs—turning requests into actions (tickets, reports, data entry, notifications)."

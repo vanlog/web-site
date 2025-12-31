@@ -1,9 +1,10 @@
 
-<section class="bar background-image-fixed-2 no-mb color-white text-center">
+<section id="intro-vanlog" class="bar background-image-fixed-1 no-mb color-white text-center intro-vanlog-fullheight">
       <div class="dark-mask"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
                 <div class="heading text-center">
                     <h2> {{ .Site.Params.intro.title | markdownify }} </h2>
                 </div>
@@ -19,7 +20,17 @@
                     </a>
                     {{ end }}
                 </p -->
+                <br>
+                <p class="text-center" style="margin-bottom: 18px;">
+                    <a href="/contact" class="btn btn-template-main btn-lg">
+                        Request Agent Discovery (1 hour)
+                    </a>
+                    <a href="/#carousel" class="btn btn-template-transparent-main btn-lg" style="margin-left: 10px;">
+                        See our use cases
+                    </a>
+                </p>
             </div>
+            <div class="col-md-3"></div>
         </div>
     </div>
 </section>

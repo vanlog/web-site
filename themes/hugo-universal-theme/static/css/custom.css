@@ -1,3 +1,29 @@
+/* Carousel background image */
+.home-carousel-2 .dark-mask {
+  background-image: url('/img/fixed-background-2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+/* Prevent anchor links from being hidden behind fixed header */
+html {
+  scroll-padding-top: 80px;
+}
+
+/* Hero full height */
+
+/* Full viewport height and vertical centering for intro-vanlog section */
+
+.intro-vanlog-fullheight {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 7vh;
+  padding-bottom: 3vh;
+}
+
+.intro-vanlog-fullheight .container {
+  width: 100%;
+}
 /* your styles go here */
 
 .box-image-text .image {
