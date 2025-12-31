@@ -10,6 +10,9 @@
 
         <div class="heading text-center">
           <h1 style="font-weight: bold; font-size: 2.8em;">Build your team of <span style="color:#4F8EF7;">AI agents</span>.</h1>
+          <div id="typewriter-container" style="min-height:2.2em; margin-top: 10px;">
+            <span id="typewriter-cursor" style="color:#4F8EF7; font-size:1.35em;">|</span>
+          </div>
         </div>
 
         <p class="lead" style="font-size: 1.35em; margin-bottom: 28px;">
@@ -23,23 +26,23 @@
             Request Agent Discovery (1 hour)
           </a>
           <a href="/#intro-vanlog" class="btn btn-template-transparent-main btn-lg" style="margin-left: 10px;">
-            See use cases
+            Know more
           </a>
         </p>
 
-        <ul class="list-unstyled text-center" style="font-size: 1.1em; margin-bottom: 0;">
-            <li style="margin-bottom: 6px; color:#4F8EF7;">
-                <span style="font-weight:bold;">✓</span> Organize and collect knowledge
-            </li>
-            <li style="margin-bottom: 6px; color:#4F8EF7;">
-                <span style="font-weight:bold;">✓</span> Explain real time data and metrics
-            </li>
-            <li style="color:#4F8EF7;">
-                <span style="font-weight:bold;">✓</span> Take intelligent actions with automation
-            </li>
-            <!-- <li style="color:#4F8EF7;">
-                <span style="font-weight:bold;">✓</span> MVP delivered in 4-6 weeks
-            </li> -->
+        <ul id="proof-bullets-2" class="list-unstyled text-center" style="font-size: 1.1em; margin-bottom: 0; opacity:0; transition:opacity 0.7s; pointer-events:none;">
+          <li style="margin-bottom: 6px; color:#4F8EF7;">
+            <span style="font-weight:bold;">✓</span> Organize and collect knowledge
+          </li>
+          <li style="margin-bottom: 6px; color:#4F8EF7;">
+            <span style="font-weight:bold;">✓</span> Explain real time data and metrics
+          </li>
+          <li style="color:#4F8EF7;">
+            <span style="font-weight:bold;">✓</span> Take intelligent actions with automation
+          </li>
+          <!-- <li style="color:#4F8EF7;">
+            <span style="font-weight:bold;">✓</span> MVP delivered in 4-6 weeks
+          </li> -->
         </ul>
 
       </div>
@@ -48,3 +51,59 @@
   </div>
 </section>
 <!-- /.bar -->
+<script>
+// Typewriting effect for hero subtitle: each phrase is typed and remains visible
+const phrases = [
+"Automate decisions with evidence-first agents.",
+"Connect your data. Empower your business.",
+"AI agents that search, synthesize, and act.",
+"From knowledge to action: discover AI for your team.",
+];
+const container = document.getElementById('typewriter-container');
+const cursorEl = document.getElementById('typewriter-cursor');
+let phraseIndex = 0;
+
+function typePhrase(phrase, cb) {
+  let charIndex = 0;
+  const line = document.createElement('div');
+  line.style.fontSize = '1.35em';
+  line.style.marginBottom = '2px';
+  container.insertBefore(line, cursorEl);
+  function typeChar() {
+    line.textContent = phrase.substring(0, charIndex + 1);
+    charIndex++;
+    if (charIndex < phrase.length) {
+      setTimeout(typeChar, 60);
+    } else {
+      line.textContent = phrase; // Ensure full phrase
+      setTimeout(cb, 700);
+    }
+  }
+  typeChar();
+}
+
+function typeAllPhrases() {
+  if (phraseIndex < phrases.length) {
+    typePhrase(phrases[phraseIndex], () => {
+      phraseIndex++;
+      typeAllPhrases();
+    });
+  } else {
+    // Hide the cursor after all phrases
+    cursorEl.style.display = 'none';
+    // Reveal the second proof bullet list
+    const proof2 = document.getElementById('proof-bullets-2');
+    if (proof2) {
+      proof2.style.opacity = '1';
+      proof2.style.pointerEvents = 'auto';
+    }
+  }
+}
+
+if (container && cursorEl) {
+  typeAllPhrases();
+  setInterval(() => {
+    cursorEl.style.opacity = cursorEl.style.opacity === '0' ? '1' : '0';
+  }, 500);
+}
+</script>

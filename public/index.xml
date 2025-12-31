@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vanlog</title>
-    <link>http://localhost:4473/</link>
+    <link>http://localhost:6214/</link>
     <description>Recent content on Vanlog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:4473/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:6214/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Appendix C - Estimation and test results</title>
-      <link>http://localhost:4473/temperature/appendix-c/</link>
+      <link>http://localhost:6214/temperature/appendix-c/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4473/temperature/appendix-c/</guid>
+      <guid>http://localhost:6214/temperature/appendix-c/</guid>
       <description>H estimation by Whittle and Wavelet estimators. Chi square statistics and stationarity tests</description>
     </item>
     <item>
       <title>Temperature Data</title>
-      <link>http://localhost:4473/temperature/temperature-data/</link>
+      <link>http://localhost:6214/temperature/temperature-data/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4473/temperature/temperature-data/</guid>
+      <guid>http://localhost:6214/temperature/temperature-data/</guid>
       <description>&lt;p&gt;The goal of this section is to describe the data used in the &lt;a href=&#34;https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557&#34;&gt;Temperature Fluctuation paper&lt;/a&gt; and how these data are organized. All the data are available in the &lt;a href=&#34;https://github.com/vanlog/tempFGN&#34;&gt;tempFGN repository&lt;/a&gt;, and their organization strongly depend from the aim of the analysis that we have carried out.&lt;/p&gt;&#xA;&lt;p&gt;Since the goal of our work was to study the historical variations of temperature fluctuations, we needed long temperatures time series, possibly for several weather station.&#xA;We found a great solution in the data collected by Sigmund H. Moen, co-author of the paper and creator of the web page &lt;a href=&#34;www.rimfrost.no&#34;&gt;www.rimfrost.no&lt;/a&gt;, where most of the records are freely available.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:4473/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</link>
+      <link>http://localhost:6214/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4473/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</guid>
+      <guid>http://localhost:6214/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</guid>
       <description>&lt;p&gt;If you are interested in training or consultancy projects or if you wish to explore how we can cooperate, write here a line in order to arrange a short introduction call.&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s get in touch!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:4473/contact/</link>
+      <link>http://localhost:6214/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4473/contact/</guid>
+      <guid>http://localhost:6214/contact/</guid>
       <description>&lt;p&gt;If you are interested in training or consultancy projects or if you wish to explore how we can cooperate, write here a line in order to arrange a short introduction call.&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s get in touch!&lt;/p&gt;</description>
     </item>
     <item>
       <title>FAQ</title>
-      <link>http://localhost:4473/faq/</link>
+      <link>http://localhost:6214/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4473/faq/</guid>
+      <guid>http://localhost:6214/faq/</guid>
       <description>&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-what-to-do-if-i-have-still-not-received-the-order&#34;&gt;1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER?&lt;/h2&gt;&#xA;&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Training Courses</title>
-      <link>http://localhost:4473/training/</link>
+      <link>http://localhost:6214/training/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4473/training/</guid>
+      <guid>http://localhost:6214/training/</guid>
       <description>&lt;!-- https://docs.google.com/document/d/1fUwUJKusL83Wa6YQS4atKS6QwBBv7pUpUy9VG7LjjIo/edit# --&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This is Vanlog&amp;rsquo;s educational offer that ranges from courses for R beginners to specialization courses. The specialist offer covers both particular analysis areas and advanced programming techniques to use technology to achieve the desired results.&lt;/p&gt;&#xA;&lt;p&gt;Trainers have experience both in corporate and academic training, and they are active users of the techniques subjects of these courses for business solutions and research.&lt;/p&gt;&#xA;&lt;h2 id=&#34;data-science-courses-2-day-courses&#34;&gt;Data Science Courses (2 day courses)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1--r-for-data-science&#34;&gt;1 . R for Data Science&lt;/h3&gt;&#xA;&lt;p&gt;This course aims to introduce the attendee to the modern R for Data Science. RStudio and the Tidyverse will be the core of tools to perform data manipulation, visualization, modelling and to perform exportation of the result in beautiful and simple reports.&lt;/p&gt;</description>
     </item>
   </channel>
