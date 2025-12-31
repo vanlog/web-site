@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Innovation on Vanlog</title>
+    <link>http://localhost:6399/categories/innovation/</link>
+    <description>Recent content in Innovation on Vanlog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:6399/categories/innovation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Future Wonders: the future is already here</title>
+      <link>http://localhost:6399/blog/2025/01/01/01-future-wonders/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:6399/blog/2025/01/01/01-future-wonders/</guid>
+      <description>&lt;h2 id=&#34;what-matters-in-2026&#34;&gt;What Matters in 2026&lt;/h2&gt;&#xA;&lt;p&gt;January 1st is a strange day to talk about technology. The calendar resets, but the world doesn’t.&lt;br&gt;&#xA;And yet, every year, there’s a moment when you can almost &lt;em&gt;feel&lt;/em&gt; the shift: tools become habits, ideas become workflows, “experimental” becomes normal.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Future Wonders&lt;/strong&gt; is our attempt to capture and understand where we are heading.&lt;/p&gt;&#xA;&lt;p&gt;Not predictions for a distant tomorrow. Not product launches as trophies.&lt;br&gt;&#xA;Just the quiet, fascinating edge of what’s already happening—and what it takes to understand it with enough technical honesty to be useful.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

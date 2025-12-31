@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ai-Agents on Vanlog</title>
+    <link>http://localhost:6399/categories/ai-agents/</link>
+    <description>Recent content in Ai-Agents on Vanlog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:6399/categories/ai-agents/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Innovation at CES: The Future of AI on Devices</title>
+      <link>http://localhost:6399/blog/2025/12/31/09-innovation-at-ces/</link>
+      <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:6399/blog/2025/12/31/09-innovation-at-ces/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;With RAG your AI agents can search in any knowledge base: documents, emails, data bases, but exploiting only textual part. Multimodal RAG is the further enancement that allows your system to give a meaning to images, audios, etc&amp;hellip; and to search among them. In this article we explain why to use a multimodal RAG is important, what it is and how it wolks.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-multimodal-rag&#34;&gt;Why Multimodal RAG?&lt;/h2&gt;&#xA;&lt;p&gt;Wheather you are a product manager or a researcher, as a humans you have libraries with vast collections of books, and systems that enable efficient searching within these collections, the Retrieval-Augmented Generation (RAG) pattern serves a similar purpose for natural language processing models. RAG assists in locating relevant information from various sources, much like how a library system helps find specific books or pieces of information within them.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

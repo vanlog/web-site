@@ -2,54 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:3007/temperature/appendix-c/</loc>
+    <loc>http://localhost:6399/categories/ai-agents/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:6399/blog/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:6399/categories/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:6399/blog/2025/12/31/09-innovation-at-ces/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:6399/tags/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:6399/tags/understand-ai/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:6399/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:6399/temperature/appendix-c/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3007/categories/</loc>
+    <loc>http://localhost:6399/tags/fgn/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3007/tags/fgn/</loc>
+    <loc>http://localhost:6399/tags/r/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3007/tags/r/</loc>
+    <loc>http://localhost:6399/categories/research/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3007/categories/research/</loc>
+    <loc>http://localhost:6399/tags/research/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3007/tags/research/</loc>
+    <loc>http://localhost:6399/tags/temperature/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3007/tags/</loc>
+    <loc>http://localhost:6399/temperature/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3007/tags/temperature/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:3007/temperature/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:3007/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:3007/tags/open-data/</loc>
+    <loc>http://localhost:6399/tags/open-data/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3007/temperature/temperature-data/</loc>
+    <loc>http://localhost:6399/temperature/temperature-data/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3007/about/</loc>
+    <loc>http://localhost:6399/about/</loc>
   </url><url>
-    <loc>http://localhost:3007/about_old/</loc>
+    <loc>http://localhost:6399/about_old/</loc>
   </url><url>
-    <loc>http://localhost:3007/agent-discovery/</loc>
+    <loc>http://localhost:6399/agent-discovery/</loc>
   </url><url>
-    <loc>http://localhost:3007/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</loc>
+    <loc>http://localhost:6399/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</loc>
   </url><url>
-    <loc>http://localhost:3007/contact/</loc>
+    <loc>http://localhost:6399/contact/</loc>
   </url><url>
-    <loc>http://localhost:3007/faq/</loc>
+    <loc>http://localhost:6399/faq/</loc>
   </url><url>
-    <loc>http://localhost:3007/training/</loc>
+    <loc>http://localhost:6399/training/</loc>
   </url>
 </urlset>

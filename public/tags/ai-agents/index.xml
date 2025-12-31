@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ai-Agents on Vanlog</title>
+    <link>http://localhost:3348/tags/ai-agents/</link>
+    <description>Recent content in Ai-Agents on Vanlog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:3348/tags/ai-agents/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multimodal RAG: Why, What, and How</title>
+      <link>http://localhost:3348/blog/2025/12/31/03_multimodal-rag/</link>
+      <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:3348/blog/2025/12/31/03_multimodal-rag/</guid>
+      <description>&lt;h2 id=&#34;why-multimodal-rag-a-story&#34;&gt;Why Multimodal RAG? (A Story)&lt;/h2&gt;&#xA;&lt;p&gt;Imagine you’re a researcher, a product manager, or a support agent. You need answers, but the information you need is scattered: some in PDFs, some in images, some in tables, some in emails. Traditional AI search and chatbots only look at text—they miss the diagrams, the screenshots, the data tables that often hold the real insight.&lt;/p&gt;&#xA;&lt;p&gt;This is the gap that Multimodal RAG (Retrieval-Augmented Generation) fills. It’s not just about searching more data—it’s about connecting the dots across formats, so you get the full picture, not just a summary of the text.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
