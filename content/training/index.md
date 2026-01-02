@@ -13,7 +13,6 @@ This set of courses are designed to teach concepts of Data Science and how to us
 
 ## Courses
 
-
 <div style="display:flex; align-items:center; margin-bottom:18px;">
 	<img src="/course/python.png" alt="Introduction to Python" style="max-width:60px; margin-right:18px;" />
 	<div>
@@ -21,7 +20,6 @@ This set of courses are designed to teach concepts of Data Science and how to us
 		<div style="font-size:0.98em; margin-top:4px;">This course provides a practical introduction to programming with Python, focusing on essential skills for data, automation, and scripting. Ideal for beginners, it emphasizes hands-on exercises and real-world examples to build confidence and fluency in Python programming.</div>
 	</div>
 </div>
-
 
 <div style="display:flex; align-items:center; margin-bottom:18px;">
 	<img src="/course/data-analysis.png" alt="Data Analysis and Reporting" style="max-width:60px; margin-right:18px;" />
@@ -31,10 +29,6 @@ This set of courses are designed to teach concepts of Data Science and how to us
 	</div>
 </div>
 
-
-
-
-
 <div style="display:flex; align-items:center; margin-bottom:18px;">
 	<img src="/course/data-science.png" alt="Data Science" style="max-width:60px; margin-right:18px;" />
 	<div>
@@ -42,11 +36,6 @@ This set of courses are designed to teach concepts of Data Science and how to us
 		<div style="font-size:0.98em; margin-top:4px;">An introduction to machine learning and optimization with Python. Explore supervised and unsupervised learning, time series analysis, and optimization problems, with a focus on practical business applications and hands-on problem solving.</div>
 	</div>
 </div>
-
-
-
-
-
 
 <div style="display:flex; align-items:center; margin-bottom:18px;">
 	<img src="/course/project-management.png" alt="Professional Project Management" style="max-width:60px; margin-right:18px;" />
@@ -56,8 +45,6 @@ This set of courses are designed to teach concepts of Data Science and how to us
 	</div>
 </div>
 
-
-
 <div style="display:flex; align-items:center; margin-bottom:18px;">
 	<img src="/course/deep-learning.png" alt="Deep Learning and Generative Models" style="max-width:60px; margin-right:18px;" />
 	<div>
@@ -66,7 +53,6 @@ This set of courses are designed to teach concepts of Data Science and how to us
 	</div>
 </div>
 
-
 <div style="display:flex; align-items:center; margin-bottom:18px;">
 	<img src="/course/efficient-data-science.png" alt="Efficient Data Science" style="max-width:60px; margin-right:18px;" />
 	<div>
@@ -74,7 +60,6 @@ This set of courses are designed to teach concepts of Data Science and how to us
 		<div style="font-size:0.98em; margin-top:4px;">Gain a high-level understanding of the data science process, from business need to solution. This course is designed for leaders and professionals who want to communicate confidently with data scientists and understand the full data science workflow.</div>
 	</div>
 </div>
-
 
 <div style="display:flex; align-items:center; margin-bottom:18px;">
 	<img src="/course/llm-ai-agents.png" alt="Mastering Large Language Models with AI Agents" style="max-width:60px; margin-right:18px;" />

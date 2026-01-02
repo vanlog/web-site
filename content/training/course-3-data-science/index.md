@@ -1,4 +1,3 @@
-
 ---
 title: Data Science with Python
 ---

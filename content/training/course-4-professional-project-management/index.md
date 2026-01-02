@@ -1,4 +1,3 @@
-
 ---
 title: Professional Project Management with Python
 ---
