@@ -1,6 +1,14 @@
+
 ---
 title: Data Science with Python
 ---
+
+<div style="display:flex; align-items:center; margin-bottom:18px;">
+	<img src="/course/data-science.png" alt="Data Science" style="max-width:60px; margin-right:18px;" />
+	<div>
+		<span style="font-size:1.15em; font-weight:bold;">Data Science with Python</span>
+	</div>
+</div>
 
 ## Description
 

@@ -2,6 +2,13 @@
 title: Introduction to Python
 ---
 
+<div style="display:flex; align-items:center; margin-bottom:18px;">
+    <img src="/course/python.png" alt="Introduction to Python" style="max-width:60px; margin-right:18px;" />
+    <div>
+        <span style="font-size:1.15em; font-weight:bold;">Introduction to Python</span>
+    </div>
+</div>
+
 ## Description
 
 This course provides a practical introduction to programming with Python, focusing on the essential skills needed to start working with data, automation, and scripting. Students will learn the basics of Python syntax, data types, control structures, functions, and how to write and run Python scripts. The course emphasizes hands-on exercises and real-world examples to build confidence and fluency in Python programming.

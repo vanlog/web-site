@@ -2,11 +2,19 @@
 title: Data Analysis and Reporting with Python
 ---
 
+<div style="display:flex; align-items:center; margin-bottom:18px;">
+	<img src="/course/data-analysis.png" alt="Data Analysis and Reporting" style="max-width:60px; margin-right:18px;" />
+	<div>
+		<span style="font-size:1.15em; font-weight:bold;">Data Analysis and Reporting with Python</span>
+	</div>
+</div>
+
 ## Description
 
 This course is designed to introduce you to the world of data analysis and reporting with Python. The first approach with the data must be to read it, clean it, and understand its content. Finally, after a numerical and graphical analysis, communicate results through beautiful presentations and reports. This is exactly what this course is about.
 
 The course covers the basics of Python, the main libraries for data analysis, and how to create reports and visualizations. The course is designed to be interactive and practical. The student will learn by doing, by solving real business problems.
+
 
 ## Topics include
 
