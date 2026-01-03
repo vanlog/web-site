@@ -1,11 +1,7 @@
 ---
 id: training
 title: Training Courses
-toc: true
 ---
-
-
-# General course description
 
 ## Introduction
 
@@ -68,4 +64,3 @@ This set of courses are designed to teach concepts of Data Science and how to us
 		<div style="font-size:0.98em; margin-top:4px;">Explore the power of Large Language Models (LLMs) and AI agents. Learn to design, implement, and deploy intelligent agents that leverage LLMs for automation, information retrieval, and real-world business solutions.</div>
 	</div>
 </div>
-
