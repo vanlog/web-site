@@ -40,6 +40,12 @@ ignoreFiles = ["\\.qmd", "\\.ipynb$", "\\.py$", "\\.Rmd$", "\\.Rmarkdown$", "_fi
     url  = "/temperature/"
     weight = 4
 
+[[menu.main]]
+    identifier = "about"
+    name = "about"
+    url  = "/about/"
+    weight = 5
+
 # Top bar social links menu
 
 [[menu.topbar]]

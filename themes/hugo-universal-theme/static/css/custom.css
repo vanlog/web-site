@@ -1,3 +1,34 @@
+/* Lead text style for about page and general use */
+.lead-blue {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 1.35em;
+  margin-bottom: 28px;
+}
+.lead-blue h2 {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.lead-blue hr {
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  margin-top: 40px;
+}
+
+/* About page hero heading and highlight styles */
+.about-hero-heading {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+}
+
+.about-hero-highlight {
+  color: #4F8EF7;
+}
+
+.about-hero-typewriter {
+  min-height: 2.2em;
+  margin-top: 10px;
+}
 /* Carousel background image */
 .home-carousel-2 .dark-mask {
   background-image: url('/img/fixed-background-2.jpg');
@@ -25,6 +56,14 @@ html {
   width: 100%;
 }
 /* your styles go here */
+.about-howwework-box {
+  text-align: left;
+  background: rgba(255,255,255,0.40);
+  border-radius: 16px;
+  box-shadow: 0 2px 18px rgba(0,0,0,0.08);
+  padding: 2em 1.5em;
+  margin-bottom: 2em;
+}
 
 .box-image-text .image {
   min-height: 200px;

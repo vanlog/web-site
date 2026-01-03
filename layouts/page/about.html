@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        <!-- {{ partial "breadcrumbs.html" . }} -->
+
+
+        <div id="content">
+          {{ if isset .Params "id" }}
+            {{ partial .Params.id . }}
+          {{ else }}
+          <section class="bar background-image-fixed-1 no-mb color-white text-center intro-vanlog-fullheight" style="position:relative; padding-top: 40px; padding-bottom: 40px;">
+            <div class="dark-mask"></div>
+            <div class="container" style="position:relative; z-index:2;">
+              <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 lead-blue heading text-center">
+                    {{ .Content }}
+                </div>
+                <div class="col-md-3"></div>
+              </div>
+            </div>
+          </section>
+          {{ end }}
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>
