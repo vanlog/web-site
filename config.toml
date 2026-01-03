@@ -6,7 +6,8 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 ## Disqus comments disabled: disqusShortname removed
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = "UA-169285327-1"
+# googleAnalytics = "UA-169285327-1"
+googleAnalytics = "	G-JJCBDV8EXR"
 
 # Define the number of posts per page
 ignoreFiles = ["\\.qmd", "\\.ipynb$", "\\.py$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
