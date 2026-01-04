@@ -1,3 +1,32 @@
+/* Breadcrumbs bar with blue overlay (moved from style.blue.css) */
+#heading-breadcrumbs {
+  position: relative;
+  background: url('../img/texture-bw.png') center center repeat;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  z-index: 1;
+}
+#heading-breadcrumbs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Blue Theme Colors */
+  /* background:linear-gradient(120deg, #2ae3cb97 0%,#467fbf99 90%); */
+  /* Vanlog colors */
+  /* background:linear-gradient(120deg, #2ae3cbbb 10%,#2c89fb99 100%); */
+  /* Other */
+  /* background: linear-gradient(120deg, #2c89fb50 0%, #2c89fb30 100%); */
+  background: linear-gradient(120deg, #2c89fb50 0%, #3f211250 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+#heading-breadcrumbs > * {
+  position: relative;
+  z-index: 3;
+}
 /* Lead text style for about page and general use */
 .lead-blue {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
