@@ -187,7 +187,7 @@ ignoreFiles = ["\\.qmd", "\\.ipynb$", "\\.py$", "\\.Rmd$", "\\.Rmarkdown$", "_fi
 
 [params.temp_see_more]
     enable = true
-    icon = ""
+    icon = "fas fa-thermometer-half"
     title = "Temperature Fluctuation Project"
     subtitle = "This website is aimed at sharing all the materials related to Temperature Fluctuations project by J.K. Dagsvik, M. Fortuna and S.H. Moen, a multi-years research project aimed at investigating the stationary and fractal nature of temperature fluctuations. The idea and the main results are summarised in the paper ”How does the temperature vary over time? Evidence on the stationary and fractal nature of temperature fluctuations”, during publication in Journal of the Royal Statistical Society, series A"
     link_url = "https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557"
