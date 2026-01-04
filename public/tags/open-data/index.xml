@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open Data on Vanlog</title>
-    <link>http://localhost:7332/tags/open-data/</link>
+    <link>http://localhost:5909/tags/open-data/</link>
     <description>Recent content in Open Data on Vanlog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Apr 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:7332/tags/open-data/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:5909/tags/open-data/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Temperature Data</title>
-      <link>http://localhost:7332/temperature/temperature-data/</link>
+      <link>http://localhost:5909/temperature/temperature-data/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:7332/temperature/temperature-data/</guid>
+      <guid>http://localhost:5909/temperature/temperature-data/</guid>
       <description>&lt;p&gt;The goal of this section is to describe the data used in the &lt;a href=&#34;https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557&#34;&gt;Temperature Fluctuation paper&lt;/a&gt; and how these data are organized. All the data are available in the &lt;a href=&#34;https://github.com/vanlog/tempFGN&#34;&gt;tempFGN repository&lt;/a&gt;, and their organization strongly depend from the aim of the analysis that we have carried out.&lt;/p&gt;&#xA;&lt;p&gt;Since the goal of our work was to study the historical variations of temperature fluctuations, we needed long temperatures time series, possibly for several weather station.&#xA;We found a great solution in the data collected by Sigmund H. Moen, co-author of the paper and creator of the web page &lt;a href=&#34;www.rimfrost.no&#34;&gt;www.rimfrost.no&lt;/a&gt;, where most of the records are freely available.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,6 +2,7 @@
 title: Efficient Data Science
 ---
 
+
 <div style="display:flex; align-items:center; margin-bottom:18px;">
 	<img src="/course/efficient-data-science.png" alt="Efficient Data Science" style="max-width:60px; margin-right:18px;" />
 	<div>

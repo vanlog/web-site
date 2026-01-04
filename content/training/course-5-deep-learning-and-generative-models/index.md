@@ -2,6 +2,7 @@
 title: Deep Learning and Generative Models
 ---
 
+
 <div style="display:flex; align-items:center; margin-bottom:18px;">
 	<img src="/course/deep-learning.png" alt="Deep Learning and Generative Models" style="max-width:60px; margin-right:18px;" />
 	<div>

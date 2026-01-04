@@ -2,6 +2,7 @@
 title: Professional Project Management with Python
 ---
 
+
 <div style="display:flex; align-items:center; margin-bottom:18px;">
 	<img src="/course/project-management.png" alt="Professional Project Management" style="max-width:60px; margin-right:18px;" />
 	<div>

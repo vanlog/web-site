@@ -1,5 +1,5 @@
 ---
-id: training
+id: page
 title: Training Courses
 ---
 

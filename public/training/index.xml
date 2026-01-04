@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trainings on Vanlog</title>
-    <link>http://localhost:3392/training/</link>
+    <link>http://localhost:5909/training/</link>
     <description>Recent content in Trainings on Vanlog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:3392/training/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:5909/training/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Professional Project Management with Python</title>
-      <link>http://localhost:3392/training/course-4-professional-project-management/</link>
+      <title>Introduction to Python</title>
+      <link>http://localhost:5909/training/course-1-introduction-to-python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:3392/training/course-4-professional-project-management/</guid>
-      <description>&lt;div style=&#34;display:flex; align-items:center; margin-bottom:18px;&#34;&gt;&#xA;&#x9;&lt;img src=&#34;../course/project-management.png&#34; alt=&#34;Professional Project Management&#34; style=&#34;max-width:60px; margin-right:18px;&#34; /&gt;&#xA;&#x9;&lt;div&gt;&#xA;&#x9;&#x9;&lt;span style=&#34;font-size:1.15em; font-weight:bold;&#34;&gt;Professional Project Management with Python&lt;/span&gt;&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;This course is designed to introduce you to the world of professional project management with Python. Real life projects are complex and require a structured approach to be successful. This course will teach you how to organize your project, develop it in a team, version code and data at the same time, and keep it tidy and reproducible to go in production smoothly and produce value for the business. The course is designed to oil and optimize your current Data Science practices and team.&lt;/p&gt;</description>
+      <guid>http://localhost:5909/training/course-1-introduction-to-python/</guid>
+      <description>&lt;div style=&#34;display:flex; align-items:center; margin-bottom:18px;&#34;&gt;&#xA;    &lt;img src=&#34;../course/python.png&#34; alt=&#34;Introduction to Python&#34; style=&#34;max-width:60px; margin-right:18px;&#34; /&gt;&#xA;    &lt;div&gt;&#xA;        &lt;span style=&#34;font-size:1.15em; font-weight:bold;&#34;&gt;Introduction to Python&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;This course provides a practical introduction to programming with Python, focusing on the essential skills needed to start working with data, automation, and scripting. Students will learn the basics of Python syntax, data types, control structures, functions, and how to write and run Python scripts. The course emphasizes hands-on exercises and real-world examples to build confidence and fluency in Python programming.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

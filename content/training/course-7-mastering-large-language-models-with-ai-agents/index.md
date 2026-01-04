@@ -2,6 +2,7 @@
 title: Mastering Large Language Models with AI Agents
 ---
 
+
 <div style="display:flex; align-items:center; margin-bottom:18px;">
 	<img src="/course/llm-ai-agents.png" alt="Mastering Large Language Models with AI Agents" style="max-width:60px; margin-right:18px;" />
 	<div>

@@ -2,54 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:7332/temperature/appendix-c/</loc>
+    <loc>http://localhost:5909/temperature/appendix-c/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7332/categories/</loc>
+    <loc>http://localhost:5909/categories/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7332/tags/fgn/</loc>
+    <loc>http://localhost:5909/tags/fgn/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7332/tags/r/</loc>
+    <loc>http://localhost:5909/tags/r/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7332/categories/research/</loc>
+    <loc>http://localhost:5909/categories/research/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7332/tags/research/</loc>
+    <loc>http://localhost:5909/tags/research/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7332/tags/</loc>
+    <loc>http://localhost:5909/tags/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7332/tags/temperature/</loc>
+    <loc>http://localhost:5909/tags/temperature/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7332/temperature/</loc>
+    <loc>http://localhost:5909/temperature/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7332/</loc>
+    <loc>http://localhost:5909/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7332/tags/open-data/</loc>
+    <loc>http://localhost:5909/tags/open-data/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7332/temperature/temperature-data/</loc>
+    <loc>http://localhost:5909/temperature/temperature-data/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7332/about/</loc>
+    <loc>http://localhost:5909/about/</loc>
   </url><url>
-    <loc>http://localhost:7332/about_old/</loc>
+    <loc>http://localhost:5909/about_old/</loc>
   </url><url>
-    <loc>http://localhost:7332/agent-discovery/</loc>
+    <loc>http://localhost:5909/agent-discovery/</loc>
   </url><url>
-    <loc>http://localhost:7332/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</loc>
+    <loc>http://localhost:5909/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</loc>
   </url><url>
-    <loc>http://localhost:7332/contact/</loc>
+    <loc>http://localhost:5909/contact/</loc>
   </url><url>
-    <loc>http://localhost:7332/faq/</loc>
+    <loc>http://localhost:5909/faq/</loc>
   </url><url>
-    <loc>http://localhost:7332/training/</loc>
+    <loc>http://localhost:5909/training/</loc>
   </url>
 </urlset>
