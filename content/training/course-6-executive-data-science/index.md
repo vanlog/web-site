@@ -1,12 +1,12 @@
 ---
-title: Efficient Data Science
+title: Data Science and AI for Business Leaders
 ---
 
 
 <div style="display:flex; align-items:center; margin-bottom:18px;">
-	<img src="/course/efficient-data-science.png" alt="Efficient Data Science" style="max-width:60px; margin-right:18px;" />
+	<img src="/course/executive-data-science.png" alt="Data Science and AI for Business Leaders" style="max-width:60px; margin-right:18px;" />
 	<div>
-		<span style="font-size:1.15em; font-weight:bold;">Efficient Data Science</span>
+		<span style="font-size:1.15em; font-weight:bold;">Data Science and AI for Business Leaders</span>
 	</div>
 </div>
 

@@ -149,7 +149,7 @@ ignoreFiles = ["\\.qmd", "\\.ipynb$", "\\.py$", "\\.Rmd$", "\\.Rmarkdown$", "_fi
 
             <p class=\"lead\">Vanlog's mission is to unlock the value of your knowledge and workflows with custom AI agents.</p>
 
-            <p class=\"lead\">We help businesses, public organizations, and research teams automate processes, accelerate decision-making, and empower people—by connecting AI directly to your content and systems.</p>
+            <p class=\"lead\">We help businesses, public organizations, and research teams automate processes, accelerate decision-making, and empower people by connecting AI directly to your content and systems.</p>
 
             <p class=\"lead\">From discovery to deployment, Vanlog guides you through every step: opportunity mapping, agent and retrieval design, integration, evaluation, and handover. We deliver solutions you own and control.</p>
 

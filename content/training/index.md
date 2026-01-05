@@ -1,13 +1,15 @@
 ---
-id: page
 title: Training Courses
+type: "page"
+layout: "single"
 ---
+
 
 ## Introduction
 
 This set of courses are designed to teach concepts of Data Science and how to use statistical and machine learning methods to solve real business problems with Python. Courses come with a book with theory, exercises, Jupyter notebooks with practical examples, instructions how to install software and how to use it. The courses are designed to be interactive and practical. The students will learn by doing, by solving real business problems.
 
-## Courses
+## Technical Courses
 
 <div style="display:flex; align-items:center; margin-bottom:18px;">
 	<img src="/course/python.png" alt="Introduction to Python" style="max-width:60px; margin-right:18px;" />
@@ -49,13 +51,13 @@ This set of courses are designed to teach concepts of Data Science and how to us
 	</div>
 </div>
 
-<div style="display:flex; align-items:center; margin-bottom:18px;">
-	<img src="/course/efficient-data-science.png" alt="Efficient Data Science" style="max-width:60px; margin-right:18px;" />
+<!-- <div style="display:flex; align-items:center; margin-bottom:18px;">
+	<img src="/course/executive-data-science.png" alt="Data Science and AI for Business Leaders" style="max-width:60px; margin-right:18px;" />
 	<div>
-		<a href="course-6-efficient-data-science/" style="font-size:1.15em; font-weight:bold;">Efficient Data Science</a>
+		<a href="course-6-executive-data-science/" style="font-size:1.15em; font-weight:bold;">Data Science and AI for Business Leaders</a>
 		<div style="font-size:0.98em; margin-top:4px;">Gain a high-level understanding of the data science process, from business need to solution. This course is designed for leaders and professionals who want to communicate confidently with data scientists and understand the full data science workflow.</div>
 	</div>
-</div>
+</div> -->
 
 <div style="display:flex; align-items:center; margin-bottom:18px;">
 	<img src="/course/llm-ai-agents.png" alt="Mastering Large Language Models with AI Agents" style="max-width:60px; margin-right:18px;" />
