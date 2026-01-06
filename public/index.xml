@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vanlog</title>
-    <link>http://localhost:5038/</link>
+    <link>http://localhost:4101/</link>
     <description>Recent content on Vanlog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:5038/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4101/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Appendix C - Estimation and test results</title>
-      <link>http://localhost:5038/temperature/appendix-c/</link>
+      <link>http://localhost:4101/temperature/appendix-c/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5038/temperature/appendix-c/</guid>
+      <guid>http://localhost:4101/temperature/appendix-c/</guid>
       <description>H estimation by Whittle and Wavelet estimators. Chi square statistics and stationarity tests</description>
     </item>
     <item>
       <title>Temperature Data</title>
-      <link>http://localhost:5038/temperature/temperature-data/</link>
+      <link>http://localhost:4101/temperature/temperature-data/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5038/temperature/temperature-data/</guid>
+      <guid>http://localhost:4101/temperature/temperature-data/</guid>
       <description>&lt;p&gt;The goal of this section is to describe the data used in the &lt;a href=&#34;https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12557&#34;&gt;Temperature Fluctuation paper&lt;/a&gt; and how these data are organized. All the data are available in the &lt;a href=&#34;https://github.com/vanlog/tempFGN&#34;&gt;tempFGN repository&lt;/a&gt;, and their organization strongly depend from the aim of the analysis that we have carried out.&lt;/p&gt;&#xA;&lt;p&gt;Since the goal of our work was to study the historical variations of temperature fluctuations, we needed long temperatures time series, possibly for several weather station.&#xA;We found a great solution in the data collected by Sigmund H. Moen, co-author of the paper and creator of the web page &lt;a href=&#34;www.rimfrost.no&#34;&gt;www.rimfrost.no&lt;/a&gt;, where most of the records are freely available.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:5038/about/</link>
+      <link>http://localhost:4101/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5038/about/</guid>
+      <guid>http://localhost:4101/about/</guid>
       <description>&lt;h2 id=&#34;about-vanlog&#34;&gt;About Vanlog&lt;/h2&gt;&#xA;&lt;p&gt;We are a senior AI product studio.&lt;br&gt;&#xA;We help teams turn applied AI research into reliable, production-ready systems.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;why-we-exist&#34;&gt;Why we exist&lt;/h2&gt;&#xA;&lt;p&gt;Bulding AI products is deceptively easy. Making them work in production, scale over time, and be trusted by users is not.&#xA;We started Vanlog to bridge the gap between AI research, product design, and real-world constraints, data quality, evaluation, costs, and long-term maintenance.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;andrea-melloncelli&#34;&gt;Director&lt;/h2&gt;&#xA;&lt;br&gt;&#xA;&lt;img src=&#34;https://media.licdn.com/dms/image/v2/D4D03AQE244ZJ0uu4SQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1709896759052?e=1769040000&amp;v=beta&amp;t=rtU1dPWun1exJLZgzNBCUNmaCrvXrOZj8GmEngu1n8M&#34; alt=&#34;Andrea Melloncelli&#34; style=&#34;width:150px; height:150px; border-radius:75px; float:center; margin-right:20px; margin-bottom:10px;&#34;&gt;&#xA;&lt;p&gt;&lt;em&gt;Hi, I’m Andrea Melloncelli.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:5038/about_old/</link>
+      <link>http://localhost:4101/about_old/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5038/about_old/</guid>
+      <guid>http://localhost:4101/about_old/</guid>
       <description>&lt;div class=&#34;lead heading text-center&#34;&#34;&gt;&#xA;&lt;p&gt;We are a senior AI product studio.&lt;br&gt;&#xA;We help teams turn applied AI research into reliable, production-ready systems.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;why-we-exist&#34;&gt;Why we exist&lt;/h2&gt;&#xA;&lt;p&gt;Bulding AI products is deceptively easy. Making them work in production, scale over time, and be trusted by users is not.&#xA;We started Vanlog to bridge the gap between AI research, product design, and real-world constraints — data quality, evaluation, costs, and long-term maintenance.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;how-we-work&#34;&gt;How we work&lt;/h2&gt;&#xA;&lt;div class=&#34;about-howwework-box&#34;&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Understand the problem&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;We start from the use case, not from the model.&lt;/em&gt; Constraints, users, risks, data availability.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Agent Discovery (1 hour)</title>
-      <link>http://localhost:5038/agent-discovery/</link>
+      <link>http://localhost:4101/agent-discovery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5038/agent-discovery/</guid>
+      <guid>http://localhost:4101/agent-discovery/</guid>
       <description>&lt;p&gt;&lt;strong&gt;In 60 minutes, we turn your idea into a concrete, actionable plan.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;What you get:&lt;/strong&gt;&#xA;You receive a one-page summary with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Use case tailored to your context&lt;/li&gt;&#xA;&lt;li&gt;Data sources and required integrations&lt;/li&gt;&#xA;&lt;li&gt;Identified risks and constraints&lt;/li&gt;&#xA;&lt;li&gt;Next steps for your MVP&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;who-is-it-for&#34;&gt;Who is it for?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Companies and teams exploring AI agents for the first time&lt;/li&gt;&#xA;&lt;li&gt;Product owners and innovation leads with a specific challenge&lt;/li&gt;&#xA;&lt;li&gt;Anyone who wants to move from idea to action, fast&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-do-you-need&#34;&gt;What do you need?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A real business problem or opportunity&lt;/li&gt;&#xA;&lt;li&gt;60 minutes of your time (remote session)&lt;/li&gt;&#xA;&lt;li&gt;Openness to discuss data, processes, and goals&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-do-you-get&#34;&gt;What do you get?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A clear, actionable use case&lt;/li&gt;&#xA;&lt;li&gt;List of data sources and integration points&lt;/li&gt;&#xA;&lt;li&gt;Key risks and how to address them&lt;/li&gt;&#xA;&lt;li&gt;Concrete next steps for your MVP&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;!-- &lt;p style=&#34;text-align:center; margin-top:32px;&#34;&gt;&#xA;&#x9;&lt;a href=&#34;./contact&#34; class=&#34;btn btn-template-main btn-lg&#34;&gt;&#xA;&#x9;&#x9;Request Agent Discovery&#xA;&#x9;&lt;/a&gt;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:5038/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</link>
+      <link>http://localhost:4101/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5038/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</guid>
+      <guid>http://localhost:4101/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</guid>
       <description>&lt;p&gt;If you are interested in training or consultancy projects or if you wish to explore how we can cooperate, write here a line in order to arrange a short introduction call.&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s get in touch!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:5038/contact/</link>
+      <link>http://localhost:4101/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5038/contact/</guid>
+      <guid>http://localhost:4101/contact/</guid>
       <description>&lt;p&gt;If you are interested in training or consultancy projects or if you wish to explore how we can cooperate, write here a line in order to arrange a short introduction call.&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s get in touch!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Data Science and AI for Business Leaders</title>
-      <link>http://localhost:5038/training/course-6-executive-data-science/</link>
+      <link>http://localhost:4101/training/course-6-executive-data-science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5038/training/course-6-executive-data-science/</guid>
-      <description>&lt;div style=&#34;display:flex; align-items:center; margin-bottom:18px;&#34;&gt;&#xA;&#x9;&lt;img src=&#34;./course/executive-data-science.png&#34; alt=&#34;Data Science and AI for Business Leaders&#34; style=&#34;max-width:60px; margin-right:18px;&#34; /&gt;&#xA;&#x9;&lt;div&gt;&#xA;&#x9;&#x9;&lt;span style=&#34;font-size:1.15em; font-weight:bold;&#34;&gt;Data Science and AI for Business Leaders&lt;/span&gt;&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;This is a course designed to understand Data Science. It is an introduction to the topics of Data Science on a high level. The main point is to understand the process that starts with the business need and terminates with a solution. The course is designed to be interactive with the trainer. The student will learn with example from real business problems.&lt;/p&gt;</description>
+      <guid>http://localhost:4101/training/course-6-executive-data-science/</guid>
+      <description>&lt;div style=&#34;display:flex; align-items:center; margin-bottom:18px;&#34;&gt;&#xA;&#x9;&lt;img src=&#34;./course/executive-data-science.png&#34; alt=&#34;Data Science and AI for Business Leaders&#34; style=&#34;max-width:60px; margin-right:18px;&#34; /&gt;&#xA;&#x9;&lt;div&gt;&#xA;&#x9;&#x9;&lt;span style=&#34;font-size:1.15em; font-weight:bold;&#34;&gt;Data Science and AI for Business Leaders&lt;/span&gt;&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;This course provides a comprehensive overview of Data Science, Machine Learning, Deep Learning, and Generative AI, with a specific focus on the needs of business leaders. The goal is to offer practical tools to understand, evaluate, and lead AI and Data Science projects, from business needs to valuable solutions. The course is interactive and full of real-world examples, with attention to metrics, workflows, ROI, governance, and adoption strategies.&lt;/p&gt;</description>
     </item>
     <item>
       <title>FAQ</title>
-      <link>http://localhost:5038/faq/</link>
+      <link>http://localhost:4101/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5038/faq/</guid>
+      <guid>http://localhost:4101/faq/</guid>
       <description>&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-what-to-do-if-i-have-still-not-received-the-order&#34;&gt;1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER?&lt;/h2&gt;&#xA;&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Training Courses</title>
-      <link>http://localhost:5038/training/</link>
+      <link>http://localhost:4101/training/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5038/training/</guid>
+      <guid>http://localhost:4101/training/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This set of courses are designed to teach concepts of Data Science and how to use statistical and machine learning methods to solve real business problems with Python. Courses come with a book with theory, exercises, Jupyter notebooks with practical examples, instructions how to install software and how to use it. The courses are designed to be interactive and practical. The students will learn by doing, by solving real business problems.&lt;/p&gt;</description>
     </item>
   </channel>

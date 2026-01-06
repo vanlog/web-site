@@ -12,39 +12,34 @@ title: Data Science and AI for Business Leaders
 
 ## Description
 
-This is a course designed to understand Data Science. It is an introduction to the topics of Data Science on a high level. The main point is to understand the process that starts with the business need and terminates with a solution. The course is designed to be interactive with the trainer. The student will learn with example from real business problems.
 
-See also the slides of the course.
+This course provides a comprehensive overview of Data Science, Machine Learning, Deep Learning, and Generative AI, with a specific focus on the needs of business leaders. The goal is to offer practical tools to understand, evaluate, and lead AI and Data Science projects, from business needs to valuable solutions. The course is interactive and full of real-world examples, with attention to metrics, workflows, ROI, governance, and adoption strategies.
 
-## Topics include
+## Main Topics
 
-- Definition of Data Science and related terms
-- The fundamental rules of Data Science
-- Principles of 3 layers of Data Science and data alchemy
-- The data driven mindset
-- How to create a Data Science team
-- How to manage the interaction with existing ICT
-- How to manage Data Science team and projects
-- How to communicate results and insights
-- Design and optimization of data lakes
-- Working with machine learning, deep learning and AI
-- Avoiding the common errors of data scientists
-- Agile development for Data Science
-- Gen Ai & Large Language Models
+- Introduction to Data Science: definitions, fundamental rules, data-driven mindset
+- Building and managing Data Science teams: roles, skills, interaction with ICT
+- Success metrics and workflows for data-driven projects
+- Machine Learning for Business Leaders: data-driven decision-making, model interpretability, metric evaluation, ML project lifecycle management, collaboration between business and data scientists
+- Deep Learning for Business Leaders: neural networks, main architectures, solution reusability, intellectual property, business requirements, ROI evaluation and roadmap planning
+- Generative AI for Business Leaders: Large Language Models (LLM), synthetic data, embeddings, agentic applications, adoption costs, governance, risks, and implementation strategies
+- Effective communication of results and insights
+- Data lakes, data products, reporting, and dashboards
 - Data valuation and monetization
-- Technologies and technical skills
-- Data products, reporting and dashboards
-- Optimizing the interactions with domain experts
-- Future: Quantum Artificial Intelligence
+- Optimizing interactions with domain experts
+- Future: Quantum Artificial Intelligence and emerging trends
+
 
 ## Duration
 
 2 days
 
+
 ## Prerequisites
 
 None.
 
+
 ## Audience
 
-This course is for business leaders, managers, and professionals who want to understand the potential of Data Science and communicate confidently with Data Scientists. It is also for Data Scientists who want to understand the full picture of Data Science and learn how to successfully communicate their work.
+This course is intended for business leaders, managers, professionals, and decision makers who want to understand the potential of Data Science, Machine Learning, Deep Learning, and Generative AI, and communicate effectively with technical teams. It is also suitable for Data Scientists who want to gain a strategic vision and improve communication with the business side.
