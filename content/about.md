@@ -27,13 +27,11 @@ We started Vanlog to bridge the gap between AI research, product design, and rea
 
 *Hi, I’m Andrea Melloncelli.*
 
-*I work at the intersection of applied AI, product engineering, and research.*
+*I take AI from breakthrough to business impact.*
 
-*With 10+ years of experience, I’ve led teams and projects in AI, data science, and software engineering, focusing on turning research into robust, production-ready products. My background spans Statistics, Mathematical Models, Deep Learning, Coding, LLM applications, and agentic systems, with a strong emphasis on reliability and measurable impact.
-I founded Vanlog to bring research rigor and real-world pragmatism to AI product development.*
+*For over 10 years, I've been the bridge between what's cutting-edge and what actually ships. Leading teams across AI, data science, and product engineering, I specialize in turning emerging capabilities—Deep Learning, LLMs, agentic systems—into production-grade solutions that scale. My track record: combining technical rigor in Statistics and Mathematical Models with commercial discipline to deliver AI that's both innovative and reliable. The result? Products that don't just impress—they perform and drive measurable ROI.*
 
 <a href="https://www.linkedin.com/in/andrea-melloncelli/" target="_blank">LinkedIn</a>
-<span style="font-size:0.98em;">Currently based in Italy, working with teams across Europe and beyond.</span>
 
 ---
 
