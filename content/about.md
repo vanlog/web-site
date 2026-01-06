@@ -24,14 +24,15 @@ We started Vanlog to bridge the gap between AI research, product design, and rea
 <br>
 
 <img src="https://media.licdn.com/dms/image/v2/D4D03AQE244ZJ0uu4SQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1709896759052?e=1769040000&v=beta&t=rtU1dPWun1exJLZgzNBCUNmaCrvXrOZj8GmEngu1n8M" alt="Andrea Melloncelli" style="width:150px; height:150px; border-radius:75px; float:center; margin-right:20px; margin-bottom:10px;">
+<br>
 
 *Hi, I’m Andrea Melloncelli.*
 
 *I take AI from breakthrough to business impact.*
 
-*For over 10 years, I've been the bridge between what's cutting-edge and what actually ships. Leading teams across AI, data science, and product engineering, I specialize in turning emerging capabilities—Deep Learning, LLMs, agentic systems—into production-grade solutions that scale. My track record: combining technical rigor in Statistics and Mathematical Models with commercial discipline to deliver AI that's both innovative and reliable. The result? Products that don't just impress—they perform and drive measurable ROI.*
-
-<a href="https://www.linkedin.com/in/andrea-melloncelli/" target="_blank">LinkedIn</a>
+*For over 10 years, I've been the bridge between what's cutting-edge and what actually ships. Leading teams across AI, data science, and product engineering, I specialize in turning emerging capabilities—Deep Learning, LLMs, agentic systems—into production-grade solutions that scale. My track record: combining technical rigor in Statistics and Mathematical Models with commercial discipline to deliver AI that's both innovative and reliable. The result? Products that don't just impress—they perform and drive measurable ROI.* <a href="https://www.linkedin.com/in/andrea-melloncelli/" target="_blank" style="display:inline-flex;align-items:center;gap:0.4em;">
+    <i class='fab fa-2x fa-linkedin'></i>
+</a>
 
 ---
 

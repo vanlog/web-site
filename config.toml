@@ -60,6 +60,12 @@ ignoreFiles = ["\\.qmd", "\\.ipynb$", "\\.py$", "\\.Rmd$", "\\.Rmarkdown$", "_fi
     url = "mailto:info@vanlog.it"
     pre = "<i class='fas fa-2x fa-envelope'></i>"
 
+# [[menu.topbar]]
+#     weight = 3
+#     name = "LinkedIn"
+#     url = "https://www.linkedin.com/company/vanlog/"
+#     pre = "<i class='fab fa-2x fa-linkedin'></i>"
+
 [params]
     viewMorePostLink = "/blog/"
     author = "Vanlog"
