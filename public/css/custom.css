@@ -1,4 +1,104 @@
+/* Limit logo size in navbar */
+.navbar-header .navbar-brand img {
+  max-height: 80px;
+  width: auto;
+  transform: translateY(-15px);
+}
+/* Breadcrumbs bar with blue overlay (moved from style.blue.css) */
+#heading-breadcrumbs {
+  position: relative;
+  background: url('../img/texture-bw.png') center center repeat;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  z-index: 1;
+}
+#heading-breadcrumbs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Blue Theme Colors */
+  /* background:linear-gradient(120deg, #2ae3cb97 0%,#467fbf99 90%); */
+  /* Vanlog colors */
+  /* background:linear-gradient(120deg, #2ae3cbbb 10%,#2c89fb99 100%); */
+  /* Other */
+  /* background: linear-gradient(120deg, #2c89fb50 0%, #2c89fb30 100%); */
+  background: linear-gradient(120deg, #2c89fb50 0%, #3f211250 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+#heading-breadcrumbs > * {
+  position: relative;
+  z-index: 3;
+}
+/* Lead text style for about page and general use */
+.lead-blue {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 1.35em;
+  margin-bottom: 28px;
+}
+.lead-blue h2 {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.lead-blue hr {
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  margin-top: 40px;
+}
+
+/* About page hero heading and highlight styles */
+.about-hero-heading {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+}
+
+.about-hero-highlight {
+  color: #4F8EF7;
+}
+
+.about-hero-typewriter {
+  min-height: 2.2em;
+  margin-top: 10px;
+}
+/* Carousel background image */
+.home-carousel-2 .dark-mask {
+  background-image: url('/img/fixed-background-2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+/* Prevent anchor links from being hidden behind fixed header */
+html {
+  scroll-padding-top: 80px;
+}
+
+/* Hero full height */
+
+/* Full viewport height and vertical centering for intro-vanlog section */
+
+.intro-vanlog-fullheight {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 7vh;
+  padding-bottom: 3vh;
+}
+
+.intro-vanlog-fullheight .container {
+  width: 100%;
+}
 /* your styles go here */
+.about-howwework-box {
+  text-align: left;
+  background: rgba(255,255,255,0.40);
+  border-radius: 16px;
+  box-shadow: 0 2px 18px rgba(0,0,0,0.08);
+  padding: 2em 1.5em;
+  margin-bottom: 2em;
+}
 
 .box-image-text .image {
   min-height: 200px;
