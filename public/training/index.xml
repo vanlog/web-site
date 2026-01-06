@@ -2,17 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trainings on Vanlog</title>
-    <link>http://localhost:4101/training/</link>
+    <link>/training/</link>
     <description>Recent content in Trainings on Vanlog</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:4101/training/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/training/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
-      <title>Data Science and AI for Business Leaders</title>
-      <link>http://localhost:4101/training/course-6-executive-data-science/</link>
+      <title>Contact</title>
+      <link>/training/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4101/training/course-6-executive-data-science/</guid>
-      <description>&lt;div style=&#34;display:flex; align-items:center; margin-bottom:18px;&#34;&gt;&#xA;&#x9;&lt;img src=&#34;../course/executive-data-science.png&#34; alt=&#34;Data Science and AI for Business Leaders&#34; style=&#34;max-width:60px; margin-right:18px;&#34; /&gt;&#xA;&#x9;&lt;div&gt;&#xA;&#x9;&#x9;&lt;span style=&#34;font-size:1.15em; font-weight:bold;&#34;&gt;Data Science and AI for Business Leaders&lt;/span&gt;&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;This course provides a comprehensive overview of Data Science, Machine Learning, Deep Learning, and Generative AI, with a specific focus on the needs of business leaders. The goal is to offer practical tools to understand, evaluate, and lead AI and Data Science projects, from business needs to valuable solutions. The course is interactive and full of real-world examples, with attention to metrics, workflows, ROI, governance, and adoption strategies.&lt;/p&gt;</description>
+      
+      <guid>/training/contact/</guid>
+      <description>Are you curious about something? Do you want a showcase of our works, or want to work with us?
+Let&amp;rsquo;s get in touch!</description>
     </item>
+    
   </channel>
 </rss>
