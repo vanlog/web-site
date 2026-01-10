@@ -2,73 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Vanlog</title>
-    <link>http://localhost:6399/tags/</link>
+    <link>http://localhost:7354/tags/</link>
     <description>Recent content in Tags on Vanlog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:6399/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:7354/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ces</title>
-      <link>http://localhost:6399/tags/ces/</link>
+      <link>http://localhost:7354/tags/ces/</link>
       <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:6399/tags/ces/</guid>
+      <guid>http://localhost:7354/tags/ces/</guid>
       <description></description>
     </item>
     <item>
       <title>Tech-Trends</title>
-      <link>http://localhost:6399/tags/tech-trends/</link>
+      <link>http://localhost:7354/tags/tech-trends/</link>
       <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:6399/tags/tech-trends/</guid>
+      <guid>http://localhost:7354/tags/tech-trends/</guid>
       <description></description>
     </item>
     <item>
       <title>FGN</title>
-      <link>http://localhost:6399/tags/fgn/</link>
+      <link>http://localhost:7354/tags/fgn/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:6399/tags/fgn/</guid>
+      <guid>http://localhost:7354/tags/fgn/</guid>
       <description></description>
     </item>
     <item>
       <title>R</title>
-      <link>http://localhost:6399/tags/r/</link>
+      <link>http://localhost:7354/tags/r/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:6399/tags/r/</guid>
+      <guid>http://localhost:7354/tags/r/</guid>
       <description></description>
     </item>
     <item>
       <title>Research</title>
-      <link>http://localhost:6399/tags/research/</link>
+      <link>http://localhost:7354/tags/research/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:6399/tags/research/</guid>
+      <guid>http://localhost:7354/tags/research/</guid>
       <description></description>
     </item>
     <item>
       <title>Temperature</title>
-      <link>http://localhost:6399/tags/temperature/</link>
+      <link>http://localhost:7354/tags/temperature/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:6399/tags/temperature/</guid>
+      <guid>http://localhost:7354/tags/temperature/</guid>
       <description></description>
     </item>
     <item>
       <title>Open Data</title>
-      <link>http://localhost:6399/tags/open-data/</link>
+      <link>http://localhost:7354/tags/open-data/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:6399/tags/open-data/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Innovation</title>
-      <link>http://localhost:6399/tags/innovation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:6399/tags/innovation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Understand-Ai</title>
-      <link>http://localhost:6399/tags/understand-ai/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:6399/tags/understand-ai/</guid>
+      <guid>http://localhost:7354/tags/open-data/</guid>
       <description></description>
     </item>
   </channel>

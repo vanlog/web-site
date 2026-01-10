@@ -29,7 +29,7 @@ CES has always been a barometer for technology trends, but this year’s event s
 We’re here to observe how leading companies and startups are approaching:
 
 - **AI on Devices:** How artificial intelligence is being embedded directly into consumer electronics and professional tools, enabling real-time decision-making and personalization.
-- **Quantum-Ready Hardware:** Early demonstrations and roadmaps for quantum-enabled devices, and how they might accelerate innovation in fields from healthcare to logistics.
+- **Quantum:** Early demonstrations and roadmaps for quantum-enabled devices, and how they might accelerate innovation in fields from healthcare to logistics.
 - **Physical AI & Robotics:** The rise of robots and intelligent machines that interact with the physical world, and the new opportunities and challenges they bring.
 
 ### The Importance of Physical Intelligence
