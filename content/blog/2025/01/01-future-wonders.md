@@ -4,7 +4,7 @@ author: "Andrea Melloncelli"
 date: 2026-01-01
 draft: false
 banner: /img/blog/2026/01/what-matters-in-2026.png
-show_banner: true
+show_banner: false
 categories: 
   - innovation
 tags:

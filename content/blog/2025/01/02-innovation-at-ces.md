@@ -4,6 +4,7 @@ author: "Andrea Melloncelli"
 date: 2026-01-06
 draft: false
 banner: /img/blog/2026/02/ces.png
+show_banner: true
 categories: 
   - innovation
 tags: 
