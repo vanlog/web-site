@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech-Trends on Vanlog</title>
+    <link>http://localhost:7354/tags/tech-trends/</link>
+    <description>Recent content in Tech-Trends on Vanlog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:7354/tags/tech-trends/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Innovation at CES: The Future of AI on Devices</title>
+      <link>http://localhost:7354/blog/2026/01/06/02-innovation-at-ces/</link>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:7354/blog/2026/01/06/02-innovation-at-ces/</guid>
+      <description>&lt;h2 id=&#34;ces-2026-exploring-the-next-wave-of-intelligence&#34;&gt;CES 2026: Exploring the Next Wave of Intelligence&lt;/h2&gt;&#xA;&lt;p&gt;The doors of CES 2026 have opened, and the world’s attention is once again on Las Vegas. This year, the event is not just a showcase of the latest gadgets, but a living laboratory for the future of intelligence—both artificial and physical—embedded in devices that shape our daily lives and professional environments.&lt;/p&gt;&#xA;&lt;p&gt;Our team is on the ground to investigate how innovation is evolving, with a particular focus on the intersection of AI, quantum computing, and robotics. The goal: to understand how these technologies are being planned and integrated into the next generation of consumer and professional devices.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Future Wonders: the Future is Already Here</title>
+      <link>http://localhost:7354/blog/2026/01/01/01-future-wonders/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:7354/blog/2026/01/01/01-future-wonders/</guid>
+      <description>&lt;img src=&#34;../../img/blog/2026/01/banner.png&#34; alt=&#34;Banner&#34; style=&#34;max-width:100%; height:auto; display:block; margin:0 auto;&#34; /&gt;&#xA;&lt;h2 id=&#34;what-matters-in-2026&#34;&gt;What Matters in 2026&lt;/h2&gt;&#xA;&lt;p&gt;January 1st is a strange day to talk about technology. The calendar resets, but the world does not.&lt;br&gt;&#xA;And yet, every year, there is a moment when we can almost &lt;em&gt;feel&lt;/em&gt; the shift: tools become habits, ideas become workflows, “experimental” becomes normal.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Future Wonders&lt;/strong&gt; is our attempt to capture and understand where we are heading as a community of builders and explorers.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Low-Code-Ai on Vanlog</title>
+    <link>http://localhost:4294/categories/low-code-ai/</link>
+    <description>Recent content in Low-Code-Ai on Vanlog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:4294/categories/low-code-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>September 2024: Low-Code AI Solutions</title>
+      <link>http://localhost:4294/blog/2025/12/31/2024-09-low-code-ai/</link>
+      <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4294/blog/2025/12/31/2024-09-low-code-ai/</guid>
+      <description>&lt;h1 id=&#34;low-code-ai-solutions&#34;&gt;Low-Code AI Solutions&lt;/h1&gt;&#xA;&lt;p&gt;Low-code platforms are democratizing access to AI by enabling a broader range of professionals to build and deploy intelligent solutions. These tools reduce the barriers to entry, allowing subject matter experts to contribute directly to the development process without deep programming expertise. As a result, organizations can tap into a wider pool of creativity and domain knowledge.&lt;/p&gt;&#xA;&lt;p&gt;One of the key benefits of low-code AI is the acceleration of development cycles. Visual interfaces, drag-and-drop components, and pre-built templates make it possible to prototype and launch solutions in a fraction of the time required by traditional coding. This agility is especially valuable in fast-moving industries where speed to market is a competitive advantage.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

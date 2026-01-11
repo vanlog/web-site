@@ -41,10 +41,18 @@ ignoreFiles = ["\\.qmd", "\\.ipynb$", "\\.py$", "\\.Rmd$", "\\.Rmarkdown$", "_fi
     weight = 4
 
 [[menu.main]]
+    name       = "Future Wonders"
+    identifier = "section.ap-blog"
+    url        = "/blog/"
+    weight     = 5
+    # parent     = "menu.allpages"
+    post       = 4
+
+[[menu.main]]
     identifier = "about"
     name = "about"
     url  = "/about/"
-    weight = 5
+    weight = 6
 
 # Top bar social links menu
 
