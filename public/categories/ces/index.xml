@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CES on Vanlog</title>
+    <link>http://localhost:3683/categories/ces/</link>
+    <description>Recent content in CES on Vanlog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:3683/categories/ces/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Humanoid Robots at CES: When Machines Start to Change Us</title>
+      <link>http://localhost:3683/blog/2026/01/12/humanoid-robots-ces-copy/</link>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:3683/blog/2026/01/12/humanoid-robots-ces-copy/</guid>
+      <description>&lt;h1 id=&#34;humanoid-robots-at-ces-when-machines-start-to-change-us&#34;&gt;Humanoid Robots at CES: When Machines Start to Change Us&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;What if the real revolution in robotics isn’t just about smarter machines, but about how we, as humans, begin to change in their presence? At CES this year, humanoid robots didn’t just get better—they started to subtly reshape the way people behave around them. This article explores the rise of “Physical AI” and how it’s already influencing our interactions, expectations, and even our gestures.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

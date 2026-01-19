@@ -2,72 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:7354/blog/</loc>
+    <loc>http://localhost:5895/blog/</loc>
     <lastmod>2026-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/categories/</loc>
+    <loc>http://localhost:5895/categories/</loc>
     <lastmod>2026-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/tags/ces/</loc>
+    <loc>http://localhost:5895/tags/ces/</loc>
     <lastmod>2026-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/categories/innovation/</loc>
+    <loc>http://localhost:5895/blog/2026/01/06/03-humanoid-robots-ces/</loc>
     <lastmod>2026-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/blog/2026/01/06/02-innovation-at-ces/</loc>
+    <loc>http://localhost:5895/categories/innovation/</loc>
     <lastmod>2026-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/tags/</loc>
+    <loc>http://localhost:5895/blog/2026/01/06/02-innovation-at-ces/</loc>
     <lastmod>2026-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/tags/tech-trends/</loc>
+    <loc>http://localhost:5895/tags/physical-ai/</loc>
     <lastmod>2026-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/</loc>
+    <loc>http://localhost:5895/tags/</loc>
     <lastmod>2026-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/blog/2026/01/01/01-future-wonders/</loc>
+    <loc>http://localhost:5895/tags/tech-trends/</loc>
+    <lastmod>2026-01-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:5895/</loc>
+    <lastmod>2026-01-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:5895/blog/2026/01/01/01-future-wonders/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/temperature/appendix-c/</loc>
+    <loc>http://localhost:5895/temperature/appendix-c/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/tags/fgn/</loc>
+    <loc>http://localhost:5895/tags/fgn/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/tags/r/</loc>
+    <loc>http://localhost:5895/tags/r/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/categories/research/</loc>
+    <loc>http://localhost:5895/categories/research/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/tags/research/</loc>
+    <loc>http://localhost:5895/tags/research/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/tags/temperature/</loc>
+    <loc>http://localhost:5895/tags/temperature/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/temperature/</loc>
+    <loc>http://localhost:5895/temperature/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/tags/open-data/</loc>
+    <loc>http://localhost:5895/tags/open-data/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/temperature/temperature-data/</loc>
+    <loc>http://localhost:5895/temperature/temperature-data/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:7354/about/</loc>
+    <loc>http://localhost:5895/about/</loc>
   </url><url>
-    <loc>http://localhost:7354/about_old/</loc>
+    <loc>http://localhost:5895/about_old/</loc>
   </url><url>
-    <loc>http://localhost:7354/agent-discovery/</loc>
+    <loc>http://localhost:5895/agent-discovery/</loc>
   </url><url>
-    <loc>http://localhost:7354/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</loc>
+    <loc>http://localhost:5895/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</loc>
   </url><url>
-    <loc>http://localhost:7354/contact/</loc>
+    <loc>http://localhost:5895/contact/</loc>
   </url><url>
-    <loc>http://localhost:7354/faq/</loc>
+    <loc>http://localhost:5895/faq/</loc>
   </url><url>
-    <loc>http://localhost:7354/training/</loc>
+    <loc>http://localhost:5895/training/</loc>
   </url>
 </urlset>
