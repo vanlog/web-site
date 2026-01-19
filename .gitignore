@@ -3,5 +3,11 @@
 .RData
 .Ruserdata
 
+# Quarto files
 /.quarto/
+
+# AI-related files
 ai/
+
+# MacOS system files
+.DS_Store

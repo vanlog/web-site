@@ -113,3 +113,11 @@ html {
    max-width: 200px;
    max-height: 200px;
 }
+
+.blog-img-small {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.2em auto 0.5em auto;
+}
