@@ -36,6 +36,12 @@
                     {{ end  }}
                   </li>
                   {{ end }}
+                    <!-- Google Translate Button: small, right of About -->
+                    <li style="display: flex; align-items: center; height: 66px; margin-left: 0.5em;">
+                        <button onclick="window.open('https://translate.google.com/translate?sl=auto&tl=it&u='+encodeURIComponent(window.location.href),'_blank')" style="padding:2px 8px; font-size:12px; border-radius:4px; border:1px solid #ccc; background:#f8f9fa; color:#333; cursor:pointer; display: flex; align-items: center; margin: 0 auto; height: 28px;">
+                            <img src='https://www.google.com/favicon.ico' alt='G' style='height:14px;vertical-align:middle;margin-right:2px;'> Translate
+                        </button>
+                    </li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
