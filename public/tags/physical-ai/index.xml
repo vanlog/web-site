@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Physical-Ai on Vanlog</title>
-    <link>http://localhost:3409/tags/physical-ai/</link>
+    <link>http://localhost:1313/tags/physical-ai/</link>
     <description>Recent content in Physical-Ai on Vanlog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:3409/tags/physical-ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/physical-ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Humanoids at CES: The Rise of Physical AI</title>
-      <link>http://localhost:3409/blog/2026/01/06/03-humanoid-robots-ces/</link>
-      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:3409/blog/2026/01/06/03-humanoid-robots-ces/</guid>
+      <link>http://localhost:1313/blog/2026/01/19/03-humanoid-robots-ces/</link>
+      <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2026/01/19/03-humanoid-robots-ces/</guid>
       <description>&lt;br&gt;&#xA;&lt;p&gt;&lt;em&gt;In today’s world, artificial intelligence is no longer confined to screens and software. We are witnessing a clear shift: AI is becoming &lt;strong&gt;Physical AI&lt;/strong&gt;—intelligence that not only processes data, but perceives, decides, and acts in the real world. At the center of this transition are humanoid robots, machines designed with an increasingly human-like form and equipped with AI, sensors, hands, legs, and bodies able to interact naturally with human environments.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>

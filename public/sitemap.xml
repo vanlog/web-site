@@ -2,78 +2,80 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:3409/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ces/</loc>
+    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/2026/01/19/03-humanoid-robots-ces/</loc>
+    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/innovation/</loc>
+    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/physical-ai/</loc>
+    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tech-trends/</loc>
+    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/2026/01/06/02-innovation-at-ces/</loc>
     <lastmod>2026-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3409/categories/</loc>
-    <lastmod>2026-01-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:3409/tags/ces/</loc>
-    <lastmod>2026-01-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:3409/blog/2026/01/06/03-humanoid-robots-ces/</loc>
-    <lastmod>2026-01-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:3409/categories/innovation/</loc>
-    <lastmod>2026-01-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:3409/blog/2026/01/06/02-innovation-at-ces/</loc>
-    <lastmod>2026-01-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:3409/tags/physical-ai/</loc>
-    <lastmod>2026-01-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:3409/tags/</loc>
-    <lastmod>2026-01-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:3409/tags/tech-trends/</loc>
-    <lastmod>2026-01-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:3409/</loc>
-    <lastmod>2026-01-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:3409/blog/2026/01/01/01-future-wonders/</loc>
+    <loc>http://localhost:1313/blog/2026/01/01/01-future-wonders/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3409/temperature/appendix-c/</loc>
+    <loc>http://localhost:1313/temperature/appendix-c/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3409/tags/fgn/</loc>
+    <loc>http://localhost:1313/tags/fgn/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3409/tags/r/</loc>
+    <loc>http://localhost:1313/tags/r/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3409/categories/research/</loc>
+    <loc>http://localhost:1313/categories/research/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3409/tags/research/</loc>
+    <loc>http://localhost:1313/tags/research/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3409/tags/temperature/</loc>
+    <loc>http://localhost:1313/tags/temperature/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3409/temperature/</loc>
+    <loc>http://localhost:1313/temperature/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3409/tags/open-data/</loc>
+    <loc>http://localhost:1313/tags/open-data/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3409/temperature/temperature-data/</loc>
+    <loc>http://localhost:1313/temperature/temperature-data/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3409/about/</loc>
+    <loc>http://localhost:1313/businesscard/</loc>
   </url><url>
-    <loc>http://localhost:3409/about_old/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>http://localhost:3409/agent-discovery/</loc>
+    <loc>http://localhost:1313/about_old/</loc>
   </url><url>
-    <loc>http://localhost:3409/contact.markdown_strict&#43;raw_html&#43;all_symbols_escapable&#43;backtick_code_blocks&#43;fenced_code_blocks&#43;space_in_atx_header&#43;intraword_underscores&#43;lists_without_preceding_blankline&#43;shortcut_reference_links/</loc>
+    <loc>http://localhost:1313/agent-discovery/</loc>
   </url><url>
-    <loc>http://localhost:3409/contact/</loc>
+    <loc>http://localhost:1313/businesscard/andreamelloncelli/</loc>
   </url><url>
-    <loc>http://localhost:3409/faq/</loc>
+    <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>http://localhost:3409/training/</loc>
+    <loc>http://localhost:1313/faq/</loc>
+  </url><url>
+    <loc>http://localhost:1313/training/</loc>
   </url>
 </urlset>

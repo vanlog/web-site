@@ -4,7 +4,7 @@
 
 ## Switch to Quarto
 
-https://www.r-bloggers.com/2022/01/switching-to-quarto-from-blogdown/
+[Switch to Quarto Howto](https://www.r-bloggers.com/2022/01/switching-to-quarto-from-blogdown/)
 
 Note: update the OS to Ubuntu 20.04 LTS in Netlify.
 
@@ -21,14 +21,13 @@ Install the following software:
 ### Preview the website
 
 ```bash
-quarto preview
+make preview
 ```
 
 ### Build the website
 
 ```bash
-quarto render && hugo
-hugo serve
+make preview
 ```
 
 ## Configuration

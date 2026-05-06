@@ -11,3 +11,4 @@ ai/
 
 # MacOS system files
 .DS_Store
+.claude/settings.json
