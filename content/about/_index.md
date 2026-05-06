@@ -23,7 +23,7 @@ We started Vanlog to bridge the gap between AI research, product design, and rea
 
 <br>
 
-<img src="https://media.licdn.com/dms/image/v2/D4D03AQE244ZJ0uu4SQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1709896759052?e=1769040000&v=beta&t=rtU1dPWun1exJLZgzNBCUNmaCrvXrOZj8GmEngu1n8M" alt="Andrea Melloncelli" style="width:150px; height:150px; border-radius:75px; float:center; margin-right:20px; margin-bottom:10px;">
+<img src="/img/andrea-melloncelli.jpg" alt="Andrea Melloncelli" style="width:150px; height:150px; border-radius:75px; float:center; margin-right:20px; margin-bottom:10px;">
 <br>
 
 *Hi, I'm Andrea Melloncelli.*
