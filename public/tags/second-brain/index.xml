@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Second-Brain on Vanlog</title>
+    <link>http://localhost:1313/tags/second-brain/</link>
+    <description>Recent content in Second-Brain on Vanlog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/second-brain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build Your Corporate Second Brain with AI</title>
+      <link>http://localhost:1313/blog/2026/07/09/04-corporate-second-brain-with-ai/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2026/07/09/04-corporate-second-brain-with-ai/</guid>
+      <description>&lt;div class=&#34;abstract&#34;&gt;&#xA;  &lt;p&gt;A corporate second brain keeps track of what happens in your company: emails, chat messages, prospects, proposals, invoices, the status of every project. It gives that material back when you need it, and it shows what is going wrong and what has become urgent, so you keep the whole picture in view. It also recognizes when a new situation resembles an old one, finds the solution that worked last time, and stops you repeating a mistake you have already made.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

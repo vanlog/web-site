@@ -121,3 +121,42 @@ html {
   display: block;
   margin: 1.2em auto 0.5em auto;
 }
+
+/* For images with fine detail (graphs, screenshots) that need the full column width */
+.blog-img-large {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.2em auto 0.5em auto;
+}
+
+/* Like blog-img-large, but scaled down where the detail still reads at 70% width */
+.blog-img-medium {
+  max-width: 70%;
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 1.2em auto 0.5em auto;
+}
+
+/* Intro block at the top of a blog post, between the title and the first section */
+.abstract {
+  max-width: 660px;
+  margin: 0 auto 2.6em auto;
+  padding: 1.5em 0;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.abstract p {
+  margin: 0 0 1em 0;
+  color: #4a5568;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.abstract p:last-child {
+  margin-bottom: 0;
+}

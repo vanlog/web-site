@@ -2,94 +2,112 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.vanlog.it/blog/</loc>
+    <loc>http://localhost:1313/tags/ai/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/2026/07/09/04-corporate-second-brain-with-ai/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/claude/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/innovation/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/knowledge-management/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/productivity/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/second-brain/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ces/</loc>
     <lastmod>2026-01-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/categories/</loc>
+    <loc>http://localhost:1313/blog/2026/01/19/03-humanoid-robots-ces/</loc>
     <lastmod>2026-01-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/tags/ces/</loc>
+    <loc>http://localhost:1313/tags/physical-ai/</loc>
     <lastmod>2026-01-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/blog/2026/01/19/03-humanoid-robots-ces/</loc>
+    <loc>http://localhost:1313/tags/tech-trends/</loc>
     <lastmod>2026-01-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/categories/innovation/</loc>
-    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.vanlog.it/tags/physical-ai/</loc>
-    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.vanlog.it/tags/</loc>
-    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.vanlog.it/tags/tech-trends/</loc>
-    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.vanlog.it/</loc>
-    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.vanlog.it/blog/2026/01/06/02-innovation-at-ces/</loc>
+    <loc>http://localhost:1313/blog/2026/01/06/02-innovation-at-ces/</loc>
     <lastmod>2026-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/blog/2026/01/01/01-future-wonders/</loc>
+    <loc>http://localhost:1313/blog/2026/01/01/01-future-wonders/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/temperature/appendix-c/</loc>
+    <loc>http://localhost:1313/temperature/appendix-c/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/tags/fgn/</loc>
+    <loc>http://localhost:1313/tags/fgn/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/tags/r/</loc>
+    <loc>http://localhost:1313/tags/r/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/categories/research/</loc>
+    <loc>http://localhost:1313/categories/research/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/tags/research/</loc>
+    <loc>http://localhost:1313/tags/research/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/tags/temperature/</loc>
+    <loc>http://localhost:1313/tags/temperature/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/temperature/</loc>
+    <loc>http://localhost:1313/temperature/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/tags/open-data/</loc>
+    <loc>http://localhost:1313/tags/open-data/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/temperature/temperature-data/</loc>
+    <loc>http://localhost:1313/temperature/temperature-data/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/businesscard/</loc>
+    <loc>http://localhost:1313/businesscard/</loc>
   </url><url>
-    <loc>https://www.vanlog.it/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://www.vanlog.it/about_old/</loc>
+    <loc>http://localhost:1313/about_old/</loc>
   </url><url>
-    <loc>https://www.vanlog.it/agent-discovery/</loc>
+    <loc>http://localhost:1313/agent-discovery/</loc>
   </url><url>
-    <loc>https://www.vanlog.it/businesscard/andreamelloncelli/</loc>
+    <loc>http://localhost:1313/businesscard/andreamelloncelli/</loc>
   </url><url>
-    <loc>https://www.vanlog.it/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>https://www.vanlog.it/training/course-2-data-analysis-and-reporting/</loc>
+    <loc>http://localhost:1313/training/course-2-data-analysis-and-reporting/</loc>
   </url><url>
-    <loc>https://www.vanlog.it/training/course-6-executive-data-science/</loc>
+    <loc>http://localhost:1313/training/course-6-executive-data-science/</loc>
   </url><url>
-    <loc>https://www.vanlog.it/training/course-3-data-science/</loc>
+    <loc>http://localhost:1313/training/course-3-data-science/</loc>
   </url><url>
-    <loc>https://www.vanlog.it/training/course-5-deep-learning-and-generative-models/</loc>
+    <loc>http://localhost:1313/training/course-5-deep-learning-and-generative-models/</loc>
   </url><url>
-    <loc>https://www.vanlog.it/faq/</loc>
+    <loc>http://localhost:1313/faq/</loc>
   </url><url>
-    <loc>https://www.vanlog.it/training/course-1-introduction-to-python/</loc>
+    <loc>http://localhost:1313/training/course-1-introduction-to-python/</loc>
   </url><url>
-    <loc>https://www.vanlog.it/training/course-7-mastering-large-language-models-with-ai-agents/</loc>
+    <loc>http://localhost:1313/training/course-7-mastering-large-language-models-with-ai-agents/</loc>
   </url><url>
-    <loc>https://www.vanlog.it/training/course-4-professional-project-management/</loc>
+    <loc>http://localhost:1313/training/course-4-professional-project-management/</loc>
   </url><url>
-    <loc>https://www.vanlog.it/training/</loc>
+    <loc>http://localhost:1313/training/</loc>
   </url>
 </urlset>
