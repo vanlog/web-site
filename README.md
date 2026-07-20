@@ -24,10 +24,23 @@ Install the following software:
 make preview
 ```
 
+This renders the Quarto content and starts the Hugo server on <http://localhost:1313>.
+Published pages only — content with `draft: true` in its front matter is skipped.
+
+### Preview drafts
+
+```bash
+make preview-draft
+```
+
+Same as `make preview` but adds Hugo's `--buildDrafts` flag, so pages marked
+`draft: true` are also rendered. Use this to review a draft article locally
+before publishing it (setting `draft: false`).
+
 ### Build the website
 
 ```bash
-make preview
+make render
 ```
 
 ## Configuration

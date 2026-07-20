@@ -2,37 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.vanlog.it/blog/</loc>
-    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+    <loc>https://www.vanlog.it/tags/ai/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.vanlog.it/blog/2026/07/09/04-corporate-second-brain-with-ai/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.vanlog.it/categories/</loc>
-    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/tags/ces/</loc>
-    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+    <loc>https://www.vanlog.it/tags/claude/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/blog/2026/01/19/03-humanoid-robots-ces/</loc>
-    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+    <loc>https://www.vanlog.it/blog/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.vanlog.it/categories/innovation/</loc>
-    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/tags/physical-ai/</loc>
-    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+    <loc>https://www.vanlog.it/tags/knowledge-management/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.vanlog.it/tags/productivity/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.vanlog.it/tags/second-brain/</loc>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.vanlog.it/tags/</loc>
-    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.vanlog.it/tags/tech-trends/</loc>
-    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.vanlog.it/</loc>
-    <lastmod>2026-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/blog/2026/01/06/02-innovation-at-ces/</loc>
-    <lastmod>2026-01-06T00:00:00+00:00</lastmod>
+    <loc>https://www.vanlog.it/blog/2026/01/01/01-future-signals/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vanlog.it/blog/2026/01/01/01-future-wonders/</loc>
+    <loc>https://www.vanlog.it/tags/tech-trends/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.vanlog.it/temperature/appendix-c/</loc>
