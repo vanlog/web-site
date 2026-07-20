@@ -2,7 +2,7 @@
 title: "Humanoids at CES: The Rise of Physical AI"
 author: "Andrea Melloncelli"
 date: 2026-01-19
-draft: false
+draft: true
 banner: /img/blog/2026/03/cowboys.JPG
 show_banner: true
 categories: 
