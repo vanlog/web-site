@@ -2,7 +2,7 @@
 title: "Build Your Corporate Second Brain with AI"
 author: "Andrea Melloncelli"
 date: 2026-07-09
-draft: true
+draft: false
 banner: /img/blog/2026/07/obsidian-revenue-graph.png
 show_banner: false
 categories:
