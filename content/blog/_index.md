@@ -1,4 +1,4 @@
 ---
-title: "AI, tech, and the trends shaping tomorrow"
-description: Latest articles and insights from Vanlog
+title: "Future Signals"
+description: "AI, tech, and the trends shaping tomorrow. Insights from Vanlog."
 ---

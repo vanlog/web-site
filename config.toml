@@ -41,7 +41,7 @@ ignoreFiles = ["\\.qmd", "\\.ipynb$", "\\.py$", "\\.Rmd$", "\\.Rmarkdown$", "_fi
     weight = 4
 
 [[menu.main]]
-    name       = "Future Wonders"
+    name       = "Future Signals"
     identifier = "section.ap-blog"
     url        = "/blog/"
     weight     = 5

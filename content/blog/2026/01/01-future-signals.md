@@ -1,8 +1,10 @@
 ---
-title: "Future Wonders: the Future is Already Here"
+title: "Future Signals: What Is Already Here"
 author: "Andrea Melloncelli"
 date: 2026-01-01
 draft: false
+aliases:
+  - /blog/2026/01/01/01-future-wonders/
 banner: /img/blog/2026/01/what-matters-in-2026.png
 show_banner: false
 categories: 
@@ -18,7 +20,7 @@ tags:
 January 1st is a strange day to talk about technology. The calendar resets, but the world does not.  
 And yet, every year, there is a moment when we can almost *feel* the shift: tools become habits, ideas become workflows, “experimental” becomes normal.
 
-**Future Wonders** is our attempt to capture and understand where we are heading as a community of builders and explorers.
+**Future Signals** is our attempt to capture and understand where we are heading as a community of builders and explorers.
 
 These are not predictions for a distant tomorrow, nor product launches as trophies.  
 We seek the quiet, fascinating edge of what is already happening—and what it takes to understand it with enough technical honesty to be useful.
@@ -29,7 +31,7 @@ We seek the quiet, fascinating edge of what is already happening—and what it t
 
 *This will change how we build, decide, create, and live, starting now.*
 
-That is the kind of wonder we are after: the kind that sparks curiosity **and** demands competence.
+That is the kind of signal we are after: the kind that sparks curiosity **and** demands competence.
 
 ## Hot topics in 2026
 
@@ -75,4 +77,4 @@ We’ll explore:
 ## Beyond the Horizon
 
 We are excited to embark on this journey in 2026, exploring the frontiers of AI and remarkable technology together.
-Let us stay curious, stay informed, and discover the future—one wonder at a time.
+Let us stay curious, stay informed, and discover the future, one signal at a time.
